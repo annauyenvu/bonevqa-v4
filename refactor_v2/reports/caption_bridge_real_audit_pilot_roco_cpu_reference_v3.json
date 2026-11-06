@@ -1,0 +1,20 @@
+{
+  "scope": "two held-out ROCO captions; technical audit, not semantic superiority",
+  "device": "cpu",
+  "repeat_answer_logit_max_difference": 0.0,
+  "reload_answer_logit_max_difference": 0.0,
+  "image_swap_prefix_max_difference": 0.6419678926467896,
+  "image_swap_answer_logit_max_difference": 4.6026411056518555,
+  "loss_before_reload": 4.359602451324463,
+  "loss_after_reload": 4.359602451324463,
+  "optimizer_model_epoch_match": true,
+  "optimizer_model_step_match": true,
+  "resume_equivalence_verified": true,
+  "passed": true,
+  "resume_comparison_run": "refactor_v2/checkpoints/pilot_roco_cpu_resumed_v3",
+  "resume_parameter_max_difference": 0.0,
+  "resume_differing_tensors": 0,
+  "resume_optimizer_state_equal": true,
+  "resume_scheduler_state_equal": true,
+  "resume_model_config_equal": true
+}

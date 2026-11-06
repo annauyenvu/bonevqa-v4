@@ -1,0 +1,9 @@
+# Isolated Lens runtime candidate — bounded installation, not model acceptance
+
+FAVP closure has completed before this stage. Preserve /Users/uyen/Downloads/BoneMedVQA/.venv and all historical runtime/source seals. Create only a new project-local environment at .evaluation_runtime/lens_venv_v1; do not upgrade the old environment or download further model weights.
+
+Candidate core pins: Python3.11, torch2.6.0/torchvision0.21.0 (official paired OSX versions), transformers5.0.0 (meets pinned Lens>=5.0), accelerate1.12.0, peft0.18.1, numpy1.26.4, datasets3.6.0 and Pillow>=10. Resolve the complete binary-wheel dependency graph first, record URLs/hashes and inspect total download footprint before installation. Reject source builds and unexpected CUDA packages on arm64macOS. Maintain8GiB free reserve. These are candidates, not a claim of proven cross-package compatibility.
+
+References checked: Hugging Face Transformers5.0.0 installation documentation https://huggingface.co/docs/transformers/v5.0.0/en/installation ; official package releases https://pypi.org/project/transformers/5.0.0/ and https://pypi.org/project/peft/0.18.1/ ; official paired PyTorch previous-version instructions https://pytorch.org/get-started/previous-versions/ . Source Lens pyproject declares torch>=2.2, transformers>=5.0, accelerate>=1.2 and peft>=0.14. Requirements are not empirical hardware minimums or model gates.
+
+After installation, capture versions/import acceptance and inspect actual local SmolVLM processor outputs before any native inference/training. Keep HF/model runtime offline and use the already pinned safetensors/tokenizer/config assets. No cloud resources, uploads or unrelated messaging. Any dependency incompatibility must be preserved and corrected in a new versioned environment or documented adapter, not by modifying the closed BoneVQA/FAVP environment.

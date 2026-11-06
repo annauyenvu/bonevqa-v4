@@ -1,0 +1,28 @@
+_base_: fracatlas_prompt_causal_v3.yaml
+run_name: fold0_b_sealed_v3
+init_from: refactor_v2/checkpoints/revised_pmcvqa_alignment_v3/best.pt
+allow_random_init: false
+train:
+  save_optimizer: true
+data:
+  max_samples: null
+  val_max_samples: null
+  sealed_answer_vocab: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/answer_vocab_runtime_normalized_v3.json
+  loader_kwargs:
+    seal_path: /Users/uyen/Downloads/BONEVQA/refactor_v2/reports/STEP1_DATA_SEAL_V3_RUNTIME_VOCAB.json
+    project_root: /Users/uyen/Downloads/BONEVQA
+    sealed_records_by_split:
+      train: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_train.json
+      model_val: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_model_val.json
+      calibration: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_calibration.json
+      test: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_test.json
+    with_masks: false
+    with_boxes: false
+    boxes_from: null
+    boxes_as_masks: false
+model:
+  # Installed MPS runtime failed stochastic checkpoint gradient parity.
+  # No-checkpoint execution must pass memory/reproducibility gates before full training.
+  grad_checkpoint: false
+  llm_grad_checkpoint: false
+  prior_labels: []

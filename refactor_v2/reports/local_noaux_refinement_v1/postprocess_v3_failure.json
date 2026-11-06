@@ -1,0 +1,6 @@
+{
+  "error": "AssertionError('/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/postprocess_v3/recover_head_0_local_real_noaux.log')",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/local_noaux_head_analysis_v3.py\", line 99, in <module>\n    if sys.argv[1]=='supervise':supervise()\n                                ^^^^^^^^^^^\n  File \"/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/local_noaux_head_analysis_v3.py\", line 91, in supervise\n    assert code==0,str(log)\n           ^^^^^^^\nAssertionError: /Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/postprocess_v3/recover_head_0_local_real_noaux.log\n",
+  "wall": 1793234582.047872,
+  "preserve_outputs": true
+}

@@ -1,0 +1,46 @@
+_base_: fracatlas_component_clean_v2.yaml
+
+# Sealed causal baseline.  This is B (image + raw question), not the former
+# "None" configuration that silently retained the textual instruction.
+run_name: fracatlas_clean_b_seed42_prompt_v3
+
+# The inherited list must be repeated because YAML list overrides are atomic.
+checkpoint_allow_mismatch_prefixes:
+  - closed_head.
+  - prompt_mixer.
+  - fusion.gamma_latent
+  - fusion.lp_out.
+  - lens_fusion.
+  - latent.
+  - fusion.lp_ca_l.
+  - fusion.lp_ca_i.
+  - fusion.lp_ca_mm.
+  - fracture_head.
+
+data:
+  loader_kwargs:
+    with_masks: false
+    with_boxes: false
+    boxes_from: refactor_v2/detector_clean/boxes.json
+    boxes_as_masks: true
+    roi_control: real
+
+model:
+  prompt_protocol_version: 3
+  prompt_variant: B
+  module_init_seed_offset: 1729
+  qformer_dropout: 0.0
+  visual_route: fusion_only
+  use_visual_prompt: false
+  use_lens: false
+  use_latent_prompt: false
+  use_textual_prompt: false
+  use_region_in_prompt: false
+  visual_force_zero: false
+  lens_force_zero: false
+  latent_force_zero: false
+  lens_training_only: true
+  lens_dropout: 0.0
+  latent_answer_bank_mode: train
+  prior_labels: []
+

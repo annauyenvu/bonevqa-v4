@@ -1,0 +1,75 @@
+{
+  "model_val": {
+    "qa": 1500,
+    "invalid_choice_labels": 0,
+    "invalid_records": [],
+    "empty_questions": 0
+  },
+  "test": {
+    "qa": 50000,
+    "invalid_choice_labels": 10,
+    "invalid_records": [
+      {
+        "index": 11595,
+        "image": "images/PMC8458390_Fig3.jpg",
+        "label": "'",
+        "answer": "'PLY-F"
+      },
+      {
+        "index": 12807,
+        "image": "images/PMC8487720_F7.jpg",
+        "label": "'",
+        "answer": "'poor enhancement of tumor"
+      },
+      {
+        "index": 15798,
+        "image": "images/PMC8559889_FIG1.jpg",
+        "label": "\"",
+        "answer": "\" Homogeneous hyperechoic mass"
+      },
+      {
+        "index": 16592,
+        "image": "images/PMC8580698_fig3.jpg",
+        "label": "'",
+        "answer": "' Ultrasonography"
+      },
+      {
+        "index": 17186,
+        "image": "images/PMC8598692_FIG1.jpg",
+        "label": "'",
+        "answer": "' Femur"
+      },
+      {
+        "index": 19724,
+        "image": "images/PMC8659434_polymers-13-04153-f002.jpg",
+        "label": "'",
+        "answer": "'SEM"
+      },
+      {
+        "index": 27396,
+        "image": "images/PMC8860945_Fig1.jpg",
+        "label": "'",
+        "answer": "'A bright field microscopy image of MG-63 cell culture"
+      },
+      {
+        "index": 29613,
+        "image": "images/PMC8908603_Fig6.jpg",
+        "label": "'",
+        "answer": "' A machine algorithm error"
+      },
+      {
+        "index": 30885,
+        "image": "images/PMC8943521_FIG2.jpg",
+        "label": "'",
+        "answer": "'X-ray"
+      },
+      {
+        "index": 33382,
+        "image": "images/PMC9001874_FIG2.jpg",
+        "label": "'",
+        "answer": "'Radius"
+      }
+    ],
+    "empty_questions": 0
+  }
+}

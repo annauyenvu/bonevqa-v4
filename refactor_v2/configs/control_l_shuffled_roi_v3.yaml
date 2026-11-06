@@ -1,0 +1,7 @@
+_base_: ablation_l_v3.yaml
+run_name: fracatlas_clean_l_shuffled_roi_seed42_prompt_v3
+init_from: refactor_v2/checkpoints/fracatlas_clean_l_align_shuffled_control_seed42_prompt_v3/best.pt
+data:
+  loader_kwargs:
+    roi_control: shuffled
+

@@ -1,0 +1,6 @@
+{
+  "status": "preparation_failed_before_training",
+  "reason": "New timing driver incorrectly assumed raw ROCO manifests contain answer_type; actual sealed schema contains caption and the existing ROCO adapter produces OPEN caption targets.",
+  "fix": "Validate nonempty existing caption instead; no source manifest, labels, adapter, model or loss change.",
+  "artifacts_overwritten": false
+}

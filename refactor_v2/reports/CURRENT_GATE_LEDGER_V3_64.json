@@ -1,0 +1,16 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_63.json",
+  "snapshot_local":"2026-10-22 approximately09:30 ICT",
+  "training_modelval_complete":true,
+  "five_fold_bindings_independent_audit":"grouped_evaluation_bindings_v3_1/independent_audit.json",
+  "five_fold_bindings_independent_audit_passed":true,
+  "public_core_source":"../experiments/grouped_public_evaluation_core_v3_1.py",
+  "public_core_synthetic_gate":"grouped_public_core_gate_v3_1.json",
+  "public_core_synthetic_gate_passed":true,
+  "gate_scope":"Public image/question keys only, batch remainder/order checks, metadata perturbation leaves predictions unchanged, canonical-only calibration, noncanonical output preserved after calibration, failed calibration retains raw results, negative fixtures and exact fresh-process replay. Synthetic model only.",
+  "remaining_work":"Real-model integration on previously inspected modelval records; reserved-role driver/release checks; then frozen five-fold calibration and outer evaluation/replay/bootstrap/audits/reporting",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false,
+  "remaining_time":"Reserved-role execution runtime not measured yet"
+}

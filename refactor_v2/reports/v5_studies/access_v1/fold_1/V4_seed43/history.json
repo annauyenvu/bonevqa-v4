@@ -1,0 +1,54 @@
+[
+  {
+    "epoch": 1,
+    "updates": 722,
+    "mean_loss": 1.44010325511811,
+    "wall_seconds": 2140.565222978592,
+    "metrics": {
+      "closed_acc": 0.9233668341708543,
+      "open_acc": 0.9073482428115016,
+      "open_recall": 0.9466462318299379,
+      "bleu1": 0.9427217878404145,
+      "overall_acc": 0.9163150492264416,
+      "n_closed": 796,
+      "n_open": 626,
+      "n": 1422,
+      "fracture_sensitivity": 0.7894736842105263,
+      "fracture_specificity": 0.9621212121212122,
+      "fracture_balanced_accuracy": 0.8757974481658692,
+      "n_fracture_presence": 321,
+      "fracture_auroc": 0.9382642211589579,
+      "fracture_auprc": 0.8829935174918874,
+      "fracture_prevalence": 0.17757009345794392,
+      "fracture_brier": 0.056967739255021146,
+      "fracture_ece10": 0.03729430784839798,
+      "fracture_yes_threshold": 0.5
+    }
+  },
+  {
+    "epoch": 2,
+    "updates": 1444,
+    "mean_loss": 0.8024895073356288,
+    "wall_seconds": 2147.7331879138947,
+    "metrics": {
+      "closed_acc": 0.9334170854271356,
+      "open_acc": 0.9137380191693291,
+      "open_recall": 0.9557047540673739,
+      "bleu1": 0.9501579766700792,
+      "overall_acc": 0.9247538677918424,
+      "n_closed": 796,
+      "n_open": 626,
+      "n": 1422,
+      "fracture_sensitivity": 0.8421052631578947,
+      "fracture_specificity": 0.9659090909090909,
+      "fracture_balanced_accuracy": 0.9040071770334928,
+      "n_fracture_presence": 321,
+      "fracture_auroc": 0.956007442849548,
+      "fracture_auprc": 0.8962678901430058,
+      "fracture_prevalence": 0.17757009345794392,
+      "fracture_brier": 0.04785583328669621,
+      "fracture_ece10": 0.03849598201647448,
+      "fracture_yes_threshold": 0.5
+    }
+  }
+]

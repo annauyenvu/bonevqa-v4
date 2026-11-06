@@ -1,0 +1,290 @@
+{
+  "scope": "TRAIN scheduling mechanics only; no gradient, efficacy or full training evidence",
+  "component_manifest_sha256": "b1c53680a7d068649f2d40c8b25b9ee86c09c27972f0679d998a9ae08784120c",
+  "audits": [
+    {
+      "fold": 0,
+      "seed": 42,
+      "batch_size": 4,
+      "qa": 11502,
+      "batches": 2876,
+      "cross_component_violations": 0,
+      "schedule_sha256": "7dda8d0787972b8a76391c1078d17cb752a1de8b018ebd08add0d141ceb78be1",
+      "manifest_sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+      "last_batch_sizes": [
+        4,
+        2
+      ]
+    },
+    {
+      "fold": 0,
+      "seed": 42,
+      "batch_size": 8,
+      "qa": 11502,
+      "batches": 1438,
+      "cross_component_violations": 0,
+      "schedule_sha256": "075ae5a4655676c82c9551f7af91a7694287b8d1a0e98474816c91d5c29d2155",
+      "manifest_sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+      "last_batch_sizes": [
+        8,
+        6
+      ]
+    },
+    {
+      "fold": 0,
+      "seed": 43,
+      "batch_size": 4,
+      "qa": 11502,
+      "batches": 2876,
+      "cross_component_violations": 0,
+      "schedule_sha256": "6813fb9839c11f011474834a19d8e85d2f09aa50824789be44b63bc94b372f8f",
+      "manifest_sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+      "last_batch_sizes": [
+        4,
+        2
+      ]
+    },
+    {
+      "fold": 0,
+      "seed": 43,
+      "batch_size": 8,
+      "qa": 11502,
+      "batches": 1438,
+      "cross_component_violations": 0,
+      "schedule_sha256": "eda581f950c147df4a0faf8358aaae8893afbce2b9c6ee52955033b639db987f",
+      "manifest_sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+      "last_batch_sizes": [
+        8,
+        6
+      ]
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "batch_size": 4,
+      "qa": 11547,
+      "batches": 2887,
+      "cross_component_violations": 0,
+      "schedule_sha256": "89b2b78e84cfbf8b3ae763496105b01a092265008d2932424e6a3ca58d43a188",
+      "manifest_sha256": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+      "last_batch_sizes": [
+        4,
+        3
+      ]
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "batch_size": 8,
+      "qa": 11547,
+      "batches": 1444,
+      "cross_component_violations": 0,
+      "schedule_sha256": "b1d85e8985d657836152c8b8c1e91c7e934f65897396c21fe51375df2c726b3d",
+      "manifest_sha256": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+      "last_batch_sizes": [
+        8,
+        3
+      ]
+    },
+    {
+      "fold": 1,
+      "seed": 43,
+      "batch_size": 4,
+      "qa": 11547,
+      "batches": 2887,
+      "cross_component_violations": 0,
+      "schedule_sha256": "1d690ca56ca889968ea9992068ddf31d10afd9fa22a090fbf58165c73af648e7",
+      "manifest_sha256": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+      "last_batch_sizes": [
+        4,
+        3
+      ]
+    },
+    {
+      "fold": 1,
+      "seed": 43,
+      "batch_size": 8,
+      "qa": 11547,
+      "batches": 1444,
+      "cross_component_violations": 0,
+      "schedule_sha256": "8324efde1ec8092475486b6eac884bc5174b3c9d656e3ba4b42a20708e3c37fa",
+      "manifest_sha256": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+      "last_batch_sizes": [
+        8,
+        3
+      ]
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "batch_size": 4,
+      "qa": 11525,
+      "batches": 2882,
+      "cross_component_violations": 0,
+      "schedule_sha256": "e5fdca8221edc3f92c6b6ae6b59a1fd03348722fb69a529812d7647183eb9794",
+      "manifest_sha256": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+      "last_batch_sizes": [
+        3,
+        2
+      ]
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "batch_size": 8,
+      "qa": 11525,
+      "batches": 1441,
+      "cross_component_violations": 0,
+      "schedule_sha256": "789bb8699ea7de5782aa6c9a9cb55c9a6767ddf71f701a83f3a165818b108a6a",
+      "manifest_sha256": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+      "last_batch_sizes": [
+        8,
+        5
+      ]
+    },
+    {
+      "fold": 2,
+      "seed": 43,
+      "batch_size": 4,
+      "qa": 11525,
+      "batches": 2882,
+      "cross_component_violations": 0,
+      "schedule_sha256": "3bb7a1cf01cb71c91340b5918714253659c8966505f63ea16b820e002ba94e5e",
+      "manifest_sha256": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+      "last_batch_sizes": [
+        3,
+        2
+      ]
+    },
+    {
+      "fold": 2,
+      "seed": 43,
+      "batch_size": 8,
+      "qa": 11525,
+      "batches": 1441,
+      "cross_component_violations": 0,
+      "schedule_sha256": "f723ae660044d4fa5e2193dd15a15003493ce9d89fb0e2cefb5b9bbae2aee1dd",
+      "manifest_sha256": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+      "last_batch_sizes": [
+        8,
+        5
+      ]
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "batch_size": 4,
+      "qa": 11524,
+      "batches": 2881,
+      "cross_component_violations": 0,
+      "schedule_sha256": "3964052718d55dd5ecde9223fcb6903438fe39ae82477d4a6115f6a1f9e25df3",
+      "manifest_sha256": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+      "last_batch_sizes": [
+        4,
+        4
+      ]
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "batch_size": 8,
+      "qa": 11524,
+      "batches": 1441,
+      "cross_component_violations": 0,
+      "schedule_sha256": "a6b2a3609323710c2282906273646789d8db5598bd705d5980d3fc61102ebc90",
+      "manifest_sha256": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+      "last_batch_sizes": [
+        8,
+        4
+      ]
+    },
+    {
+      "fold": 3,
+      "seed": 43,
+      "batch_size": 4,
+      "qa": 11524,
+      "batches": 2881,
+      "cross_component_violations": 0,
+      "schedule_sha256": "237afa92f12455fc1543060a016730bdc9374e639c156d722ddd499cc3692900",
+      "manifest_sha256": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+      "last_batch_sizes": [
+        4,
+        4
+      ]
+    },
+    {
+      "fold": 3,
+      "seed": 43,
+      "batch_size": 8,
+      "qa": 11524,
+      "batches": 1441,
+      "cross_component_violations": 0,
+      "schedule_sha256": "c1ea16ff48c8c3da8b00f49653c19f32c5157abcdc41400f170f8da72a59a785",
+      "manifest_sha256": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+      "last_batch_sizes": [
+        8,
+        4
+      ]
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "batch_size": 4,
+      "qa": 11510,
+      "batches": 2878,
+      "cross_component_violations": 0,
+      "schedule_sha256": "3f7db7767a6de61eda66731f733cd21f2d27280bfa34e2ad46cd7a71dae4d4e5",
+      "manifest_sha256": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+      "last_batch_sizes": [
+        4,
+        2
+      ]
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "batch_size": 8,
+      "qa": 11510,
+      "batches": 1439,
+      "cross_component_violations": 0,
+      "schedule_sha256": "50bfb7846b35f2c31eaee2da8a303a518e7d550f504bc655591257eff19f2c37",
+      "manifest_sha256": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+      "last_batch_sizes": [
+        8,
+        6
+      ]
+    },
+    {
+      "fold": 4,
+      "seed": 43,
+      "batch_size": 4,
+      "qa": 11510,
+      "batches": 2878,
+      "cross_component_violations": 0,
+      "schedule_sha256": "4605d7e41e83d980add6cf2a86dd31dfba937c43e9f424a2c36f6559aab25a4b",
+      "manifest_sha256": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+      "last_batch_sizes": [
+        4,
+        2
+      ]
+    },
+    {
+      "fold": 4,
+      "seed": 43,
+      "batch_size": 8,
+      "qa": 11510,
+      "batches": 1439,
+      "cross_component_violations": 0,
+      "schedule_sha256": "867aca1aad1f50712cb01d33e0c3c15ff44322eda9b49fd857701d8740aa4aec",
+      "manifest_sha256": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+      "last_batch_sizes": [
+        8,
+        6
+      ]
+    }
+  ],
+  "passed": true,
+  "seconds": 0.9325685839867219,
+  "training_entrypoint_enabled": false,
+  "remaining": "wire common sampler and component IDs through every matched arm; checkpoint/resume and real-data route audit"
+}

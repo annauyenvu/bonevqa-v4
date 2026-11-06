@@ -1,0 +1,26 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 7.421311407047752,
+      "time_s": 12954.203812122345,
+      "train_loss_cls": 4.455878179697565,
+      "train_loss_lm": 2.84714058500295,
+      "train_loss_cs": 0.8778155985396391,
+      "train_loss_con": 0.5642794215283589,
+      "val_closed_acc": 0.11650485436893204,
+      "val_open_acc": 0.010309278350515464,
+      "val_open_recall": 0.15310505645557193,
+      "val_bleu1": 0.12487382592771278,
+      "val_overall_acc": 0.065,
+      "val_n_closed": 103,
+      "val_n_open": 97,
+      "val_n": 200,
+      "val_loss": 6.718409738540649
+    }
+  ],
+  "epoch": 1,
+  "best_metric": 0.065,
+  "run_name": "stage2_pmcvqa_full",
+  "stage": 2
+}

@@ -1,0 +1,18 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_67.json",
+  "snapshot_local":"2026-10-22 approximately11:30 ICT",
+  "reserved_exact_replays_complete":["0","1","2","3"],
+  "independent_reserved_fit_prediction_metric_audits_passed":["0","1","2","3"],
+  "active_fold":"4",
+  "observed_phase":"worker calibration80of322 at initial check",
+  "observed_driver_elapsed":"58m03s",
+  "fold2_BA":{"raw":0.7923659673659673,"calibrated":0.7627039627039627},
+  "fold3_BA":{"raw":0.7366055795494338,"calibrated":0.7324829950019631},
+  "analysis_source":"../experiments/analyze_grouped_outer_v3_1.py",
+  "analysis_status":"Implemented; preparation/execution requires all five independent outer audits. Frozen2000 paired within-fold component draws, seed20261021, no refitting, undefined draw counts, exact fresh-process replay; independent final bootstrap audit still required.",
+  "conditional_inference_replay_remaining":"Approximately15m to20m from initial check for final fold at measured6.4m/7.5m per first pass; final audit, bootstrap/replay and reporting add time",
+  "interpretation":"Calibration has reduced BA in each of the first four folds. Follow frozen protocol without threshold/model selection; pooled result/uncertainty not yet available.",
+  "scope":"Development-informed component-grouped evaluation; no untouched independent confirmation",
+  "step3_complete":false,
+  "production_released":false
+}

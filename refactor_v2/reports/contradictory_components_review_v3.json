@@ -1,0 +1,68 @@
+{
+  "status": "requires_duplicate_and_label_review",
+  "groups": [
+    [
+      {
+        "image_id": "IMG0002886",
+        "split": "train",
+        "fractured": 1,
+        "image": "images/Fractured/IMG0002886.jpg"
+      },
+      {
+        "image_id": "IMG0004243",
+        "split": "train",
+        "fractured": 0,
+        "image": "images/Non_fractured/IMG0004243.jpg"
+      }
+    ],
+    [
+      {
+        "image_id": "IMG0002952",
+        "split": "train",
+        "fractured": 0,
+        "image": "images/Non_fractured/IMG0002952.jpg"
+      },
+      {
+        "image_id": "IMG0004262",
+        "split": "train",
+        "fractured": 1,
+        "image": "images/Fractured/IMG0004262.jpg"
+      }
+    ],
+    [
+      {
+        "image_id": "IMG0002998",
+        "split": "train",
+        "fractured": 1,
+        "image": "images/Fractured/IMG0002998.jpg"
+      },
+      {
+        "image_id": "IMG0004280",
+        "split": "train",
+        "fractured": 0,
+        "image": "images/Non_fractured/IMG0004280.jpg"
+      }
+    ],
+    [
+      {
+        "image_id": "IMG0003034",
+        "split": "model_val",
+        "fractured": 1,
+        "image": "images/Fractured/IMG0003034.jpg"
+      },
+      {
+        "image_id": "IMG0004314",
+        "split": "model_val",
+        "fractured": 0,
+        "image": "images/Non_fractured/IMG0004314.jpg"
+      },
+      {
+        "image_id": "IMG0004341",
+        "split": "model_val",
+        "fractured": 0,
+        "image": "images/Non_fractured/IMG0004341.jpg"
+      }
+    ]
+  ],
+  "policy": "Do not relabel without ground truth evidence; conservatively quarantine unresolved components in new manifests."
+}

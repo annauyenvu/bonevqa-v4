@@ -1,0 +1,244 @@
+{
+  "status": "DRAFT_REQUIREMENTS_NOT_EXECUTABLE_OR_PREREGISTERED",
+  "script_sha256": "690c2f9b08cfa3c1520f50564a0b0ee14cba1c2b89d8624ef025bd284d8ebabc",
+  "alignment_seal_sha256": "2e0346c2cebe23b5e364db6c119fddfb5502ebbae099ac3e6250487ca8658e03",
+  "evidence_sha256": {
+    "STEP3_TECHNICAL_REFERENCE_SEAL_V3.json": "1c0bd38966052981d078d0ebcd7e5b3dc880379474cd14b7a30e0fee2ad6e8e3",
+    "ARCHITECTURE_LOSS_RUNTIME_PROTOCOL_V3_REVIEW.md": "879131a870eba130e03625b5de88e4bb8129665d65c89b40681977c1d0d7843c",
+    "FULL_MODELVAL_COVERAGE_OUTCOME_V3.md": "c1838908b08699612b165fe51d0d12aa5a2aa61b6ca6aa6b238fa00c04c8d9b8",
+    "CURRENT_GATE_LEDGER_V3_15.json": "2d13d13e4f06f4f19d14b64c385236d18daed01cb7d86a2b384468ebaea6bd7b",
+    "full_modelval_coverage_v3_1/independent_artifact_audit.json": "c697d5ac61fd1569bccfa8728594b6d4823874d21ff5b945d2e001d10a245c83",
+    "upstream_byte_label_provenance_v3_1.json": "b158399c10d377bc22ebc94dafc97c48eb9f501ccfd8383827a09b4c42e8ba77"
+  },
+  "scope": "Prospective evaluation of a development-informed pipeline; not erased historical inspection",
+  "folds": {
+    "0": {
+      "train": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_train.json",
+        "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+        "QA": 11502,
+        "images": 2568,
+        "known_components": 2512
+      },
+      "model_val": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_model_val.json",
+        "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a",
+        "QA": 1432,
+        "images": 321,
+        "known_components": 314
+      },
+      "calibration": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_calibration.json",
+        "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4",
+        "QA": 1432,
+        "images": 321,
+        "known_components": 311
+      },
+      "test": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_test.json",
+        "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02",
+        "QA": 3632,
+        "images": 803,
+        "known_components": 783
+      },
+      "vocabulary": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/answer_vocab_runtime_normalized_v3.json",
+        "sha256": "ecda1d3a1e84ceaa288308cffd71f489d62f3de674bcd0976fc9bc6738be5bd3",
+        "answers": 125
+      },
+      "detector_metadata_sha256": "dbf2f9acc0de96c28d9af12ce4d8b3aac521f504c9a79fbea09838daa1c21f5d"
+    },
+    "1": {
+      "train": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_train.json",
+        "sha256": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+        "QA": 11547,
+        "images": 2568,
+        "known_components": 2504
+      },
+      "model_val": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_model_val.json",
+        "sha256": "bb1948fd548fe531dd8184abf3d622adfd6aa7c8fa2acc7d71be4ff984f12acf",
+        "QA": 1422,
+        "images": 321,
+        "known_components": 316
+      },
+      "calibration": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_calibration.json",
+        "sha256": "8fc4a27b994d1509bd840d7222208b57ef0c1178dac09bc9ac0b0f1468502a34",
+        "QA": 1408,
+        "images": 321,
+        "known_components": 316
+      },
+      "test": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_test.json",
+        "sha256": "d7c3e3aaf8d540f512f850c8dac09e0d7f1a17286c4232f66b6f0f82e7bb6591",
+        "QA": 3621,
+        "images": 803,
+        "known_components": 784
+      },
+      "vocabulary": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/answer_vocab_runtime_normalized_v3.json",
+        "sha256": "e5c82de0d3768ec812d53c5a430e4dff8eb9b1263b1d513b3db69a5654266d07",
+        "answers": 117
+      },
+      "detector_metadata_sha256": "c4a55c8c4a5af2e0fca60381740326c9d56790f89333cf5a6eddc5e187a00f2d"
+    },
+    "2": {
+      "train": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_train.json",
+        "sha256": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+        "QA": 11525,
+        "images": 2568,
+        "known_components": 2510
+      },
+      "model_val": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_model_val.json",
+        "sha256": "68494f0ce2347b854f32326805375273c46d3b6118f41200676bfc1f0f97a7b8",
+        "QA": 1434,
+        "images": 321,
+        "known_components": 310
+      },
+      "calibration": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_calibration.json",
+        "sha256": "f457e4df51c113a3d09d06e651bda5e6f8b6f073ed68b34cabb9e61d7008cdf6",
+        "QA": 1442,
+        "images": 321,
+        "known_components": 316
+      },
+      "test": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_test.json",
+        "sha256": "1425ebefa438dcb69eac928b00eb29b5f411d44769553f988a67f9e591770e73",
+        "QA": 3597,
+        "images": 803,
+        "known_components": 784
+      },
+      "vocabulary": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/answer_vocab_runtime_normalized_v3.json",
+        "sha256": "acf80f7bc3d273a43d3c4e70ab935d3d2ac50560cff8ce72770b0c2fd9ff7f70",
+        "answers": 115
+      },
+      "detector_metadata_sha256": "20760fe53db67b0e28ee83d1db9c5fb3460266b8e7ae5391e4ecbdeb47ec203d"
+    },
+    "3": {
+      "train": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_train.json",
+        "sha256": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+        "QA": 11524,
+        "images": 2569,
+        "known_components": 2511
+      },
+      "model_val": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_model_val.json",
+        "sha256": "cf78d4bc98b9efa49bd73e20d5f76e25334a3ed45232e296bb2038cecee85315",
+        "QA": 1483,
+        "images": 321,
+        "known_components": 312
+      },
+      "calibration": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_calibration.json",
+        "sha256": "e83a6654e918b91801fa39d660b7d90bdb7b4d7702202bb9ba26d5067083d484",
+        "QA": 1444,
+        "images": 321,
+        "known_components": 313
+      },
+      "test": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_test.json",
+        "sha256": "5844e7a9431335512abb277b18a66989411173f47c633ef0585234f0d63926f0",
+        "QA": 3547,
+        "images": 802,
+        "known_components": 784
+      },
+      "vocabulary": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/answer_vocab_runtime_normalized_v3.json",
+        "sha256": "bb2ff66d987555355bd7063b7c6117429f6a80f47ee9281251e0e1604686ed73",
+        "answers": 127
+      },
+      "detector_metadata_sha256": "68a2f89e2cb9451aaf7683fc058c51b37c1513a20aac92ae0e96cbbdd5930faa"
+    },
+    "4": {
+      "train": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_train.json",
+        "sha256": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+        "QA": 11510,
+        "images": 2568,
+        "known_components": 2509
+      },
+      "model_val": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_model_val.json",
+        "sha256": "ddc5a19d68c4a111db178de1199ed4ceea3544c7d0e20d41f25d29661943231b",
+        "QA": 1421,
+        "images": 321,
+        "known_components": 312
+      },
+      "calibration": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_calibration.json",
+        "sha256": "c51ba830f75f2dd2cb0c4a6fe9119beb95b0c44a65c0926e40c5f08349eb658d",
+        "QA": 1466,
+        "images": 322,
+        "known_components": 314
+      },
+      "test": {
+        "manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_test.json",
+        "sha256": "8464509f958bc3540785aa2663820ba4f3cb634a5f77b71ea0c79ef3fb454ee5",
+        "QA": 3601,
+        "images": 802,
+        "known_components": 785
+      },
+      "vocabulary": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/answer_vocab_runtime_normalized_v3.json",
+        "sha256": "560aeab560bff729f248773127b92f9f5cf1389261f219a8d71c410ac801585f",
+        "answers": 120
+      },
+      "detector_metadata_sha256": "7dc5fb29391afd074c4a470894614565786e9cdba968318b744678e9651ba050"
+    }
+  },
+  "outer_test_images_each_once": 4013,
+  "all_within_fold_image_and_known_component_roles_disjoint": true,
+  "all_detector_role_metadata_parity": true,
+  "proposed_minimal_comparison": [
+    "raw B native objective",
+    "B sequence-uniform objective"
+  ],
+  "selection_bias_disclosure": "Uniform proposed because inspected full1432OPEN point result; not an independent discovery or new untouched cohort",
+  "held_fixed": [
+    "offline CPU8 float32",
+    "original images and raw questions only",
+    "T/V/L/P off; no PF",
+    "same per-fold PREtask shared tensors/new-head initialization",
+    "same fold-specific TRAIN-only vocabulary",
+    "same batches/exposures/LR/horizon and LAST checkpoint",
+    "all original auxiliary losses except the explicitly scoped OPEN reduction change"
+  ],
+  "required_before_any_training_release": [
+    "Explicit primary endpoints, hypotheses and uncertainty rule",
+    "Exact seed list, epoch/update horizon, failure rule and maximum measured CPU budget",
+    "Per-fold private TRAIN adapter and public inference-bypass gates",
+    "Per-fold clean common initialization and optimizer/state/source binding",
+    "TRAIN-only actual timing/resource pilot; timing cannot be inferred from byte audit",
+    "Frozen inner-selection rule without accessing outer results",
+    "Selection and calibration chronology; no full-data calibration reused across outer folds",
+    "Signed per-run execution release after all applicable technical gates"
+  ],
+  "inner_model_validation": "Only within-fold model-validation selects allowed configuration; selection rule must be frozen before launch",
+  "calibration": "Only within-fold calibration after candidate freeze; raw metrics retained; no fitting in this draft",
+  "outer_evaluation": "Once per frozen fold/model; label as development-informed grouped evaluation, not untouched or independent clinical validation",
+  "reporting": [
+    "Per-seed and per-fold QA/CLOSED/OPEN, AUROC/AUPRC, sensitivity/specificity, BA,Brier/ECE",
+    "Actual optimizer updates, image/QA exposure, module gradients/routing and measured wall time",
+    "Matched paired component uncertainty and all negative/inconclusive results",
+    "Fold-aware out-of-fold calibration metrics; no pooling to refit a global threshold after viewing outer results"
+  ],
+  "V_L_expansion": "Not part of this minimal draft; full TRAIN-only detector/proposals per fold and new efficacy rationale required",
+  "positive_gain_required_to_report_completed_negative_screen": false,
+  "prior_bounded_screens_complete": true,
+  "original_CPU_technical_reference_complete": true,
+  "future_quality_gain_or_full_step3_complete": false,
+  "model_calls": 0,
+  "training_updates": 0,
+  "manifest_changes": 0,
+  "calibration_or_outer_model_inference": false,
+  "long_training_authorized": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

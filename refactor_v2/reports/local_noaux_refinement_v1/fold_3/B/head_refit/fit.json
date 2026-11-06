@@ -1,0 +1,60 @@
+{
+  "TRAIN_images": 2569,
+  "positive_weight": 4.609170436859131,
+  "updates": 410,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 41,
+      "TRAIN_BCE": 0.577082615927204
+    },
+    {
+      "epoch": 2,
+      "updates": 82,
+      "TRAIN_BCE": 0.5426552280835857
+    },
+    {
+      "epoch": 3,
+      "updates": 123,
+      "TRAIN_BCE": 0.5463965015914385
+    },
+    {
+      "epoch": 4,
+      "updates": 164,
+      "TRAIN_BCE": 0.537757253266346
+    },
+    {
+      "epoch": 5,
+      "updates": 205,
+      "TRAIN_BCE": 0.5369315813688881
+    },
+    {
+      "epoch": 6,
+      "updates": 246,
+      "TRAIN_BCE": 0.5339955714581633
+    },
+    {
+      "epoch": 7,
+      "updates": 287,
+      "TRAIN_BCE": 0.533961323227294
+    },
+    {
+      "epoch": 8,
+      "updates": 328,
+      "TRAIN_BCE": 0.5368758342165388
+    },
+    {
+      "epoch": 9,
+      "updates": 369,
+      "TRAIN_BCE": 0.5327239610101054
+    },
+    {
+      "epoch": 10,
+      "updates": 410,
+      "TRAIN_BCE": 0.5275020389681708
+    }
+  ],
+  "all_model_parameters_unchanged_during_fit": true,
+  "checkpoint_sha256": "537569e3ddba41c778cbe578c3a0faa2f9d3b10e2a242f8b1c802263156125e9",
+  "wall_seconds": 3.118253231048584
+}

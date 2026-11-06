@@ -1,0 +1,213 @@
+{
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "primary_matrix": [
+    {
+      "regime": "auto",
+      "config": "vlp",
+      "seed": 42
+    },
+    {
+      "regime": "auto",
+      "config": "none",
+      "seed": 42
+    },
+    {
+      "regime": "detector",
+      "config": "vlp",
+      "seed": 42
+    },
+    {
+      "regime": "detector",
+      "config": "none",
+      "seed": 42
+    },
+    {
+      "regime": "clinician",
+      "config": "vlp",
+      "seed": 42
+    },
+    {
+      "regime": "clinician",
+      "config": "none",
+      "seed": 42
+    },
+    {
+      "regime": "auto",
+      "config": "vlp",
+      "seed": 123
+    },
+    {
+      "regime": "auto",
+      "config": "none",
+      "seed": 123
+    },
+    {
+      "regime": "detector",
+      "config": "vlp",
+      "seed": 123
+    },
+    {
+      "regime": "detector",
+      "config": "none",
+      "seed": 123
+    },
+    {
+      "regime": "clinician",
+      "config": "vlp",
+      "seed": 123
+    },
+    {
+      "regime": "clinician",
+      "config": "none",
+      "seed": 123
+    },
+    {
+      "regime": "auto",
+      "config": "vlp",
+      "seed": 456
+    },
+    {
+      "regime": "auto",
+      "config": "none",
+      "seed": 456
+    },
+    {
+      "regime": "detector",
+      "config": "vlp",
+      "seed": 456
+    },
+    {
+      "regime": "detector",
+      "config": "none",
+      "seed": 456
+    },
+    {
+      "regime": "clinician",
+      "config": "vlp",
+      "seed": 456
+    },
+    {
+      "regime": "clinician",
+      "config": "none",
+      "seed": 456
+    },
+    {
+      "regime": "auto",
+      "config": "vlp",
+      "seed": 789
+    },
+    {
+      "regime": "auto",
+      "config": "none",
+      "seed": 789
+    },
+    {
+      "regime": "detector",
+      "config": "vlp",
+      "seed": 789
+    },
+    {
+      "regime": "detector",
+      "config": "none",
+      "seed": 789
+    },
+    {
+      "regime": "clinician",
+      "config": "vlp",
+      "seed": 789
+    },
+    {
+      "regime": "clinician",
+      "config": "none",
+      "seed": 789
+    },
+    {
+      "regime": "auto",
+      "config": "vlp",
+      "seed": 2026
+    },
+    {
+      "regime": "auto",
+      "config": "none",
+      "seed": 2026
+    },
+    {
+      "regime": "detector",
+      "config": "vlp",
+      "seed": 2026
+    },
+    {
+      "regime": "detector",
+      "config": "none",
+      "seed": 2026
+    },
+    {
+      "regime": "clinician",
+      "config": "vlp",
+      "seed": 2026
+    },
+    {
+      "regime": "clinician",
+      "config": "none",
+      "seed": 2026
+    }
+  ],
+  "expected_counts": {
+    "train": [
+      6000,
+      1342,
+      3340
+    ],
+    "val": [
+      300,
+      69,
+      166
+    ],
+    "test": [
+      2773,
+      612,
+      1546
+    ]
+  },
+  "primary_runs": 30,
+  "sanity_extra_runs": 1,
+  "sanity_rule": "First auto/vlp/seed42 run is prespecified primary; independent repeat excluded. Never select between repeats by score. Full matrix gated by evaluator identity and training sanity report.",
+  "primary_endpoint": "CLOSED exact accuracy 1546 QA, 612 image clusters",
+  "primary_contrasts": [
+    "vlp-none within auto",
+    "vlp-none within detector",
+    "vlp-none within clinician"
+  ],
+  "secondary_contrasts": [
+    "(clinician vlp-none)-(auto vlp-none)",
+    "(clinician vlp-none)-(detector vlp-none)"
+  ],
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260921,
+    "algorithm": "resample 5 seeds, then independently resample 612 images within each sampled seed slot; identical image and seed draws across paired configs and regimes"
+  },
+  "checkpoint_selection": "validation overall_acc, strictly better selects new best; ties keep earliest epoch",
+  "failure_rules": [
+    "crash",
+    "nonfinite loss or gradients",
+    "unexpected ROI processing error or absent/corrupt mask file",
+    "manifest/environment/config mismatch",
+    "checkpoint corruption",
+    "evaluator failure or wrong counts"
+  ],
+  "rerun_policy": "No score-based restart. Technical failures quarantined and recorded; rerun same seed/recipe only. Pipeline stops for diagnosis.",
+  "historical": "supplementary only; never included in primary seed summaries",
+  "roi": "All cohort masks generated once in locked environment and immutable audited bank; same bank used by every seed, empty post-filter result is valid, processing exception is invalid. None bypasses use of masks, but audit still verifies regime bank.",
+  "precision": "float32, no AMP, MPS, fixed CPU fallback",
+  "initialization": "Every new run independently starts optimizer from same stage2 state; not resume existing stage3",
+  "evaluator": "fixed batch size4, original manifest order, greedy generation, no sampling, float32, deterministic algorithms strict",
+  "lens_rng_fix": "random.Random() replaced with global seeded random; separate seeded DataLoader generator",
+  "optional_interventions": "Deferred until primary matrix and analysis complete; not part of primary stopping rule"
+}

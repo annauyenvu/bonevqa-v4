@@ -1,0 +1,23 @@
+{
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_39.json",
+  "scope": "Frozen TRAIN feature cache verified; fixed fracture-head pilot LAST410 saved; public model-validation evaluation pending",
+  "cache": "frozen_head_TRAIN_cache_v3_1/independent_artifact_audit.json",
+  "cache_result": "All2568 CPU public scores exact against prior verified predictions; full features fresh-process replay exact; independent head reconstruction exact",
+  "cache_extraction_seconds": 95.77003700000205,
+  "pilot": "frozen_fracture_head_pilot_v3_1/report.json",
+  "protocol_sha256": "d7540feff38bad9fe96aac27a81f02a2cf3f3e6bf360ea98bc0e3dcc38c51686",
+  "candidate_sha256": "57ce16ae565bde7f4a0a5236f4de2daf39f2d600bcd274483032806672f66d03",
+  "head_optimizer_updates": 410,
+  "backbone_updates": 0,
+  "training_seed": 42,
+  "TRAIN_BCE_epoch1": 0.6118687064476845,
+  "TRAIN_BCE_epoch10": 0.5788281942453711,
+  "fit_internal_elapsed_seconds": 0.6581163340015337,
+  "timing_limit": "Head-only cached fit timer excludes feature extraction, process launch and pending public evaluation; not comparable to full-model training throughput",
+  "technical_gate": "Fresh smoke replay recovered with permitted runtime after preserved sandbox OpenMP SHM abort; independent gradient/update reconstruction passed; disposable states discarded",
+  "next": "Predeclare fresh public modelval evaluation for original and fixed LAST410 head, replay and paired known-component uncertainty, then audit before any improvement claim",
+  "modelval_calibration_test_new_inference": false,
+  "quality_gain_established": false,
+  "step3_complete": false,
+  "production_released": false
+}

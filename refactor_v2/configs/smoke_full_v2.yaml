@@ -1,0 +1,14 @@
+_base_: fracatlas_component_clean_v2.yaml
+run_name: smoke_full_v2
+checkpoint_dir: refactor_v2/smoke_checkpoints
+figure_dir: refactor_v2/reports/smoke_figures
+data:
+  max_samples: 32
+  val_max_samples: 16
+  num_workers: 0
+train:
+  epochs: 1
+  batch_size: 2
+  grad_accum: 1
+  eval_max_samples: 16
+  log_every: 1

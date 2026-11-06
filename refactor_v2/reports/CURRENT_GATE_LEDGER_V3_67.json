@@ -1,0 +1,19 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_66.json",
+  "snapshot_local":"2026-10-22 approximately11:00 ICT",
+  "reserved_folds_exact_replay_complete":["0","1"],
+  "reserved_folds_independent_fit_prediction_metric_audit_passed":["0","1"],
+  "active_fold":"2",
+  "active_phase":"worker",
+  "driver_pid":15830,
+  "observed_driver_elapsed":"27m57s at initial check",
+  "first_pass_timings_seconds":{"0":384.23052337499394,"1":449.86424958299904},
+  "conditional_inference_replay_remaining":"Approximately40m to50m for remaining three folds at measured throughput; bootstrap/independent audits/reporting add time, not step3 ETA",
+  "independent_fold0":{"raw_TP_FN_TN_FP":[75,68,613,47],"calibrated_TP_FN_TN_FP":[68,75,630,30],"raw_balanced_accuracy":0.7266317016317017,"calibrated_balanced_accuracy":0.715034965034965},
+  "independent_fold1":{"raw_TP_FN_TN_FP":[77,66,625,35],"calibrated_TP_FN_TN_FP":[66,77,639,21],"raw_balanced_accuracy":0.7427156177156178,"calibrated_balanced_accuracy":0.7148601398601399},
+  "interpretation":"Frozen calibration reduces sensitivity/BA in both first folds; no threshold/refit/model search authorized from these observations. Overall interpretation waits for all folds and frozen paired component bootstrap.",
+  "audit_scope":"Saved role/order labels, exact replay, calibration-only independent fixed-parameter refit, independently transformed probabilities, untouched noncanonical outputs, manual confusion/VQA counts and AUROC/AP/Brier, artifact hashes; no new image inference in auditor",
+  "scope":"Development-informed grouped outer evaluation; not untouched independent clinical confirmation",
+  "step3_complete":false,
+  "production_released":false
+}

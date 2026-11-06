@@ -1,0 +1,8 @@
+_base_: fracatlas_prompt_causal_v3.yaml
+run_name: fracatlas_clean_p_seed42_prompt_v3
+model:
+  prompt_variant: P
+  use_latent_prompt: true
+  latent_answer_bank_mode: train
+  prior_labels: []
+

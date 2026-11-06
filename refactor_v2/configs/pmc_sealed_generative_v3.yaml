@@ -1,0 +1,23 @@
+_base_: fold0_b_sealed_v3.yaml
+run_name: revised_pmcvqa_alignment_v3
+init_from: refactor_v2/checkpoints/revised_roco_alignment_v3/best.pt
+data:
+  dataset: pmc_vqa
+  train_split: train
+  val_split: model_val
+  sealed_answer_vocab: null
+  loader_kwargs:
+    root: /Users/uyen/Downloads/BONEVQA/data
+    flat_image_prefix: 'BONE_VQA\BaoYen_work\data\pmc_vqa\'
+    sealed_records_by_split:
+      calibration: null
+      train: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_joint_groups_v3/pmc_vqa_train_label_filtered.json
+      model_val: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_candidates_v3/pmc_vqa_model_val_article_candidate.json
+      test: /Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_joint_groups_v3/pmc_vqa_test_label_valid.json
+    routing_policy: generative
+train:
+  stage: 2
+  select_metric: val_loss
+  eval_max_samples: null
+model:
+  use_fracture_head: false

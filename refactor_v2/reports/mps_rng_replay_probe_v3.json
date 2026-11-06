@@ -1,0 +1,10 @@
+{
+  "torch_version": "2.2.2",
+  "device": "mps",
+  "samples": 1024,
+  "rng_state_bytes": 36,
+  "state_restore_dropout_equal": false,
+  "state_restore_differing_elements": 162,
+  "manual_seed_dropout_equal": true,
+  "scope": "installed runtime only; epoch-boundary seed workaround, not mid-epoch replay"
+}

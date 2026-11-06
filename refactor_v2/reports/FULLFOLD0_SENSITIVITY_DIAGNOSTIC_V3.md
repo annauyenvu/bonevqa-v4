@@ -1,0 +1,13 @@
+# Persistent sensitivity errors: saved-artifact diagnostic
+
+Post-hoc development analysis only. The verified matched LAST pair has20false negatives each;19image IDs overlap and each arm has1unique false negative. No new model inference, optimization, threshold search or labels were used.
+
+Checks on2568TRAIN canonical records and321model-validation canonical records found no canonical yes/no versus existing `fractured` mismatch, no `fractured` versus positive `fracture_count` mismatch, and no disagreement in existing image metadata across QA rows for the same image. This demonstrates internal field consistency only, not clinical annotation correctness or patient independence. No records were relabeled or removed.
+
+Both arms'20false negatives have the same existing region-stratum counts:12`hand`,3`leg`,3`leg and hip`,2`hand and shoulder`. The57positive images include32`hand`,13`leg`,6`leg and hip`,5`hand and shoulder`,1`shoulder`. Counts are small and inspected after evaluation: they do not establish a regional mechanism or a clinical subtype. Multi-region labels are original dataset values, not inferred diagnoses or production inputs.
+
+False-negative probabilities range0.01549–0.44414 for native and0.01600–0.46459 for uniform (means0.20037/0.19047). Hence the observed errors are not all tiny numerical deviations around0.5. These descriptive scores do not authorize threshold fitting on inspected modelval. Region-specific questions are sparse: `Is the hand fractured?` is4/9correct in both arms, while `Is the leg fractured?` is8/8; neither small sample supports reliable comparative clinical conclusions.
+
+Exact per-question counts, original metadata, full saved score lists, each false-negative image ID and its other existing QA answers are preserved in fullfold0_saved_error_diagnostic_v3_1/report.json, SHA955001dacfa862a590882a61315ddd410879c4738fc46f2c81adec19276aaca6. Separate read-only recomputation verified source bindings, per-question counts, metadata strata, score distributions and FN IDs using the frozen exact-answer normalizers. No annotation ROI or GT routing was supplied to any model.
+
+Next discriminating check should be fixed-checkpoint TRAIN-only canonical fracture inference: assess whether these frozen heads can fit their own TRAIN positives at the same raw0.5 endpoint before changing the loss, representation or training length. This would be a diagnostic, not efficacy evidence. It needs a bound cohort/checkpoint/input protocol and execution preflight; no automatic new training, calibration fit, modelval threshold tuning or unplanned checkpoint selection is released by this report. Full-step3 completion/production is not claimed.

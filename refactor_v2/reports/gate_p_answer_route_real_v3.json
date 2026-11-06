@@ -1,0 +1,51 @@
+{
+  "scope": "GM+LF only, TRAIN-only four rows, two steps; no control superiority or clinical claim",
+  "device": "cpu",
+  "selected_train_indices": [
+    37,
+    0,
+    2,
+    3
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "loss": 11.882109642028809,
+      "answer_loss": 11.743992805480957,
+      "answer_only_gradient_max": {
+        "fusion.gamma_latent": 0.18300102651119232,
+        "latent.latent": 0.0,
+        "fusion.lp_ca_l.norm_q.weight": 0.0,
+        "fusion.lp_ca_i.norm_q.weight": 0.0,
+        "fusion.lp_ca_mm.norm_q.weight": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "loss": 13.241743087768555,
+      "answer_loss": 13.141725540161133,
+      "answer_only_gradient_max": {
+        "fusion.gamma_latent": 0.25631266832351685,
+        "latent.latent": 1.7504413563074195e-07,
+        "fusion.lp_ca_l.norm_q.weight": 4.545429987956595e-07,
+        "fusion.lp_ca_i.norm_q.weight": 1.0267063288438294e-07,
+        "fusion.lp_ca_mm.norm_q.weight": 1.3917451724410057e-07
+      }
+    }
+  ],
+  "selected_parameter_updates": {
+    "fusion.gamma_latent": 0.0001984262780752033,
+    "latent.latent": 0.0001581180840730667,
+    "fusion.lp_ca_l.norm_q.weight": 1.33514404296875e-05,
+    "fusion.lp_ca_i.norm_q.weight": 4.649162292480469e-06,
+    "fusion.lp_ca_mm.norm_q.weight": 5.900859832763672e-06
+  },
+  "gate_zero_endpoint_max_differences": {
+    "closed": 6.771087646484375e-05,
+    "fracture": 1.8268823623657227e-05,
+    "open_answer_logits": 0.0005502700805664062
+  },
+  "latent_delta_norm": 0.0022793118841946125,
+  "seconds": 6.5455207909981254,
+  "passed": true
+}

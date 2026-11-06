@@ -1,0 +1,13 @@
+{
+  "pairs": 3734,
+  "normalized_mae_threshold_counts": {
+    "0": 3342,
+    "0.005": 3692,
+    "0.01": 3707,
+    "0.02": 3718,
+    "0.05": 3729
+  },
+  "limitations": [
+    "Equal-pHash candidates only; thresholds are descriptive, not validated duplicate decisions."
+  ]
+}

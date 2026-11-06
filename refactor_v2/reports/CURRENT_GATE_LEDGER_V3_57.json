@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_56.json",
+  "snapshot_local":"2026-10-22 approximately05:44 ICT",
+  "completed_new_folds":["1","2","3"],
+  "active_fold":"4",
+  "latest_logged_update":970,
+  "active_fold_total_updates":1440,
+  "active_epoch":2,
+  "active_worker_elapsed":"1h11m53s",
+  "active_worker_cpu_percent":761.5,
+  "active_worker_memory_percent":23.2,
+  "measured_window":{"updates":[940,970],"wall_clock_local":["05:42:35","05:44:33"],"seconds_per_update":3.9333},
+  "remaining_quality_updates":470,
+  "conditional_training_execution_remaining":"Approximately40m to50m including final native validation/checkpoint overhead if throughput holds; independent evaluation/calibration/replay/audits remain additional",
+  "fold4_epoch1_trainer_modelval":{"overall_acc":0.8860,"fracture_sensitivity":0.3333,"fracture_specificity":0.9962,"fracture_balanced_accuracy":0.6648,"fracture_auroc":0.8944},
+  "metric_scope":"Rounded epoch1 native trainer log diagnostics only; fixed epoch2 LAST remains the evaluation checkpoint. Low sensitivity is a quality concern, not grounds for posthoc checkpoint/threshold selection.",
+  "routing":"Fixed seed42 native B protocol, T/V/L/P disabled",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}

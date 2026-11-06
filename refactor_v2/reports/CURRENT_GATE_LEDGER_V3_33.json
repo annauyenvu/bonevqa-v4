@@ -1,0 +1,33 @@
+{
+  "updated_local": "2026-10-21T13:58:00+07:00",
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_32.json",
+  "scope": "Tiny TRAIN eval-mode gradient/routing probe COMPLETE_REPLAYED_AUDITED after explicit same-forward numerical contract correction; no quality change",
+  "correction_to_previous_monitor": "Earlier combined state-invariance failure attribution was WRONG: effective dynamic compiled source failed at manual_grad_enabled_probabilities==public_no_grad_probabilities. Originalfilename traceback line did not map to displayed source. All263statehashes/physicalcheckpoints were unchanged across5stages; no model-state mutation found.",
+  "preserved_failed_versions": ["fullfold0_fracture_gradient_probe_v3_1", "fullfold0_fracture_gradient_probe_v3_2", "fullfold0_fracture_state_trace_v3_3", "fullfold0_probability_trace_v3_4"],
+  "verified_report": "fullfold0_fracture_gradient_probe_v3_5/report.json",
+  "report_sha256": "eecc8562137ba35398ee82a4fc414b316cfd86a177b5dd9140adffcbfccbb935",
+  "audit": "fullfold0_fracture_gradient_probe_v3_5/independent_artifact_audit.json",
+  "audit_sha256": "bd0ade58ca4c29d87b543da0fba7ca07c90578948cc13e4d33aed6a9b6c324be",
+  "protocol_sha256": "6802f4a9128f3a18cb6e14da248d8f625648e75ddbf609beeaa8c5f214b7935e",
+  "elapsed_seconds_including_replay": 19.483961542006,
+  "technical_contract": "Exact public sigmoid equality within SAME publicno_gradforward;crossgrad/no_grad numerical delta retained descriptively,notrequired bitidentical. Exact BCE/CE identities and state invariance retained, no equality tolerance added. This contract change was explicitly preflighted, not hidden relaxation.",
+  "observed": {
+    "native": {"cross_mode_probability_max_abs_error":3.725290298461914e-09,"shared_x_f_BCE_CE_cosine":0.15562753116402583,"selected_visual_LoRA_B_BCE_CE_cosine":0.9086120239924514,"fracture_head_total_vs_manual_BCE_max_error":0.0},
+    "uniform": {"cross_mode_probability_max_abs_error":8.381903171539307e-09,"shared_x_f_BCE_CE_cosine":0.25829608789343655,"selected_visual_LoRA_B_BCE_CE_cosine":0.9826287833459155,"fracture_head_total_vs_manual_BCE_max_error":0.0},
+    "all_raw0_5_crossmode_decisions_unchanged":true,
+    "all263statehashes_unchanged_eachstage_botharms":true,
+    "head_shared_feature_visual_gradients_finite_nonzero":true,
+    "QFormer_query_disconnected_on_allCLOSED_fixture":true
+  },
+  "routing_interpretation": "QFormer provides LLM visualprefix;currentVLPoffcanonicalfractureheadconsumesfusionoriginalimage/questiontokens,soallCLOSEDfixturehasnoQFormerLMgradient. NOTgloballydeadmodule_orclinicalcause_claim.",
+  "limits": "Four first-label-selected TRAIN examples on4knowncomponents;evalautogradNOTstochastictrainmode. Fresh replay compares recordedgradientnorm/max/cosine summaries,fourlogitgradientvalues,losses/publicprobabilities,NOTallunpersistedfullgradientarrays. Local positivecosines doNOTruleoutfullTRAINconflict.",
+  "quality_conclusions_unchanged": "Native/uniformmodelval90.08/89.94percentQA,64.91percentfracturesensitivityboth;TRAIN68.56/67.25percentfracturesensitivity. This probe doesnot improveaccuracy,identifyallFNcause,justifyauxlossdeletion_orreleasequalitytraining.",
+  "next_safe_work": "Prospectivelyfixed diagnostic on error-bearing TRAIN examples to test loss/representation sensitivity before proposing a quality candidate;preserve current checkpointhashes and technical sources, no thresholdfit on modelval.",
+  "optimizer_updates": 0,
+  "new_checkpoints": 0,
+  "reserved_role_inference": false,
+  "new_quality_training_released": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

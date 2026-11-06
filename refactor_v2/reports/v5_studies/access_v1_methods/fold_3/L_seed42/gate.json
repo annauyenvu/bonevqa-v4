@@ -1,0 +1,14 @@
+{
+  "arm": "L",
+  "device": "mps",
+  "required": [
+    "qformer.query",
+    "prefix_proj.0.weight",
+    "fracture_head.net.0.weight",
+    "v5_lens_fusion.compress.weight"
+  ],
+  "missing": [],
+  "passed": true,
+  "loss": 6.27780294418335,
+  "seconds": 36.637619972229004
+}

@@ -1,0 +1,9 @@
+# Classic Vietnamese demo
+
+User requested the older richer interface and Vietnamese with the strongest evidence-backed model rather than a mock. Served on localhost8014 by experiments/serve_local_noaux_classic_demo_v2.py, exec session78496. Original sealed app/API/model sources untouched; versioned copy of classic HTML changes misleading FAVP/LaPA/Lens/SAM labels to actual local-token/detector route. The displayed original-image panel does not imply Lens is enabled. Model score is not clinically calibrated confidence.
+
+Actual model: local_real_noaux fixed LAST fold0 original head, automatic fold0 detector640 .05/top3, strict checkpoint/detector hash checks. Not promoted as best until pooled bootstrap and predeclared rule complete. No best-fold selection, no head-refit or assessment-driven threshold changes. Vietnamese mapping and answer rendering reused from original app/ngon_ngu.py; not new validated Vietnamese clinical capability. Classic UI supports history display, manual boxes, original/proposal previews and feedback. Manual boxes are exploratory user prompts, not automatic benchmark inference. Feedback stored separately in local_noaux_demo_feedback_v2.jsonl and does not trigger training.
+
+Real POST smoke test: Vietnamese `Ảnh này có gãy xương không?` mapped to canonical English and returned Vietnamese `không`, model no,2proposals,897ms on the existing technical example. This does not establish accuracy and the negative answer on a positive-named example remains a failure possibility. No sample replacement to hide it. Health realmodel_loadedtrue/mocknotused.
+
+Classic UI was visually opened and checked in the in-app browser. Two CPU threads, one model in RAM; simple demo8013 process73338 retired to release RAM after classic demo passed. Research supervisorv4 and localfold0 freshheadreplay continued independently. Research closure and promotion remain pending.

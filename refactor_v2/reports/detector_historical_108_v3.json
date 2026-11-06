@@ -1,0 +1,16 @@
+{
+  "checkpoint": "refactor_v2/detector_clean_v3/best.pt",
+  "ids_from": "mandatory_experiments_20261011/grounding_interventions/original_108/original_predictions.json",
+  "score_threshold": 0.05,
+  "n_requested": 108,
+  "metrics": {
+    "so_anh": 108,
+    "so_anh_duong": 108,
+    "so_anh_am": 0,
+    "iou_tot_nhat_tb": 0.2804,
+    "ty_le_iou_tren_0_5": 0.2315,
+    "ty_le_khong_tim_thay": 0.3056,
+    "negative_specificity": 1.0,
+    "negative_false_positive_rate": 0.0
+  }
+}

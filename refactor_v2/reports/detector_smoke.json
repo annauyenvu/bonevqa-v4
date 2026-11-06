@@ -1,0 +1,31 @@
+{
+  "lich_su": [
+    {
+      "so_anh": 32,
+      "so_anh_duong": 1,
+      "so_anh_am": 31,
+      "iou_tot_nhat_tb": 0.0,
+      "ty_le_iou_tren_0_5": 0.0,
+      "ty_le_khong_tim_thay": 1.0,
+      "negative_specificity": 1.0,
+      "negative_false_positive_rate": 0.0,
+      "epoch": 1,
+      "loss": 0.2652,
+      "time_s": 49.1
+    }
+  ],
+  "test": {
+    "so_anh": 32,
+    "so_anh_duong": 3,
+    "so_anh_am": 29,
+    "iou_tot_nhat_tb": 0.0,
+    "ty_le_iou_tren_0_5": 0.0,
+    "ty_le_khong_tim_thay": 1.0,
+    "negative_specificity": 1.0,
+    "negative_false_positive_rate": 0.0
+  },
+  "checkpoint": "refactor_v2/detector_clean/smoke.pt",
+  "so_anh_train": 64,
+  "includes_negative_images": true,
+  "split_manifest": ".evaluation_runtime/data/fracatlas_component_clean/component_split_manifest.json"
+}

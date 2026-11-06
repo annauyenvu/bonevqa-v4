@@ -1,0 +1,5 @@
+_base_: ablation_p_v3.yaml
+run_name: fracatlas_clean_p_random_bank_seed42_prompt_v3
+model:
+  latent_answer_bank_mode: random
+

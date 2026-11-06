@@ -1,0 +1,104 @@
+{
+  "scope": "frozen two-step smoke weights, four distinct TRAIN images; interventions not efficacy",
+  "selected_train_indices": [
+    37,
+    0,
+    8,
+    13
+  ],
+  "distinct_images": 4,
+  "device": "cpu",
+  "reference_residual_row_max_difference": 0.00018320971867069602,
+  "random_bank_row_norm_max_error": 1.9073486328125e-06,
+  "trainable_state_unchanged": true,
+  "trainable_state_sha256": "38018d2ae4bff85f6eedb5aef8b464705a7daf1dfbf78f943a03fe57ce35a7b9",
+  "controls": {
+    "repeat": {
+      "endpoint_max_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "residual_row_max_difference": 0.00018320971867069602,
+      "gm_row_max_difference": 0.0,
+      "bank_shape": [
+        125,
+        768
+      ]
+    },
+    "random_bank": {
+      "endpoint_max_differences": {
+        "closed": 6.914138793945312e-05,
+        "fracture": 1.31949782371521e-05,
+        "open": 0.0006567239761352539
+      },
+      "residual_row_max_difference": 0.0001949807337950915,
+      "gm_row_max_difference": 0.0,
+      "bank_shape": [
+        125,
+        768
+      ]
+    },
+    "bank_off": {
+      "endpoint_max_differences": {
+        "closed": 6.151199340820312e-05,
+        "fracture": 1.179426908493042e-05,
+        "open": 0.0005251169204711914
+      },
+      "residual_row_max_difference": 0.00018688326235860586,
+      "gm_row_max_difference": 0.0,
+      "bank_shape": [
+        0,
+        768
+      ]
+    },
+    "unconditioned_LF": {
+      "endpoint_max_differences": {
+        "closed": 4.7206878662109375e-05,
+        "fracture": 1.064687967300415e-05,
+        "open": 0.0006822943687438965
+      },
+      "residual_row_max_difference": 0.0,
+      "gm_row_max_difference": 0.0,
+      "bank_shape": [
+        125,
+        768
+      ]
+    },
+    "shuffled_LF": {
+      "endpoint_max_differences": {
+        "closed": 3.719329833984375e-05,
+        "fracture": 1.0609626770019531e-05,
+        "open": 0.0004024505615234375
+      },
+      "residual_row_max_difference": 0.00018320971867069602,
+      "gm_row_max_difference": 0.0,
+      "bank_shape": [
+        125,
+        768
+      ]
+    },
+    "gate_zero": {
+      "endpoint_max_differences": {
+        "closed": 7.343292236328125e-05,
+        "fracture": 9.022653102874756e-06,
+        "open": 0.0007706284523010254
+      },
+      "residual_row_max_difference": 0.0,
+      "gm_row_max_difference": 0.0,
+      "bank_shape": [
+        125,
+        768
+      ]
+    }
+  },
+  "passed_technical_interventions": true,
+  "matched_training_superiority_measured": false,
+  "seconds": 9.685658208007226,
+  "limitations": [
+    "bank-off removes bank attention and is not compute matched",
+    "shuffled control is a batch cyclic derangement; all four image IDs are distinct",
+    "unconditioned/random controls retain parameters and attention tensor shapes, not measured wall-clock equality",
+    "no held-out accuracy, clinical metrics, or significance claim"
+  ]
+}

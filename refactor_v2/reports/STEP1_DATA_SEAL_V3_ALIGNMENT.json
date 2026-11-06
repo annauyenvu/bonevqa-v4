@@ -1,0 +1,81 @@
+{
+  "status": "sealed_development_data",
+  "step": 1,
+  "checks": {
+    "component_cv_verification_v3": "pass",
+    "independent_transitive_check_v3": "pass",
+    "final_vocabulary_verification_v3": "pass",
+    "manifest_reproduction_v3": "pass"
+  },
+  "artifacts": {
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/answer_vocab_train_only.json": "1cfd2821a9da579cfbd4af1e922601334ca556266277bc787e038d0ad1410fd9",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_calibration.json": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_model_val.json": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_test.json": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_train.json": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/answer_vocab_train_only.json": "15ad0f1441d29af2a18cf68ed21dd6cb757182c9888377af304fcfcb27bb0434",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_calibration.json": "8fc4a27b994d1509bd840d7222208b57ef0c1178dac09bc9ac0b0f1468502a34",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_model_val.json": "bb1948fd548fe531dd8184abf3d622adfd6aa7c8fa2acc7d71be4ff984f12acf",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_test.json": "d7c3e3aaf8d540f512f850c8dac09e0d7f1a17286c4232f66b6f0f82e7bb6591",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_train.json": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/answer_vocab_train_only.json": "05c28a1fcaf9f03f977244a818b29219de151c7438274b29d3089f3753118705",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_calibration.json": "f457e4df51c113a3d09d06e651bda5e6f8b6f073ed68b34cabb9e61d7008cdf6",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_model_val.json": "68494f0ce2347b854f32326805375273c46d3b6118f41200676bfc1f0f97a7b8",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_test.json": "1425ebefa438dcb69eac928b00eb29b5f411d44769553f988a67f9e591770e73",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_train.json": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/answer_vocab_train_only.json": "cac00bb7b473d733048643503deba7f604b12aced22a9a772bce33e4f474658f",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_calibration.json": "e83a6654e918b91801fa39d660b7d90bdb7b4d7702202bb9ba26d5067083d484",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_model_val.json": "cf78d4bc98b9efa49bd73e20d5f76e25334a3ed45232e296bb2038cecee85315",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_test.json": "5844e7a9431335512abb277b18a66989411173f47c633ef0585234f0d63926f0",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_train.json": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/answer_vocab_train_only.json": "fee627eb8c3835f8270232f524da8b117af326f81716eff3d1fe3dde13069da4",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_calibration.json": "c51ba830f75f2dd2cb0c4a6fe9119beb95b0c44a65c0926e40c5f08349eb658d",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_model_val.json": "ddc5a19d68c4a111db178de1199ed4ceea3544c7d0e20d41f25d29661943231b",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_test.json": "8464509f958bc3540785aa2663820ba4f3cb634a5f77b71ea0c79ef3fb454ee5",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_train.json": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/manifest.json": "b1c53680a7d068649f2d40c8b25b9ee86c09c27972f0679d998a9ae08784120c",
+    ".evaluation_runtime/data/pretraining_candidates_v3/pmc_vqa_model_val_article_candidate.json": "6ec3dbd49226d8f994c2bcde83cf496398ab57b47f43895fa6c20a06e13adace",
+    ".evaluation_runtime/data/pretraining_joint_groups_v3/pmc_vqa_test_label_valid.json": "fe306620581b5b3bb52f25a652fc862d063c7aaa145597e6756b9efc8612b4c2",
+    ".evaluation_runtime/data/pretraining_joint_groups_v3/pmc_vqa_train_label_filtered.json": "adefea3c93500e42af6d2acfbe2bd984c6f70649f925d2541e367773c5b4ca99",
+    ".evaluation_runtime/data/pretraining_joint_groups_v3/roco_train.json": "a99212e05f2f226f13f78dab5fc9a0a74f38805882d9e986c215c7957674e524",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/answer_vocab_runtime_normalized_v3.json": "ecda1d3a1e84ceaa288308cffd71f489d62f3de674bcd0976fc9bc6738be5bd3",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/answer_vocab_runtime_normalized_v3.json": "e5c82de0d3768ec812d53c5a430e4dff8eb9b1263b1d513b3db69a5654266d07",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/answer_vocab_runtime_normalized_v3.json": "acf80f7bc3d273a43d3c4e70ab935d3d2ac50560cff8ce72770b0c2fd9ff7f70",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/answer_vocab_runtime_normalized_v3.json": "bb2ff66d987555355bd7063b7c6117429f6a80f47ee9281251e0e1604686ed73",
+    ".evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/answer_vocab_runtime_normalized_v3.json": "560aeab560bff729f248773127b92f9f5cf1389261f219a8d71c410ac801585f",
+    ".evaluation_runtime/data/pretraining_joint_groups_v3/roco_validation_caption_valid.json": "9572e954d7998ce0e2f26bfb380f27813f2f0669afd9b72dc542151974b4ff12"
+  },
+  "scope": "Data inventory, conservative known duplicate grouping, quarantine, split manifests and train-only fold vocabularies.",
+  "initialization": "Historical PMC checkpoint excluded; fresh audited base initialization and upstream training required.",
+  "runtime_training_ready": false,
+  "next_step_gates": [
+    "Bind loaders to these exact artifacts and verify source hashes at runtime.",
+    "Load base weights offline and verify architecture, module routes and losses.",
+    "Train detectors separately within each fold training partition."
+  ],
+  "limitations": [
+    "Development-informed grouped evaluation, not untouched external validation.",
+    "Heuristic duplicate search cannot certify patient independence or exhaustive duplicate removal.",
+    "Base-model training data independence is unknown.",
+    "PMC test is a filtered 49990-QA cohort; original benchmark denominator differs.",
+    "VQA-RAD remains supplementary and unsealed for image-independent evaluation."
+  ],
+  "supersedes_for_training": "refactor_v2/reports/STEP1_DATA_SEAL_V3.json",
+  "parent_seal_sha256": "de63fef15ba86d91a06c883f7089966285173c205aea9c0a5210c694b062c347",
+  "vocabulary_normalization": "src.utils.normalize_answer",
+  "runtime_vocab_counts": {
+    "0": 125,
+    "1": 117,
+    "2": 115,
+    "3": 127,
+    "4": 120
+  },
+  "roco_validation_filter": {
+    "source_sha256": "4aea2e44fca90736e704f7c5b9f3fc828111579ef2423e853159d7d681766b6d",
+    "excluded_source_indices": [
+      3887
+    ],
+    "retained": 9903
+  },
+  "roco_validation_role": "Alignment selection only, not an independent final VQA test"
+}

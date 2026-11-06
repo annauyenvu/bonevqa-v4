@@ -1,0 +1,5 @@
+_base_: pilot_roco_no_checkpoint_v3.yaml
+run_name: pilot_roco_cpu_reference_v3
+# Run with --device cpu. Numerical reference, not the throughput recipe.
+model:
+  llm_dtype: float32

@@ -1,0 +1,6 @@
+{
+  "status": "failed_technical_launch",
+  "reason": "pytest subprocess aborted SIGABRT while importing an extension in sandbox; no technical seal issued by this attempt. SHM/OpenMP cause is not established by this log; recheck outside sandbox passed.",
+  "preserve_artifacts": true,
+  "recheck_log": "step3_seal_regression_v3_recheck.log"
+}

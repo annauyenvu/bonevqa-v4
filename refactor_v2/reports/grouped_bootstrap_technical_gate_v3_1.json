@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "Synthetic known-component resampling, paired indices, undefined metrics and exact fresh-process replay; no actual cohort data or inference",
+  "fixture": {
+    "intervals": {
+      "raw": {
+        "valid_draws": 2000,
+        "undefined_draws": 0,
+        "percentile_2_5_97_5": [
+          0.3333333333333333,
+          1.0
+        ]
+      },
+      "calibrated": {
+        "valid_draws": 2000,
+        "undefined_draws": 0,
+        "percentile_2_5_97_5": [
+          0.0,
+          0.6666666666666666
+        ]
+      },
+      "difference": {
+        "valid_draws": 2000,
+        "undefined_draws": 0,
+        "percentile_2_5_97_5": [
+          -1.0,
+          0.3333333333333333
+        ]
+      },
+      "undefined": {
+        "valid_draws": 0,
+        "undefined_draws": 2000,
+        "percentile_2_5_97_5": null
+      }
+    },
+    "draw_sha256": "3bc13d0be9abc7ebaf0fda23ee9abc412b504c03dafdbd6664905155bed44e67",
+    "resamples": 2000,
+    "seed": 20261021,
+    "negative_cases": 2
+  },
+  "dependencies": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/gate_grouped_bootstrap_v3_1.py": "9bfe9e96228f1fc297c095cd1cd2c8115ff70ae40fa5c8f13cde37d8e0a3362b",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/grouped_bootstrap_v3_1.py": "38c1dd2b7baaa8b47bfb12795210ae55c1d5ba27a2df480e3e99406ae3758e32",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/GROUPED_EVALUATION_RULES_V3_1.json": "ba9384adb522aa241e1fdbb244de8e7ecc0d6cd786cecdcff1093895db05020b"
+  },
+  "elapsed_seconds": 0.16457183299644385,
+  "reserved_role_inference_authorized": false
+}

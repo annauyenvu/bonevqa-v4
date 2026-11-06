@@ -1,0 +1,151 @@
+{
+  "status": "pass",
+  "steps": 2,
+  "scope": "Visual-LoRA optimizer only, single open sample, technical audit",
+  "records": [
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.1.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.1.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.2.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.2.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.3.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.3.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.4.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.4.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.5.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.5.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.6.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.6.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.7.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.7.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.8.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.8.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.9.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.9.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.10.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.10.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.11.attn.qkv.lora_A.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    },
+    {
+      "name": "visual.shared_clip.visual.trunk.blocks.11.attn.qkv.lora_B.default.weight",
+      "finite_gradient": true,
+      "nonzero_gradient": true,
+      "changed": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "objective": "five-seed Detector V-vs-None and None/V/P/VP interaction on conservative component-clean split",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "variants": [
+    "none",
+    "v",
+    "p",
+    "vp"
+  ],
+  "primary_runs": 20,
+  "primary_contrasts": [
+    "V - None",
+    "(VP - P) - (V - None)"
+  ],
+  "split": "components connect exact duplicates and all-pair perceptual near-duplicate candidates",
+  "training": "2 epochs; 6000 train QA; 300 validation QA; batch 4; grad accumulation 4; float32; MPS deterministic",
+  "checkpoint_selection": "validation overall exact accuracy; ties retain earliest epoch",
+  "primary_reporting": [
+    "closed exact",
+    "overall exact",
+    "open exact",
+    "macro family accuracy"
+  ],
+  "no_test_selection": true,
+  "specs": {
+    "train": [
+      6000,
+      1332,
+      3334
+    ],
+    "val": [
+      300,
+      71,
+      171
+    ],
+    "test": [
+      2443,
+      550,
+      1359
+    ]
+  }
+}

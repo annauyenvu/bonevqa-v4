@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "scope": "Synthetic input routing/order/metadata perturbation/calibration application and exact fresh-process replay; not real-model integration or reserved-role release",
+  "fixture": {
+    "raw": [
+      {
+        "image_id": "0",
+        "question": "Is there a fracture in this X-ray?",
+        "gt": "no",
+        "answer_type": "CLOSED",
+        "pred": "no",
+        "p_yes": 0.1
+      },
+      {
+        "image_id": "1",
+        "question": "Synthetic question",
+        "gt": "no",
+        "answer_type": "OPEN",
+        "pred": "fixture"
+      },
+      {
+        "image_id": "2",
+        "question": "Is there a fracture in this X-ray?",
+        "gt": "yes",
+        "answer_type": "CLOSED",
+        "pred": "yes",
+        "p_yes": 0.8
+      },
+      {
+        "image_id": "3",
+        "question": "Synthetic question",
+        "gt": "yes",
+        "answer_type": "OPEN",
+        "pred": "fixture"
+      },
+      {
+        "image_id": "4",
+        "question": "Is there a fracture in this X-ray?",
+        "gt": "yes",
+        "answer_type": "CLOSED",
+        "pred": "yes",
+        "p_yes": 0.7
+      },
+      {
+        "image_id": "5",
+        "question": "Synthetic question",
+        "gt": "yes",
+        "answer_type": "OPEN",
+        "pred": "fixture"
+      }
+    ],
+    "calibration": {
+      "passed": true,
+      "slope": 0.8729487410919303,
+      "intercept": 0.9122269936319296,
+      "n_iter": 8,
+      "warnings": [],
+      "parameters": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 1e-08,
+        "random_state": 42,
+        "fit_intercept": true,
+        "class_weight": null
+      }
+    },
+    "adjusted": [
+      {
+        "image_id": "0",
+        "question": "Is there a fracture in this X-ray?",
+        "gt": "no",
+        "answer_type": "CLOSED",
+        "pred": "no",
+        "p_yes": 0.267795261163116
+      },
+      {
+        "image_id": "1",
+        "question": "Synthetic question",
+        "gt": "no",
+        "answer_type": "OPEN",
+        "pred": "fixture"
+      },
+      {
+        "image_id": "2",
+        "question": "Is there a fracture in this X-ray?",
+        "gt": "yes",
+        "answer_type": "CLOSED",
+        "pred": "yes",
+        "p_yes": 0.8930604844523526
+      },
+      {
+        "image_id": "3",
+        "question": "Synthetic question",
+        "gt": "yes",
+        "answer_type": "OPEN",
+        "pred": "fixture"
+      },
+      {
+        "image_id": "4",
+        "question": "Is there a fracture in this X-ray?",
+        "gt": "yes",
+        "answer_type": "CLOSED",
+        "pred": "yes",
+        "p_yes": 0.8391442462562946
+      },
+      {
+        "image_id": "5",
+        "question": "Synthetic question",
+        "gt": "yes",
+        "answer_type": "OPEN",
+        "pred": "fixture"
+      }
+    ],
+    "negative_cases": 3,
+    "public_keys": [
+      "images",
+      "questions"
+    ]
+  },
+  "dependencies": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/gate_grouped_public_core_v3_1.py": "4eb3bcb666361cf583f69ec3159267d64eb24030735cd431c96b7e5cca414036",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/grouped_public_evaluation_core_v3_1.py": "03b99e88c1c2334fe4b573c39d1d94d2fac9976829c6751c24a39cb24aee6aa7",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/grouped_calibration_v3_1.py": "67c8a05eca6afbe6d2b9209e5e094d4dca5a447afa58516980c09efeafea8a0f"
+  },
+  "reserved_role_inference_authorized": false
+}

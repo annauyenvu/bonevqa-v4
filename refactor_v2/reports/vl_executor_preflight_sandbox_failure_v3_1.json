@@ -1,0 +1,7 @@
+{
+  "scope": "preflight only; zero quality updates",
+  "failure": "Nested seal verifier aborted with OpenMP Error179 Cannot open SHM under restricted sandbox",
+  "output_directory_created": false,
+  "weights_or_data_changed": false,
+  "next_action": "Repeat identical offline preflight with reviewed process/shared-memory permission; no training retry or config change"
+}

@@ -1,0 +1,29 @@
+{
+  "de_tai": "Phát triển hệ thống hội thoại trực quan trên ảnh y khoa xương có dùng gợi ý",
+  "bac_dao_tao": "Luận văn thạc sĩ",
+  "hoc_vien": "Vu Dinh Bao Uyen",
+  "ma_hoc_vien": "",
+  "nganh": "Trí tuệ nhân tạo – Thị giác máy tính",
+  "co_so_dao_tao": "",
+  "giang_vien_huong_dan": "",
+  "nam": "2026",
+  "ket_qua": {
+    "pham_vi": "FracAtlas, đánh giá 5 fold: 4.013 ảnh (715 ảnh gãy), 17.998 câu hỏi. Một seed.",
+    "bang": [
+      {"chi_so": "AP phát hiện gãy", "b": "0,716", "v4": "0,749"},
+      {"chi_so": "AUROC", "b": "0,884", "v4": "0,892"},
+      {"chi_so": "Độ nhạy (ngưỡng 0,5)", "b": "55,94%", "v4": "63,78%"},
+      {"chi_so": "Độ đặc hiệu (ngưỡng 0,5)", "b": "94,57%", "v4": "95,57%"},
+      {"chi_so": "Độ chính xác hỏi đáp", "b": "90,00%", "v4": "90,73%"}
+    ],
+    "delta": "Chênh lệch AP giữa V4 và B: +0,033, CI 95% [+0,016; +0,052]. Checkpoint chạy trong demo là fold 0 (AP 0,740)."
+  },
+  "gioi_han": [
+    "Sản phẩm nghiên cứu, chưa được kiểm định lâm sàng và chưa có kiểm định ngoài.",
+    "Phần lớn lợi ích của V4 đến từ việc detector có đề xuất vùng hay không; chưa chứng minh mô hình dựa vào đúng vùng tổn thương.",
+    "Khung gợi ý là đề xuất của detector, không phải xác nhận vị trí gãy.",
+    "Mỗi câu hỏi được trả lời độc lập, chưa dùng ngữ cảnh các lượt trước.",
+    "Chỉ đánh giá với các mẫu câu hỏi tiếng Anh sinh tự động; tiếng Việt được ánh xạ sang các mẫu đó.",
+    "Vùng bác sĩ tự vẽ là chế độ thử nghiệm, nằm ngoài kết quả đánh giá."
+  ]
+}

@@ -1,0 +1,21 @@
+# New architecture study, V first — 25 October 2026
+
+User authorizes ordered V, L, P (including exploration of LaPA PF), then conditional T/combinations. This protocol freezes the first bounded V study before new results. Historical releases remain unchanged. Further stages require their own scoped specifications and technical releases; authorization to implement them already exists.
+
+## V experiment
+
+Reuse the exact inspected step4 cohort:256TRAIN images/1164QA,321model-validation images/1432QA,TRAIN vocabulary/positive weight, seed42 and four schedules. Fresh zero-task initialization from step4 B_PREtask; never initialize from a trained B. No calibration/outer inference. Four epochs,292updates,AdamW1e-4,weight_decay0.01,accum4,clip1,CPU8,offline. Fixed LAST4 primary; no post-result extension. Data are development-informed.
+
+Five new arms: B reference, real_aux, placebo_aux, grid_aux, real_noaux. All shared B tensors identical at initialization; all local module tensors identical across four local arms. Base global image and question path remain present. New local module reads up to3 original-pixel crops, independently resized by the same224px encoder; four2×2pooled patch tokens per crop. Question-conditioned cross-attention adds a sigmoid-gated residual to global visual tokens before fusion. Gate initialized with bias−4, not forced to increase. Empty proposal residual exactlyzero. Existing OPEN prefix consumes fused output. Auxiliary MIL head predicts image-level fracture from attention-pooled crop features. Only canonical TRAIN image rows with a nonempty crop bag contribute; weight0.1,TRAIN-derivedpositiveweight. No label is assigned to individual crops.
+
+Real/placebo use existing automatic proposals with provenance and location-placebo count/size parity. Grid control partitions the canonical image into K equal vertical strips, K=automatic proposal count, with zero crops when countzero. It matches view count/availability but not crop geometry; it remains detector-count-conditioned and is not a detector-free baseline. Report those limits. real_noaux retains architecture but weight0; auxiliary-head-only parameters need not update. Equal steps do not imply equal views/FLOPs; record timings/parameters/exposures.
+
+Primary AP canonical fracture on full321modelval. Compare real_aux against B, placebo_aux,grid_aux,real_noaux. Report paired2000component bootstrap(seed20261025), raw0.5sensitivity/spec/BA/Brier/ECE and CLOSED/OPEN/question strata. A provisional candidate requires AP at least0.005 above B and both spatial controls; auxiliary effect is separately tested against real_noaux, not assumed. This is a development budget rule, not a significance claim. Any next multi-seed study is separately frozen. No threshold fitting from modelval/assessment or positive-result search.
+
+Before release: verify sealed inputs/shared states; disposable two-update gates; finite nonzero gradients and updates in expected local/visual/head paths; canonical-only auxiliary routing, public-input invariance, empty/forced-zero fallback, changed-crop intervention, strict checkpoint/fresh-process output replay; measured timing. Preserve failures. All new source/checkpoint files live outside historical seals.
+
+## Later stages and PF
+
+L: spatial supervision on original encoder, original-only inference, same-capacity controls. P: consistency/bank ablations before input-conditioned latent changes. PF is newly authorized as an experimental extension; earlier GM+LF-only claims stay historical. LaPA section3.3 cites SLAKE for an organ–disease graph and uses an8-head GAT. Source: https://arxiv.org/html/2404.13039v1 . The exact graph files, license, preprocessing and label mapping must be verified before integration. No local SLAKE/LaPA knowledge files found in initial filename search. Do not invent edges or use evaluation answers to build/select graph. PF controls must distinguish graph structure from node tokens/capacity; random/degree-preserving edges and graph-off are prospective candidates, to be frozen in P protocol.
+
+T requires visual signal; V+L/V+P require individual evidence. Negative outcomes advance diagnosis/reporting, not automatic architecture expansion. Runtime remains offline with existing dependencies; documentation retrieval does not grant training-time network access.

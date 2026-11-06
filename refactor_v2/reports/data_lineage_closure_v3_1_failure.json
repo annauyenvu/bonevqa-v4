@@ -1,0 +1,10 @@
+{
+  "status": "failed_preserved_before_output",
+  "exception": "KeyError('model_val')",
+  "source": "refactor_v2/experiments/audit_data_lineage_closure_v3_1.py",
+  "reason": "Auditor expected detector role model_val; actual frozen detector manifest uses val, explicitly bound to vqa_model_val.json",
+  "model_instantiations": 0,
+  "source_data_or_manifest_changes": false,
+  "training_updates": 0,
+  "repair_policy": "New audit wrapper must require exact source path/hash before mapping val to model_val in auditor memory only; preserve this failed source"
+}

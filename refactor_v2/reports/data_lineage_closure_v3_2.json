@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "created_utc": "2026-10-20T18:21:55.248554+00:00",
+  "scope": "No-model artifact reconciliation, role/component parity and saved candidate-link arithmetic",
+  "source_script_sha256": "d22ec2806ff7fdd9498fa12bfcaff872e95fbc08cacbe2c8c640afb4dff7c32b",
+  "dependencies_sha256": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/audit_data_lineage_closure_v3_1.py": "5ab988d7bc57503b7df3c6e140e6465aa93a31c6194bf3dac91435f8c1ebbf6e",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/data_lineage_closure_v3_1_failure.json": "544fdf2063e26894082ea6761fa95c2e84c40b4ebc8f30612ffbed72d4283895",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/data_inventory_exact_v3.json": "058f51a9b7afd0aa8975276354c4b326a2a36a1438d26029dd7ba175db7492d7",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/STEP1_DATA_SEAL_V3_RUNTIME_VOCAB.json": "de63fef15ba86d91a06c883f7089966285173c205aea9c0a5210c694b062c347",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/STEP1_DATA_SEAL_V3_ALIGNMENT.json": "2e0346c2cebe23b5e364db6c119fddfb5502ebbae099ac3e6250487ca8658e03",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/answer_vocab_train_only.json": "1cfd2821a9da579cfbd4af1e922601334ca556266277bc787e038d0ad1410fd9",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_calibration.json": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_model_val.json": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_test.json": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_train.json": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/answer_vocab_train_only.json": "15ad0f1441d29af2a18cf68ed21dd6cb757182c9888377af304fcfcb27bb0434",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_calibration.json": "8fc4a27b994d1509bd840d7222208b57ef0c1178dac09bc9ac0b0f1468502a34",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_model_val.json": "bb1948fd548fe531dd8184abf3d622adfd6aa7c8fa2acc7d71be4ff984f12acf",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_test.json": "d7c3e3aaf8d540f512f850c8dac09e0d7f1a17286c4232f66b6f0f82e7bb6591",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_train.json": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/answer_vocab_train_only.json": "05c28a1fcaf9f03f977244a818b29219de151c7438274b29d3089f3753118705",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_calibration.json": "f457e4df51c113a3d09d06e651bda5e6f8b6f073ed68b34cabb9e61d7008cdf6",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_model_val.json": "68494f0ce2347b854f32326805375273c46d3b6118f41200676bfc1f0f97a7b8",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_test.json": "1425ebefa438dcb69eac928b00eb29b5f411d44769553f988a67f9e591770e73",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_train.json": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/answer_vocab_train_only.json": "cac00bb7b473d733048643503deba7f604b12aced22a9a772bce33e4f474658f",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_calibration.json": "e83a6654e918b91801fa39d660b7d90bdb7b4d7702202bb9ba26d5067083d484",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_model_val.json": "cf78d4bc98b9efa49bd73e20d5f76e25334a3ed45232e296bb2038cecee85315",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_test.json": "5844e7a9431335512abb277b18a66989411173f47c633ef0585234f0d63926f0",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_train.json": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/answer_vocab_train_only.json": "fee627eb8c3835f8270232f524da8b117af326f81716eff3d1fe3dde13069da4",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_calibration.json": "c51ba830f75f2dd2cb0c4a6fe9119beb95b0c44a65c0926e40c5f08349eb658d",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_model_val.json": "ddc5a19d68c4a111db178de1199ed4ceea3544c7d0e20d41f25d29661943231b",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_test.json": "8464509f958bc3540785aa2663820ba4f3cb634a5f77b71ea0c79ef3fb454ee5",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_train.json": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/manifest.json": "b1c53680a7d068649f2d40c8b25b9ee86c09c27972f0679d998a9ae08784120c",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_candidates_v3/pmc_vqa_model_val_article_candidate.json": "6ec3dbd49226d8f994c2bcde83cf496398ab57b47f43895fa6c20a06e13adace",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_joint_groups_v3/pmc_vqa_test_label_valid.json": "fe306620581b5b3bb52f25a652fc862d063c7aaa145597e6756b9efc8612b4c2",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_joint_groups_v3/pmc_vqa_train_label_filtered.json": "adefea3c93500e42af6d2acfbe2bd984c6f70649f925d2541e367773c5b4ca99",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_joint_groups_v3/roco_train.json": "a99212e05f2f226f13f78dab5fc9a0a74f38805882d9e986c215c7957674e524",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/answer_vocab_runtime_normalized_v3.json": "ecda1d3a1e84ceaa288308cffd71f489d62f3de674bcd0976fc9bc6738be5bd3",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/answer_vocab_runtime_normalized_v3.json": "e5c82de0d3768ec812d53c5a430e4dff8eb9b1263b1d513b3db69a5654266d07",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/answer_vocab_runtime_normalized_v3.json": "acf80f7bc3d273a43d3c4e70ab935d3d2ac50560cff8ce72770b0c2fd9ff7f70",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/answer_vocab_runtime_normalized_v3.json": "bb2ff66d987555355bd7063b7c6117429f6a80f47ee9281251e0e1604686ed73",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/answer_vocab_runtime_normalized_v3.json": "560aeab560bff729f248773127b92f9f5cf1389261f219a8d71c410ac801585f",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/pretraining_joint_groups_v3/roco_validation_caption_valid.json": "9572e954d7998ce0e2f26bfb380f27813f2f0669afd9b72dc542151974b4ff12",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/detector_split_v3.json": "dbf2f9acc0de96c28d9af12ce4d8b3aac521f504c9a79fbea09838daa1c21f5d",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/detector_split_v3.json": "c4a55c8c4a5af2e0fca60381740326c9d56790f89333cf5a6eddc5e187a00f2d",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/detector_split_v3.json": "20760fe53db67b0e28ee83d1db9c5fb3460266b8e7ae5391e4ecbdeb47ec203d",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/detector_split_v3.json": "68a2f89e2cb9451aaf7683fc058c51b37c1513a20aac92ae0e96cbbdd5930faa",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/detector_split_v3.json": "7dc5fb29391afd074c4a470894614565786e9cdba968318b744678e9651ba050",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perceptual_fingerprints_v3.jsonl": "26599c238d4c1fc7230a4a8340143bd136189a0aa68f67c9d276ad0319b9bfb8",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/cross_dataset_neighbour_progress_v3.json": "a5918b4e74b9a961844e2d1a353db106cfa7a948ba373e0ecb207db1ad1d4ec0",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/cross_dataset_hamming_candidates_v3.jsonl": "d93e74f784094dd5ce4518257c627eb0a520047264682fdcf37b30a39e0997c1",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/cross_dataset_pixel_edges_v3.json": "8e15e725563eb5a930815480091e15ebe43da0a48ec9f966d1540f3e91a718c9",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/within_pmc_neighbour_progress_v3.json": "ad14d0a3f078592f5538a560156d0da74b51340882c5692012bd07c77c1db3be",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/within_pmc_hamming_candidates_v3.jsonl": "accba68f41f98c0729d7f8159a416e4b03b9f1710366aaf680c62df97ea03a2c",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/within_pmc_pixel_edges_v3.json": "12f7ccc7e33a7740399b0ed17253e05c7e23c49f1d4d9f7aad231b85c7c030ae",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/within_roco_neighbour_progress_v3.json": "deb841169950e999d8cc9bfc628ffa886c0a18083aa7d4d2b92ff58992540e13",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/within_roco_hamming_candidates_v3.jsonl": "f153e6911ed107bf4d60cf717c0421323c9353df9bf77439bca1194e13d2c5b7",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/within_roco_pixel_edges_v3.json": "ef30af8203022f08d0232b00647ea5482f6b9037f7837e9da39b31f8a9adf06e",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/independent_transitive_check_v3.json": "eeaf42c67b6749146def21d77f7d96ab72b1d4d8e5bc65e492eef82c1f8380d0",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/roco_alignment_execution_v3/independent_verification.json": "bf9e10f76f1b52d04edb67b0276001b5a8f19f5657ee4ee9f69a431b54226c2e",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/roco_alignment_execution_v3/progress.json": "8a870fa37fed4037f2256927cbe1558b04e95d2d4a5d29710a58be82c942678f",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/revised_roco_alignment_v3/best.pt": "08cd132ef1097da8f64758225b3f66b7a5329a5d008accfe84e352e94cb98302",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/revised_roco_alignment_v3/last.pt": "6df3d78684b5f5b1c8071a424f16d5e20556693b051611fdb1afaeebc73e91ca",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/pmc_alignment_execution_v3/independent_artifact_verification.json": "a260205a0a31aee6efdb335a87feb8cc8f678ab6ddc1cad2c7f41df6e93eca7c",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/pmc_alignment_execution_v3/progress.json": "229f1d5d89e0b05a96967c72b87e30450c550f50e778eca6b59dc43e35521b13",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/revised_pmcvqa_alignment_v3/best.pt": "ce5262252ecca06c0d547c5edd0e2a992c31fccd90474e194e6ddad68ed0f976",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/revised_pmcvqa_alignment_v3/last.pt": "d3ed496636431e6d6add27c56f241159dcabf2df45e5cafe0a1bf1e1a97a1b19",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/pmc_label_integrity_v3.json": "5910d87d30fffc27af411c1c9041e854231fe25c3df13356e8170ef3de41ab46"
+  },
+  "alignment_seal_artifacts_verified": 36,
+  "runtime_seal_artifacts": 35,
+  "folds": {
+    "0": {
+      "train": {
+        "images": 2568,
+        "QA": 11502,
+        "components": 2512
+      },
+      "model_val": {
+        "images": 321,
+        "QA": 1432,
+        "components": 314
+      },
+      "calibration": {
+        "images": 321,
+        "QA": 1432,
+        "components": 311
+      },
+      "test": {
+        "images": 803,
+        "QA": 3632,
+        "components": 783
+      }
+    },
+    "1": {
+      "train": {
+        "images": 2568,
+        "QA": 11547,
+        "components": 2504
+      },
+      "model_val": {
+        "images": 321,
+        "QA": 1422,
+        "components": 316
+      },
+      "calibration": {
+        "images": 321,
+        "QA": 1408,
+        "components": 316
+      },
+      "test": {
+        "images": 803,
+        "QA": 3621,
+        "components": 784
+      }
+    },
+    "2": {
+      "train": {
+        "images": 2568,
+        "QA": 11525,
+        "components": 2510
+      },
+      "model_val": {
+        "images": 321,
+        "QA": 1434,
+        "components": 310
+      },
+      "calibration": {
+        "images": 321,
+        "QA": 1442,
+        "components": 316
+      },
+      "test": {
+        "images": 803,
+        "QA": 3597,
+        "components": 784
+      }
+    },
+    "3": {
+      "train": {
+        "images": 2569,
+        "QA": 11524,
+        "components": 2511
+      },
+      "model_val": {
+        "images": 321,
+        "QA": 1483,
+        "components": 312
+      },
+      "calibration": {
+        "images": 321,
+        "QA": 1444,
+        "components": 313
+      },
+      "test": {
+        "images": 802,
+        "QA": 3547,
+        "components": 784
+      }
+    },
+    "4": {
+      "train": {
+        "images": 2568,
+        "QA": 11510,
+        "components": 2509
+      },
+      "model_val": {
+        "images": 321,
+        "QA": 1421,
+        "components": 312
+      },
+      "calibration": {
+        "images": 322,
+        "QA": 1466,
+        "components": 314
+      },
+      "test": {
+        "images": 802,
+        "QA": 3601,
+        "components": 785
+      }
+    }
+  },
+  "all5fold_detector_VQA_role_image_sets_exact": true,
+  "all5fold_role_components_disjoint": true,
+  "all4013_retained_images_exactly_once_outer_test": true,
+  "known_neighbour_artifacts": {
+    "cross_dataset": {
+      "candidate_pairs": 4560,
+      "selected_edges": 3570,
+      "saved_Hamming_arithmetic_recomputed": true,
+      "pixel_correlation_not_recomputed_this_audit": true
+    },
+    "within_pmc": {
+      "candidate_pairs": 1107,
+      "selected_edges": 44,
+      "saved_Hamming_arithmetic_recomputed": true,
+      "pixel_correlation_not_recomputed_this_audit": true
+    },
+    "within_roco": {
+      "candidate_pairs": 1865,
+      "selected_edges": 52,
+      "saved_Hamming_arithmetic_recomputed": true,
+      "pixel_correlation_not_recomputed_this_audit": true
+    }
+  },
+  "prior_transitive_report_rebound_no_known_shared_components": true,
+  "upstream_checkpoint_hashes_reverified": {
+    "ROCO": {
+      "artifact_verification_passed": true,
+      "best_sha256": "08cd132ef1097da8f64758225b3f66b7a5329a5d008accfe84e352e94cb98302",
+      "quality_gate_passed": null,
+      "interpretation": "Technical lineage only, not independent clinical benefit"
+    },
+    "PMC": {
+      "artifact_verification_passed": true,
+      "best_sha256": "ce5262252ecca06c0d547c5edd0e2a992c31fccd90474e194e6ddad68ed0f976",
+      "quality_gate_passed": false,
+      "interpretation": "Technical lineage only, not independent clinical benefit"
+    }
+  },
+  "historical_PMC_checkpoint_eligible": false,
+  "PMC_train_lon_independent_evidence": false,
+  "PMC_train_label_valid_QA": 28490,
+  "PMC_train_malformed_quarantined": 3,
+  "model_instantiations": 0,
+  "new_training_updates": 0,
+  "reserved_role_model_inference": false,
+  "limitations": [
+    "No new exhaustive similarity search or raw-pixel correlation rerun",
+    "Transitive separation report is rebound, not recomputed here",
+    "Grouping is not verified patient identity; base-model pretraining independence unknown",
+    "ROCO is technically verified, not isolated pretraining efficacy; PMC quality remains failed",
+    "Existing FracAtlas evaluation is development-informed; generated folds are not executed nested confirmation"
+  ],
+  "next_required": "Define evidence-backed step3 exit and honest confirmation protocol; no automatic long training",
+  "long_training_authorized": false,
+  "step3_complete": false,
+  "production_released": false
+}

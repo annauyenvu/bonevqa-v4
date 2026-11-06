@@ -1,0 +1,4858 @@
+{
+  "passed": true,
+  "scope": "Post-hoc descriptive analysis; original frozen thresholds and model unchanged; no outer fitting or threshold selection",
+  "source_sha256": "4fafdeb58cd972f789e0175d9af13a0b877747c61524136f0cb9b6df1a32bdad",
+  "closure_artifacts_verified": 32,
+  "image_bytes_rehashed": 4013,
+  "partition_audit": "Zero image-ID, known-component and exact-byte intersections among four roles within each fold; outer IDs exactly once",
+  "folds": {
+    "0": {
+      "role_counts": {
+        "train": {
+          "n": 2568,
+          "positive": 458
+        },
+        "model_val": {
+          "n": 321,
+          "positive": 57
+        },
+        "calibration": {
+          "n": 321,
+          "positive": 57
+        },
+        "test": {
+          "n": 803,
+          "positive": 143
+        }
+      },
+      "raw": {
+        "n": 803,
+        "positives": 143,
+        "TP": 75,
+        "FN": 68,
+        "TN": 613,
+        "FP": 47,
+        "sensitivity": 0.5244755244755245,
+        "specificity": 0.9287878787878788,
+        "BA": 0.7266317016317017,
+        "AUROC": 0.8762873490146218,
+        "AP": 0.6783443853970285,
+        "Brier": 0.1086102176604509,
+        "positive_probability_quantiles": [
+          0.02164611779153347,
+          0.05562672466039658,
+          0.149355910718441,
+          0.6236134767532349,
+          0.9926031231880188,
+          0.9972308874130249,
+          0.9981929659843445
+        ],
+        "positives_below_025": 47,
+        "positives_025_to_05": 21
+      },
+      "calibrated": {
+        "n": 803,
+        "positives": 143,
+        "TP": 68,
+        "FN": 75,
+        "TN": 630,
+        "FP": 30,
+        "sensitivity": 0.4755244755244755,
+        "specificity": 0.9545454545454546,
+        "BA": 0.715034965034965,
+        "AUROC": 0.8762873490146218,
+        "AP": 0.6783443853970285,
+        "Brier": 0.10114265949107666,
+        "positive_probability_quantiles": [
+          0.03300259308632006,
+          0.06325590597834073,
+          0.12630410131842132,
+          0.4086007486318593,
+          0.9366799939181591,
+          0.9670966797259709,
+          0.9753703735084759
+        ],
+        "positives_below_025": 60,
+        "positives_025_to_05": 15
+      },
+      "calibration_only_refit": {
+        "slope": 0.6969149896366539,
+        "intercept": -0.7216350634163234,
+        "raw_probability_equivalent_to_calibrated_05": 0.7379751327510212,
+        "n_iter": 9
+      },
+      "calibration_raw": {
+        "n": 321,
+        "positives": 57,
+        "TP": 34,
+        "FN": 23,
+        "TN": 252,
+        "FP": 12,
+        "sensitivity": 0.5964912280701754,
+        "specificity": 0.9545454545454546,
+        "BA": 0.775518341307815,
+        "AUROC": 0.9066985645933013,
+        "AP": 0.7480108397535764,
+        "Brier": 0.08593373242790113,
+        "positive_probability_quantiles": [
+          0.04335233196616173,
+          0.0781629353761673,
+          0.2173411101102829,
+          0.8499552011489868,
+          0.9895263910293579,
+          0.9978084802627564,
+          0.9983420372009277
+        ],
+        "positives_below_025": 15,
+        "positives_025_to_05": 8
+      },
+      "sensitivity_component_CI95": {
+        "raw": [
+          0.43795620437956206,
+          0.6099290780141844
+        ],
+        "calibrated": [
+          0.3881554399057345,
+          0.5586257606490872
+        ]
+      },
+      "region_positive_counts": {
+        "hand": 78,
+        "hand and hip": 1,
+        "hand and leg": 1,
+        "hand and shoulder": 8,
+        "hand, hip and shoulder": 1,
+        "hip": 1,
+        "leg": 40,
+        "leg and hip": 11,
+        "shoulder": 2
+      },
+      "region_positive_sensitivity": {
+        "hand": 0.5641025641025641,
+        "hand and hip": 1.0,
+        "hand and leg": 0.0,
+        "hand and shoulder": 0.5,
+        "hand, hip and shoulder": 1.0,
+        "hand, leg and hip": null,
+        "hip": 0.0,
+        "leg": 0.55,
+        "leg and hip": 0.2727272727272727,
+        "shoulder": 0.0
+      },
+      "pooled_region_standardized_sensitivity": null
+    },
+    "1": {
+      "role_counts": {
+        "train": {
+          "n": 2568,
+          "positive": 458
+        },
+        "model_val": {
+          "n": 321,
+          "positive": 57
+        },
+        "calibration": {
+          "n": 321,
+          "positive": 57
+        },
+        "test": {
+          "n": 803,
+          "positive": 143
+        }
+      },
+      "raw": {
+        "n": 803,
+        "positives": 143,
+        "TP": 77,
+        "FN": 66,
+        "TN": 625,
+        "FP": 35,
+        "sensitivity": 0.5384615384615384,
+        "specificity": 0.946969696969697,
+        "BA": 0.7427156177156178,
+        "AUROC": 0.893399025217207,
+        "AP": 0.6989061965229851,
+        "Brier": 0.1015424070992055,
+        "positive_probability_quantiles": [
+          0.008248887024819851,
+          0.035797062516212466,
+          0.0803912803530693,
+          0.7015586495399475,
+          0.993118017911911,
+          0.9991809606552124,
+          0.9995515942573547
+        ],
+        "positives_below_025": 52,
+        "positives_025_to_05": 14
+      },
+      "calibrated": {
+        "n": 803,
+        "positives": 143,
+        "TP": 66,
+        "FN": 77,
+        "TN": 639,
+        "FP": 21,
+        "sensitivity": 0.46153846153846156,
+        "specificity": 0.9681818181818181,
+        "BA": 0.7148601398601399,
+        "AUROC": 0.893399025217207,
+        "AP": 0.6989061965229851,
+        "Brier": 0.09226073414244682,
+        "positive_probability_quantiles": [
+          0.04710075531174993,
+          0.09063653267813296,
+          0.12960998813574026,
+          0.41068396061086565,
+          0.8276552894284304,
+          0.9288959380728623,
+          0.9454453735912802
+        ],
+        "positives_below_025": 59,
+        "positives_025_to_05": 18
+      },
+      "calibration_only_refit": {
+        "slope": 0.46882050092277694,
+        "intercept": -0.7618540908151027,
+        "raw_probability_equivalent_to_calibrated_05": 0.8354896284483837,
+        "n_iter": 11
+      },
+      "calibration_raw": {
+        "n": 321,
+        "positives": 57,
+        "TP": 30,
+        "FN": 27,
+        "TN": 246,
+        "FP": 18,
+        "sensitivity": 0.5263157894736842,
+        "specificity": 0.9318181818181818,
+        "BA": 0.729066985645933,
+        "AUROC": 0.8756645401382243,
+        "AP": 0.6943164661924706,
+        "Brier": 0.11251198906280357,
+        "positive_probability_quantiles": [
+          0.01617434062063694,
+          0.03369215950369835,
+          0.06949680298566818,
+          0.7462545037269592,
+          0.9964417815208435,
+          0.9993637084960938,
+          0.9995648264884949
+        ],
+        "positives_below_025": 24,
+        "positives_025_to_05": 3
+      },
+      "sensitivity_component_CI95": {
+        "raw": [
+          0.4538993453355155,
+          0.6258515636470415
+        ],
+        "calibrated": [
+          0.3742298185991084,
+          0.5481597222222222
+        ]
+      },
+      "region_positive_counts": {
+        "hand": 81,
+        "hand and shoulder": 14,
+        "hand, hip and shoulder": 0,
+        "hip": 3,
+        "leg": 37,
+        "leg and hip": 6,
+        "shoulder": 2
+      },
+      "region_positive_sensitivity": {
+        "hand": 0.5061728395061729,
+        "hand and hip": null,
+        "hand and leg": null,
+        "hand and shoulder": 0.7142857142857143,
+        "hand, hip and shoulder": null,
+        "hand, leg and hip": null,
+        "hip": 0.6666666666666666,
+        "leg": 0.6216216216216216,
+        "leg and hip": 0.16666666666666666,
+        "shoulder": 0.0
+      },
+      "pooled_region_standardized_sensitivity": null
+    },
+    "2": {
+      "role_counts": {
+        "train": {
+          "n": 2568,
+          "positive": 458
+        },
+        "model_val": {
+          "n": 321,
+          "positive": 57
+        },
+        "calibration": {
+          "n": 321,
+          "positive": 57
+        },
+        "test": {
+          "n": 803,
+          "positive": 143
+        }
+      },
+      "raw": {
+        "n": 803,
+        "positives": 143,
+        "TP": 86,
+        "FN": 57,
+        "TN": 649,
+        "FP": 11,
+        "sensitivity": 0.6013986013986014,
+        "specificity": 0.9833333333333333,
+        "BA": 0.7923659673659673,
+        "AUROC": 0.9107120152574699,
+        "AP": 0.8206086855114689,
+        "Brier": 0.06713625446529119,
+        "positive_probability_quantiles": [
+          0.00826200470328331,
+          0.03695344030857087,
+          0.16998624801635742,
+          0.8352334499359131,
+          0.9939289093017578,
+          0.9972643852233887,
+          0.9986832737922668
+        ],
+        "positives_below_025": 40,
+        "positives_025_to_05": 17
+      },
+      "calibrated": {
+        "n": 803,
+        "positives": 143,
+        "TP": 76,
+        "FN": 67,
+        "TN": 656,
+        "FP": 4,
+        "sensitivity": 0.5314685314685315,
+        "specificity": 0.9939393939393939,
+        "BA": 0.7627039627039627,
+        "AUROC": 0.9107120152574699,
+        "AP": 0.8206086855114689,
+        "Brier": 0.07047523159721039,
+        "positive_probability_quantiles": [
+          0.04209270183272391,
+          0.08892547845409456,
+          0.19005013148471855,
+          0.5570507356309653,
+          0.8856659076437587,
+          0.9217270644329152,
+          0.9452840820226878
+        ],
+        "positives_below_025": 41,
+        "positives_025_to_05": 26
+      },
+      "calibration_only_refit": {
+        "slope": 0.5231776119390817,
+        "intercept": -0.620011208520901,
+        "raw_probability_equivalent_to_calibrated_05": 0.765861302892743,
+        "n_iter": 12
+      },
+      "calibration_raw": {
+        "n": 321,
+        "positives": 57,
+        "TP": 29,
+        "FN": 28,
+        "TN": 247,
+        "FP": 17,
+        "sensitivity": 0.5087719298245614,
+        "specificity": 0.9356060606060606,
+        "BA": 0.722188995215311,
+        "AUROC": 0.8579213184476342,
+        "AP": 0.6424100569180844,
+        "Brier": 0.11275445243043558,
+        "positive_probability_quantiles": [
+          0.009089365601539612,
+          0.03991697803139688,
+          0.1302110105752945,
+          0.5050873756408691,
+          0.9496831297874451,
+          0.9972383975982666,
+          0.9982132911682129
+        ],
+        "positives_below_025": 23,
+        "positives_025_to_05": 5
+      },
+      "sensitivity_component_CI95": {
+        "raw": [
+          0.5202635135135135,
+          0.6805555555555556
+        ],
+        "calibrated": [
+          0.44881166049096805,
+          0.6143884603021537
+        ]
+      },
+      "region_positive_counts": {
+        "hand": 74,
+        "hand and leg": 1,
+        "hand and shoulder": 10,
+        "hand, hip and shoulder": 0,
+        "hand, leg, hip and shoulder": 0,
+        "hip": 2,
+        "leg": 41,
+        "leg and hip": 14,
+        "shoulder": 1
+      },
+      "region_positive_sensitivity": {
+        "hand": 0.6216216216216216,
+        "hand and hip": null,
+        "hand and leg": 1.0,
+        "hand and shoulder": 0.7,
+        "hand, hip and shoulder": null,
+        "hand, leg and hip": null,
+        "hip": 0.0,
+        "leg": 0.5609756097560976,
+        "leg and hip": 0.6428571428571429,
+        "shoulder": 0.0
+      },
+      "pooled_region_standardized_sensitivity": null
+    },
+    "3": {
+      "role_counts": {
+        "train": {
+          "n": 2569,
+          "positive": 458
+        },
+        "model_val": {
+          "n": 321,
+          "positive": 57
+        },
+        "calibration": {
+          "n": 321,
+          "positive": 57
+        },
+        "test": {
+          "n": 802,
+          "positive": 143
+        }
+      },
+      "raw": {
+        "n": 802,
+        "positives": 143,
+        "TP": 77,
+        "FN": 66,
+        "TN": 616,
+        "FP": 43,
+        "sensitivity": 0.5384615384615384,
+        "specificity": 0.9347496206373292,
+        "BA": 0.7366055795494338,
+        "AUROC": 0.8543565690758407,
+        "AP": 0.6794748678428946,
+        "Brier": 0.10550948674994687,
+        "positive_probability_quantiles": [
+          0.006133631337434053,
+          0.02094290219247341,
+          0.09671751409769058,
+          0.7203611731529236,
+          0.9959506690502167,
+          0.9987098097801208,
+          0.9991791844367981
+        ],
+        "positives_below_025": 52,
+        "positives_025_to_05": 14
+      },
+      "calibrated": {
+        "n": 802,
+        "positives": 143,
+        "TP": 73,
+        "FN": 70,
+        "TN": 629,
+        "FP": 30,
+        "sensitivity": 0.5104895104895105,
+        "specificity": 0.9544764795144158,
+        "BA": 0.7324829950019631,
+        "AUROC": 0.8543565690758407,
+        "AP": 0.6794748678428946,
+        "Brier": 0.0964917966666686,
+        "positive_probability_quantiles": [
+          0.037220597552801264,
+          0.07215540963208421,
+          0.16131530409147654,
+          0.5349034722744608,
+          0.9373800375839634,
+          0.9660368715691655,
+          0.9734651910004171
+        ],
+        "positives_below_025": 52,
+        "positives_025_to_05": 18
+      },
+      "calibration_only_refit": {
+        "slope": 0.5622744747385294,
+        "intercept": -0.39221305162025616,
+        "raw_probability_equivalent_to_calibrated_05": 0.6676437567707808,
+        "n_iter": 10
+      },
+      "calibration_raw": {
+        "n": 321,
+        "positives": 57,
+        "TP": 29,
+        "FN": 28,
+        "TN": 256,
+        "FP": 8,
+        "sensitivity": 0.5087719298245614,
+        "specificity": 0.9696969696969697,
+        "BA": 0.7392344497607656,
+        "AUROC": 0.853468899521531,
+        "AP": 0.7021853634603797,
+        "Brier": 0.09512012071128169,
+        "positive_probability_quantiles": [
+          0.0067735156044363976,
+          0.023798424378037454,
+          0.05233823508024216,
+          0.5318582057952881,
+          0.9923535585403442,
+          0.9980509996414184,
+          0.9991493225097656
+        ],
+        "positives_below_025": 25,
+        "positives_025_to_05": 3
+      },
+      "sensitivity_component_CI95": {
+        "raw": [
+          0.4558798519407763,
+          0.624113475177305
+        ],
+        "calibrated": [
+          0.42756321839080463,
+          0.6
+        ]
+      },
+      "region_positive_counts": {
+        "hand": 68,
+        "hand and shoulder": 7,
+        "hand, hip and shoulder": 1,
+        "hip": 3,
+        "leg": 52,
+        "leg and hip": 8,
+        "shoulder": 4
+      },
+      "region_positive_sensitivity": {
+        "hand": 0.5441176470588235,
+        "hand and hip": null,
+        "hand and leg": null,
+        "hand and shoulder": 0.5714285714285714,
+        "hand, hip and shoulder": 0.0,
+        "hand, leg and hip": null,
+        "hip": 0.6666666666666666,
+        "leg": 0.5769230769230769,
+        "leg and hip": 0.5,
+        "shoulder": 0.0
+      },
+      "pooled_region_standardized_sensitivity": null
+    },
+    "4": {
+      "role_counts": {
+        "train": {
+          "n": 2568,
+          "positive": 458
+        },
+        "model_val": {
+          "n": 321,
+          "positive": 57
+        },
+        "calibration": {
+          "n": 322,
+          "positive": 57
+        },
+        "test": {
+          "n": 802,
+          "positive": 143
+        }
+      },
+      "raw": {
+        "n": 802,
+        "positives": 143,
+        "TP": 85,
+        "FN": 58,
+        "TN": 616,
+        "FP": 43,
+        "sensitivity": 0.5944055944055944,
+        "specificity": 0.9347496206373292,
+        "BA": 0.7645776075214619,
+        "AUROC": 0.8973969884440295,
+        "AP": 0.7485539021186471,
+        "Brier": 0.09532771967482732,
+        "positive_probability_quantiles": [
+          0.007358434610068798,
+          0.04629781171679497,
+          0.1715569943189621,
+          0.9188143014907837,
+          0.9953227043151855,
+          0.9981651425361633,
+          0.9986710548400879
+        ],
+        "positives_below_025": 45,
+        "positives_025_to_05": 13
+      },
+      "calibrated": {
+        "n": 802,
+        "positives": 143,
+        "TP": 77,
+        "FN": 66,
+        "TN": 635,
+        "FP": 24,
+        "sensitivity": 0.5384615384615384,
+        "specificity": 0.9635811836115327,
+        "BA": 0.7510213610365355,
+        "AUROC": 0.8973969884440295,
+        "AP": 0.7485539021186471,
+        "Brier": 0.08417121762383209,
+        "positive_probability_quantiles": [
+          0.04214865992759897,
+          0.10110112264523057,
+          0.18836743577893122,
+          0.6312093505512283,
+          0.8810843342834576,
+          0.9221183372156404,
+          0.9329341793330366
+        ],
+        "positives_below_025": 47,
+        "positives_025_to_05": 19
+      },
+      "calibration_only_refit": {
+        "slope": 0.4993813105623967,
+        "intercept": -0.6742628656278855,
+        "raw_probability_equivalent_to_calibrated_05": 0.7941617411932803,
+        "n_iter": 10
+      },
+      "calibration_raw": {
+        "n": 322,
+        "positives": 57,
+        "TP": 27,
+        "FN": 30,
+        "TN": 247,
+        "FP": 18,
+        "sensitivity": 0.47368421052631576,
+        "specificity": 0.9320754716981132,
+        "BA": 0.7028798411122145,
+        "AUROC": 0.8822244289970209,
+        "AP": 0.6639118451488799,
+        "Brier": 0.11370687076783473,
+        "positive_probability_quantiles": [
+          0.0217084102332592,
+          0.04034270793199539,
+          0.08698909729719162,
+          0.4423263669013977,
+          0.9908822774887085,
+          0.9971185922622681,
+          0.9983469247817993
+        ],
+        "positives_below_025": 24,
+        "positives_025_to_05": 6
+      },
+      "sensitivity_component_CI95": {
+        "raw": [
+          0.5103413089373681,
+          0.6755011634150707
+        ],
+        "calibrated": [
+          0.4558798519407763,
+          0.6219579945799457
+        ]
+      },
+      "region_positive_counts": {
+        "hand": 76,
+        "hand and hip": 1,
+        "hand and leg": 1,
+        "hand and shoulder": 11,
+        "hand, hip and shoulder": 1,
+        "hand, leg and hip": 1,
+        "hip": 1,
+        "leg": 42,
+        "leg and hip": 8,
+        "shoulder": 1
+      },
+      "region_positive_sensitivity": {
+        "hand": 0.5789473684210527,
+        "hand and hip": 1.0,
+        "hand and leg": 0.0,
+        "hand and shoulder": 0.5454545454545454,
+        "hand, hip and shoulder": 1.0,
+        "hand, leg and hip": 0.0,
+        "hip": 0.0,
+        "leg": 0.6904761904761905,
+        "leg and hip": 0.5,
+        "shoulder": 0.0
+      },
+      "pooled_region_standardized_sensitivity": 0.5879955769907923
+    }
+  },
+  "pooled_raw": {
+    "n": 4013,
+    "positives": 715,
+    "TP": 400,
+    "FN": 315,
+    "TN": 3119,
+    "FP": 179,
+    "sensitivity": 0.5594405594405595,
+    "specificity": 0.9457246816252274,
+    "BA": 0.7525826205328934,
+    "AUROC": 0.8839877526960607,
+    "AP": 0.7162745380189747,
+    "Brier": 0.09562282820092245,
+    "positive_probability_quantiles": [
+      0.006133631337434053,
+      0.03455172702670098,
+      0.1258533075451851,
+      0.7800108790397644,
+      0.9943511486053467,
+      0.9980130910873413,
+      0.9995515942573547
+    ],
+    "positives_below_025": 236,
+    "positives_025_to_05": 79
+  },
+  "pooled_calibrated": {
+    "n": 4013,
+    "positives": 715,
+    "TP": 360,
+    "FN": 355,
+    "TN": 3189,
+    "FP": 109,
+    "sensitivity": 0.5034965034965035,
+    "specificity": 0.966949666464524,
+    "BA": 0.7352230849805137,
+    "AUROC": 0.880276666935248,
+    "AP": 0.7047944105200596,
+    "Brier": 0.08890761861980084,
+    "positive_probability_quantiles": [
+      0.03300259308632006,
+      0.08242959319426403,
+      0.15463455092369532,
+      0.5037548571562801,
+      0.8884500406295934,
+      0.942526019041698,
+      0.9753703735084759
+    ],
+    "positives_below_025": 259,
+    "positives_025_to_05": 96
+  },
+  "subgroups_existing_ground_truth": {
+    "region": {
+      "\"hand and hip\"": {
+        "n": 2,
+        "positives": 2,
+        "TP": 2,
+        "FN": 0,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 1.0,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 1.0,
+        "Brier": 1.901124246650454e-05,
+        "positive_probability_quantiles": [
+          0.9943617582321167,
+          0.9946759283542633,
+          0.9951471835374832,
+          0.9959326088428497,
+          0.9967180341482162,
+          0.9971892893314361,
+          0.9975034594535828
+        ],
+        "positives_below_025": 0,
+        "positives_025_to_05": 0
+      },
+      "\"hand and leg\"": {
+        "n": 6,
+        "positives": 3,
+        "TP": 1,
+        "FN": 2,
+        "TN": 3,
+        "FP": 0,
+        "sensitivity": 0.3333333333333333,
+        "specificity": 1.0,
+        "BA": 0.6666666666666666,
+        "AUROC": 0.888888888888889,
+        "AP": 0.9166666666666665,
+        "Brier": 0.22840524155894362,
+        "positive_probability_quantiles": [
+          0.16002985835075378,
+          0.17235933244228363,
+          0.1908535435795784,
+          0.22167722880840302,
+          0.564470998942852,
+          0.7701472610235215,
+          0.907264769077301
+        ],
+        "positives_below_025": 2,
+        "positives_025_to_05": 0
+      },
+      "\"hand and shoulder\"": {
+        "n": 230,
+        "positives": 50,
+        "TP": 31,
+        "FN": 19,
+        "TN": 162,
+        "FP": 18,
+        "sensitivity": 0.62,
+        "specificity": 0.9,
+        "BA": 0.76,
+        "AUROC": 0.8277777777777777,
+        "AP": 0.658550206953794,
+        "Brier": 0.13512989283584503,
+        "positive_probability_quantiles": [
+          0.014504002407193184,
+          0.0744138240814209,
+          0.12989310547709465,
+          0.8386996388435364,
+          0.9760159105062485,
+          0.9958736896514893,
+          0.998472273349762
+        ],
+        "positives_below_025": 15,
+        "positives_025_to_05": 4
+      },
+      "\"hand\"": {
+        "n": 1247,
+        "positives": 377,
+        "TP": 212,
+        "FN": 165,
+        "TN": 751,
+        "FP": 119,
+        "sensitivity": 0.5623342175066313,
+        "specificity": 0.8632183908045977,
+        "BA": 0.7127763041556145,
+        "AUROC": 0.8062105551998537,
+        "AP": 0.6894399644390712,
+        "Brier": 0.16670765989411168,
+        "positive_probability_quantiles": [
+          0.013661171309649944,
+          0.06176156550645828,
+          0.19960527122020721,
+          0.7203611731529236,
+          0.9840332865715027,
+          0.9957590103149414,
+          0.9989842772483826
+        ],
+        "positives_below_025": 108,
+        "positives_025_to_05": 57
+      },
+      "\"hand, hip and shoulder\"": {
+        "n": 14,
+        "positives": 3,
+        "TP": 2,
+        "FN": 1,
+        "TN": 10,
+        "FP": 1,
+        "sensitivity": 0.6666666666666666,
+        "specificity": 0.9090909090909091,
+        "BA": 0.7878787878787878,
+        "AUROC": 0.8181818181818181,
+        "AP": 0.7777777777777777,
+        "Brier": 0.11357445821590283,
+        "positive_probability_quantiles": [
+          0.21304188668727875,
+          0.3121894121170044,
+          0.46091070026159286,
+          0.708779513835907,
+          0.8439488708972931,
+          0.9250504851341248,
+          0.9791182279586792
+        ],
+        "positives_below_025": 1,
+        "positives_025_to_05": 0
+      },
+      "\"hand, leg and hip\"": {
+        "n": 1,
+        "positives": 1,
+        "TP": 0,
+        "FN": 1,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 0.0,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 1.0,
+        "Brier": 0.7327856809587419,
+        "positive_probability_quantiles": [
+          0.14397098124027252,
+          0.14397098124027252,
+          0.14397098124027252,
+          0.14397098124027252,
+          0.14397098124027252,
+          0.14397098124027252,
+          0.14397098124027252
+        ],
+        "positives_below_025": 1,
+        "positives_025_to_05": 0
+      },
+      "\"hand, leg, hip and shoulder\"": {
+        "n": 1,
+        "positives": 0,
+        "TP": 0,
+        "FN": 0,
+        "TN": 1,
+        "FP": 0,
+        "sensitivity": null,
+        "specificity": 1.0,
+        "BA": null,
+        "AUROC": null,
+        "AP": null,
+        "Brier": 0.006970387128407085,
+        "positive_probability_quantiles": [],
+        "positives_below_025": 0,
+        "positives_025_to_05": 0
+      },
+      "\"hip\"": {
+        "n": 179,
+        "positives": 10,
+        "TP": 4,
+        "FN": 6,
+        "TN": 169,
+        "FP": 0,
+        "sensitivity": 0.4,
+        "specificity": 1.0,
+        "BA": 0.7,
+        "AUROC": 0.8715976331360947,
+        "AP": 0.5563672766917651,
+        "Brier": 0.032635037722875064,
+        "positive_probability_quantiles": [
+          0.013040217570960522,
+          0.032980155851691964,
+          0.035328748635947704,
+          0.08087353967130184,
+          0.9882768243551254,
+          0.9991809308528901,
+          0.9994718432426453
+        ],
+        "positives_below_025": 6,
+        "positives_025_to_05": 0
+      },
+      "\"leg and hip\"": {
+        "n": 140,
+        "positives": 47,
+        "TP": 21,
+        "FN": 26,
+        "TN": 89,
+        "FP": 4,
+        "sensitivity": 0.44680851063829785,
+        "specificity": 0.956989247311828,
+        "BA": 0.7018988789750629,
+        "AUROC": 0.857698467169984,
+        "AP": 0.802903488196856,
+        "Brier": 0.1616246689491606,
+        "positive_probability_quantiles": [
+          0.013947169296443462,
+          0.060242007672786715,
+          0.10843489691615105,
+          0.32099759578704834,
+          0.997905433177948,
+          0.9986436605453491,
+          0.9994657635688782
+        ],
+        "positives_below_025": 19,
+        "positives_025_to_05": 7
+      },
+      "\"leg\"": {
+        "n": 2095,
+        "positives": 212,
+        "TP": 127,
+        "FN": 85,
+        "TN": 1846,
+        "FP": 37,
+        "sensitivity": 0.5990566037735849,
+        "specificity": 0.9803505045140732,
+        "BA": 0.7897035541438291,
+        "AUROC": 0.9032104530105511,
+        "AP": 0.7421742198373122,
+        "Brier": 0.04945873427380926,
+        "positive_probability_quantiles": [
+          0.006133631337434053,
+          0.02095794305205345,
+          0.048952341079711914,
+          0.9907194674015045,
+          0.9978009760379791,
+          0.9989052772521972,
+          0.9995515942573547
+        ],
+        "positives_below_025": 75,
+        "positives_025_to_05": 10
+      },
+      "\"shoulder\"": {
+        "n": 98,
+        "positives": 10,
+        "TP": 0,
+        "FN": 10,
+        "TN": 88,
+        "FP": 0,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "BA": 0.5,
+        "AUROC": 0.6715909090909091,
+        "AP": 0.28141967949453,
+        "Brier": 0.09168000679841107,
+        "positive_probability_quantiles": [
+          0.019781367853283882,
+          0.02095300704240799,
+          0.02521729562431574,
+          0.044172242283821106,
+          0.05465830024331808,
+          0.08738380074501029,
+          0.31101346015930176
+        ],
+        "positives_below_025": 9,
+        "positives_025_to_05": 1
+      }
+    },
+    "hardware": {
+      "0": {
+        "n": 3914,
+        "positives": 618,
+        "TP": 309,
+        "FN": 309,
+        "TN": 3119,
+        "FP": 177,
+        "sensitivity": 0.5,
+        "specificity": 0.9462985436893204,
+        "BA": 0.7231492718446602,
+        "AUROC": 0.8698441967511861,
+        "AP": 0.6408382257196376,
+        "Brier": 0.09633016934697694,
+        "positive_probability_quantiles": [
+          0.006133631337434053,
+          0.032934704422950746,
+          0.10542159341275692,
+          0.5003985464572906,
+          0.984310045838356,
+          0.9962798297405243,
+          0.9994563460350037
+        ],
+        "positives_below_025": 231,
+        "positives_025_to_05": 78
+      },
+      "1": {
+        "n": 99,
+        "positives": 97,
+        "TP": 91,
+        "FN": 6,
+        "TN": 0,
+        "FP": 2,
+        "sensitivity": 0.9381443298969072,
+        "specificity": 0.0,
+        "BA": 0.4690721649484536,
+        "AUROC": 0.7061855670103093,
+        "AP": 0.9919583447500847,
+        "Brier": 0.06765784592155635,
+        "positive_probability_quantiles": [
+          0.020944833755493164,
+          0.9714956045150757,
+          0.9964334964752197,
+          0.9981946349143982,
+          0.9986832737922668,
+          0.9990997195243836,
+          0.9995515942573547
+        ],
+        "positives_below_025": 5,
+        "positives_025_to_05": 1
+      }
+    },
+    "fracture_count": {
+      "0": {
+        "n": 3298,
+        "positives": 0,
+        "TP": 0,
+        "FN": 0,
+        "TN": 3119,
+        "FP": 179,
+        "sensitivity": null,
+        "specificity": 0.9457246816252274,
+        "BA": null,
+        "AUROC": null,
+        "AP": null,
+        "Brier": 0.044294519000812035,
+        "positive_probability_quantiles": [],
+        "positives_below_025": 0,
+        "positives_025_to_05": 0
+      },
+      "1": {
+        "n": 544,
+        "positives": 544,
+        "TP": 267,
+        "FN": 277,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 0.49080882352941174,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 1.0,
+        "Brier": 0.38442424944629755,
+        "positive_probability_quantiles": [
+          0.006133631337434053,
+          0.02972386293113232,
+          0.09721426852047443,
+          0.4732866436243057,
+          0.9876222163438797,
+          0.9972446084022522,
+          0.9995515942573547
+        ],
+        "positives_below_025": 207,
+        "positives_025_to_05": 70
+      },
+      "2": {
+        "n": 146,
+        "positives": 146,
+        "TP": 109,
+        "FN": 37,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 0.7465753424657534,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 1.0000000000000002,
+        "Brier": 0.19088355194267603,
+        "positive_probability_quantiles": [
+          0.008248887024819851,
+          0.06695988401770592,
+          0.5093194842338562,
+          0.9858267605304718,
+          0.9978095889091492,
+          0.9985914528369904,
+          0.9994563460350037
+        ],
+        "positives_below_025": 29,
+        "positives_025_to_05": 8
+      },
+      "3": {
+        "n": 17,
+        "positives": 17,
+        "TP": 16,
+        "FN": 1,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 0.9411764705882353,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 1.0,
+        "Brier": 0.0359232032043632,
+        "positive_probability_quantiles": [
+          0.27960503101348877,
+          0.8052367568016052,
+          0.9909046292304993,
+          0.9960561990737915,
+          0.9977691173553467,
+          0.998744535446167,
+          0.9992825388908386
+        ],
+        "positives_below_025": 0,
+        "positives_025_to_05": 1
+      },
+      "4": {
+        "n": 7,
+        "positives": 7,
+        "TP": 7,
+        "FN": 0,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 1.0,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 0.9999999999999998,
+        "Brier": 0.0063715466905216135,
+        "positive_probability_quantiles": [
+          0.8352334499359131,
+          0.8615295767784119,
+          0.9131632149219513,
+          0.9933815002441406,
+          0.9992051422595978,
+          0.999252462387085,
+          0.9993113279342651
+        ],
+        "positives_below_025": 0,
+        "positives_025_to_05": 0
+      },
+      "5": {
+        "n": 1,
+        "positives": 1,
+        "TP": 1,
+        "FN": 0,
+        "TN": 0,
+        "FP": 0,
+        "sensitivity": 1.0,
+        "specificity": null,
+        "BA": null,
+        "AUROC": null,
+        "AP": 1.0,
+        "Brier": 3.418993088644129e-07,
+        "positive_probability_quantiles": [
+          0.9994152784347534,
+          0.9994152784347534,
+          0.9994152784347534,
+          0.9994152784347534,
+          0.9994152784347534,
+          0.9994152784347534,
+          0.9994152784347534
+        ],
+        "positives_below_025": 0,
+        "positives_025_to_05": 0
+      }
+    },
+    "views": {
+      "[\"frontal\", \"lateral\"]": {
+        "n": 277,
+        "positives": 79,
+        "TP": 63,
+        "FN": 16,
+        "TN": 164,
+        "FP": 34,
+        "sensitivity": 0.7974683544303798,
+        "specificity": 0.8282828282828283,
+        "BA": 0.812875591356604,
+        "AUROC": 0.9127988748241913,
+        "AP": 0.8290662560908438,
+        "Brier": 0.139441668781741,
+        "positive_probability_quantiles": [
+          0.024540169164538383,
+          0.14731088280677795,
+          0.7357019782066345,
+          0.9882510304450989,
+          0.9975930452346802,
+          0.9989067554473877,
+          0.9994563460350037
+        ],
+        "positives_below_025": 10,
+        "positives_025_to_05": 6
+      },
+      "[\"frontal\", \"oblique\"]": {
+        "n": 26,
+        "positives": 9,
+        "TP": 5,
+        "FN": 4,
+        "TN": 16,
+        "FP": 1,
+        "sensitivity": 0.5555555555555556,
+        "specificity": 0.9411764705882353,
+        "BA": 0.7483660130718954,
+        "AUROC": 0.869281045751634,
+        "AP": 0.7691659704817599,
+        "Brier": 0.13825185663019493,
+        "positive_probability_quantiles": [
+          0.04279458895325661,
+          0.14311436489224436,
+          0.3924849331378937,
+          0.9472661018371582,
+          0.9853000044822693,
+          0.9962766885757446,
+          0.9983750581741333
+        ],
+        "positives_below_025": 2,
+        "positives_025_to_05": 2
+      },
+      "[\"frontal\"]": {
+        "n": 2168,
+        "positives": 350,
+        "TP": 175,
+        "FN": 175,
+        "TN": 1747,
+        "FP": 71,
+        "sensitivity": 0.5,
+        "specificity": 0.9609460946094609,
+        "BA": 0.7304730473047305,
+        "AUROC": 0.8715511551155115,
+        "AP": 0.6831910743433108,
+        "Brier": 0.09093909930410587,
+        "positive_probability_quantiles": [
+          0.006133631337434053,
+          0.033034168928861615,
+          0.09779891557991505,
+          0.5003985464572906,
+          0.9937615841627121,
+          0.9979618787765503,
+          0.9994718432426453
+        ],
+        "positives_below_025": 137,
+        "positives_025_to_05": 38
+      },
+      "[\"lateral\", \"oblique\"]": {
+        "n": 26,
+        "positives": 4,
+        "TP": 4,
+        "FN": 0,
+        "TN": 21,
+        "FP": 1,
+        "sensitivity": 1.0,
+        "specificity": 0.9545454545454546,
+        "BA": 0.9772727272727273,
+        "AUROC": 1.0,
+        "AP": 1.0,
+        "Brier": 0.025724089908945532,
+        "positive_probability_quantiles": [
+          0.9198862314224243,
+          0.9431419670581818,
+          0.9780255705118179,
+          0.9979600310325623,
+          0.9985194951295853,
+          0.998528105020523,
+          0.9985338449478149
+        ],
+        "positives_below_025": 0,
+        "positives_025_to_05": 0
+      },
+      "[\"lateral\"]": {
+        "n": 1159,
+        "positives": 241,
+        "TP": 143,
+        "FN": 98,
+        "TN": 850,
+        "FP": 68,
+        "sensitivity": 0.5933609958506224,
+        "specificity": 0.9259259259259259,
+        "BA": 0.7596434608882742,
+        "AUROC": 0.89969625471212,
+        "AP": 0.7491820097327281,
+        "Brier": 0.10369587703993317,
+        "positive_probability_quantiles": [
+          0.0071935937739908695,
+          0.047089044004678726,
+          0.21372146904468536,
+          0.815852165222168,
+          0.9915321469306946,
+          0.9972767233848572,
+          0.9995515942573547
+        ],
+        "positives_below_025": 65,
+        "positives_025_to_05": 33
+      },
+      "[\"oblique\"]": {
+        "n": 357,
+        "positives": 32,
+        "TP": 10,
+        "FN": 22,
+        "TN": 321,
+        "FP": 4,
+        "sensitivity": 0.3125,
+        "specificity": 0.9876923076923076,
+        "BA": 0.6500961538461538,
+        "AUROC": 0.7018269230769231,
+        "AP": 0.4284414923245659,
+        "Brier": 0.06584370847943372,
+        "positive_probability_quantiles": [
+          0.014923731796443462,
+          0.01784362867474556,
+          0.029919428285211325,
+          0.052442701533436775,
+          0.9951414167881012,
+          0.9977214872837067,
+          0.9991486072540283
+        ],
+        "positives_below_025": 22,
+        "positives_025_to_05": 0
+      }
+    }
+  },
+  "region_standardization_weights": {
+    "hand": 0.5272727272727272,
+    "hand and hip": 0.002797202797202797,
+    "hand and leg": 0.004195804195804196,
+    "hand and shoulder": 0.06993006993006994,
+    "hand, hip and shoulder": 0.004195804195804196,
+    "hand, leg and hip": 0.0013986013986013986,
+    "hip": 0.013986013986013986,
+    "leg": 0.2965034965034965,
+    "leg and hip": 0.06573426573426573,
+    "shoulder": 0.013986013986013986
+  },
+  "false_negative_records": [
+    {
+      "image_id": "IMG0000151",
+      "p_yes": 0.061868637800216675,
+      "known_component": "component_01645",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000190",
+      "p_yes": 0.10975755006074905,
+      "known_component": "component_02322",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000319",
+      "p_yes": 0.13933978974819183,
+      "known_component": "component_01828",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000762",
+      "p_yes": 0.23184242844581604,
+      "known_component": "component_00966",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000805",
+      "p_yes": 0.2693580985069275,
+      "known_component": "component_03607",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000845",
+      "p_yes": 0.35313472151756287,
+      "known_component": "component_02886",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000851",
+      "p_yes": 0.10629889369010925,
+      "known_component": "component_01830",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001123",
+      "p_yes": 0.12044664472341537,
+      "known_component": "component_02563",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001200",
+      "p_yes": 0.142533078789711,
+      "known_component": "component_02990",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001351",
+      "p_yes": 0.03023696504533291,
+      "known_component": "component_03666",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0001365",
+      "p_yes": 0.43750959634780884,
+      "known_component": "component_01924",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001367",
+      "p_yes": 0.07450762391090393,
+      "known_component": "component_02663",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001391",
+      "p_yes": 0.15083283185958862,
+      "known_component": "component_01998",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001410",
+      "p_yes": 0.17015554010868073,
+      "known_component": "component_01529",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001774",
+      "p_yes": 0.352958083152771,
+      "known_component": "component_01047",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001933",
+      "p_yes": 0.2784295976161957,
+      "known_component": "component_02146",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001934",
+      "p_yes": 0.18116147816181183,
+      "known_component": "component_02145",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001948",
+      "p_yes": 0.06059861555695534,
+      "known_component": "component_02175",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002127",
+      "p_yes": 0.21432152390480042,
+      "known_component": "component_00944",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002181",
+      "p_yes": 0.3924849331378937,
+      "known_component": "component_01474",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002265",
+      "p_yes": 0.4253176152706146,
+      "known_component": "component_00836",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002301",
+      "p_yes": 0.1478789895772934,
+      "known_component": "component_01351",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002303",
+      "p_yes": 0.05522629991173744,
+      "known_component": "component_01717",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002304",
+      "p_yes": 0.06253606081008911,
+      "known_component": "component_00381",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002321",
+      "p_yes": 0.13116566836833954,
+      "known_component": "component_03716",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002322",
+      "p_yes": 0.22761844098567963,
+      "known_component": "component_00982",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002355",
+      "p_yes": 0.2867688536643982,
+      "known_component": "component_03847",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002359",
+      "p_yes": 0.284496545791626,
+      "known_component": "component_01732",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002360",
+      "p_yes": 0.47380971908569336,
+      "known_component": "component_03802",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002389",
+      "p_yes": 0.05041808634996414,
+      "known_component": "component_01477",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002419",
+      "p_yes": 0.2841310501098633,
+      "known_component": "component_02396",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002452",
+      "p_yes": 0.023078519850969315,
+      "known_component": "component_02120",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002456",
+      "p_yes": 0.30397552251815796,
+      "known_component": "component_02290",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002482",
+      "p_yes": 0.45362383127212524,
+      "known_component": "component_00771",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002490",
+      "p_yes": 0.04957344010472298,
+      "known_component": "component_03649",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002493",
+      "p_yes": 0.12175432592630386,
+      "known_component": "component_00604",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002501",
+      "p_yes": 0.04289945960044861,
+      "known_component": "component_03073",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002503",
+      "p_yes": 0.3894730806350708,
+      "known_component": "component_02694",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002518",
+      "p_yes": 0.2564408779144287,
+      "known_component": "component_01117",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002535",
+      "p_yes": 0.1343202441930771,
+      "known_component": "component_02024",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002542",
+      "p_yes": 0.08243651688098907,
+      "known_component": "component_01486",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002544",
+      "p_yes": 0.11316834390163422,
+      "known_component": "component_03676",
+      "region": "hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002545",
+      "p_yes": 0.07838379591703415,
+      "known_component": "component_02061",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002553",
+      "p_yes": 0.21372146904468536,
+      "known_component": "component_01781",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002587",
+      "p_yes": 0.024540169164538383,
+      "known_component": "component_01386",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002646",
+      "p_yes": 0.34667152166366577,
+      "known_component": "component_01902",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002650",
+      "p_yes": 0.044494133442640305,
+      "known_component": "component_03715",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002651",
+      "p_yes": 0.03384643793106079,
+      "known_component": "component_02964",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002664",
+      "p_yes": 0.12484465539455414,
+      "known_component": "component_01099",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002704",
+      "p_yes": 0.033338431268930435,
+      "known_component": "component_00993",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002705",
+      "p_yes": 0.03153499588370323,
+      "known_component": "component_00310",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002768",
+      "p_yes": 0.06389223039150238,
+      "known_component": "component_03219",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003164",
+      "p_yes": 0.40692138671875,
+      "known_component": "component_01340",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003183",
+      "p_yes": 0.05722842365503311,
+      "known_component": "component_02453",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003298",
+      "p_yes": 0.16002985835075378,
+      "known_component": "component_01900",
+      "region": "hand and leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003373",
+      "p_yes": 0.4986535906791687,
+      "known_component": "component_01613",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003383",
+      "p_yes": 0.22160843014717102,
+      "known_component": "component_02714",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003459",
+      "p_yes": 0.2358425110578537,
+      "known_component": "component_01978",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003477",
+      "p_yes": 0.26718851923942566,
+      "known_component": "component_01726",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003519",
+      "p_yes": 0.07931968569755554,
+      "known_component": "component_02500",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003520",
+      "p_yes": 0.02164611779153347,
+      "known_component": "component_00174",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003625",
+      "p_yes": 0.038505468517541885,
+      "known_component": "component_00907",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003771",
+      "p_yes": 0.03273133561015129,
+      "known_component": "component_03223",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003810",
+      "p_yes": 0.35505905747413635,
+      "known_component": "component_00621",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003892",
+      "p_yes": 0.02325660176575184,
+      "known_component": "component_00334",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003942",
+      "p_yes": 0.14275486767292023,
+      "known_component": "component_03033",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003953",
+      "p_yes": 0.16027745604515076,
+      "known_component": "component_01194",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0004333",
+      "p_yes": 0.3140508234500885,
+      "known_component": "component_03180",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000284",
+      "p_yes": 0.04279458895325661,
+      "known_component": "component_01207",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0000479",
+      "p_yes": 0.06604986637830734,
+      "known_component": "component_01751",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000758",
+      "p_yes": 0.11686894297599792,
+      "known_component": "component_03555",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000804",
+      "p_yes": 0.042723845690488815,
+      "known_component": "component_00306",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001007",
+      "p_yes": 0.031821202486753464,
+      "known_component": "component_01868",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001025",
+      "p_yes": 0.10812720656394958,
+      "known_component": "component_02399",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001199",
+      "p_yes": 0.36586517095565796,
+      "known_component": "component_02209",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001360",
+      "p_yes": 0.11648183315992355,
+      "known_component": "component_03355",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001363",
+      "p_yes": 0.13367301225662231,
+      "known_component": "component_00380",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001364",
+      "p_yes": 0.24117791652679443,
+      "known_component": "component_00166",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001366",
+      "p_yes": 0.06190671771764755,
+      "known_component": "component_01501",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001578",
+      "p_yes": 0.29306086897850037,
+      "known_component": "component_03801",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001780",
+      "p_yes": 0.06786990165710449,
+      "known_component": "component_00339",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001916",
+      "p_yes": 0.12575966119766235,
+      "known_component": "component_01757",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001965",
+      "p_yes": 0.2571970224380493,
+      "known_component": "component_03553",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001981",
+      "p_yes": 0.028563104569911957,
+      "known_component": "component_00720",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002180",
+      "p_yes": 0.03519570454955101,
+      "known_component": "component_02083",
+      "region": "hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002298",
+      "p_yes": 0.054847367107868195,
+      "known_component": "component_00354",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002310",
+      "p_yes": 0.037312258034944534,
+      "known_component": "component_03729",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002334",
+      "p_yes": 0.3097531199455261,
+      "known_component": "component_01276",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002341",
+      "p_yes": 0.07809998095035553,
+      "known_component": "component_01042",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002365",
+      "p_yes": 0.087582528591156,
+      "known_component": "component_01901",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002379",
+      "p_yes": 0.054847367107868195,
+      "known_component": "component_00354",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002424",
+      "p_yes": 0.008248887024819851,
+      "known_component": "component_02210",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002428",
+      "p_yes": 0.027962850406765938,
+      "known_component": "component_02464",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002434",
+      "p_yes": 0.023048045113682747,
+      "known_component": "component_03257",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002436",
+      "p_yes": 0.29658806324005127,
+      "known_component": "component_03704",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002438",
+      "p_yes": 0.012366842478513718,
+      "known_component": "component_02780",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002441",
+      "p_yes": 0.2473336011171341,
+      "known_component": "component_01560",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002460",
+      "p_yes": 0.0722259059548378,
+      "known_component": "component_01322",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002466",
+      "p_yes": 0.02883359231054783,
+      "known_component": "component_02297",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002467",
+      "p_yes": 0.06154383718967438,
+      "known_component": "component_00354",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002468",
+      "p_yes": 0.049157459288835526,
+      "known_component": "component_03140",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002481",
+      "p_yes": 0.09712902456521988,
+      "known_component": "component_00071",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002491",
+      "p_yes": 0.29783177375793457,
+      "known_component": "component_01286",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002495",
+      "p_yes": 0.48959654569625854,
+      "known_component": "component_02234",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002497",
+      "p_yes": 0.16785675287246704,
+      "known_component": "component_00350",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002499",
+      "p_yes": 0.06240933761000633,
+      "known_component": "component_01685",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002502",
+      "p_yes": 0.03571154177188873,
+      "known_component": "component_00271",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002530",
+      "p_yes": 0.028966818004846573,
+      "known_component": "component_02808",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002534",
+      "p_yes": 0.01503087766468525,
+      "known_component": "component_01827",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002539",
+      "p_yes": 0.047089044004678726,
+      "known_component": "component_01000",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002540",
+      "p_yes": 0.09769660234451294,
+      "known_component": "component_02858",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002543",
+      "p_yes": 0.16653062403202057,
+      "known_component": "component_00710",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002557",
+      "p_yes": 0.42352789640426636,
+      "known_component": "component_01370",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002583",
+      "p_yes": 0.45252421498298645,
+      "known_component": "component_00978",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002590",
+      "p_yes": 0.036139145493507385,
+      "known_component": "component_03525",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002621",
+      "p_yes": 0.05295430123806,
+      "known_component": "component_02859",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002627",
+      "p_yes": 0.04591579735279083,
+      "known_component": "component_00645",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002653",
+      "p_yes": 0.0871446505188942,
+      "known_component": "component_00322",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002668",
+      "p_yes": 0.3028368651866913,
+      "known_component": "component_00006",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002737",
+      "p_yes": 0.03796669840812683,
+      "known_component": "component_01578",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003279",
+      "p_yes": 0.20484432578086853,
+      "known_component": "component_02250",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003280",
+      "p_yes": 0.43343839049339294,
+      "known_component": "component_01748",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003310",
+      "p_yes": 0.08141116052865982,
+      "known_component": "component_03850",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003396",
+      "p_yes": 0.04828047379851341,
+      "known_component": "component_03195",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003545",
+      "p_yes": 0.033559512346982956,
+      "known_component": "component_01265",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003586",
+      "p_yes": 0.04492349177598953,
+      "known_component": "component_01289",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003671",
+      "p_yes": 0.07937140017747879,
+      "known_component": "component_02599",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003803",
+      "p_yes": 0.017926029860973358,
+      "known_component": "component_01432",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003812",
+      "p_yes": 0.4801165461540222,
+      "known_component": "component_01648",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003955",
+      "p_yes": 0.031624842435121536,
+      "known_component": "component_00387",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0004061",
+      "p_yes": 0.30794209241867065,
+      "known_component": "component_00006",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0004068",
+      "p_yes": 0.08843687176704407,
+      "known_component": "component_00322",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0004072",
+      "p_yes": 0.4360676109790802,
+      "known_component": "component_03578",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0004356",
+      "p_yes": 0.03263000026345253,
+      "known_component": "component_00079",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000471",
+      "p_yes": 0.020944833755493164,
+      "known_component": "component_02952",
+      "region": "leg",
+      "hardware": 1,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000472",
+      "p_yes": 0.029162492603063583,
+      "known_component": "component_00337",
+      "region": "leg",
+      "hardware": 1,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000702",
+      "p_yes": 0.2743678092956543,
+      "known_component": "component_02529",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000750",
+      "p_yes": 0.34723368287086487,
+      "known_component": "component_03142",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000763",
+      "p_yes": 0.043475016951560974,
+      "known_component": "component_03842",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001362",
+      "p_yes": 0.3982059359550476,
+      "known_component": "component_03231",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001428",
+      "p_yes": 0.10730092972517014,
+      "known_component": "component_00974",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001441",
+      "p_yes": 0.36256158351898193,
+      "known_component": "component_01719",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001494",
+      "p_yes": 0.16523076593875885,
+      "known_component": "component_02572",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001710",
+      "p_yes": 0.03307907655835152,
+      "known_component": "component_02311",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001763",
+      "p_yes": 0.36204829812049866,
+      "known_component": "component_03093",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001938",
+      "p_yes": 0.1970757097005844,
+      "known_component": "component_01536",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001980",
+      "p_yes": 0.017766179516911507,
+      "known_component": "component_00786",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002020",
+      "p_yes": 0.3141774535179138,
+      "known_component": "component_03798",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002105",
+      "p_yes": 0.08983246982097626,
+      "known_component": "component_02836",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002308",
+      "p_yes": 0.016317319124937057,
+      "known_component": "component_01122",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002309",
+      "p_yes": 0.4494991898536682,
+      "known_component": "component_01307",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002320",
+      "p_yes": 0.3377338647842407,
+      "known_component": "component_01127",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002336",
+      "p_yes": 0.3747974932193756,
+      "known_component": "component_03571",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002337",
+      "p_yes": 0.04857873544096947,
+      "known_component": "component_01079",
+      "region": "hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002339",
+      "p_yes": 0.05355183035135269,
+      "known_component": "component_01029",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002340",
+      "p_yes": 0.05549546703696251,
+      "known_component": "component_01079",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002362",
+      "p_yes": 0.3828939199447632,
+      "known_component": "component_02219",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002413",
+      "p_yes": 0.16637378931045532,
+      "known_component": "component_02528",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002414",
+      "p_yes": 0.12403185665607452,
+      "known_component": "component_01191",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002429",
+      "p_yes": 0.014496499672532082,
+      "known_component": "component_03682",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002437",
+      "p_yes": 0.010778052732348442,
+      "known_component": "component_00624",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002461",
+      "p_yes": 0.08893442898988724,
+      "known_component": "component_03644",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002462",
+      "p_yes": 0.4122355580329895,
+      "known_component": "component_02934",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002469",
+      "p_yes": 0.09643085300922394,
+      "known_component": "component_00455",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002487",
+      "p_yes": 0.31144484877586365,
+      "known_component": "component_03101",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002506",
+      "p_yes": 0.3488844037055969,
+      "known_component": "component_01448",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002548",
+      "p_yes": 0.21420086920261383,
+      "known_component": "component_01804",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002550",
+      "p_yes": 0.035323046147823334,
+      "known_component": "component_02247",
+      "region": "hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002558",
+      "p_yes": 0.18057721853256226,
+      "known_component": "component_02676",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002568",
+      "p_yes": 0.09455662965774536,
+      "known_component": "component_01120",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002592",
+      "p_yes": 0.059461042284965515,
+      "known_component": "component_00001",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002615",
+      "p_yes": 0.36204829812049866,
+      "known_component": "component_03093",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002620",
+      "p_yes": 0.31101346015930176,
+      "known_component": "component_01096",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002732",
+      "p_yes": 0.03493960574269295,
+      "known_component": "component_02337",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002738",
+      "p_yes": 0.06440098583698273,
+      "known_component": "component_03133",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002809",
+      "p_yes": 0.35232046246528625,
+      "known_component": "component_02615",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002885",
+      "p_yes": 0.14281128346920013,
+      "known_component": "component_03410",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003077",
+      "p_yes": 0.00826200470328331,
+      "known_component": "component_01630",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003157",
+      "p_yes": 0.10451147705316544,
+      "known_component": "component_02556",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003200",
+      "p_yes": 0.17359870672225952,
+      "known_component": "component_03128",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003294",
+      "p_yes": 0.13748612999916077,
+      "known_component": "component_02980",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003297",
+      "p_yes": 0.06591308861970901,
+      "known_component": "component_03691",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003309",
+      "p_yes": 0.010344312526285648,
+      "known_component": "component_02554",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003382",
+      "p_yes": 0.11183679848909378,
+      "known_component": "component_00791",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003766",
+      "p_yes": 0.12969644367694855,
+      "known_component": "component_00158",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003770",
+      "p_yes": 0.03429314121603966,
+      "known_component": "component_00414",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003798",
+      "p_yes": 0.018540671095252037,
+      "known_component": "component_02604",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003821",
+      "p_yes": 0.11174063384532928,
+      "known_component": "component_02974",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003847",
+      "p_yes": 0.02359231933951378,
+      "known_component": "component_01033",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003848",
+      "p_yes": 0.022428786382079124,
+      "known_component": "component_03233",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0004008",
+      "p_yes": 0.2909371554851532,
+      "known_component": "component_03557",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000351",
+      "p_yes": 0.09184197336435318,
+      "known_component": "component_00107",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000480",
+      "p_yes": 0.012308859266340733,
+      "known_component": "component_00881",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000751",
+      "p_yes": 0.0370124913752079,
+      "known_component": "component_03150",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000777",
+      "p_yes": 0.10052512586116791,
+      "known_component": "component_02277",
+      "region": "leg",
+      "hardware": 1,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001147",
+      "p_yes": 0.08322131633758545,
+      "known_component": "component_03108",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001198",
+      "p_yes": 0.08326620608568192,
+      "known_component": "component_00227",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001350",
+      "p_yes": 0.02950396202504635,
+      "known_component": "component_00806",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001361",
+      "p_yes": 0.03682076558470726,
+      "known_component": "component_03098",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001392",
+      "p_yes": 0.02155805192887783,
+      "known_component": "component_02383",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001730",
+      "p_yes": 0.21304188668727875,
+      "known_component": "component_02945",
+      "region": "hand, hip and shoulder",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002021",
+      "p_yes": 0.19960527122020721,
+      "known_component": "component_03549",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002126",
+      "p_yes": 0.09724268317222595,
+      "known_component": "component_02163",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002302",
+      "p_yes": 0.027609286829829216,
+      "known_component": "component_01768",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002305",
+      "p_yes": 0.024419965222477913,
+      "known_component": "component_03799",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002307",
+      "p_yes": 0.026467997580766678,
+      "known_component": "component_03072",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002312",
+      "p_yes": 0.4952068030834198,
+      "known_component": "component_02182",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002313",
+      "p_yes": 0.09619234502315521,
+      "known_component": "component_02743",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002338",
+      "p_yes": 0.10512915998697281,
+      "known_component": "component_03720",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002347",
+      "p_yes": 0.18668189644813538,
+      "known_component": "component_01422",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002386",
+      "p_yes": 0.4527552127838135,
+      "known_component": "component_02580",
+      "region": "hand",
+      "hardware": 1,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002388",
+      "p_yes": 0.013661171309649944,
+      "known_component": "component_03023",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002420",
+      "p_yes": 0.1449459046125412,
+      "known_component": "component_00278",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002430",
+      "p_yes": 0.3423911929130554,
+      "known_component": "component_00686",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002433",
+      "p_yes": 0.1768495738506317,
+      "known_component": "component_00995",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002435",
+      "p_yes": 0.15377937257289886,
+      "known_component": "component_02183",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002446",
+      "p_yes": 0.27960503101348877,
+      "known_component": "component_03416",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 3,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002451",
+      "p_yes": 0.024781635031104088,
+      "known_component": "component_02960",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002489",
+      "p_yes": 0.006133631337434053,
+      "known_component": "component_03282",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002498",
+      "p_yes": 0.2828342318534851,
+      "known_component": "component_03460",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002516",
+      "p_yes": 0.1328839212656021,
+      "known_component": "component_01962",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002517",
+      "p_yes": 0.04810154065489769,
+      "known_component": "component_00905",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002519",
+      "p_yes": 0.020907830446958542,
+      "known_component": "component_03368",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002529",
+      "p_yes": 0.0217912420630455,
+      "known_component": "component_01461",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002533",
+      "p_yes": 0.02250789850950241,
+      "known_component": "component_03437",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002541",
+      "p_yes": 0.32099759578704834,
+      "known_component": "component_01655",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002551",
+      "p_yes": 0.20789176225662231,
+      "known_component": "component_02657",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002552",
+      "p_yes": 0.014264618046581745,
+      "known_component": "component_01712",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002622",
+      "p_yes": 0.019781367853283882,
+      "known_component": "component_00954",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002628",
+      "p_yes": 0.02108318917453289,
+      "known_component": "component_01116",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002701",
+      "p_yes": 0.013040217570960522,
+      "known_component": "component_02915",
+      "region": "hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002731",
+      "p_yes": 0.019086353480815887,
+      "known_component": "component_02280",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002849",
+      "p_yes": 0.4727635681629181,
+      "known_component": "component_03615",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002905",
+      "p_yes": 0.027277730405330658,
+      "known_component": "component_01193",
+      "region": "hand",
+      "hardware": 1,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002971",
+      "p_yes": 0.0071935937739908695,
+      "known_component": "component_01913",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003131",
+      "p_yes": 0.35961389541625977,
+      "known_component": "component_03618",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003165",
+      "p_yes": 0.44229334592819214,
+      "known_component": "component_02472",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003184",
+      "p_yes": 0.008835733868181705,
+      "known_component": "component_00983",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003201",
+      "p_yes": 0.09810585528612137,
+      "known_component": "component_02385",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003301",
+      "p_yes": 0.42130428552627563,
+      "known_component": "component_00093",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003375",
+      "p_yes": 0.35688745975494385,
+      "known_component": "component_02696",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003381",
+      "p_yes": 0.04572156444191933,
+      "known_component": "component_00943",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003626",
+      "p_yes": 0.014923731796443462,
+      "known_component": "component_02750",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003686",
+      "p_yes": 0.2197059839963913,
+      "known_component": "component_02128",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003797",
+      "p_yes": 0.021826529875397682,
+      "known_component": "component_02174",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003820",
+      "p_yes": 0.11359693109989166,
+      "known_component": "component_00660",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003852",
+      "p_yes": 0.017485711723566055,
+      "known_component": "component_03310",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003893",
+      "p_yes": 0.19879648089408875,
+      "known_component": "component_00684",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003932",
+      "p_yes": 0.009821399115025997,
+      "known_component": "component_02793",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003954",
+      "p_yes": 0.41495785117149353,
+      "known_component": "component_00319",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0004007",
+      "p_yes": 0.12594695389270782,
+      "known_component": "component_01082",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0004009",
+      "p_yes": 0.04926406219601631,
+      "known_component": "component_01043",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0004071",
+      "p_yes": 0.376252144575119,
+      "known_component": "component_03719",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0004207",
+      "p_yes": 0.4727635681629181,
+      "known_component": "component_03615",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0004233",
+      "p_yes": 0.027277730405330658,
+      "known_component": "component_01193",
+      "region": "hand",
+      "hardware": 1,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0004337",
+      "p_yes": 0.014504002407193184,
+      "known_component": "component_01973",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0004349",
+      "p_yes": 0.0204439889639616,
+      "known_component": "component_01236",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000019",
+      "p_yes": 0.4506193995475769,
+      "known_component": "component_02271",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000100",
+      "p_yes": 0.10704933106899261,
+      "known_component": "component_03743",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000206",
+      "p_yes": 0.31901389360427856,
+      "known_component": "component_00511",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000207",
+      "p_yes": 0.24279780685901642,
+      "known_component": "component_00362",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0000352",
+      "p_yes": 0.22047239542007446,
+      "known_component": "component_01707",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000599",
+      "p_yes": 0.23082436621189117,
+      "known_component": "component_01769",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0000801",
+      "p_yes": 0.3998441994190216,
+      "known_component": "component_03390",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0000852",
+      "p_yes": 0.38416391611099243,
+      "known_component": "component_01223",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001151",
+      "p_yes": 0.04461941123008728,
+      "known_component": "component_00326",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001440",
+      "p_yes": 0.3296811282634735,
+      "known_component": "component_03207",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0001495",
+      "p_yes": 0.18365058302879333,
+      "known_component": "component_02972",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001546",
+      "p_yes": 0.4758002758026123,
+      "known_component": "component_02371",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001781",
+      "p_yes": 0.15235581994056702,
+      "known_component": "component_02531",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0001870",
+      "p_yes": 0.03203887492418289,
+      "known_component": "component_02406",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002106",
+      "p_yes": 0.04765697941184044,
+      "known_component": "component_02345",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002122",
+      "p_yes": 0.028925461694598198,
+      "known_component": "component_00977",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002306",
+      "p_yes": 0.04242868721485138,
+      "known_component": "component_03822",
+      "region": "shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002311",
+      "p_yes": 0.11499889194965363,
+      "known_component": "component_00357",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002315",
+      "p_yes": 0.10171474516391754,
+      "known_component": "component_02405",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002348",
+      "p_yes": 0.032952599227428436,
+      "known_component": "component_01381",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002351",
+      "p_yes": 0.43447569012641907,
+      "known_component": "component_02189",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002364",
+      "p_yes": 0.048843324184417725,
+      "known_component": "component_00497",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002390",
+      "p_yes": 0.279550701379776,
+      "known_component": "component_00396",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002391",
+      "p_yes": 0.47312769293785095,
+      "known_component": "component_00047",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002407",
+      "p_yes": 0.02255922555923462,
+      "known_component": "component_01064",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002412",
+      "p_yes": 0.3998304605484009,
+      "known_component": "component_01124",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002423",
+      "p_yes": 0.2149307131767273,
+      "known_component": "component_03698",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002425",
+      "p_yes": 0.05418701097369194,
+      "known_component": "component_03904",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002449",
+      "p_yes": 0.06000663712620735,
+      "known_component": "component_01609",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002465",
+      "p_yes": 0.13416767120361328,
+      "known_component": "component_03487",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002478",
+      "p_yes": 0.14397098124027252,
+      "known_component": "component_03189",
+      "region": "hand, leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002494",
+      "p_yes": 0.0636129081249237,
+      "known_component": "component_00276",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002496",
+      "p_yes": 0.4398733377456665,
+      "known_component": "component_00138",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002504",
+      "p_yes": 0.1450384557247162,
+      "known_component": "component_00425",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal",
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002536",
+      "p_yes": 0.06039892137050629,
+      "known_component": "component_02257",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002538",
+      "p_yes": 0.05019179731607437,
+      "known_component": "component_01869",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002549",
+      "p_yes": 0.013947169296443462,
+      "known_component": "component_02035",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002573",
+      "p_yes": 0.16819430887699127,
+      "known_component": "component_00496",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal",
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002597",
+      "p_yes": 0.03847062960267067,
+      "known_component": "component_02644",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002617",
+      "p_yes": 0.02571389265358448,
+      "known_component": "component_02292",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002840",
+      "p_yes": 0.11227122694253922,
+      "known_component": "component_02847",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0002935",
+      "p_yes": 0.17727647721767426,
+      "known_component": "component_03519",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0002970",
+      "p_yes": 0.0085928188636899,
+      "known_component": "component_01626",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0002980",
+      "p_yes": 0.4197792410850525,
+      "known_component": "component_00458",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003121",
+      "p_yes": 0.0459580197930336,
+      "known_component": "component_00887",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003132",
+      "p_yes": 0.07283204793930054,
+      "known_component": "component_01681",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003172",
+      "p_yes": 0.11613824963569641,
+      "known_component": "component_01887",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003214",
+      "p_yes": 0.032892949879169464,
+      "known_component": "component_00955",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003308",
+      "p_yes": 0.007358434610068798,
+      "known_component": "component_02992",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003311",
+      "p_yes": 0.07562239468097687,
+      "known_component": "component_01140",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "oblique"
+      ]
+    },
+    {
+      "image_id": "IMG0003341",
+      "p_yes": 0.035345856100320816,
+      "known_component": "component_01492",
+      "region": "hip",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003628",
+      "p_yes": 0.08483638614416122,
+      "known_component": "component_01344",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    },
+    {
+      "image_id": "IMG0003767",
+      "p_yes": 0.27394282817840576,
+      "known_component": "component_02334",
+      "region": "leg and hip",
+      "hardware": 0,
+      "fracture_count": 2,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003774",
+      "p_yes": 0.07465692609548569,
+      "known_component": "component_03518",
+      "region": "hand and shoulder",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003819",
+      "p_yes": 0.22167722880840302,
+      "known_component": "component_00577",
+      "region": "hand and leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003851",
+      "p_yes": 0.02107592672109604,
+      "known_component": "component_00792",
+      "region": "leg",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0003926",
+      "p_yes": 0.2376663237810135,
+      "known_component": "component_03913",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "frontal"
+      ]
+    },
+    {
+      "image_id": "IMG0004217",
+      "p_yes": 0.17491967976093292,
+      "known_component": "component_03519",
+      "region": "hand",
+      "hardware": 0,
+      "fracture_count": 1,
+      "views": [
+        "lateral"
+      ]
+    }
+  ],
+  "limitations": [
+    "Known components are not verified patients",
+    "Previously inspected development-informed outer folds",
+    "Subgroups are exploratory, sparse and unadjusted for multiple comparisons",
+    "One training seed; folds differ in training and test data, so model variance and case-mix cannot be separated",
+    "Fresh byte checks cover sealed FracAtlas images, not a new exhaustive upstream perceptual audit"
+  ],
+  "elapsed_seconds": 1.8425481250160374
+}

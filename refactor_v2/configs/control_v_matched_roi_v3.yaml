@@ -1,0 +1,6 @@
+_base_: ablation_v_v3.yaml
+run_name: fracatlas_clean_v_matched_roi_seed42_prompt_v3
+data:
+  loader_kwargs:
+    roi_control: matched
+

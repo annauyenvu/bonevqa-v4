@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoneVQA-Prompt — Hội thoại trực quan ảnh X-quang xương</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <style>
+    [x-cloak] { display: none !important; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .canvas-wrap { position: relative; background: #0f172a; }
+    .canvas-wrap canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
+    .chat-scroll::-webkit-scrollbar { width: 6px; }
+    .chat-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    .thumb-img { object-fit: contain; background: #0f172a; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen" x-data="boneVqaApp()" x-init="init()">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-20">
+    <div class="max-w-[1500px] mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-sky-700 flex items-center justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 4.5a2.5 2.5 0 0 1 4.3-1.7l.7.7.7-.7A2.5 2.5 0 0 1 17 4.5c0 1.2-.8 2.2-2 2.5L13 9v6l2 2c1.2.3 2 1.3 2 2.5a2.5 2.5 0 0 1-4.3 1.7l-.7-.7-.7.7A2.5 2.5 0 0 1 7 19.5c0-1.2.8-2.2 2-2.5l2-2V9L9 7C7.8 6.7 7 5.7 7 4.5Z" />
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold leading-tight text-slate-900">BoneVQA-Prompt</h1>
+          <p class="text-xs text-slate-500">Hệ thống hội thoại trực quan ảnh X-quang xương dùng Prompt (FAVP + LaPA + Localization Lens)</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 text-sm">
+        <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-md border border-slate-200 bg-slate-50">
+          <span class="inline-block w-2.5 h-2.5 rounded-full" :class="health.status === 'ok' ? (health.model_loaded ? 'bg-emerald-500' : 'bg-amber-500') : 'bg-rose-500'"></span>
+          <span x-text="trangThaiModel()"></span>
+          <span class="text-slate-400" x-show="health.device" x-text="'· ' + health.device"></span>
+        </div>
+        <span class="text-xs text-slate-400 hidden md:inline" x-text="'Phiên: ' + sessionId.slice(0, 8)"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-[1500px] mx-auto px-4 py-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+    <section class="lg:col-span-7 space-y-4">
+      <div class="bg-white rounded-lg border border-slate-200">
+        <div class="px-4 py-3 border-b border-slate-200 flex items-center justify-between">
+          <h2 class="font-semibold text-slate-900 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A1.5 1.5 0 0021.75 19.5V4.5A1.5 1.5 0 0020.25 3H3.75A1.5 1.5 0 002.25 4.5v15A1.5 1.5 0 003.75 21z" /></svg>
+            Ảnh X-quang & Visual Prompt
+          </h2>
+          <div class="flex items-center gap-2 text-xs text-slate-500">
+            <span x-show="imageInfo" x-text="imageInfo"></span>
+            <button type="button" x-show="imageUrl" @click="xoaAnh()" class="text-rose-600 hover:underline">Xoá ảnh</button>
+          </div>
+        </div>
+
+        <div class="p-4 space-y-3">
+          <div x-show="!imageUrl"
+               @dragover.prevent="dragging = true" @dragleave.prevent="dragging = false" @drop.prevent="onDrop($event)"
+               :class="dragging ? 'border-sky-500 bg-sky-50' : 'border-slate-300 bg-slate-50'"
+               class="border-2 border-dashed rounded-lg p-8 text-center transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" /></svg>
+            <p class="mt-2 text-sm text-slate-700">Kéo-thả ảnh X-quang vào đây hoặc</p>
+            <label class="inline-flex mt-2 items-center gap-2 px-3 py-1.5 rounded-md bg-sky-700 text-white text-sm cursor-pointer hover:bg-sky-800">
+              Chọn tệp ảnh
+              <input type="file" accept="image/*" class="hidden" data-testid="file-input" @change="onFileChange($event)" />
+            </label>
+            <p class="mt-2 text-xs text-slate-400">Hỗ trợ PNG, JPG. Ảnh chỉ xử lý trong phiên hiện tại.</p>
+            <div class="mt-4" x-show="examples.length">
+              <p class="text-xs text-slate-500 mb-2">Hoặc chọn ảnh mẫu:</p>
+              <div class="flex flex-wrap justify-center gap-2">
+                <template x-for="ex in examples" :key="ex.url">
+                  <button type="button" @click="chonViDu(ex)" class="border border-slate-200 rounded-md overflow-hidden hover:border-sky-500 bg-white" :title="ex.name">
+                    <img :src="ex.url" :alt="ex.name" class="w-20 h-20 thumb-img" />
+                  </button>
+                </template>
+              </div>
+            </div>
+          </div>
+
+          <div x-show="imageUrl" x-cloak>
+            <div class="flex flex-wrap items-center gap-2 mb-2 text-sm">
+              <button type="button" data-testid="btn-segment" @click="phanVung()" :disabled="dangPhanVung"
+                      class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-sky-700 text-white hover:bg-sky-800 disabled:opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7V5a1 1 0 011-1h2M4 17v2a1 1 0 001 1h2m10-16h2a1 1 0 011 1v2m-3 14h2a1 1 0 001-1v-2M9 12a3 3 0 106 0 3 3 0 00-6 0z" /></svg>
+                <span x-text="dangPhanVung ? 'Đang phân vùng…' : 'Phân vùng (SAM)'"></span>
+              </button>
+              <button type="button" @click="xoaBoxes()" class="px-3 py-1.5 rounded-md border border-slate-300 bg-white hover:bg-slate-50">Xoá box</button>
+              <button type="button" @click="hoanTacBox()" class="px-3 py-1.5 rounded-md border border-slate-300 bg-white hover:bg-slate-50">Hoàn tác</button>
+              <div class="ml-auto flex items-center gap-2">
+                <label class="text-xs text-slate-500">Kiểu visual prompt</label>
+                <select x-model="promptKind" data-testid="prompt-kind" class="border border-slate-300 rounded-md px-2 py-1 text-sm bg-white">
+                  <option value="contour">Contour (đường viền)</option>
+                  <option value="box">Box (khung chữ nhật)</option>
+                  <option value="circle">Circle (đường tròn)</option>
+                  <option value="mask">Mask (tô màu)</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-500 mb-2">Kéo chuột trên ảnh để vẽ bounding box làm visual prompt cho SAM. Đã vẽ: <span class="font-medium text-slate-700" x-text="boxes.length"></span> box · Số vùng: <span class="font-medium text-slate-700" x-text="masksCount"></span></p>
+
+            <div class="canvas-wrap rounded-md overflow-hidden border border-slate-300 mx-auto max-w-full" :style="'aspect-ratio:' + canvasW + '/' + canvasH + '; width: calc(68vh * ' + (canvasW / canvasH) + '); max-height: 68vh'">
+              <canvas x-ref="canvas" data-testid="canvas"
+                      @mousedown="batDauVe($event)" @mousemove="dangVe($event)" @mouseup="ketThucVe($event)" @mouseleave="ketThucVe($event)"
+                      @touchstart.prevent="batDauVe($event.touches[0])" @touchmove.prevent="dangVe($event.touches[0])" @touchend.prevent="ketThucVe(null)"></canvas>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+              <div class="border border-slate-200 rounded-md overflow-hidden">
+                <div class="px-2 py-1 text-xs font-medium bg-slate-50 border-b border-slate-200 text-slate-600">Overlay mask (SAM)</div>
+                <div class="aspect-square bg-slate-900 flex items-center justify-center">
+                  <img x-show="overlayImage" :src="overlayImage" data-testid="img-overlay" alt="Overlay mask" class="w-full h-full thumb-img" />
+                  <span x-show="!overlayImage" class="text-xs text-slate-400">Chưa phân vùng</span>
+                </div>
+              </div>
+              <div class="border border-slate-200 rounded-md overflow-hidden">
+                <div class="px-2 py-1 text-xs font-medium bg-slate-50 border-b border-slate-200 text-slate-600">Visual prompt (FAVP)</div>
+                <div class="aspect-square bg-slate-900 flex items-center justify-center">
+                  <img x-show="promptImage" :src="promptImage" data-testid="img-prompt" alt="Visual prompt" class="w-full h-full thumb-img" />
+                  <span x-show="!promptImage" class="text-xs text-slate-400">Chưa có câu hỏi</span>
+                </div>
+              </div>
+              <div class="border border-slate-200 rounded-md overflow-hidden">
+                <div class="px-2 py-1 text-xs font-medium bg-slate-50 border-b border-slate-200 text-slate-600">Lens (Localization Lens)</div>
+                <div class="aspect-square bg-slate-900 flex items-center justify-center">
+                  <img x-show="lensImage" :src="lensImage" data-testid="img-lens" alt="Lens" class="w-full h-full thumb-img" />
+                  <span x-show="!lensImage" class="text-xs text-slate-400">Chưa có câu hỏi</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3" x-show="regions.length">
+              <p class="text-xs font-medium text-slate-600 mb-1">Vùng đã phân đoạn</p>
+              <div class="flex flex-wrap gap-2">
+                <template x-for="r in regions" :key="r.id">
+                  <span class="text-xs px-2 py-1 rounded border border-slate-200 bg-slate-50 text-slate-700">
+                    <span class="inline-block w-2 h-2 rounded-full mr-1" :style="'background:' + mauVung(r.id)"></span>
+                    #<span x-text="r.id"></span> bbox [<span x-text="r.bbox.join(', ')"></span>]
+                  </span>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:col-span-5">
+      <div class="bg-white rounded-lg border border-slate-200 flex flex-col lg:h-[calc(100vh-7rem)] lg:sticky lg:top-20">
+        <div class="px-4 py-3 border-b border-slate-200 flex items-center justify-between">
+          <h2 class="font-semibold text-slate-900 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg>
+            Hội thoại với ảnh
+          </h2>
+          <button type="button" @click="xoaHoiThoai()" class="text-xs text-slate-500 hover:text-rose-600">Xoá hội thoại</button>
+        </div>
+
+        <div class="px-4 py-3 border-b border-slate-100">
+          <p class="text-xs text-slate-500 mb-2">Câu hỏi gợi ý</p>
+          <div class="flex flex-wrap gap-2">
+            <template x-for="g in goiY" :key="g">
+              <button type="button" @click="question = g; guiCauHoi()" :disabled="!imageUrl || dangHoi"
+                      class="text-xs px-2.5 py-1 rounded-full border border-sky-200 bg-sky-50 text-sky-800 hover:bg-sky-100 disabled:opacity-50" x-text="g"></button>
+            </template>
+          </div>
+        </div>
+
+        <div class="flex-1 overflow-y-auto chat-scroll px-4 py-3 space-y-3 min-h-[320px]" x-ref="chatBox" data-testid="chat-box">
+          <div x-show="!messages.length" class="text-sm text-slate-500 text-center py-10">
+            <p>Tải ảnh X-quang lên, vẽ box vào vùng quan tâm (tuỳ chọn) rồi đặt câu hỏi.</p>
+            <p class="mt-1 text-xs">Hỗ trợ tiếng Việt và tiếng Anh. Câu hỏi đóng trả lời yes/no, câu hỏi mở sinh bằng LLM.</p>
+          </div>
+          <template x-for="m in messages" :key="m.id">
+            <div :class="m.role === 'user' ? 'flex justify-end' : 'flex justify-start'">
+              <div :class="m.role === 'user' ? 'bg-sky-700 text-white' : (m.error ? 'bg-rose-50 border border-rose-200 text-rose-800' : 'bg-slate-100 text-slate-800')"
+                   class="max-w-[85%] rounded-lg px-3 py-2 text-sm" :data-role="m.role">
+                <p class="whitespace-pre-wrap" x-text="m.content"></p>
+                <p class="mt-0.5 text-[11px] italic text-slate-500" data-testid="answer-en"
+                   x-show="m.role === 'assistant' && m.answer_en && m.answer_en !== m.content" x-text="'Nguyên văn (EN): ' + m.answer_en"></p>
+                <div class="mt-1.5 flex flex-wrap items-center gap-1.5 text-[11px]" x-show="m.role === 'assistant' && !m.error">
+                  <span class="px-1.5 py-0.5 rounded font-medium"
+                        :class="m.answer_type === 'CLOSED' ? 'bg-emerald-100 text-emerald-800' : 'bg-violet-100 text-violet-800'"
+                        x-text="m.answer_type === 'CLOSED' ? 'Đóng' : 'Mở'"></span>
+                  <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200 text-slate-600">Tin cậy <span x-text="phanTram(m.confidence)"></span></span>
+                  <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200 text-slate-600" x-text="m.latency_ms + ' ms'"></span>
+                  <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200 text-slate-600" x-show="m.masks_count !== undefined" x-text="m.masks_count + ' vùng'"></span>
+                  <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200 text-slate-600" x-text="tenKieu(m.prompt_kind)"></span>
+                </div>
+                <div class="mt-1 text-[10px] opacity-70" x-text="m.time"></div>
+                <div class="mt-2 pt-2 border-t border-slate-200" x-show="m.role === 'assistant' && !m.error" data-testid="khoi-phan-hoi">
+                  <div class="flex flex-wrap items-center gap-1.5 text-[11px]">
+                    <span class="text-slate-500">Bác sĩ xác nhận:</span>
+                    <template x-for="dg in danhGiaHopLe" :key="dg.ma">
+                      <button type="button"
+                              class="px-2 py-0.5 rounded border transition"
+                              :class="m.danh_gia === dg.ma ? dg.classChon : 'bg-white border-slate-300 text-slate-600 hover:bg-slate-50'"
+                              :data-testid="'btn-' + dg.ma"
+                              @click="guiPhanHoi(m, dg.ma)"
+                              x-text="dg.nhan"></button>
+                    </template>
+                    <span x-show="m.danh_gia === 'sai'" class="flex items-center gap-1">
+                      <input type="text" class="px-1.5 py-0.5 border border-slate-300 rounded text-[11px] w-40"
+                             placeholder="Đáp án đúng là…" data-testid="input-dap-an-dung"
+                             x-model="m.dap_an_dung" @keydown.enter.prevent="guiPhanHoi(m, 'sai')">
+                      <button type="button" class="px-2 py-0.5 rounded bg-slate-700 text-white"
+                              data-testid="btn-luu-dap-an" @click="guiPhanHoi(m, 'sai')">Lưu</button>
+                    </span>
+                    <span x-show="m.da_ghi_phan_hoi" class="text-emerald-700" data-testid="da-ghi-phan-hoi">Đã ghi nhận</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+          <div x-show="dangHoi" class="flex justify-start">
+            <div class="bg-slate-100 rounded-lg px-3 py-2 text-sm text-slate-500 flex items-center gap-2">
+              <svg class="animate-spin w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path></svg>
+              Mô hình đang suy luận…
+            </div>
+          </div>
+        </div>
+
+        <form class="px-4 py-3 border-t border-slate-200" @submit.prevent="guiCauHoi()">
+          <div class="flex items-end gap-2">
+            <textarea x-model="question" data-testid="question-input" rows="2" placeholder="Nhập câu hỏi về ảnh X-quang… (Enter để gửi, Shift+Enter xuống dòng)"
+                      @keydown.enter.exact.prevent="guiCauHoi()"
+                      class="flex-1 resize-none border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+            <button type="submit" data-testid="btn-ask" :disabled="!imageUrl || !question.trim() || dangHoi"
+                    class="inline-flex items-center gap-1.5 px-4 py-2 rounded-md bg-sky-700 text-white text-sm hover:bg-sky-800 disabled:opacity-50">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+              Gửi
+            </button>
+          </div>
+          <p class="mt-1 text-[11px] text-slate-400" x-show="!imageUrl">Cần tải ảnh lên trước khi hỏi.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-[1500px] mx-auto px-4 py-4 text-xs text-slate-400">
+    Đồ án tốt nghiệp · Kết quả chỉ mang tính tham khảo nghiên cứu, không thay thế chẩn đoán của bác sĩ.
+  </footer>
+
+  <script>
+    function boneVqaApp() {
+      return {
+        health: { status: 'loading', model_loaded: false, device: '' },
+        sessionId: (crypto.randomUUID ? crypto.randomUUID().replace(/-/g, '') : String(Date.now())),
+        examples: [],
+        imageFile: null,
+        imageUrl: null,
+        imageInfo: '',
+        imgEl: null,
+        canvasW: 4, canvasH: 3,
+        dragging: false,
+        boxes: [],
+        veTam: null,
+        dangKeo: false,
+        promptKind: 'contour',
+        masksCount: 0,
+        regions: [],
+        overlayImage: null,
+        promptImage: null,
+        lensImage: null,
+        dangPhanVung: false,
+        dangHoi: false,
+        question: '',
+        messages: [],
+        goiY: [
+          'Ảnh này có gãy xương không?',
+          'Đây là vùng cơ thể nào?',
+          'Có bao nhiêu vị trí gãy?',
+          'Có dụng cụ kim loại/nẹp vít không?',
+          'Is there a fracture?',
+        ],
+        mau: ['#ef4444', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'],
+        danhGiaHopLe: [
+          { ma: 'dung', nhan: 'Đúng', classChon: 'bg-emerald-600 border-emerald-600 text-white' },
+          { ma: 'sai', nhan: 'Sai', classChon: 'bg-rose-600 border-rose-600 text-white' },
+          { ma: 'khong_chac', nhan: 'Không chắc', classChon: 'bg-amber-500 border-amber-500 text-white' },
+        ],
+        thongKePhanHoi: null,
+
+        async init() {
+          this.taiHealth();
+          setInterval(() => this.taiHealth(), 15000);
+          try {
+            const r = await fetch('/api/examples');
+            const d = await r.json();
+            this.examples = d.examples || [];
+          } catch (e) { this.examples = []; }
+        },
+        async taiHealth() {
+          try {
+            const r = await fetch('/api/health');
+            this.health = await r.json();
+          } catch (e) {
+            this.health = { status: 'error', model_loaded: false, device: '' };
+          }
+        },
+        trangThaiModel() {
+          if (this.health.status === 'loading') return 'Đang kiểm tra model…';
+          if (this.health.status !== 'ok') return 'Không kết nối được backend';
+          return this.health.model_loaded ? 'Model đã nạp (' + (this.health.engine || 'BoneVQA') + ')' : 'Chế độ mô phỏng (' + (this.health.engine || 'Mock') + ')';
+        },
+        mauVung(id) { return this.mau[(id - 1) % this.mau.length]; },
+        phanTram(v) { return v === undefined || v === null ? '—' : Math.round(v * 100) + '%'; },
+        tenKieu(k) { return ({ contour: 'Contour', box: 'Box', circle: 'Circle', mask: 'Mask' })[k] || k || ''; },
+        gioHienTai() { return new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); },
+
+        onFileChange(ev) {
+          const f = ev.target.files && ev.target.files[0];
+          if (f) this.napAnh(f);
+          ev.target.value = '';
+        },
+        onDrop(ev) {
+          this.dragging = false;
+          const f = ev.dataTransfer.files && ev.dataTransfer.files[0];
+          if (f && f.type.startsWith('image/')) this.napAnh(f);
+        },
+        async chonViDu(ex) {
+          const r = await fetch(ex.url);
+          const b = await r.blob();
+          this.napAnh(new File([b], ex.name, { type: b.type || 'image/png' }));
+        },
+        napAnh(file) {
+          this.xoaAnh(false);
+          this.imageFile = file;
+          this.imageUrl = URL.createObjectURL(file);
+          const img = new Image();
+          img.onload = () => {
+            this.imgEl = img;
+            this.canvasW = img.naturalWidth;
+            this.canvasH = img.naturalHeight;
+            this.imageInfo = file.name + ' · ' + img.naturalWidth + '×' + img.naturalHeight;
+            this.$nextTick(() => this.veCanvas());
+          };
+          img.src = this.imageUrl;
+        },
+        xoaAnh(resetChat = true) {
+          if (this.imageUrl) URL.revokeObjectURL(this.imageUrl);
+          this.imageFile = null; this.imageUrl = null; this.imgEl = null; this.imageInfo = '';
+          this.boxes = []; this.regions = []; this.masksCount = 0;
+          this.overlayImage = null; this.promptImage = null; this.lensImage = null;
+          if (resetChat) this.xoaHoiThoai();
+        },
+        xoaHoiThoai() {
+          this.messages = [];
+          fetch('/api/history/' + this.sessionId, { method: 'DELETE' }).catch(() => {});
+        },
+
+        toaDo(ev) {
+          const c = this.$refs.canvas;
+          const rect = c.getBoundingClientRect();
+          const sx = c.width / rect.width, sy = c.height / rect.height;
+          return {
+            x: Math.max(0, Math.min(c.width, (ev.clientX - rect.left) * sx)),
+            y: Math.max(0, Math.min(c.height, (ev.clientY - rect.top) * sy)),
+          };
+        },
+        batDauVe(ev) {
+          if (!this.imgEl) return;
+          const p = this.toaDo(ev);
+          this.veTam = { x1: p.x, y1: p.y, x2: p.x, y2: p.y };
+          this.dangKeo = true;
+        },
+        dangVe(ev) {
+          if (!this.dangKeo || !this.veTam) return;
+          const p = this.toaDo(ev);
+          this.veTam.x2 = p.x; this.veTam.y2 = p.y;
+          this.veCanvas();
+        },
+        ketThucVe(ev) {
+          if (!this.dangKeo) return;
+          this.dangKeo = false;
+          const b = this.veTam; this.veTam = null;
+          if (b && Math.abs(b.x2 - b.x1) > 4 && Math.abs(b.y2 - b.y1) > 4) {
+            this.boxes.push([
+              Math.round(Math.min(b.x1, b.x2)), Math.round(Math.min(b.y1, b.y2)),
+              Math.round(Math.max(b.x1, b.x2)), Math.round(Math.max(b.y1, b.y2)),
+            ]);
+          }
+          this.veCanvas();
+        },
+        xoaBoxes() { this.boxes = []; this.veCanvas(); },
+        hoanTacBox() { this.boxes.pop(); this.veCanvas(); },
+        veCanvas() {
+          const c = this.$refs.canvas;
+          if (!c || !this.imgEl) return;
+          c.width = this.imgEl.naturalWidth; c.height = this.imgEl.naturalHeight;
+          const ctx = c.getContext('2d');
+          ctx.clearRect(0, 0, c.width, c.height);
+          ctx.drawImage(this.imgEl, 0, 0);
+          const lw = Math.max(2, Math.round(c.width / 300));
+          ctx.font = Math.max(12, Math.round(c.width / 40)) + 'px sans-serif';
+          this.boxes.forEach((b, i) => {
+            ctx.strokeStyle = this.mau[i % this.mau.length];
+            ctx.lineWidth = lw;
+            ctx.strokeRect(b[0], b[1], b[2] - b[0], b[3] - b[1]);
+            ctx.fillStyle = ctx.strokeStyle;
+            ctx.fillText('#' + (i + 1), b[0] + 4, Math.max(b[1] - 6, 14));
+          });
+          if (this.veTam) {
+            ctx.setLineDash([6, 4]);
+            ctx.strokeStyle = '#facc15';
+            ctx.lineWidth = lw;
+            ctx.strokeRect(this.veTam.x1, this.veTam.y1, this.veTam.x2 - this.veTam.x1, this.veTam.y2 - this.veTam.y1);
+            ctx.setLineDash([]);
+          }
+        },
+
+        formCoBan() {
+          const fd = new FormData();
+          fd.append('image', this.imageFile, this.imageFile.name || 'image.png');
+          if (this.boxes.length) fd.append('boxes', JSON.stringify(this.boxes));
+          return fd;
+        },
+        async phanVung() {
+          if (!this.imageFile || this.dangPhanVung) return;
+          this.dangPhanVung = true;
+          try {
+            const r = await fetch('/api/segment', { method: 'POST', body: this.formCoBan() });
+            if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+            const d = await r.json();
+            this.masksCount = d.masks_count;
+            this.regions = d.regions || [];
+            this.overlayImage = 'data:image/png;base64,' + d.overlay_image;
+          } catch (e) {
+            this.messages.push({ id: Date.now(), role: 'assistant', error: true, content: 'Lỗi phân vùng: ' + e.message, time: this.gioHienTai() });
+          } finally {
+            this.dangPhanVung = false;
+          }
+        },
+        async guiCauHoi() {
+          const q = this.question.trim();
+          if (!q || !this.imageFile || this.dangHoi) return;
+          this.messages.push({ id: Date.now() + '-u', role: 'user', content: q, time: this.gioHienTai() });
+          this.question = '';
+          this.dangHoi = true;
+          this.cuonXuong();
+          try {
+            const fd = this.formCoBan();
+            fd.append('question', q);
+            fd.append('prompt_kind', this.promptKind);
+            fd.append('session_id', this.sessionId);
+            const r = await fetch('/api/ask', { method: 'POST', body: fd });
+            if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+            const d = await r.json();
+            this.promptImage = 'data:image/png;base64,' + d.prompt_image;
+            this.lensImage = 'data:image/png;base64,' + d.lens_image;
+            this.masksCount = d.masks_count;
+            if (d.regions && d.regions.length) this.regions = d.regions;
+            this.messages.push({
+              id: Date.now() + '-a', role: 'assistant', content: d.answer, answer_en: d.answer_en, answer_type: d.answer_type,
+              confidence: d.confidence, latency_ms: d.latency_ms, masks_count: d.masks_count,
+              prompt_kind: this.promptKind, time: this.gioHienTai(),
+            });
+          } catch (e) {
+            this.messages.push({ id: Date.now() + '-e', role: 'assistant', error: true, content: 'Lỗi: ' + e.message, time: this.gioHienTai() });
+          } finally {
+            this.dangHoi = false;
+            this.cuonXuong();
+          }
+        },
+        async guiPhanHoi(m, danhGia) {
+          try {
+            const fd = new FormData();
+            fd.append('session_id', this.sessionId);
+            fd.append('question', this.timCauHoiTruoc(m));
+            fd.append('answer', m.content || '');
+            fd.append('danh_gia', danhGia);
+            fd.append('answer_type', m.answer_type || '');
+            if (m.confidence !== undefined) fd.append('confidence', m.confidence);
+            if (m.masks_count !== undefined) fd.append('masks_count', m.masks_count);
+            if (m.prompt_kind) fd.append('prompt_kind', m.prompt_kind);
+            if (m.dap_an_dung) fd.append('dap_an_dung', m.dap_an_dung);
+            const r = await fetch('/api/phan-hoi', { method: 'POST', body: fd });
+            if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+            m.danh_gia = danhGia;
+            m.da_ghi_phan_hoi = true;
+            this.taiThongKePhanHoi();
+          } catch (e) {
+            m.da_ghi_phan_hoi = false;
+            alert('Không ghi được phản hồi: ' + e.message);
+          }
+        },
+        timCauHoiTruoc(m) {
+          const i = this.messages.findIndex((x) => x.id === m.id);
+          for (let k = i - 1; k >= 0; k--) {
+            if (this.messages[k].role === 'user') return this.messages[k].content;
+          }
+          return '';
+        },
+        async taiThongKePhanHoi() {
+          try {
+            const r = await fetch('/api/phan-hoi/thong-ke');
+            this.thongKePhanHoi = await r.json();
+          } catch (e) { this.thongKePhanHoi = null; }
+        },
+        cuonXuong() {
+          this.$nextTick(() => { const b = this.$refs.chatBox; if (b) b.scrollTop = b.scrollHeight; });
+        },
+      };
+    }
+  </script>
+</body>
+</html>

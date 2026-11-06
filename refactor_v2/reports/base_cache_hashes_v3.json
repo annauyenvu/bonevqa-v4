@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "snapshot_revisions": {
+    "models--Qwen--Qwen2.5-0.5B-Instruct": [
+      "7ae557604adf67be50417f59c2c2f167def9a775"
+    ],
+    "models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract": [
+      "d673b8835373c6fa116d6d8006b33d48734e305d"
+    ],
+    "models--microsoft--BiomedCLIP-PubMedBERT_256-vit_base_patch16_224": [
+      "9f341de24bfb00180f1b847274256e9b65a3a32e"
+    ]
+  },
+  "file_sha256": {
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/model.safetensors": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract/snapshots/d673b8835373c6fa116d6d8006b33d48734e305d/tokenizer_config.json": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract/snapshots/d673b8835373c6fa116d6d8006b33d48734e305d/config.json": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract/snapshots/d673b8835373c6fa116d6d8006b33d48734e305d/vocab.txt": "7b36651908a88bc38bda41b728b2a598191e0d3b553cbacf7b1e5f026d5b5b9f",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/snapshots/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_pytorch_model.bin": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/snapshots/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_config.json": "9a41f334a8c444678772c0ebb9ab854c97ab350bced3a17b803e258d39c23dc0"
+  },
+  "limitation": "Cache hashes establish local artifact identity, not original training-data independence."
+}

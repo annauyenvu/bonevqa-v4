@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_65.json",
+  "snapshot_local":"2026-10-22 approximately10:33 ICT",
+  "training_modelval_audits_complete":true,
+  "driver_role_gate":"grouped_reserved_driver_gate_v3_1.json",
+  "driver_role_gate_passed":true,
+  "driver_gate_scope":"Synthetic driver invokes calibration then test, passes only public inputs, fits solely canonical calibration labels, outer-label perturbation leaves calibration and predictions unchanged, zero updates, exact fresh-process replay; real hashes separately verified",
+  "scoped_execution_release":"grouped_reserved_evaluation_v3_1/execution_release.json",
+  "reserved_execution_status":"running",
+  "driver_pid":15830,
+  "exec_session":63341,
+  "active_fold":"0",
+  "active_phase":"worker startup",
+  "execution_protocol":"Fixed native seed42 two-epoch LAST per fold, canonical calibration fit using frozen LogisticRegression settings, full original-image/question outer prediction, calibrated threshold0.5, exact fresh-process replay; no optimization/search",
+  "new_reserved_role_execution_started":true,
+  "remaining_work":"Complete serial five-fold inference/calibration/replays; compute frozen2000 within-fold component bootstrap; independent prediction/fit/metric/bootstrap audits and final reporting",
+  "remaining_time":"First reserved-role fold timing not yet measured; do not extrapolate step3 ETA",
+  "scope":"Development-informed component grouped evaluation with historical fold0 disclosure; no untouched independent clinical confirmation",
+  "step3_complete":false,
+  "production_released":false
+}

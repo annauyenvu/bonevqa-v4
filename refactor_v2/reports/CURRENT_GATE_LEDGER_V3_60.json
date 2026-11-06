@@ -1,0 +1,22 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_59.json",
+  "snapshot_local":"2026-10-22 approximately07:14 ICT",
+  "training_complete":true,
+  "modelval_exact_fresh_replays_completed":["1","2","3"],
+  "modelval_independent_artifact_metric_audits_passed":["1","2","3"],
+  "active_modelval_fold":"4",
+  "observed_fold4_completed_QA":704,
+  "fold4_total_QA":1421,
+  "observed_driver_elapsed":"29m01s",
+  "observed_worker_cpu_percent":796.7,
+  "verified_counts":{
+    "1":{"TP":36,"FN":21,"TN":251,"FP":13},
+    "2":{"TP":26,"FN":31,"TN":249,"FP":15},
+    "3":{"TP":30,"FN":27,"TN":245,"FP":19}
+  },
+  "audit_scope":"Saved original-order labels, public predictions, exact replay, VQA counts and recomputed metrics, independent canonical confusion matrix/AUROC/AUPRC/Brier. This verifies development modelval results, not clinical efficacy or untouched confirmation.",
+  "conditional_remaining_modelval_inference_replay":"Approximately6m to10m based on three folds completing first prediction and replay in about26m44s, with current fold4 roughly half through first pass. Additional audits and calibration/outer implementation gates remain; not step3 ETA.",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}

@@ -1,0 +1,11 @@
+# Head inference batch consistency review
+
+28 October 2026, 03:46 ICT. This is a prospective technical correction while quality local training is still healthy. No head fitting, head-based assessment or model/epoch selection has started.
+
+The queued v1 head pipeline computes updated-head probabilities from all canonical feature rows in one matrix multiplication, then requires exact equality with public inference batches of four. A small TRAIN-free synthetic diagnostic using the existing FracturePresenceHead(768,0.1), seed42,803 random feature rows, FP32 and one CPU thread reproduced unequal results:109 probabilities differed, maximum absolute difference1.1920928955078125e-7. This is floating-point batch-shape dependence, not evidence of a model-quality failure. The strict replay condition should use the same prediction batching, rather than relaxing equality or changing thresholds.
+
+Version2 changes only detached-head evaluation prediction batching to chunks of four, matching public inference. Training remains batch64 for10 fixed epochs; no optimizer, label, split, target specificity, threshold tie policy or model budget changes. The v1 source and its release stay unchanged. The idle v1 postprocessing supervisor is stopped before any child/head task, with verified PID/command and a receipt, and replaced by exactly one v2 supervisor. Main training coordinator, quality worker, wall guard and all97 preparation dependencies remain untouched. Old log and started receipt remain.
+
+The new supervisor writes its own postprocess_v2 directory and a compatibility completion receipt only after full analysis, so the existing wall guard can observe completion. It keeps the original coordinator deadline and terminates any own child on deadline. A new temporary idle hold binds to the replacement supervisor. Actual head prediction/public replay still must pass when those tasks run; this synthetic correction alone is not proof that the complete head pipeline has passed.
+
+Final closure must additionally verify the v2 amendment release and review. The five-fold scientific design and promotion criteria remain unchanged. No training restart or historical source edits are part of this recovery.

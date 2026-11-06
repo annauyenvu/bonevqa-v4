@@ -1,0 +1,20 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_60.json",
+  "snapshot_local":"2026-10-22 approximately07:52 ICT",
+  "training_complete":true,
+  "modelval_exact_fresh_replays_completed":["1","2","3","4"],
+  "modelval_independent_artifact_metric_audits_passed":["1","2","3","4"],
+  "modelval_inference_and_replay_elapsed_seconds":2138.423989834002,
+  "fold4_verified_counts":{"TP":35,"FN":22,"TN":252,"FP":12},
+  "fold4_verified_sensitivity":0.6140350877192983,
+  "fold4_verified_balanced_accuracy":0.7842902711323765,
+  "quality_scope":"Development modelval results verified, sensitivity limited and varying; no independent untouched confirmation or superiority claim",
+  "calibration_technical_gate":"grouped_calibration_technical_gate_v3_1.json",
+  "calibration_technical_gate_passed":true,
+  "calibration_gate_scope":"Synthetic fixture only: frozen fitting parameters, manual logistic objective stationarity, input/single-class failures, exact fresh-process replay. Zero actual dataset fitting or reserved-role inference.",
+  "remaining_work":"Checkpoint/role binding freeze, public reserved-role evaluation runner and artifact gates, 2000 within-fold known-component bootstrap implementation/gates, then frozen per-fold calibration and outer evaluation/replay/audits and reports",
+  "remaining_time":"No ETA for still-unimplemented reserved-role runner and bootstrap gates; completed modelval runtime is not remaining-step3 runtime",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}

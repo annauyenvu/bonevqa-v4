@@ -1,0 +1,19 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_50.json",
+  "snapshot_local":"2026-10-22 approximately02:44 ICT",
+  "completed_new_folds":["1","2"],
+  "active_fold":"3",
+  "latest_logged_update":10,
+  "active_fold_total_updates":1442,
+  "runtime":{"driver_pid":11696,"worker_pid":12881,"worker_cpu_percent":801.6,"worker_memory_percent":22.3},
+  "fold2_elapsed_seconds":6422.134661667005,
+  "fold2_execution_artifact_audit":"grouped_fold2_execution_artifact_audit_v3_1.json",
+  "fold2_execution_artifact_audit_passed":true,
+  "fold2_native_trainer_epoch2_modelval":{"overall_acc":0.8835,"open_acc":0.8720,"closed_acc":0.8925,"fracture_sensitivity":0.4561,"fracture_specificity":0.9432,"fracture_balanced_accuracy":0.6997,"fracture_auroc":0.8596,"fracture_auprc":0.6647,"fracture_brier":0.1071,"fracture_ece10":0.0651},
+  "metric_scope":"Rounded trainer log metrics on modelval; independent prediction/clinical metric audit pending. Fold2 sensitivity lower than fold1; no superiority or production claim.",
+  "fold3_startup_QC":"VisualLoRA24/24 gradient and optimizer updates passed",
+  "remaining_training_runtime_estimate":"Approximately3h20m to3h40m conditional on the two completed folds taking100.8 and107.0 minutes; includes their observed native training/validation execution pattern but excludes later independent evaluation/calibration/replay/audits",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}

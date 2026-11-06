@@ -1,0 +1,127 @@
+{
+  "scope": "four fullfoldTRAIN QA rows,two updates perV/L with vocab68;technical only,no quality or scientific superiority",
+  "device": "cpu",
+  "proposals": "refactor_v2/reports/detector640_top3_binding_v3/TRAIN_technical_boxes.json",
+  "source": "effective640 detector automatic proposals only,annotation ROI disabled",
+  "proposal_sha256": "8c86d547345cb7cf039be5f048fad36159893783f128c1e2fa5971391679e771",
+  "PREtask_initialization_sha256": "bfc799a5fb6db140ab833db460308c98cba76d871b9d415856175ed769abc09b",
+  "calibration_or_test_used": false,
+  "scientific_training_released": false,
+  "train_indices": [
+    37,
+    39,
+    0,
+    2
+  ],
+  "roi_image": "IMG0000019",
+  "no_roi_image": "IMG0000000",
+  "limitations": [
+    "selected for branch coverage, not unbiased efficacy;fullfoldTRAIN rows not necessarilyBpilot261images",
+    "same-instance strict reload only;independent fresh-process reload still pending",
+    "L is training-only alignment; zero direct inference contribution is intentional",
+    "full fold proposals, matched controls and held-out outcomes remain pending"
+  ],
+  "results": [
+    {
+      "variant": "V",
+      "steps": [
+        {
+          "step": 1,
+          "loss": 8.33742904663086,
+          "lens_alignment_loss": 0.0,
+          "route_gradients": {
+            "prompt_mixer.gamma_visual": 0.002660387195646763,
+            "prompt_mixer.visual_proj.0.weight": 0.0
+          }
+        },
+        {
+          "step": 2,
+          "loss": 6.339087009429932,
+          "lens_alignment_loss": 0.0,
+          "route_gradients": {
+            "prompt_mixer.gamma_visual": 0.002771141240373254,
+            "prompt_mixer.visual_proj.0.weight": 1.7074293623409176e-07
+          }
+        }
+      ],
+      "selected_updates": {
+        "prompt_mixer.gamma_visual": 0.0001884644152596593,
+        "prompt_mixer.visual_proj.0.weight": 2.7210451662540436e-05
+      },
+      "shared_initial_tensors_exact": 263,
+      "vocab_size": 68,
+      "no_roi_row_gate_differences": {
+        "closed": 0.0,
+        "fracture": 0.0
+      },
+      "gate_zero_endpoint_differences": {
+        "closed": 7.867813110351562e-06,
+        "fracture": 3.5762786865234375e-07,
+        "open": 4.0411949157714844e-05
+      },
+      "no_roi_inference_differences": {
+        "closed": 7.867813110351562e-06,
+        "fracture": 3.5762786865234375e-07,
+        "open": 4.0411949157714844e-05
+      },
+      "reload_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "seconds": 8.802527291991282,
+      "passed": true
+    },
+    {
+      "variant": "L",
+      "steps": [
+        {
+          "step": 1,
+          "loss": 8.446858406066895,
+          "lens_alignment_loss": 1.094296932220459,
+          "route_gradients": {
+            "lens_fusion.view_emb": 0.0025497633032500744,
+            "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.01136232540011406
+          }
+        },
+        {
+          "step": 2,
+          "loss": 6.37389612197876,
+          "lens_alignment_loss": 0.3220288157463074,
+          "route_gradients": {
+            "lens_fusion.view_emb": 0.0008060123072937131,
+            "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.002981792902573943
+          }
+        }
+      ],
+      "selected_updates": {
+        "lens_fusion.view_emb": 0.00019949511624872684,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0002000909298658371
+      },
+      "shared_initial_tensors_exact": 263,
+      "vocab_size": 68,
+      "no_roi_row_gate_differences": {
+        "closed": 0.0,
+        "fracture": 0.0
+      },
+      "gate_zero_endpoint_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "no_roi_inference_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "reload_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "seconds": 7.6101569589809515,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

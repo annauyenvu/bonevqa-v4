@@ -1,0 +1,4944 @@
+[
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl3_du3/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74863810493608,
+   "latent.": 148.4567152524463,
+   "fusion.lp_": 122.49961410498581
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl3_khong_latent_no_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.67693272410841,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl3_khong_lens_no_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.53860429088604,
+   "fusion.lp_": 122.54024477545151
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl3_khong_prompt_no_visual_prompt_latent_prompt_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl3_khong_visual_no_visual_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.73790270739578,
+   "latent.": 148.39289783059667,
+   "fusion.lp_": 122.51780894601738
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl5_du3/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.79267847573594,
+   "latent.": 148.50018715584437,
+   "fusion.lp_": 122.60471503462993
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl5_khong_latent_no_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.71494828918576,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl5_khong_lens_no_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.5374110089366,
+   "fusion.lp_": 122.45693023097813
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl5_khong_prompt_no_visual_prompt_latent_prompt_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl5_khong_visual_no_visual_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.75790927864124,
+   "latent.": 148.4950903023937,
+   "fusion.lp_": 122.57231977023315
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl7_du3/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.73684327857862,
+   "latent.": 148.49092463577182,
+   "fusion.lp_": 122.54255922799764
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl7_khong_latent_no_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.6698234192249,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl7_khong_lens_no_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.5230825994209,
+   "fusion.lp_": 122.51280687611714
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl7_khong_prompt_no_visual_prompt_latent_prompt_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/abl7_khong_visual_no_visual_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.72357310373349,
+   "latent.": 148.5235743266975,
+   "fusion.lp_": 122.56607014681697
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiL_bophathien_no_visual_prompt_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.674709553578,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiL_hotro_no_visual_prompt_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.72146346168478,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiL_tudong_no_visual_prompt_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.66287215709289,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiP_bophathien_no_visual_prompt_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.5409630006993,
+   "fusion.lp_": 122.49718459744803
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiP_hotro_no_visual_prompt_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.50984563665853,
+   "fusion.lp_": 122.49025946125235
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiP_tudong_no_visual_prompt_lens/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.49161059599894,
+   "fusion.lp_": 122.49660003314104
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiV_bophathien_no_lens_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiV_hotro_no_lens_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/chiV_tudong_no_lens_latent_prompt/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/stage2_pmcvqa_full/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.44349132684215,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/stage3_fracatlas_lon_tudong/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.86812961589705,
+   "latent.": 150.5795402616115,
+   "fusion.lp_": 122.75714575203621
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/content_split_checkpoints/fracatlas_content_clean/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.72838957428104,
+   "latent.": 148.19340198789374,
+   "fusion.lp_": 122.62165465882062
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/content_split_checkpoints/fracatlas_content_clean/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.72838957428104,
+   "latent.": 148.19340198789374,
+   "fusion.lp_": 122.62165465882062
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/experiments_20260921/seeds/invalid_mps_sam_attempt/automatic_VLP_seed1337/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.73008170906162,
+   "latent.": 148.1164249623985,
+   "fusion.lp_": 122.51182442343072
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/experiments_20260921/seeds/invalid_mps_sam_attempt/automatic_VLP_seed1337/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.73008170906162,
+   "latent.": 148.1164249623985,
+   "fusion.lp_": 122.51182442343072
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/roi_control_checkpoints/gray_real_roi/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.5210930494485,
+   "latent.": 148.2724852773692,
+   "fusion.lp_": 122.42200961437332
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/roi_control_checkpoints/gray_real_roi/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.49900824141511,
+   "latent.": 148.2139746678544,
+   "fusion.lp_": 122.45228050177045
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/roi_control_checkpoints/gray_shuffled_roi/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.43617962472163,
+   "latent.": 148.2496914664955,
+   "fusion.lp_": 122.46115534872855
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/roi_control_checkpoints/gray_shuffled_roi/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.39650168940183,
+   "latent.": 148.19167134961955,
+   "fusion.lp_": 122.44971419081634
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/roi_control_checkpoints/normal_real_roi/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.63401432118376,
+   "latent.": 148.27084474435134,
+   "fusion.lp_": 122.40018549891893
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/roi_control_checkpoints/normal_real_roi/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.63476339154367,
+   "latent.": 148.21400647478538,
+   "fusion.lp_": 122.39867470666904
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/none/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/none/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/none/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/none/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/none/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/vlp/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.71455276450574,
+   "latent.": 148.20119158727096,
+   "fusion.lp_": 122.58902365630568
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/vlp/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74222437029974,
+   "latent.": 148.1953786444809,
+   "fusion.lp_": 122.53808704806384
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/vlp/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74818010482629,
+   "latent.": 148.20321461997247,
+   "fusion.lp_": 122.57424237484118
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/vlp/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74420604864548,
+   "latent.": 148.20177621151788,
+   "fusion.lp_": 122.57664321050969
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/auto/vlp/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.76236095143948,
+   "latent.": 148.25250817284285,
+   "fusion.lp_": 122.59266454784753
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/none/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/none/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/none/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/none/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/none/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/vlp/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.76280211360458,
+   "latent.": 148.20324046813877,
+   "fusion.lp_": 122.64747387927818
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/vlp/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.76991950028422,
+   "latent.": 148.20021155802925,
+   "fusion.lp_": 122.57820990267643
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/vlp/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.75767843031414,
+   "latent.": 148.20243827950296,
+   "fusion.lp_": 122.59305403985266
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/vlp/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.77536476009533,
+   "latent.": 148.2007427843705,
+   "fusion.lp_": 122.60015196273095
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/clinician/vlp/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.81611661856407,
+   "latent.": 148.25617979552723,
+   "fusion.lp_": 122.64684820332117
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/none/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/none/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/none/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/none/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/none/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/vlp/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.75083272614118,
+   "latent.": 148.25625095643852,
+   "fusion.lp_": 122.6006342519621
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/vlp/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74242988998162,
+   "latent.": 148.1941100121432,
+   "fusion.lp_": 122.52787418232393
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/vlp/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.7253751154901,
+   "latent.": 148.19783704910623,
+   "fusion.lp_": 122.55086295170683
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/vlp/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74602686458478,
+   "latent.": 148.20277069703195,
+   "fusion.lp_": 122.57327522764966
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/detector/vlp/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.76244747474998,
+   "latent.": 148.19611489108985,
+   "fusion.lp_": 122.58869084844277
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/exp4_multiseed/sanity/auto_vlp_seed42_repeat/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.74818010482629,
+   "latent.": 148.20321461997247,
+   "fusion.lp_": 122.57424237484118
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/none/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/none/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/none/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/none/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/none/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/p/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.19699291776402,
+   "fusion.lp_": 122.60141656586718
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/p/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.2483345713024,
+   "fusion.lp_": 122.55057509748946
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/p/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.1857397316281,
+   "fusion.lp_": 122.6292860816458
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/p/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.2548703021719,
+   "fusion.lp_": 122.58695032524159
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/p/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.19349933855997,
+   "fusion.lp_": 122.63525731298847
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/v/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/v/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/v/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/v/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/v/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 363,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 100.97769715180135,
+   "fusion.lp_": 122.36368291411588
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/vp/seed_123/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.19090870810453,
+   "fusion.lp_": 122.60353391178968
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/vp/seed_2026/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.19056104357716,
+   "fusion.lp_": 122.5356430478657
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/vp/seed_42/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.19124247255206,
+   "fusion.lp_": 122.62963517753674
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/vp/seed_456/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.25487418594994,
+   "fusion.lp_": 122.57015053178479
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/mandatory_experiments_20261011/detector/vp/seed_789/checkpoint_best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra"
+  ],
+  "n_tensors": 378,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57547153917346,
+   "latent.": 148.18340258832916,
+   "fusion.lp_": 122.64759218106944
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_fresh_seed43_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_fresh_seed44_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_roco_seed43_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_roco_seed44_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_sequence_rarity_seed42_bounded_v3_3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_sequence_uniform_seed42_bounded_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/B_sequence_uniform_seed42_bounded_v3_3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/P_random_bank_seed42_target_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 339,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "random",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "P",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "fusion.gamma_latent": 1.063327999872854e-05
+  },
+  "norms": {
+   "latent.": 101.26679536997895,
+   "fusion.lp_": 123.41828175152764
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/P_seed42_target_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 339,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "P",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "fusion.gamma_latent": 0.0005317731411196291
+  },
+  "norms": {
+   "latent.": 101.26244470267027,
+   "fusion.lp_": 123.43360225066205
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/P_unconditioned_seed42_target_bounded_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 339,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "P",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "fusion.gamma_latent": 2.402974587312201e-06
+  },
+  "norms": {
+   "latent.": 101.26347221436484,
+   "fusion.lp_": 123.40826841213791
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/T_clinical_paraphrase_seed42_bounded_current_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical_paraphrase",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "T",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/T_clinical_seed42_bounded_current_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "T",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/T_irrelevant_matched_seed42_bounded_current_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "irrelevant_matched",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "T",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/common_initialization_seed42_fold0_v3/initial.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/component_sampler_resume_train_only_v3/continuous/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/component_sampler_resume_train_only_v3/resumed/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/component_sampler_resume_train_only_v3_p_shuffled/continuous/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 339,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "P",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "fusion.gamma_latent": 0.0001081918744603172
+  },
+  "norms": {
+   "latent.": 101.26145607012666,
+   "fusion.lp_": 123.42471531398333
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/component_sampler_resume_train_only_v3_p_shuffled/resumed/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 339,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "P",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "fusion.gamma_latent": 0.0001081918744603172
+  },
+  "norms": {
+   "latent.": 101.26145607012666,
+   "fusion.lp_": 123.42471531398333
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_B_fresh_pilot_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_B_fresh_scale_pilot_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_B_roco_pilot_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_B_roco_scale_pilot_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_clean_l_seed42_ce_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 293,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "prompt_mixer.gamma_lens": -0.0010729610221460462
+  },
+  "norms": {
+   "lens_fusion": 98.53912264245639,
+   "prompt_mixer.lens_proj": 16.01540807995784
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_clean_none_seed42_ce_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_clean_none_seed42_v2/best.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_clean_none_seed42_v2/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fracatlas_clean_v_seed42_ce_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 262,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "prompt_mixer.gamma_visual": 0.0027992420364171267
+  },
+  "norms": {
+   "prompt_mixer.visual_proj": 16.039572078230016
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fullfold0_B_sequence_uniform_seed42_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fullfold0_B_token_mean_seed42_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold1_seed42_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold2_seed42_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold3_seed42_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold4_seed42_v3_1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_bridge_trainmode_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_caption_bridge_resume_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_caption_bridge_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_cpu_reference_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_cpu_resumed_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_epochseed_continuous_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_epochseed_resumed_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_nockpt_continuous_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pilot_roco_nockpt_resumed_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pmc_cpu_timing_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pmc_objective_answer_control_v3_2/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/pmc_objective_current_v3_2/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/revised_pmcvqa_alignment_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/revised_roco_alignment_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/roco_cpu_timing_train_only_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 259,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/smoke_real_b_prompt_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/smoke_real_l_align_prompt_v3_fix1/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 294,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": true,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "L",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "lens_fusion": 98.57608613806201
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/smoke_real_p_prompt_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 339,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": true,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "P",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "fusion.gamma_latent": 7.898290641605854e-05
+  },
+  "norms": {
+   "latent.": 100.97787851938025,
+   "fusion.lp_": 123.4070901536601
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/smoke_real_t_prompt_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "T",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/smoke_real_v_prompt_v3/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 265,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "V",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "prompt_mixer.gamma_visual": 0.000139071315061301
+  },
+  "norms": {
+   "prompt_mixer.visual_proj": 15.986608146027988
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/B/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": false,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/gate_B/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": false,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/gate_local_placebo_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.004590683616697788,
+   "local_tokens.gate.bias": -3.999812602996826
+  },
+  "norms": {
+   "local_tokens.": 49.47716102230979
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/gate_local_real_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.004957449622452259,
+   "local_tokens.gate.bias": -3.9998056888580322
+  },
+  "norms": {
+   "local_tokens.": 49.477221708894675
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/local_placebo_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.11414697021245956,
+   "local_tokens.gate.bias": -3.9921767711639404
+  },
+  "norms": {
+   "local_tokens.": 49.70695409397932
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/local_real_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.11820109933614731,
+   "local_tokens.gate.bias": -3.9920027256011963
+  },
+  "norms": {
+   "local_tokens.": 49.750003943660715
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_1/B/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": false,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_1/local_real_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.09787295758724213,
+   "local_tokens.gate.bias": -3.992705821990967
+  },
+  "norms": {
+   "local_tokens.": 49.715880274779806
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_2/B/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": false,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_2/local_real_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.11398305743932724,
+   "local_tokens.gate.bias": -3.992335319519043
+  },
+  "norms": {
+   "local_tokens.": 49.76066660768972
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_3/B/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": false,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_3/local_real_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.09548540413379669,
+   "local_tokens.gate.bias": -3.992800235748291
+  },
+  "norms": {
+   "local_tokens.": 49.71797758084441
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_4/B/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": false,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_4/local_real_noaux/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "vnext_enabled": true,
+   "vnext_aux_weight": 0.0,
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.11045767366886139,
+   "local_tokens.gate.bias": -3.9924685955047607
+  },
+  "norms": {
+   "local_tokens.": 49.72508810459027
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_0_PREtask.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_1_PREtask.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_2_PREtask.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_3_PREtask.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_4_PREtask.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/B_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": false,
+   "v5_hag": "off",
+   "v5_local_view": "crop",
+   "v5_lens": false,
+   "v5_latent": false,
+   "v5_pf": "none",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/L_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 294,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": false,
+   "v5_hag": "off",
+   "v5_local_view": "crop",
+   "v5_lens": true,
+   "v5_latent": false,
+   "v5_pf": "none",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "v5_lens_fusion": 99.30099043189774
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/PT_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 370,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": false,
+   "v5_hag": "off",
+   "v5_local_view": "crop",
+   "v5_lens": false,
+   "v5_latent": true,
+   "v5_pf": "graph",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "v5_gm": 101.1817514904242,
+   "v5_lf": 122.62075588091369,
+   "v5_prior": 91.53901021126016,
+   "v5_out_norm": 27.681288483229014
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/P_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 370,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": false,
+   "v5_hag": "off",
+   "v5_local_view": "crop",
+   "v5_lens": false,
+   "v5_latent": true,
+   "v5_pf": "graph",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {
+   "v5_gm": 101.17639355652769,
+   "v5_lf": 122.59243826213103,
+   "v5_prior": 91.5372460705043,
+   "v5_out_norm": 27.682060611293508
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/T_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 263,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": false,
+   "v5_hag": "off",
+   "v5_local_view": "crop",
+   "v5_lens": false,
+   "v5_latent": false,
+   "v5_pf": "none",
+   "use_llm": true
+  },
+  "gates": {},
+  "norms": {}
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/V4_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": true,
+   "v5_hag": "off",
+   "v5_local_view": "crop",
+   "v5_lens": false,
+   "v5_latent": false,
+   "v5_pf": "none",
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.1186598390340805,
+   "local_tokens.gate.bias": -3.9920737743377686
+  },
+  "norms": {
+   "local_tokens.": 49.74694930727752
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/VLPT_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 414,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": true,
+   "v5_hag": "replace",
+   "v5_local_view": "circle",
+   "v5_lens": true,
+   "v5_latent": true,
+   "v5_pf": "graph",
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.07165992259979248,
+   "local_tokens.gate.bias": -3.9965908527374268
+  },
+  "norms": {
+   "local_tokens.": 49.59861764087934,
+   "v5_lens_fusion": 99.31633594315637,
+   "v5_gm": 101.18635946946138,
+   "v5_lf": 122.62903381168408,
+   "v5_prior": 91.53994560369992,
+   "v5_out_norm": 27.687362796987106
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/v5_studies/factorial_fold0/fold_0/V_seed42/LAST.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 276,
+  "sw": {
+   "use_visual_prompt": false,
+   "use_lens": false,
+   "use_latent_prompt": false,
+   "use_textual_prompt": false,
+   "use_region_in_prompt": false,
+   "textual_prompt_style": "clinical",
+   "lens_training_only": true,
+   "visual_route": "fusion_only",
+   "visual_force_zero": false,
+   "lens_force_zero": false,
+   "latent_force_zero": false,
+   "latent_answer_bank_mode": "train",
+   "prompt_protocol_version": 3,
+   "prompt_variant": "B",
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "v5_local": true,
+   "v5_hag": "replace",
+   "v5_local_view": "circle",
+   "v5_lens": false,
+   "v5_latent": false,
+   "v5_pf": "none",
+   "use_llm": true
+  },
+  "gates": {
+   "local_tokens.gate.weight_norm": 0.08423714339733124,
+   "local_tokens.gate.bias": -3.9997220039367676
+  },
+  "norms": {
+   "local_tokens.": 49.516477791801066
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/smoke_checkpoints/smoke_full_v2/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 387,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "prompt_mixer.gamma_visual": 0.00010243390715913847,
+   "prompt_mixer.gamma_lens": -0.0006294986233115196,
+   "fusion.gamma_latent": 0.0005975833628326654
+  },
+  "norms": {
+   "lens_fusion": 98.57471690778942,
+   "latent.": 127.18921012774733,
+   "prompt_mixer.visual_proj": 16.005056407400645,
+   "prompt_mixer.lens_proj": 16.00122091172534,
+   "fusion.lp_": 123.40669699609934
+  }
+ },
+ {
+  "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/smoke_checkpoints/smoke_protocol_v3_real/last.pt",
+  "top": [
+   "state",
+   "config",
+   "answer_vocab",
+   "extra",
+   "manifest"
+  ],
+  "n_tensors": 391,
+  "sw": {
+   "use_visual_prompt": true,
+   "use_lens": true,
+   "use_latent_prompt": true,
+   "use_textual_prompt": true,
+   "use_region_in_prompt": false,
+   "use_fracture_head": true,
+   "prompt_kind": "contour",
+   "use_llm": true
+  },
+  "gates": {
+   "prompt_mixer.gamma_visual": -0.00014878629008308053,
+   "prompt_mixer.gamma_lens": -0.0003946211654692888,
+   "fusion.gamma_latent": 0.0005792608135379851
+  },
+  "norms": {
+   "lens_fusion": 98.57472432338791,
+   "latent.": 127.19040881868169,
+   "prompt_mixer.visual_proj": 16.005243115667138,
+   "prompt_mixer.lens_proj": 16.001266458240796,
+   "fusion.lp_": 123.40681393108245
+  }
+ }
+]

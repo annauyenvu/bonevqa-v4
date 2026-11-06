@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scope": "Synthetic driver/calibration/test role orchestration and label-perturbation check, exact fresh-process replay; hash binding is separately audited on real metadata; zero actual cohort inference",
+  "fixture": {
+    "calibration": {
+      "passed": true,
+      "slope": 0.7458011879548908,
+      "intercept": 0.3023963593842215,
+      "n_iter": 9,
+      "warnings": [],
+      "parameters": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 1e-08,
+        "random_state": 42,
+        "fit_intercept": true,
+        "class_weight": null
+      }
+    },
+    "raw_predictions": [
+      [
+        "no",
+        0.1
+      ],
+      [
+        "yes",
+        0.8
+      ],
+      [
+        "fixture",
+        null
+      ]
+    ],
+    "calls": [
+      "calibration",
+      "test",
+      "calibration",
+      "test"
+    ],
+    "fitting_labels": [
+      [
+        "no",
+        "yes"
+      ],
+      [
+        "no",
+        "yes"
+      ]
+    ],
+    "outer_label_perturbation_invariant": true,
+    "public_input_keys_checked": true,
+    "zero_updates": true
+  },
+  "dependencies": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/gate_grouped_reserved_driver_v3_1.py": "7f15d6d4d6f064ded96200ea9dddcec1ce941243ed67b2ba7cabf8e2d93c72f8",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/run_grouped_reserved_evaluation_v3_1.py": "467c62f8e9cf0bc5eb6e6d8fc4dfdebf55fc541907e2e6baf18d4ba05d17224c",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/grouped_public_evaluation_core_v3_1.py": "03b99e88c1c2334fe4b573c39d1d94d2fac9976829c6751c24a39cb24aee6aa7",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/grouped_calibration_v3_1.py": "67c8a05eca6afbe6d2b9209e5e094d4dca5a447afa58516980c09efeafea8a0f"
+  },
+  "elapsed_seconds": 3.568061292011407,
+  "reserved_role_inference": false
+}

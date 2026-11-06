@@ -1,0 +1,23 @@
+== start Fri Oct 30 00:38:37 +07 2026
+== old venv open_clip / timm / numpy
+-e git+https://github.com/annauyenvu/BoneMedVQA.git@2deec7768c052f2edb4c2fc41d6dfc60a1a0c16f#egg=bonemedvqa
+numpy==1.26.4
+sympy==1.14.0
+timm==0.9.16
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'open_clip'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'open_clip'
+ERROR: Invalid requirement: 'open_clip_torch==': Expected semicolon (after name with no version specifier) or end
+    open_clip_torch==
+                   ^
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'open_clip'
+pip open_clip_torch== failed; installing from 
+ERROR:  is not a valid editable requirement. It should either be a path to a local project or a VCS URL (beginning with bzr+http, bzr+https, bzr+ssh, bzr+sftp, bzr+ftp, bzr+lp, bzr+file, git+http, git+https, git+ssh, git+git, git+file, hg+file, hg+http, hg+https, hg+ssh, hg+static-http, svn+ssh, svn+http, svn+https, svn+svn, svn+file).
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'open_clip'

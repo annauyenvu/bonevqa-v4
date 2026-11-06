@@ -1,0 +1,9 @@
+{
+  "status": "open_backward_completed",
+  "loss_lm": 5.198030948638916,
+  "loss": 5.27377986907959,
+  "elapsed_seconds": 5.172859250000329,
+  "visual_lora_tensors_found": 24,
+  "visual_lora_finite_gradients": 24,
+  "limitation": "Single open sample; no optimizer update, multi-step gradient or clinical gate."
+}

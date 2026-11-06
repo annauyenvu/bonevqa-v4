@@ -1,0 +1,5 @@
+_base_: ablation_t_v3.yaml
+run_name: fracatlas_clean_t_irrelevant_seed42_prompt_v3
+model:
+  textual_prompt_style: irrelevant
+

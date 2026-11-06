@@ -1,0 +1,32 @@
+{
+  "data_binding_status": "pass",
+  "training_ready": false,
+  "configs": {
+    "fold0_b_sealed_v3": {
+      "train_qa": 11502,
+      "validation_qa": 1432,
+      "train_image_size": [
+        1760,
+        2140
+      ],
+      "validation_image_size": [
+        2304,
+        2880
+      ],
+      "initialization_exists": false
+    },
+    "pmc_sealed_generative_v3": {
+      "train_qa": 28490,
+      "validation_qa": 1500,
+      "train_image_size": [
+        709,
+        495
+      ],
+      "validation_image_size": [
+        600,
+        182
+      ],
+      "initialization_exists": false
+    }
+  }
+}

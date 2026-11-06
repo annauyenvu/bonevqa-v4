@@ -1,0 +1,17 @@
+{
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_40.json",
+  "scope": "Fixed frozen-head pilot public evaluation replayed; saved artifact audit and paired known-component analysis completed",
+  "evidence": "frozen_head_public_evaluation_v3_1/paired_artifact_audit.json",
+  "public_evaluation_including_replay_seconds": 302.04322949999914,
+  "original_counts": {"TP":37,"FN":20,"TN":246,"FP":18},
+  "head_LAST410_counts": {"TP":48,"FN":9,"TN":221,"FP":43},
+  "original_BA": 0.7904704944178629,
+  "head_BA": 0.8396132376395534,
+  "paired_BA_difference_interval95": [-0.0033016489318565953,0.10390335394047373],
+  "interpretation": "Higher sensitivity with lower specificity; BA improvement point estimate but interval includes zero. No established overall superiority, no automatic promotion or threshold tuning.",
+  "noncanonical_VQA_records": "All unchanged exactly against original",
+  "limits": "Single seed42, development-informed fold, known-component bootstrap500; not independent clinical confirmation",
+  "next": "Review discrimination/calibration and operating-point tradeoff from saved predictions, close bounded pilot interpretation, then update step3 exit requirements before further experiments",
+  "step3_complete": false,
+  "production_released": false
+}

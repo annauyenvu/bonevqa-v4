@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_38.json",
+  "scope":"SixTRAINmixedlosszero-updateprobe_COMPLETE_REPLAYED_REVIEWED;localweakinteractionnotclinicalcause;nextfrozen-headpilotDRAFTonly",
+  "protocol_sha256":"7e6d2a0ac5d72e1761108eda146cc9a2c035f0c4e540bcc1e8b7ea6c1acac9d5",
+  "report":"mixed_TRAIN_loss_interaction_v3_2/report.json",
+  "report_sha256":"1abee74372d188c4ff452b2368811c957560d52e01628d2e3399ef9bd2fc8f31",
+  "artifact_review":"mixed_TRAIN_loss_interaction_v3_2/independent_artifact_review.json",
+  "elapsed_seconds_including_replay":19.154237124996143,
+  "fixed_scope":"Same6knownTRAINcomponents_2nativeFN2TN2OPENcounts2and19_sameforwardpercheckpoint_lossesnative_uniformonSAMElogitsweights1;dropoutoffevalautograd_privateTRAINlabelsonly",
+  "cosines":{"native_visual_BCE_nativeLM":0.2404421069436764,"native_visual_BCE_uniformLM":0.24015483586571432,"uniform_visual_BCE_nativeLM":0.22202700309145415,"uniform_visual_BCE_uniformLM":0.22183488026999842,"native_fusion_projection_BCE_nativeLM":0.011617139765435231,"uniform_fusion_projection_BCE_nativeLM":-0.012034157311661724},
+  "interpretation":"Visualgradientsalignhere,fusionnearlyorthogonal/tinynegativeinonecheckpoint. NOTevidenceofstrongfullTRAINLMconflict_orreasonforLMdeletion/gradient_surgery/weightincrease. Native_uniformdirectionssimilaronfixture;clinicalresultsunchanged.",
+  "preserved_numeric_artifact":"mixed_TRAIN_loss_interaction_v3_1 remains:float32cosinesoccasionally>1by3.5e-5. v3_2changesONLYdetachedstatisticstoCPUfloat64,noclamping;lossesandrecordedgradientnorm/maxsummaryEXACTsame. Notmodelprecisionorlosschange.",
+  "verification":"Allsource/checkpointhashes_same263weights;manualBCECEexact_nativeLM_vsmanualtokenmeangradmax<=1e-6;freshrecordedsummaryreplayexact;separateartifactbindings/normequivalence/cosineboundsreviewPASS",
+  "next_design":"FROZEN_FEATURE_HEAD_PILOT_DRAFT_V3.json_DRAFT_NOTEXECUTIONRELEASE_fixedheadcontrol_frozenrepresentations_proposed410headonlysteps_10epochs_seed42_LASTonly_aftercacheparity_andgates;notyetimplemented_noextraction_orupdates",
+  "optimizer_updates":0,
+  "reserved_role_inference":false,
+  "new_quality_training_released":false,
+  "step3_complete":false,
+  "Final_Solution_selected":false,
+  "production_released":false
+}

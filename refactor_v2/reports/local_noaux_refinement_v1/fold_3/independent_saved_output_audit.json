@@ -1,0 +1,43 @@
+{
+  "fold": "3",
+  "arms": {
+    "B": {
+      "TP": 77,
+      "FN": 66,
+      "TN": 616,
+      "FP": 43,
+      "fracture_sensitivity": 0.5384615384615384,
+      "fracture_specificity": 0.9347496206373292,
+      "fracture_balanced_accuracy": 0.7366055795494338,
+      "fracture_auprc": 0.6794748678428939,
+      "fracture_auroc": 0.8543565690758407,
+      "overall_acc": 0.8970961375810544,
+      "correct_QA": 3182,
+      "QA": 3547,
+      "images": 802
+    },
+    "local_real_noaux": {
+      "TP": 78,
+      "FN": 65,
+      "TN": 629,
+      "FP": 30,
+      "fracture_sensitivity": 0.5454545454545454,
+      "fracture_specificity": 0.9544764795144158,
+      "fracture_balanced_accuracy": 0.7499655124844806,
+      "fracture_auprc": 0.7050253151419408,
+      "fracture_auroc": 0.8714729883166908,
+      "overall_acc": 0.9004792782633211,
+      "correct_QA": 3194,
+      "QA": 3547,
+      "images": 802
+    }
+  },
+  "sources": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_3/B/test_predictions.json": "fa0e295c87b2420bdbd1ee8b0f212a743fd7ee6635bf5394eb89553671f14971",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_3/local_real_noaux/test_predictions.json": "f598fb203458e97ae05cfd6d1bcfe607fa5a0382bfd1803331ebb94d1c5a2e28"
+  },
+  "no_model_calls": true,
+  "no_optimizer_updates": true,
+  "method": "stdlib tie-group AP, Mann-Whitney AUROC, direct confusion and normalized QA recount",
+  "passed": true
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "full BoneVQAModel integration overfit with lightweight encoders",
+  "samples": 32,
+  "all_passed": true,
+  "results": [
+    {
+      "name": "None",
+      "initial_loss": 1.346510887145996,
+      "final_loss": 0.00031043781200423837,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {},
+      "passed": true
+    },
+    {
+      "name": "V",
+      "initial_loss": 1.4040634632110596,
+      "final_loss": 0.0001723651948850602,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "V": 0.023081138730049133
+      },
+      "passed": true
+    },
+    {
+      "name": "L",
+      "initial_loss": 1.4551055431365967,
+      "final_loss": 0.00013915513409301639,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "L": 0.006048034876585007
+      },
+      "passed": true
+    },
+    {
+      "name": "P",
+      "initial_loss": 1.414862871170044,
+      "final_loss": 9.95514274109155e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "P": 0.05411704629659653
+      },
+      "passed": true
+    },
+    {
+      "name": "VLP",
+      "initial_loss": 1.4888460636138916,
+      "final_loss": 8.740147313801572e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "V": 0.002696217969059944,
+        "L": 0.0061226580291986465,
+        "P": 0.008807939477264881
+      },
+      "passed": true
+    }
+  ]
+}

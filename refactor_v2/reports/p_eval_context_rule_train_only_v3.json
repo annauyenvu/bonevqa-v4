@@ -1,0 +1,24 @@
+{
+  "scope": "4 existing CLOSED outer-TRAIN rows, frozen smoke weights; new explicit eval override; no efficacy claim",
+  "checkpoint_sha256": "d7ec29f103c6ac59f0aedc8687a4e6e2f5d18eda38f4d208f8450f380a20db6e",
+  "train_context": "shuffled",
+  "eval_context": "conditioned",
+  "all_fusion_calls_conditioned": true,
+  "tolerance": 1e-05,
+  "endpoint_errors": {
+    "closed": {
+      "singleton_vs_batch": 2.682209014892578e-07,
+      "reordered_batch": 0.0
+    },
+    "fracture": {
+      "singleton_vs_batch": 2.384185791015625e-07,
+      "reordered_batch": 0.0
+    },
+    "p_yes": {
+      "singleton_vs_batch": 8.940696716308594e-08,
+      "reordered_batch": 0.0
+    }
+  },
+  "seconds": 6.5436390840040985,
+  "passed": true
+}

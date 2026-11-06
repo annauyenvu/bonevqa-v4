@@ -1,0 +1,81 @@
+{
+ "name": "v3_P",
+ "checkpoint": "refactor_v2/checkpoints/P_seed42_target_bounded_v3/last.pt",
+ "code": "src",
+ "switches": {
+  "use_visual_prompt": false,
+  "use_lens": false,
+  "use_latent_prompt": true,
+  "use_textual_prompt": false,
+  "lens_training_only": true,
+  "prompt_kind": "contour",
+  "visual_route": "fusion_only"
+ },
+ "gates": {
+  "fusion.gamma_latent": 0.0005317731411196291
+ },
+ "table": {
+  "clean": {
+   "ap": 0.746814986045555,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 0.0,
+   "closed_flip": 0.0,
+   "xf_shift": 0.0,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 0.0,
+   "open_t1_flip": 0.0,
+   "closed_acc": 0.864
+  },
+  "img_blank": {
+   "ap": 0.23419179022622935,
+   "frac_flip": 0.4633333333333333,
+   "mean_abs_dlogit": 1.9739931309223175,
+   "closed_flip": 0.044,
+   "xf_shift": 0.8627236049349715,
+   "prefix_shift": 0.5039728167580395,
+   "fi_shift": 1.0330118464260567,
+   "open_kl": 1.0027720438083634,
+   "open_t1_flip": 0.4587500035762787,
+   "closed_acc": 0.876
+  },
+  "img_swap": {
+   "ap": 0.2159322188150144,
+   "frac_flip": 0.47333333333333333,
+   "mean_abs_dlogit": 2.295099760517478,
+   "closed_flip": 0.04,
+   "xf_shift": 0.637515911241857,
+   "prefix_shift": 0.41296997448293177,
+   "fi_shift": 0.8996059691033712,
+   "open_kl": 2.3020089289497263,
+   "open_t1_flip": 0.49875000305473804,
+   "closed_acc": 0.864
+  },
+  "P_gate_x0": {
+   "ap": 0.746814986045555,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 0.0002285087356964747,
+   "closed_flip": 0.0,
+   "xf_shift": 0.0004996398049293132,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 1.0739865297093587e-08,
+   "open_t1_flip": 0.0,
+   "closed_acc": 0.864
+  },
+  "P_gate_x100": {
+   "ap": 0.7475219053226552,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 0.025752502977848053,
+   "closed_flip": 0.004,
+   "xf_shift": 0.04860617138627099,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 1.8431467332113983e-05,
+   "open_t1_flip": 0.0,
+   "closed_acc": 0.86
+  }
+ },
+ "n_canonical": 300,
+ "positives": 60
+}

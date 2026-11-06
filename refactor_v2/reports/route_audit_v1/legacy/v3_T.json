@@ -1,0 +1,67 @@
+{
+ "name": "v3_T",
+ "checkpoint": "refactor_v2/checkpoints/T_clinical_seed42_bounded_current_v3_1/last.pt",
+ "code": "src",
+ "switches": {
+  "use_visual_prompt": false,
+  "use_lens": false,
+  "use_latent_prompt": false,
+  "use_textual_prompt": true,
+  "lens_training_only": true,
+  "prompt_kind": "contour",
+  "visual_route": "fusion_only"
+ },
+ "gates": {},
+ "table": {
+  "clean": {
+   "ap": 0.7602676805017965,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 0.0,
+   "closed_flip": 0.0,
+   "xf_shift": 0.0,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 0.0,
+   "open_t1_flip": 0.0,
+   "closed_acc": 0.848
+  },
+  "img_blank": {
+   "ap": 0.24162540963117765,
+   "frac_flip": 0.49333333333333335,
+   "mean_abs_dlogit": 1.760312591381371,
+   "closed_flip": 0.076,
+   "xf_shift": 0.9127697435820975,
+   "prefix_shift": 0.5250346994981533,
+   "fi_shift": 1.0335577726364136,
+   "open_kl": 0.9934061433188617,
+   "open_t1_flip": 0.4433333370834589,
+   "closed_acc": 0.844
+  },
+  "img_swap": {
+   "ap": 0.21124839508702598,
+   "frac_flip": 0.46,
+   "mean_abs_dlogit": 2.0882619473089776,
+   "closed_flip": 0.044,
+   "xf_shift": 0.5830527834775971,
+   "prefix_shift": 0.42365677909153265,
+   "fi_shift": 0.9025366146390031,
+   "open_kl": 2.331371195462998,
+   "open_t1_flip": 0.5000000029802323,
+   "closed_acc": 0.844
+  },
+  "T_off": {
+   "ap": 0.7506656203164412,
+   "frac_flip": 0.05,
+   "mean_abs_dlogit": 0.30947545162091655,
+   "closed_flip": 0.372,
+   "xf_shift": 0.3651831927822857,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 0.803669806884136,
+   "open_t1_flip": 0.30541666895151137,
+   "closed_acc": 0.556
+  }
+ },
+ "n_canonical": 300,
+ "positives": 60
+}

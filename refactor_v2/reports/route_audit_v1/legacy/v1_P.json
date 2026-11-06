@@ -1,0 +1,79 @@
+{
+ "name": "v1_P",
+ "checkpoint": "mandatory_experiments_20261011/detector/p/seed_42/checkpoint_best.pt",
+ "code": "exp4",
+ "switches": {
+  "use_visual_prompt": false,
+  "use_lens": false,
+  "use_latent_prompt": true,
+  "use_textual_prompt": true,
+  "lens_training_only": null,
+  "prompt_kind": "contour",
+  "visual_route": null
+ },
+ "gates": {},
+ "table": {
+  "clean": {
+   "ap": 0.5332606534729538,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 0.0,
+   "closed_flip": 0.0,
+   "xf_shift": 0.0,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 0.0,
+   "open_t1_flip": 0.0,
+   "closed_acc": 0.864
+  },
+  "img_blank": {
+   "ap": 0.20662366513353098,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 1.1314742477734883,
+   "closed_flip": 0.036,
+   "xf_shift": 0.2917440628133169,
+   "prefix_shift": 0.5646208001346122,
+   "fi_shift": 1.1012913744624069,
+   "open_kl": 0.4324686187785119,
+   "open_t1_flip": 0.1983333345502615,
+   "closed_acc": 0.868
+  },
+  "img_swap": {
+   "ap": 0.22369457953537442,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 1.2560322936375936,
+   "closed_flip": 0.04,
+   "xf_shift": 0.3132125571733568,
+   "prefix_shift": 0.48908139074720985,
+   "fi_shift": 0.9422594657758387,
+   "open_kl": 1.5607791531583644,
+   "open_t1_flip": 0.2491666693240404,
+   "closed_acc": 0.864
+  },
+  "P_off": {
+   "ap": 0.38100797549413035,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 3.295951202933987,
+   "closed_flip": 0.628,
+   "xf_shift": 1.245214401221857,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 0.5101737593358848,
+   "open_t1_flip": 0.1320833344012499,
+   "closed_acc": 0.336
+  },
+  "T_off": {
+   "ap": 0.5341858179249194,
+   "frac_flip": 0.0,
+   "mean_abs_dlogit": 0.06057559967041016,
+   "closed_flip": 0.076,
+   "xf_shift": 0.11833132003865592,
+   "prefix_shift": 0.0,
+   "fi_shift": 0.0,
+   "open_kl": 0.12350047045911197,
+   "open_t1_flip": 0.03333333358168602,
+   "closed_acc": 0.86
+  }
+ },
+ "n_canonical": 300,
+ "positives": 60
+}

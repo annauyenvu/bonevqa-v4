@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/local_noaux_head_analysis_v1.py": "731cec97197f04c93a0d81a194bb89771e55d633c970d10a6e317e2ab6a672d6",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/local_noaux_head_analysis_v2.py": "5741c167d9d2ddc420884eb3f278dc6093003a8519ba0008c15cc76512c0b367",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/LOCAL_NOAUX_HEAD_BATCH_REVIEW_V2_20261028.md": "afc7870e6bfea7719d501f47eafbe58a560d77c300059bd7976693c502c73b3c"
+  },
+  "synthetic_diagnostic": {
+    "seed": 42,
+    "rows": 803,
+    "features": 768,
+    "compute": "FP32CPU1",
+    "changed_probabilities": 109,
+    "maximum_absolute_difference": 1.1920928955078125e-07
+  },
+  "only_change": "detached_head_prediction_batch4_instead_of_full_cohort",
+  "head_training_started_before_change": false,
+  "scientific_budget_unchanged": true,
+  "wall": 1793134126.8365598
+}

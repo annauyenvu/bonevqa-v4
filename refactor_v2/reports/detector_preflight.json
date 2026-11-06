@@ -1,0 +1,20 @@
+{
+  "train": {
+    "images": 2890,
+    "positive": 497,
+    "negative": 2393,
+    "manifest_ids_found": 2890
+  },
+  "val": {
+    "images": 643,
+    "positive": 103,
+    "negative": 540,
+    "manifest_ids_found": 643
+  },
+  "test": {
+    "images": 550,
+    "positive": 119,
+    "negative": 431,
+    "manifest_ids_found": 550
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "scope": "Existing1173TRAIN question-type metadata versus frozen routing heuristics; not quality inference",
+  "source_script_sha256": "df54155d7ff1fa18649521e2a566c158167be2f7c5edd7e1b937e08582f731b4",
+  "frozen_utils_sha256": "5c8ae90886d641a7cc84de4f04bb645f431edaeb01c010cf386c498fbb72f6d4",
+  "TRAIN_manifest": {
+    "n_rows": 1173,
+    "n_groups": 261,
+    "identities": [
+      "image_id:IMG0000008",
+      "image_id:IMG0000015",
+      "image_id:IMG0000026",
+      "image_id:IMG0000070",
+      "image_id:IMG0000073",
+      "image_id:IMG0000096",
+      "image_id:IMG0000099",
+      "image_id:IMG0000120",
+      "image_id:IMG0000147",
+      "image_id:IMG0000183",
+      "image_id:IMG0000224",
+      "image_id:IMG0000225",
+      "image_id:IMG0000228",
+      "image_id:IMG0000290",
+      "image_id:IMG0000351",
+      "image_id:IMG0000376",
+      "image_id:IMG0000443",
+      "image_id:IMG0000460",
+      "image_id:IMG0000471",
+      "image_id:IMG0000492",
+      "image_id:IMG0000540",
+      "image_id:IMG0000599",
+      "image_id:IMG0000619",
+      "image_id:IMG0000631",
+      "image_id:IMG0000632",
+      "image_id:IMG0000674",
+      "image_id:IMG0000687",
+      "image_id:IMG0000738",
+      "image_id:IMG0000758",
+      "image_id:IMG0000775",
+      "image_id:IMG0000797",
+      "image_id:IMG0000801",
+      "image_id:IMG0000802",
+      "image_id:IMG0000841",
+      "image_id:IMG0000871",
+      "image_id:IMG0000922",
+      "image_id:IMG0000939",
+      "image_id:IMG0000958",
+      "image_id:IMG0000965",
+      "image_id:IMG0000970",
+      "image_id:IMG0000986",
+      "image_id:IMG0001007",
+      "image_id:IMG0001021",
+      "image_id:IMG0001024",
+      "image_id:IMG0001034",
+      "image_id:IMG0001039",
+      "image_id:IMG0001041",
+      "image_id:IMG0001042",
+      "image_id:IMG0001059",
+      "image_id:IMG0001073",
+      "image_id:IMG0001080",
+      "image_id:IMG0001114",
+      "image_id:IMG0001147",
+      "image_id:IMG0001152",
+      "image_id:IMG0001169",
+      "image_id:IMG0001184",
+      "image_id:IMG0001195",
+      "image_id:IMG0001205",
+      "image_id:IMG0001236",
+      "image_id:IMG0001246",
+      "image_id:IMG0001266",
+      "image_id:IMG0001304",
+      "image_id:IMG0001313",
+      "image_id:IMG0001364",
+      "image_id:IMG0001401",
+      "image_id:IMG0001420",
+      "image_id:IMG0001439",
+      "image_id:IMG0001452",
+      "image_id:IMG0001458",
+      "image_id:IMG0001462",
+      "image_id:IMG0001493",
+      "image_id:IMG0001495",
+      "image_id:IMG0001497",
+      "image_id:IMG0001507",
+      "image_id:IMG0001516",
+      "image_id:IMG0001563",
+      "image_id:IMG0001571",
+      "image_id:IMG0001576",
+      "image_id:IMG0001578",
+      "image_id:IMG0001589",
+      "image_id:IMG0001658",
+      "image_id:IMG0001686",
+      "image_id:IMG0001697",
+      "image_id:IMG0001698",
+      "image_id:IMG0001721",
+      "image_id:IMG0001730",
+      "image_id:IMG0001816",
+      "image_id:IMG0001827",
+      "image_id:IMG0001840",
+      "image_id:IMG0001847",
+      "image_id:IMG0001872",
+      "image_id:IMG0001929",
+      "image_id:IMG0001931",
+      "image_id:IMG0001971",
+      "image_id:IMG0002015",
+      "image_id:IMG0002113",
+      "image_id:IMG0002126",
+      "image_id:IMG0002180",
+      "image_id:IMG0002186",
+      "image_id:IMG0002197",
+      "image_id:IMG0002205",
+      "image_id:IMG0002221",
+      "image_id:IMG0002225",
+      "image_id:IMG0002238",
+      "image_id:IMG0002266",
+      "image_id:IMG0002270",
+      "image_id:IMG0002298",
+      "image_id:IMG0002307",
+      "image_id:IMG0002314",
+      "image_id:IMG0002325",
+      "image_id:IMG0002328",
+      "image_id:IMG0002333",
+      "image_id:IMG0002334",
+      "image_id:IMG0002339",
+      "image_id:IMG0002348",
+      "image_id:IMG0002349",
+      "image_id:IMG0002354",
+      "image_id:IMG0002365",
+      "image_id:IMG0002367",
+      "image_id:IMG0002375",
+      "image_id:IMG0002379",
+      "image_id:IMG0002382",
+      "image_id:IMG0002395",
+      "image_id:IMG0002397",
+      "image_id:IMG0002399",
+      "image_id:IMG0002406",
+      "image_id:IMG0002411",
+      "image_id:IMG0002414",
+      "image_id:IMG0002418",
+      "image_id:IMG0002426",
+      "image_id:IMG0002434",
+      "image_id:IMG0002437",
+      "image_id:IMG0002439",
+      "image_id:IMG0002442",
+      "image_id:IMG0002444",
+      "image_id:IMG0002453",
+      "image_id:IMG0002457",
+      "image_id:IMG0002458",
+      "image_id:IMG0002466",
+      "image_id:IMG0002467",
+      "image_id:IMG0002468",
+      "image_id:IMG0002469",
+      "image_id:IMG0002471",
+      "image_id:IMG0002478",
+      "image_id:IMG0002480",
+      "image_id:IMG0002481",
+      "image_id:IMG0002488",
+      "image_id:IMG0002494",
+      "image_id:IMG0002499",
+      "image_id:IMG0002500",
+      "image_id:IMG0002502",
+      "image_id:IMG0002505",
+      "image_id:IMG0002506",
+      "image_id:IMG0002508",
+      "image_id:IMG0002513",
+      "image_id:IMG0002527",
+      "image_id:IMG0002529",
+      "image_id:IMG0002536",
+      "image_id:IMG0002538",
+      "image_id:IMG0002546",
+      "image_id:IMG0002548",
+      "image_id:IMG0002549",
+      "image_id:IMG0002552",
+      "image_id:IMG0002558",
+      "image_id:IMG0002561",
+      "image_id:IMG0002570",
+      "image_id:IMG0002574",
+      "image_id:IMG0002591",
+      "image_id:IMG0002597",
+      "image_id:IMG0002599",
+      "image_id:IMG0002603",
+      "image_id:IMG0002604",
+      "image_id:IMG0002611",
+      "image_id:IMG0002654",
+      "image_id:IMG0002665",
+      "image_id:IMG0002671",
+      "image_id:IMG0002738",
+      "image_id:IMG0002749",
+      "image_id:IMG0002846",
+      "image_id:IMG0002847",
+      "image_id:IMG0002884",
+      "image_id:IMG0002885",
+      "image_id:IMG0002942",
+      "image_id:IMG0002945",
+      "image_id:IMG0002965",
+      "image_id:IMG0002971",
+      "image_id:IMG0002973",
+      "image_id:IMG0003001",
+      "image_id:IMG0003055",
+      "image_id:IMG0003074",
+      "image_id:IMG0003093",
+      "image_id:IMG0003101",
+      "image_id:IMG0003105",
+      "image_id:IMG0003111",
+      "image_id:IMG0003130",
+      "image_id:IMG0003132",
+      "image_id:IMG0003139",
+      "image_id:IMG0003146",
+      "image_id:IMG0003156",
+      "image_id:IMG0003192",
+      "image_id:IMG0003193",
+      "image_id:IMG0003213",
+      "image_id:IMG0003224",
+      "image_id:IMG0003279",
+      "image_id:IMG0003296",
+      "image_id:IMG0003300",
+      "image_id:IMG0003301",
+      "image_id:IMG0003315",
+      "image_id:IMG0003325",
+      "image_id:IMG0003342",
+      "image_id:IMG0003360",
+      "image_id:IMG0003395",
+      "image_id:IMG0003419",
+      "image_id:IMG0003430",
+      "image_id:IMG0003458",
+      "image_id:IMG0003460",
+      "image_id:IMG0003473",
+      "image_id:IMG0003487",
+      "image_id:IMG0003506",
+      "image_id:IMG0003524",
+      "image_id:IMG0003531",
+      "image_id:IMG0003545",
+      "image_id:IMG0003566",
+      "image_id:IMG0003569",
+      "image_id:IMG0003590",
+      "image_id:IMG0003603",
+      "image_id:IMG0003619",
+      "image_id:IMG0003620",
+      "image_id:IMG0003628",
+      "image_id:IMG0003629",
+      "image_id:IMG0003640",
+      "image_id:IMG0003682",
+      "image_id:IMG0003703",
+      "image_id:IMG0003734",
+      "image_id:IMG0003759",
+      "image_id:IMG0003767",
+      "image_id:IMG0003770",
+      "image_id:IMG0003785",
+      "image_id:IMG0003805",
+      "image_id:IMG0003812",
+      "image_id:IMG0003826",
+      "image_id:IMG0003836",
+      "image_id:IMG0003844",
+      "image_id:IMG0003848",
+      "image_id:IMG0003851",
+      "image_id:IMG0003863",
+      "image_id:IMG0003868",
+      "image_id:IMG0003893",
+      "image_id:IMG0003922",
+      "image_id:IMG0003960",
+      "image_id:IMG0003985",
+      "image_id:IMG0004010",
+      "image_id:IMG0004012",
+      "image_id:IMG0004071",
+      "image_id:IMG0004150",
+      "image_id:IMG0004208",
+      "image_id:IMG0004209",
+      "image_id:IMG0004266",
+      "image_id:IMG0004369",
+      "image_id:IMG0004370",
+      "image_id:IMG0004388"
+    ],
+    "sha256": "e02c1865aa04cd5439f5da8b4b7b8d892fb1d2922c7df9478a91fbed2872635f"
+  },
+  "TRAIN_rows": 1173,
+  "unique_questions": 23,
+  "questions": {
+    "Is there a fracture in this X-ray?": {
+      "TRAIN_count": 261,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 261
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is this an X-ray of the leg?": {
+      "TRAIN_count": 63,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 63
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is the hip fractured?": {
+      "TRAIN_count": 6,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 6
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Which body region is shown in this X-ray?": {
+      "TRAIN_count": 158,
+      "existing_GT_answer_type_counts": {
+        "OPEN": 158
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": false,
+      "heuristic_closed": false
+    },
+    "Is this an X-ray of the hand?": {
+      "TRAIN_count": 23,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 23
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is this a frontal view X-ray?": {
+      "TRAIN_count": 57,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 57
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Describe the finding.": {
+      "TRAIN_count": 168,
+      "existing_GT_answer_type_counts": {
+        "OPEN": 168
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": false,
+      "heuristic_closed": false
+    },
+    "What abnormality is seen in this X-ray?": {
+      "TRAIN_count": 58,
+      "existing_GT_answer_type_counts": {
+        "OPEN": 58
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": false,
+      "heuristic_closed": false
+    },
+    "Is this a lateral view X-ray?": {
+      "TRAIN_count": 37,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 37
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "What type of imaging is this?": {
+      "TRAIN_count": 60,
+      "existing_GT_answer_type_counts": {
+        "OPEN": 60
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": false,
+      "heuristic_closed": false
+    },
+    "How many fracture sites are visible?": {
+      "TRAIN_count": 58,
+      "existing_GT_answer_type_counts": {
+        "OPEN": 58
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": false,
+      "heuristic_closed": false
+    },
+    "Is this an X-ray of the hip?": {
+      "TRAIN_count": 17,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 17
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Does this image contain more than one scan?": {
+      "TRAIN_count": 38,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 38
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is this an oblique view X-ray?": {
+      "TRAIN_count": 31,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 31
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Are there multiple fractures?": {
+      "TRAIN_count": 18,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 18
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is this an X-ray of the leg and hip?": {
+      "TRAIN_count": 2,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 2
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is there any orthopedic hardware or implant visible?": {
+      "TRAIN_count": 38,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 38
+      },
+      "heuristic_choice": true,
+      "heuristic_polar": true,
+      "heuristic_closed": false
+    },
+    "Is this an X-ray of the shoulder?": {
+      "TRAIN_count": 15,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 15
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is the shoulder fractured?": {
+      "TRAIN_count": 10,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 10
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Where is the fracture located?": {
+      "TRAIN_count": 32,
+      "existing_GT_answer_type_counts": {
+        "OPEN": 32
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": false,
+      "heuristic_closed": false
+    },
+    "Is the leg fractured?": {
+      "TRAIN_count": 12,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 12
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is the hand fractured?": {
+      "TRAIN_count": 10,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 10
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    },
+    "Is the hand and shoulder fractured?": {
+      "TRAIN_count": 1,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 1
+      },
+      "heuristic_choice": false,
+      "heuristic_polar": true,
+      "heuristic_closed": true
+    }
+  },
+  "existing_CLOSED_polar_questions_excluded_by_choice_heuristic": {
+    "Is there any orthopedic hardware or implant visible?": {
+      "TRAIN_count": 38,
+      "existing_GT_answer_type_counts": {
+        "CLOSED": 38
+      },
+      "heuristic_choice": true,
+      "heuristic_polar": true,
+      "heuristic_closed": false
+    }
+  },
+  "interpretation": "Choice heuristic scans any or/hay/hoac connector; excluded polar questions fall back to learned type probability, not guaranteed OPEN. Inspect actual trace before claiming route error.",
+  "evidence_actual_24TRAIN_trace": "T_routes_stratified24_TRAIN_v3_1/independent_artifact_audit.json",
+  "new_labels": false,
+  "model_instantiations": 0,
+  "training_updates": 0,
+  "modelval_calibration_or_test_inference_used": false,
+  "runtime_changed": false,
+  "limitations": [
+    "Existing annotations are audited, not replaced or used as runtime inputs",
+    "TRAIN heuristic conflict alone is not an accuracy improvement or a general-purpose grammar fix"
+  ],
+  "long_training_authorized": false
+}

@@ -1,0 +1,44 @@
+{
+  "updated_local": "2026-10-20T16:43:00+07:00",
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_1.json",
+  "preserves_prior_ledger": true,
+  "completed_geometry_diagnostic": {
+    "protocol": "geometry_diagnostic_current_v3_1/protocol.json",
+    "report_sha256": "7ad85db8e52d95d826f7846ed71d83a3bc2f08cac896e8b5603e8f0c5843d64e",
+    "model_sha256": "ceba4d8d9a2cba64e25c3a388e6e9cc6e4d2a12777aab12b0f6aec33e3e7170c",
+    "TRAIN_images_binary": 261,
+    "TRAIN_QA_secondary": 1173,
+    "modelval_images_binary": 321,
+    "modelval_QA_secondary": 142,
+    "fit_count_fixed_linear_classifiers": 3,
+    "hyperparameter_search": false,
+    "threshold": 0.5,
+    "independent_frozen_reload_passed": true,
+    "TRAIN_scaler_mean_variance_scale_and_TFIDF_vocabulary_IDF_exact": true,
+    "geometry_AUROC": 0.8446305156831473,
+    "geometry_AUPRC": 0.5541759971177158,
+    "geometry_raw_accuracy": 0.8193146417445483,
+    "geometry_sensitivity": 0.7017543859649122,
+    "geometry_specificity": 0.8446969696969697,
+    "geometry_TP_FN_TN_FP": [40, 17, 223, 41],
+    "interpretation": "Proposal metadata is predictive; high accuracy trades off sensitivity. Not visual grounding, clinical superiority, or an independent test. Upstream detector used pixels/full TRAIN annotations."
+  },
+  "still_not_established": [
+    "Positive semantic/clinical contribution of current V/L/P over matched controls",
+    "All new-fold no-ROI-capacity/image-group-shuffled controls or module-specific full resume paths",
+    "Current T raw/clinical/irrelevant/paraphrase quality comparison with matched initialization and token budgets",
+    "Honest component-grouped nested or verified independent confirmation",
+    "Clinical calibration/threshold release and a verified Final Solution"
+  ],
+  "next_safe_actions": [
+    "Review the existing T technical/token controls and prepare a bounded quality protocol on current ROCO PREtask/data, without silently launching old PMC-bound configs",
+    "Use mechanism diagnostics to justify any separately versioned architecture/loss candidate; no posthoc gate amplification, contrastive-loss deletion or threshold tuning",
+    "Do not expand current weak V/L/P or select a geometry control by overall accuracy alone"
+  ],
+  "new_multimodal_training_updates": 0,
+  "calibration_or_test_inference_used": false,
+  "long_training_authorized": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

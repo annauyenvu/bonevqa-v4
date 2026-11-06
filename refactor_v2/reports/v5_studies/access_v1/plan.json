@@ -1,0 +1,156 @@
+{
+  "suite": "access_v1",
+  "jobs": [
+    {
+      "fold": "0",
+      "arm": "V4",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "0",
+      "arm": "V4_flag",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "0",
+      "arm": "B",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "0",
+      "arm": "V4_grid",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "0",
+      "arm": "V4_placebo",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "1",
+      "arm": "V4",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "1",
+      "arm": "V4_flag",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "1",
+      "arm": "B",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "1",
+      "arm": "V4_grid",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "1",
+      "arm": "V4_placebo",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "2",
+      "arm": "V4",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "2",
+      "arm": "V4_flag",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "2",
+      "arm": "B",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "2",
+      "arm": "V4_grid",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "2",
+      "arm": "V4_placebo",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "3",
+      "arm": "V4",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "3",
+      "arm": "V4_flag",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "3",
+      "arm": "B",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "3",
+      "arm": "V4_grid",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "3",
+      "arm": "V4_placebo",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "4",
+      "arm": "V4",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "4",
+      "arm": "V4_flag",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "4",
+      "arm": "B",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "4",
+      "arm": "V4_grid",
+      "seed": 43,
+      "device": "mps"
+    },
+    {
+      "fold": "4",
+      "arm": "V4_placebo",
+      "seed": 43,
+      "device": "mps"
+    }
+  ],
+  "created": 1793621518.513416
+}

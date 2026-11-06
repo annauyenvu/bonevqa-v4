@@ -1,0 +1,15 @@
+_base_: roco_sealed_alignment_v3.yaml
+run_name: pilot_roco_caption_bridge_v3
+# Technical pilot only: no benchmark or module-superiority claims.
+data:
+  max_samples: 8
+  val_max_samples: 4
+train:
+  # Candidate runtime workaround under audit, NOT enabled for full training.
+  epoch_seeded_rng: true
+  epochs: 2
+  batch_size: 2
+  grad_accum: 1
+  lr: 0.00001
+  log_every: 1
+  save_optimizer: true

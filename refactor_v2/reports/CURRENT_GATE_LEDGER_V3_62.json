@@ -1,0 +1,17 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_61.json",
+  "snapshot_local":"2026-10-22 approximately08:30 ICT",
+  "training_complete":true,
+  "modelval_exact_replays_and_metric_audits_complete":true,
+  "active_training_or_modelval_workers_observed":false,
+  "process_check":"Permitted ps inspection found no matching grouped training/evaluation worker",
+  "calibration_synthetic_gate_passed":true,
+  "bootstrap_synthetic_gate":"grouped_bootstrap_technical_gate_v3_1.json",
+  "bootstrap_synthetic_gate_passed":true,
+  "bootstrap_gate_scope":"2000 within-fold known-component resamples seed20261021; preserve selected component row multiplicity; identical paired indices; independent fixture enumeration support; undefined metrics counted; fresh-process exact replay. Synthetic fixtures only.",
+  "remaining_work":"Freeze and audit all five LAST/role bindings including reused fold0; implement public calibration/outer prediction runner and integration gates; after release fit per-fold calibration, evaluate outer roles, replay predictions and bootstrap, independently audit and report",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false,
+  "remaining_time":"No trustworthy remaining-step3 ETA until reserved-role runner integration and measured execution"
+}

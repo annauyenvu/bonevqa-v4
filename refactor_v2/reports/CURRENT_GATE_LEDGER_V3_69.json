@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_68.json",
+  "snapshot_local":"2026-10-22 approximately12:00 ICT",
+  "fixed_grouped_experiment_complete":true,
+  "all_five_outer_replays_and_independent_audits_passed":true,
+  "outer_inference_replay_seconds":4701.252509624988,
+  "bootstrap_analysis_replay_seconds":49.35839795900392,
+  "bootstrap_independent_primary_draw_percentile_audit_passed":true,
+  "results_report":"GROUPED_OUTER_RESULTS_V3_1.md",
+  "raw_BA":0.7525826205328934,
+  "raw_BA_interval":[0.7315773842929177,0.7705203833325229],
+  "raw_sensitivity":0.5594405594405595,
+  "raw_overall_VQA_accuracy":0.8999888876541838,
+  "calibrated_minus_raw_BA":-0.01735953555237968,
+  "calibrated_minus_raw_BA_interval":[-0.02646115134010873,-0.00909738047730623],
+  "interpretation":"Low fracture sensitivity persists; calibration reduces primary BA despite better Brier/ECE. No promotion, threshold search or further training from these outer observations.",
+  "remaining_work":"Reconcile original approved step3 exit scope and final report evidence; grouped experiment closure alone does not establish full step3 or seven-step completion",
+  "scope":"Development-informed known-component grouping, historical fold0, one training seed; no untouched independent clinical confirmation",
+  "step3_complete":false,
+  "production_released":false
+}

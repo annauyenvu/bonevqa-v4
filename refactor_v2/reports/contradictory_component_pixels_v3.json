@@ -1,0 +1,48 @@
+{
+  "scope": "contradictory candidate components",
+  "pairs": [
+    {
+      "left": "IMG0002886",
+      "right": "IMG0004243",
+      "normalized_mae": 0.0,
+      "correlation": 0.9999999999999999,
+      "same_fracture_label": false
+    },
+    {
+      "left": "IMG0002952",
+      "right": "IMG0004262",
+      "normalized_mae": 0.0001649145986519608,
+      "correlation": 0.9999904085579777,
+      "same_fracture_label": false
+    },
+    {
+      "left": "IMG0002998",
+      "right": "IMG0004280",
+      "normalized_mae": 0.0,
+      "correlation": 1.0,
+      "same_fracture_label": false
+    },
+    {
+      "left": "IMG0003034",
+      "right": "IMG0004314",
+      "normalized_mae": 0.0,
+      "correlation": 0.9999999999999998,
+      "same_fracture_label": false
+    },
+    {
+      "left": "IMG0003034",
+      "right": "IMG0004341",
+      "normalized_mae": 0.0,
+      "correlation": 0.9999999999999998,
+      "same_fracture_label": false
+    },
+    {
+      "left": "IMG0004314",
+      "right": "IMG0004341",
+      "normalized_mae": 0.0,
+      "correlation": 0.9999999999999998,
+      "same_fracture_label": true
+    }
+  ],
+  "limitation": "Pixel similarity does not establish clinical equivalence or correct labels."
+}

@@ -1,0 +1,13 @@
+{
+  "status":"FROZEN_RULES_BEFORE_NEW_FOLD_TRAINING_AND_RESERVED_INFERENCE",
+  "candidate":"Native B seed42, existing two-epoch LAST per fold; no modelval selection",
+  "primary":"Raw canonical fracture balanced accuracy at0.5; per-fold and pooled out-of-fold results",
+  "secondary":"QA/CLOSED/OPEN,AUROC,AUPRC,sensitivity,specificity,Brier,ECE10; descriptive, no multiple-endpoint superiority claim",
+  "calibration":"Per-fold sklearn LogisticRegression(C=1.0,solver=lbfgs,max_iter=1000,tol=1e-8,random_state=42,fit_intercept=true,class_weight=null) on one feature logit(clip(raw_probability,1e-6,1-1e-6)), using canonical rows from reserved calibration only after LAST checkpoint freeze. Threshold remains0.5 on calibrated probabilities. No sensitivity-target or threshold search.",
+  "calibration_failure":"If single class, nonfinite parameters or convergence warning, retain failure and raw results; do not change hyperparameters or consult outer labels to repair",
+  "outer":"Once per frozen fold pipeline, original public images/questions only. Replays verify determinism, never select models. No refitting from pooled outer scores.",
+  "uncertainty":"2000 paired known-component bootstrap draws seed20261021, resample components within each outer fold; percentile2.5/97.5. Report valid draws and undefined metrics. Model and training seed fixed; no claim to cover seed variance or unknown patient grouping.",
+  "provenance":"All FracAtlas folds development-informed; historical fold0 reused with disclosure. Not untouched independent clinical validation.",
+  "execution_limit":"This file freezes rules, does not authorize reserved-role inference until fitting/evaluation implementation and artifact checks pass",
+  "production_released":false
+}

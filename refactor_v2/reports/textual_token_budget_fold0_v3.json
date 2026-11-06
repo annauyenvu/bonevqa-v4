@@ -1,0 +1,76 @@
+{
+  "scope": "fold0 TRAIN questions only; token matching is not semantic efficacy",
+  "source_manifest": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_train.json",
+  "manifest_sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+  "train_rows": 11502,
+  "unique_questions": 28,
+  "budgets": {
+    "biomedical": 48,
+    "language": 56
+  },
+  "styles": {
+    "raw": {
+      "biomedical": {
+        "min": 6,
+        "max": 16,
+        "over_budget_questions": []
+      },
+      "language": {
+        "min": 8,
+        "max": 17,
+        "over_budget_questions": []
+      }
+    },
+    "clinical": {
+      "biomedical": {
+        "min": 20,
+        "max": 30,
+        "over_budget_questions": []
+      },
+      "language": {
+        "min": 21,
+        "max": 30,
+        "over_budget_questions": []
+      }
+    },
+    "clinical_paraphrase": {
+      "biomedical": {
+        "min": 20,
+        "max": 30,
+        "over_budget_questions": []
+      },
+      "language": {
+        "min": 21,
+        "max": 30,
+        "over_budget_questions": []
+      }
+    },
+    "irrelevant": {
+      "biomedical": {
+        "min": 19,
+        "max": 29,
+        "over_budget_questions": []
+      },
+      "language": {
+        "min": 21,
+        "max": 30,
+        "over_budget_questions": []
+      }
+    },
+    "irrelevant_matched": {
+      "biomedical": {
+        "min": 20,
+        "max": 30,
+        "over_budget_questions": []
+      },
+      "language": {
+        "min": 21,
+        "max": 30,
+        "over_budget_questions": []
+      }
+    }
+  },
+  "matched_control_mismatches": [],
+  "all_questions_preserved_without_truncation": true,
+  "passed": true
+}

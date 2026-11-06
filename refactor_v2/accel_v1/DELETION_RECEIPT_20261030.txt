@@ -1,0 +1,4 @@
+Deleted 2026-10-30 ~00:25 ICT at user request: 406 files (47 optimizer.pt = 22.8 GB, 359 closed-pilot checkpoints in reports/ = 141.3 GB) listed in deletion_manifest_20261030.tsv.
+Protected and verified present: checkpoints/*/last.pt and best.pt, reports/perfold_PREtask_roundtrip_v3_1 (5 PRE inits), reports/local_noaux_refinement_v1 (all 18 LAST.pt, detectors, head refits), detector640_fold0_bounded_quality_v3_1.
+Disk free: 19 GB before -> 174 GB after.
+Side effect: fresh-process replay of the deleted closed pilots is no longer possible; their reported metrics, predictions and JSON records are unchanged.

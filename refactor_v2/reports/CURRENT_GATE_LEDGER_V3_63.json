@@ -1,0 +1,17 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_62.json",
+  "snapshot_local":"2026-10-22 approximately09:00 ICT",
+  "training_and_modelval_audits_complete":true,
+  "active_training_evaluation_workers_observed":false,
+  "five_fold_metadata_bindings":"grouped_evaluation_bindings_v3_1/bindings.json",
+  "five_fold_metadata_seal_passed":true,
+  "metadata_checks":"All five fixed LAST hashes/configs/vocabularies, existing role file SHA/QA/image counts, one existing canonical binary label per image, within-fold role component disjointness, outer known-component disjointness and exactly-once image coverage",
+  "outer_images":4013,
+  "outer_known_components":3920,
+  "fold0_scope":"Historical native LAST reused; development-informed and inspected before amendment; no untouched confirmation claim",
+  "remaining_work":"Independently audit role/checkpoint bindings; implement and gate public calibration/outer inference runner; release reserved execution only after integration gates; then per-fold fitting/evaluation/replay/bootstrap/audits/reporting",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false,
+  "remaining_time":"No measured reserved-role execution runtime yet"
+}

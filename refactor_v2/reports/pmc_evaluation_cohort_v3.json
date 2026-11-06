@@ -1,0 +1,22 @@
+{
+  "status": "label_valid_evaluation_cohort",
+  "source_rows": 50000,
+  "retained_rows": 49990,
+  "excluded_source_indices": [
+    11595,
+    12807,
+    15798,
+    16592,
+    17186,
+    19724,
+    27396,
+    29613,
+    30885,
+    33382
+  ],
+  "source_sha256": "72c182ea0fda07d1e783b45210e88f8d97ff16f679387ec19640f7799bbe677d",
+  "output_sha256": "fe306620581b5b3bb52f25a652fc862d063c7aaa145597e6756b9efc8612b4c2",
+  "reporting": "Report filtered-cohort denominator and exclusions; not directly identical to original benchmark.",
+  "metric_contract": "Choice-label selection accuracy with provided choices; free-text answer accuracy must be reported separately.",
+  "independence": "Historical checkpoint prohibited; revised upstream train filtered for known article/perceptual overlap."
+}

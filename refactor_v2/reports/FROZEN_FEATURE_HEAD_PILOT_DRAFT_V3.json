@@ -1,0 +1,16 @@
+{
+  "status":"DRAFT_NOT_EXECUTION_RELEASE",
+  "purpose":"Test optimization capacity of existing fracture head on frozen native-LAST representation, without modifying backbone/LM/loss definition",
+  "parent_quality_checkpoint_sha256":"c34779eb82b9ec2dd30dac49823386afeadf2c7b7add9f60dee0715a96309626",
+  "proposed_scope":"All2568canonicalTRAINimages, existing458positive2110negative;inspected321image modelval for fixed development evaluation only;no calibration/test",
+  "candidate":"Existing fracture-head architecture warmstarted from nativeLAST, fixed x_f features;only4headparametertensors optimized",
+  "matched_control":"Same original frozen head, same exact feature cache and raw0.5 endpoint, zeroextraheadupdates",
+  "proposed_fixed_budget":{"epochs":10,"batch_size":64,"updates_per_epoch":41,"total_max_updates":410,"seed":42,"optimizer":"AdamW","lr":0.0001,"betas":[0.9,0.98],"weight_decay":0.01,"clip":1.0,"loss":"Existing BCEwithlogits posweight2110/458","primary_checkpoint":"LAST410only_noearlystopping_epochselection_or_thresholdfit"},
+  "proposed_primary":"Modelval canonical321 balancedaccuracy difference refitminusoriginal at raw0.5;all clinical metrics and paired known-component uncertainty secondary;singletrainingseed/developmentinformedNOTindependentconfirmation",
+  "requirements_before_execution":["Bind rawTRAIN/modelval/manifests/componentroles/init/runtime/sourceSHA","Extractfeatureswithoriginalpublicimage/questionpath_noGTtype_region_ROIinputs","Featurecacheperrowidentityandoriginalheadpublicscore/decisionreplayagainstverifiedpredictions","No modelval labels or scores in fitting/feature/epoch/hyperparameter selection","One fixedprospectivebudgetandindependentinitialization/update/export/reload/gateaudit","Candidate freshprocess publicinference/replay and allnegativeoutcomes beforeanyclinicalclaim"],
+  "limits":"This tests head optimization with frozen features, not independent efficacy or cause of poor representation. No current model/qualitycheckpoint overwrites. If featureparity/gates fail, preserve and stop.",
+  "quality_training_released":false,
+  "feature_extraction_started":false,
+  "optimizer_updates":0,
+  "production_released":false
+}

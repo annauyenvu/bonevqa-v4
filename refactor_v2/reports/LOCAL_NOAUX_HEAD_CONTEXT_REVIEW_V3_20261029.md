@@ -1,0 +1,9 @@
+# Head assessment batch-context recovery v3
+
+The v2 supervisor stopped at local fold0 before assessment output was written. The fixed ten-epoch head was already fitted and saved. No head or quality fitting is repeated.
+
+Read-only diagnosis bound to the actual local fold0 LAST found canonical-only versus historical mixed-QA batch4 probability differences at most 1.1920928955078125e-7 (10/321 model-val and20/803 test probabilities). All diagnostic answers were unchanged; calibration was bitwise identical. This is numerical batch context, not evidence of a clinical effect.
+
+V3 restores the exact historical mixed-QA batch4 ordering for assessment feature extraction, detached-head evaluation and fresh public replay. Canonical rows are selected AFTER full-batch forward and head evaluation. Exact equality to saved original records remains mandatory; no tolerance is added. The fitting algorithm, TRAIN-only features/batch64, ten epochs, seed, calibration-negative threshold policy and bootstrap protocol remain unchanged. Existing Bfold0 head/replay/operating receipts are reused. The fitted localfold0 HEAD_LAST and fit receipt are reused for assessment only. Remaining heads are fitted once as prospectively specified.
+
+All v1/v2 sources, failures and partials remain unchanged. V3 has a separate supervisor, progress and failure destination. It enforces the original coordinator deadline for child timeouts; no deadline extension. Previous wall guard exited upon v2 failure; v3 child supervision continues under the original absolute deadline. Final closure needs a versioned validator that acknowledges the preserved resolved failure and checks v3 receipts, immutable dependencies, all exact replays and original wall deadline. Neither execution completion nor analysis generation alone is closure.

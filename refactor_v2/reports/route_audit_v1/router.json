@@ -1,0 +1,198 @@
+{
+ "B": {
+  "rows": 1432,
+  "rows_rule_closed": 779,
+  "rows_free_router": 653,
+  "type_prob_quantiles": [
+   1.9110461835225578e-07,
+   2.963913721032441e-07,
+   5.994756406835222e-07,
+   9.894001777865924e-06,
+   0.0035137285478413073,
+   0.9999946355819702,
+   0.9999980926513672
+  ],
+  "grid": {
+   "0.1": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8836140888208269
+   },
+   "0.3": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8836140888208269
+   },
+   "0.5": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8836140888208269
+   },
+   "0.7": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8836140888208269
+   },
+   "0.9": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8836140888208269
+   },
+   "0.99": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8836140888208269
+   }
+  },
+  "gt_type_counts": {
+   "OPEN": 628,
+   "CLOSED": 25
+  }
+ },
+ "token_budget": {
+  "n_unique_questions": 28,
+  "template_tokens": 14,
+  "max_text_tokens": 30,
+  "text_limit": 48,
+  "truncated_text": 0,
+  "max_llm_tokens": 30,
+  "llm_limit": 56,
+  "truncated_llm": 0
+ },
+ "V4": {
+  "rows": 1432,
+  "rows_rule_closed": 779,
+  "rows_free_router": 653,
+  "type_prob_quantiles": [
+   1.059339851394725e-07,
+   1.654175974863392e-07,
+   3.3211591699000564e-07,
+   2.20925867324695e-05,
+   0.0031546292360871988,
+   0.9998691558837891,
+   0.9999654293060303
+  ],
+  "grid": {
+   "0.1": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.891271056661562
+   },
+   "0.3": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.891271056661562
+   },
+   "0.5": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.891271056661562
+   },
+   "0.7": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.891271056661562
+   },
+   "0.9": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.891271056661562
+   },
+   "0.99": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.891271056661562
+   }
+  },
+  "gt_type_counts": {
+   "OPEN": 628,
+   "CLOSED": 25
+  }
+ },
+ "VLPT": {
+  "rows": 1432,
+  "rows_rule_closed": 779,
+  "rows_free_router": 653,
+  "type_prob_quantiles": [
+   4.09848871640861e-06,
+   5.987982331134845e-06,
+   1.1445479140093085e-05,
+   9.509853407507762e-05,
+   0.005267655849456785,
+   0.9992771244049072,
+   0.9997768998146057
+  ],
+  "grid": {
+   "0.1": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8943338437978561
+   },
+   "0.3": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8943338437978561
+   },
+   "0.5": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8943338437978561
+   },
+   "0.7": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8943338437978561
+   },
+   "0.9": {
+    "routed_closed": 25,
+    "routed_open": 628,
+    "changed_vs_0p7": 0,
+    "unknown_rows": 0,
+    "acc_known": 0.8943338437978561
+   },
+   "0.99": {
+    "routed_closed": 22,
+    "routed_open": 631,
+    "changed_vs_0p7": 3,
+    "unknown_rows": 3,
+    "acc_known": 0.8938461538461538
+   }
+  },
+  "gt_type_counts": {
+   "OPEN": 628,
+   "CLOSED": 25
+  }
+ }
+}

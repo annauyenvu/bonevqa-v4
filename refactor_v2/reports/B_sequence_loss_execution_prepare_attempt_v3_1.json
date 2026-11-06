@@ -1,0 +1,13 @@
+{
+  "scope": "Preserved pre-seal preparation diagnostic; no model or training",
+  "first_attempt": "Preparation stopped at initial ps call: PermissionError Operation not permitted",
+  "process_state_from_denied_call": "unknown; no claim of no processes based on this denied call",
+  "candidate_output_folder_created_by_denied_attempt": false,
+  "quality_training_updates": 0,
+  "follow_up": "Repeat preparation with explicit read-process permission; normalize legacy partial config with frozen DEFAULT_MODEL_CFG before first candidate seal",
+  "legacy_model_override_keys": 56,
+  "resolved_PREtask_model_keys": 66,
+  "scientific_architecture_changed": false,
+  "original_technical_sources_modified": false,
+  "long_training_authorized": false
+}

@@ -1,0 +1,1504 @@
+[
+  {
+    "image": "images/Non_fractured/IMG0000008.jpg",
+    "image_id": "IMG0000008",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral",
+      "oblique"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000008.jpg",
+    "image_id": "IMG0000008",
+    "question": "Is this an X-ray of the leg?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral",
+      "oblique"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000008.jpg",
+    "image_id": "IMG0000008",
+    "question": "Is the hip fractured?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral",
+      "oblique"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000008.jpg",
+    "image_id": "IMG0000008",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "leg",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral",
+      "oblique"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000013.jpg",
+    "image_id": "IMG0000013",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000013.jpg",
+    "image_id": "IMG0000013",
+    "question": "Is this an X-ray of the leg?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000013.jpg",
+    "image_id": "IMG0000013",
+    "question": "Is the leg fractured?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000013.jpg",
+    "image_id": "IMG0000013",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "leg",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000013.jpg",
+    "image_id": "IMG0000013",
+    "question": "What type of imaging is this?",
+    "answer": "x-ray",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000015.jpg",
+    "image_id": "IMG0000015",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2880,
+    "height": 2304
+  },
+  {
+    "image": "images/Non_fractured/IMG0000015.jpg",
+    "image_id": "IMG0000015",
+    "question": "Is this an X-ray of the hand?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2880,
+    "height": 2304
+  },
+  {
+    "image": "images/Non_fractured/IMG0000015.jpg",
+    "image_id": "IMG0000015",
+    "question": "Is this a frontal view X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2880,
+    "height": 2304
+  },
+  {
+    "image": "images/Non_fractured/IMG0000015.jpg",
+    "image_id": "IMG0000015",
+    "question": "Describe the finding.",
+    "answer": "No fracture is seen in the hand.",
+    "answer_type": "OPEN",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2880,
+    "height": 2304
+  },
+  {
+    "image": "images/Non_fractured/IMG0000015.jpg",
+    "image_id": "IMG0000015",
+    "question": "What abnormality is seen in this X-ray?",
+    "answer": "no abnormality",
+    "answer_type": "OPEN",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2880,
+    "height": 2304
+  },
+  {
+    "image": "images/Non_fractured/IMG0000016.jpg",
+    "image_id": "IMG0000016",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000016.jpg",
+    "image_id": "IMG0000016",
+    "question": "Is this a lateral view X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000016.jpg",
+    "image_id": "IMG0000016",
+    "question": "Describe the finding.",
+    "answer": "No fracture is seen in the hand.",
+    "answer_type": "OPEN",
+    "region": "hand",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000018.jpg",
+    "image_id": "IMG0000018",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000018.jpg",
+    "image_id": "IMG0000018",
+    "question": "Is this a lateral view X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000018.jpg",
+    "image_id": "IMG0000018",
+    "question": "Describe the finding.",
+    "answer": "No fracture is seen in the leg.",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000018.jpg",
+    "image_id": "IMG0000018",
+    "question": "What abnormality is seen in this X-ray?",
+    "answer": "no abnormality",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000018.jpg",
+    "image_id": "IMG0000018",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "leg",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000019.jpg",
+    "image_id": "IMG0000019",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1242.2970297029703,
+        929.1089108910893,
+        1515.5643564356437,
+        1076.4356435643565
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1266.0594059405942,
+          1045.5445544554457,
+          1339.7227722772277,
+          1021.782178217822,
+          1401.5049504950496,
+          1052.673267326733,
+          1489.4257425742576,
+          1076.4356435643565,
+          1515.5643564356437,
+          1021.782178217822,
+          1449.0297029702972,
+          943.3663366336635,
+          1308.8316831683169,
+          929.1089108910893,
+          1242.2970297029703,
+          986.1386138613863
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000019.jpg",
+    "image_id": "IMG0000019",
+    "question": "Is this a lateral view X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1242.2970297029703,
+        929.1089108910893,
+        1515.5643564356437,
+        1076.4356435643565
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1266.0594059405942,
+          1045.5445544554457,
+          1339.7227722772277,
+          1021.782178217822,
+          1401.5049504950496,
+          1052.673267326733,
+          1489.4257425742576,
+          1076.4356435643565,
+          1515.5643564356437,
+          1021.782178217822,
+          1449.0297029702972,
+          943.3663366336635,
+          1308.8316831683169,
+          929.1089108910893,
+          1242.2970297029703,
+          986.1386138613863
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000019.jpg",
+    "image_id": "IMG0000019",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "hand",
+    "answer_type": "OPEN",
+    "region": "hand",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1242.2970297029703,
+        929.1089108910893,
+        1515.5643564356437,
+        1076.4356435643565
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1266.0594059405942,
+          1045.5445544554457,
+          1339.7227722772277,
+          1021.782178217822,
+          1401.5049504950496,
+          1052.673267326733,
+          1489.4257425742576,
+          1076.4356435643565,
+          1515.5643564356437,
+          1021.782178217822,
+          1449.0297029702972,
+          943.3663366336635,
+          1308.8316831683169,
+          929.1089108910893,
+          1242.2970297029703,
+          986.1386138613863
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000022.jpg",
+    "image_id": "IMG0000022",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000022.jpg",
+    "image_id": "IMG0000022",
+    "question": "Is this a lateral view X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000022.jpg",
+    "image_id": "IMG0000022",
+    "question": "Is this an X-ray of the leg?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000022.jpg",
+    "image_id": "IMG0000022",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "leg",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000022.jpg",
+    "image_id": "IMG0000022",
+    "question": "Describe the finding.",
+    "answer": "No fracture is seen in the leg.",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000024.jpg",
+    "image_id": "IMG0000024",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000024.jpg",
+    "image_id": "IMG0000024",
+    "question": "Is this an X-ray of the leg?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000024.jpg",
+    "image_id": "IMG0000024",
+    "question": "Describe the finding.",
+    "answer": "No fracture is seen in the leg.",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000024.jpg",
+    "image_id": "IMG0000024",
+    "question": "What abnormality is seen in this X-ray?",
+    "answer": "no abnormality",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000024.jpg",
+    "image_id": "IMG0000024",
+    "question": "How many fracture sites are visible?",
+    "answer": "zero",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "lateral"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000026.jpg",
+    "image_id": "IMG0000026",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000026.jpg",
+    "image_id": "IMG0000026",
+    "question": "Is this an X-ray of the leg?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000026.jpg",
+    "image_id": "IMG0000026",
+    "question": "Describe the finding.",
+    "answer": "No fracture is seen in the leg.",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Non_fractured/IMG0000026.jpg",
+    "image_id": "IMG0000026",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "leg",
+    "answer_type": "OPEN",
+    "region": "leg",
+    "fractured": 0,
+    "hardware": 0,
+    "fracture_count": 0,
+    "views": [
+      "frontal"
+    ],
+    "boxes": null,
+    "segmentation": null,
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000044.jpg",
+    "image_id": "IMG0000044",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1426.5110928512734,
+        1072.0131470829908,
+        1570.8660640920293,
+        1187.9704190632704
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1554.300739523418,
+          1076.746096959737,
+          1457.2752670501231,
+          1072.0131470829908,
+          1426.5110928512734,
+          1126.442070665571,
+          1452.542317173377,
+          1183.237469186524,
+          1518.8036154478223,
+          1187.9704190632704,
+          1570.8660640920293,
+          1152.4732949876745
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000044.jpg",
+    "image_id": "IMG0000044",
+    "question": "Does this image contain more than one scan?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1426.5110928512734,
+        1072.0131470829908,
+        1570.8660640920293,
+        1187.9704190632704
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1554.300739523418,
+          1076.746096959737,
+          1457.2752670501231,
+          1072.0131470829908,
+          1426.5110928512734,
+          1126.442070665571,
+          1452.542317173377,
+          1183.237469186524,
+          1518.8036154478223,
+          1187.9704190632704,
+          1570.8660640920293,
+          1152.4732949876745
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000044.jpg",
+    "image_id": "IMG0000044",
+    "question": "Is this a lateral view X-ray?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1426.5110928512734,
+        1072.0131470829908,
+        1570.8660640920293,
+        1187.9704190632704
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1554.300739523418,
+          1076.746096959737,
+          1457.2752670501231,
+          1072.0131470829908,
+          1426.5110928512734,
+          1126.442070665571,
+          1452.542317173377,
+          1183.237469186524,
+          1518.8036154478223,
+          1187.9704190632704,
+          1570.8660640920293,
+          1152.4732949876745
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000044.jpg",
+    "image_id": "IMG0000044",
+    "question": "Describe the finding.",
+    "answer": "A fracture is seen in the hand and shoulder at the center.",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1426.5110928512734,
+        1072.0131470829908,
+        1570.8660640920293,
+        1187.9704190632704
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1554.300739523418,
+          1076.746096959737,
+          1457.2752670501231,
+          1072.0131470829908,
+          1426.5110928512734,
+          1126.442070665571,
+          1452.542317173377,
+          1183.237469186524,
+          1518.8036154478223,
+          1187.9704190632704,
+          1570.8660640920293,
+          1152.4732949876745
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000044.jpg",
+    "image_id": "IMG0000044",
+    "question": "Where is the fracture located?",
+    "answer": "center of the hand and shoulder",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1426.5110928512734,
+        1072.0131470829908,
+        1570.8660640920293,
+        1187.9704190632704
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1554.300739523418,
+          1076.746096959737,
+          1457.2752670501231,
+          1072.0131470829908,
+          1426.5110928512734,
+          1126.442070665571,
+          1452.542317173377,
+          1183.237469186524,
+          1518.8036154478223,
+          1187.9704190632704,
+          1570.8660640920293,
+          1152.4732949876745
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000044.jpg",
+    "image_id": "IMG0000044",
+    "question": "How many fracture sites are visible?",
+    "answer": "one",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        1426.5110928512734,
+        1072.0131470829908,
+        1570.8660640920293,
+        1187.9704190632704
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1554.300739523418,
+          1076.746096959737,
+          1457.2752670501231,
+          1072.0131470829908,
+          1426.5110928512734,
+          1126.442070665571,
+          1452.542317173377,
+          1183.237469186524,
+          1518.8036154478223,
+          1187.9704190632704,
+          1570.8660640920293,
+          1152.4732949876745
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000057.jpg",
+    "image_id": "IMG0000057",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "oblique"
+    ],
+    "boxes": [
+      [
+        1130.6138613861388,
+        1119.2079207920794,
+        1270.8118811881188,
+        1219.0099009900991
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1201.90099009901,
+          1119.2079207920794,
+          1130.6138613861388,
+          1150.0990099009903,
+          1180.5148514851485,
+          1219.0099009900991,
+          1270.8118811881188,
+          1200.0000000000002,
+          1270.8118811881188,
+          1138.2178217821784
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000057.jpg",
+    "image_id": "IMG0000057",
+    "question": "Is there any orthopedic hardware or implant visible?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "oblique"
+    ],
+    "boxes": [
+      [
+        1130.6138613861388,
+        1119.2079207920794,
+        1270.8118811881188,
+        1219.0099009900991
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1201.90099009901,
+          1119.2079207920794,
+          1130.6138613861388,
+          1150.0990099009903,
+          1180.5148514851485,
+          1219.0099009900991,
+          1270.8118811881188,
+          1200.0000000000002,
+          1270.8118811881188,
+          1138.2178217821784
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000057.jpg",
+    "image_id": "IMG0000057",
+    "question": "Does this image contain more than one scan?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "oblique"
+    ],
+    "boxes": [
+      [
+        1130.6138613861388,
+        1119.2079207920794,
+        1270.8118811881188,
+        1219.0099009900991
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1201.90099009901,
+          1119.2079207920794,
+          1130.6138613861388,
+          1150.0990099009903,
+          1180.5148514851485,
+          1219.0099009900991,
+          1270.8118811881188,
+          1200.0000000000002,
+          1270.8118811881188,
+          1138.2178217821784
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000057.jpg",
+    "image_id": "IMG0000057",
+    "question": "Describe the finding.",
+    "answer": "A fracture is seen in the hand and shoulder at the center.",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "oblique"
+    ],
+    "boxes": [
+      [
+        1130.6138613861388,
+        1119.2079207920794,
+        1270.8118811881188,
+        1219.0099009900991
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1201.90099009901,
+          1119.2079207920794,
+          1130.6138613861388,
+          1150.0990099009903,
+          1180.5148514851485,
+          1219.0099009900991,
+          1270.8118811881188,
+          1200.0000000000002,
+          1270.8118811881188,
+          1138.2178217821784
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000057.jpg",
+    "image_id": "IMG0000057",
+    "question": "What type of imaging is this?",
+    "answer": "x-ray",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "oblique"
+    ],
+    "boxes": [
+      [
+        1130.6138613861388,
+        1119.2079207920794,
+        1270.8118811881188,
+        1219.0099009900991
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1201.90099009901,
+          1119.2079207920794,
+          1130.6138613861388,
+          1150.0990099009903,
+          1180.5148514851485,
+          1219.0099009900991,
+          1270.8118811881188,
+          1200.0000000000002,
+          1270.8118811881188,
+          1138.2178217821784
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000057.jpg",
+    "image_id": "IMG0000057",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "hand and shoulder",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "oblique"
+    ],
+    "boxes": [
+      [
+        1130.6138613861388,
+        1119.2079207920794,
+        1270.8118811881188,
+        1219.0099009900991
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          1201.90099009901,
+          1119.2079207920794,
+          1130.6138613861388,
+          1150.0990099009903,
+          1180.5148514851485,
+          1219.0099009900991,
+          1270.8118811881188,
+          1200.0000000000002,
+          1270.8118811881188,
+          1138.2178217821784
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000100.jpg",
+    "image_id": "IMG0000100",
+    "question": "Is there a fracture in this X-ray?",
+    "answer": "yes",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        683.4379622021364,
+        1038.8824979457681,
+        834.8923582580114,
+        1178.504519309778
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          683.4379622021364,
+          1088.5784716516023,
+          685.8044371405094,
+          1157.2062448644206,
+          759.165160230074,
+          1178.504519309778,
+          834.8923582580114,
+          1171.405094494659,
+          825.4264585045192,
+          1119.3426458504518,
+          756.7986852917008,
+          1055.4478225143796,
+          704.7362366474938,
+          1038.8824979457681
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000100.jpg",
+    "image_id": "IMG0000100",
+    "question": "Is the hip fractured?",
+    "answer": "no",
+    "answer_type": "CLOSED",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        683.4379622021364,
+        1038.8824979457681,
+        834.8923582580114,
+        1178.504519309778
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          683.4379622021364,
+          1088.5784716516023,
+          685.8044371405094,
+          1157.2062448644206,
+          759.165160230074,
+          1178.504519309778,
+          834.8923582580114,
+          1171.405094494659,
+          825.4264585045192,
+          1119.3426458504518,
+          756.7986852917008,
+          1055.4478225143796,
+          704.7362366474938,
+          1038.8824979457681
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000100.jpg",
+    "image_id": "IMG0000100",
+    "question": "Which body region is shown in this X-ray?",
+    "answer": "hand and shoulder",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        683.4379622021364,
+        1038.8824979457681,
+        834.8923582580114,
+        1178.504519309778
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          683.4379622021364,
+          1088.5784716516023,
+          685.8044371405094,
+          1157.2062448644206,
+          759.165160230074,
+          1178.504519309778,
+          834.8923582580114,
+          1171.405094494659,
+          825.4264585045192,
+          1119.3426458504518,
+          756.7986852917008,
+          1055.4478225143796,
+          704.7362366474938,
+          1038.8824979457681
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000100.jpg",
+    "image_id": "IMG0000100",
+    "question": "What type of imaging is this?",
+    "answer": "x-ray",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        683.4379622021364,
+        1038.8824979457681,
+        834.8923582580114,
+        1178.504519309778
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          683.4379622021364,
+          1088.5784716516023,
+          685.8044371405094,
+          1157.2062448644206,
+          759.165160230074,
+          1178.504519309778,
+          834.8923582580114,
+          1171.405094494659,
+          825.4264585045192,
+          1119.3426458504518,
+          756.7986852917008,
+          1055.4478225143796,
+          704.7362366474938,
+          1038.8824979457681
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  },
+  {
+    "image": "images/Fractured/IMG0000100.jpg",
+    "image_id": "IMG0000100",
+    "question": "What abnormality is seen in this X-ray?",
+    "answer": "fracture",
+    "answer_type": "OPEN",
+    "region": "hand and shoulder",
+    "fractured": 1,
+    "hardware": 0,
+    "fracture_count": 1,
+    "views": [
+      "frontal"
+    ],
+    "boxes": [
+      [
+        683.4379622021364,
+        1038.8824979457681,
+        834.8923582580114,
+        1178.504519309778
+      ]
+    ],
+    "segmentation": [
+      [
+        [
+          683.4379622021364,
+          1088.5784716516023,
+          685.8044371405094,
+          1157.2062448644206,
+          759.165160230074,
+          1178.504519309778,
+          834.8923582580114,
+          1171.405094494659,
+          825.4264585045192,
+          1119.3426458504518,
+          756.7986852917008,
+          1055.4478225143796,
+          704.7362366474938,
+          1038.8824979457681
+        ]
+      ]
+    ],
+    "width": 2304,
+    "height": 2880
+  }
+]

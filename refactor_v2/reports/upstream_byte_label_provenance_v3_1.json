@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "script_sha256": "4667c7b6e0a262776323c2b5db4bea9c85a0800f8e8b351d997cf064596e1809",
+  "fresh_inventory_sha256": "7a548b9287bde7d2b3ab2b513080bd386ada8043590c23a747ae26993a1cdbb5",
+  "fresh_inventory_independent_verification_sha256": "4d71eb600bde6240672172f8f1ff1ed54bce262c055f6183cefde1542ba6a7db",
+  "alignment_seal_sha256": "2e0346c2cebe23b5e364db6c119fddfb5502ebbae099ac3e6250487ca8658e03",
+  "alignment_seal_artifacts_rehashed": 36,
+  "upstream": {
+    "roco": {
+      "config_sha256": "d61feb5892a8548082fc78189f8488d14ebd6dc6783e35bf8f5cb217ef713e45",
+      "driver_progress_sha256": "8a870fa37fed4037f2256927cbe1558b04e95d2d4a5d29710a58be82c942678f",
+      "prior_independent_artifact_audit_sha256": "bf9e10f76f1b52d04edb67b0276001b5a8f19f5657ee4ee9f69a431b54226c2e",
+      "train_manifest_sha256": "a99212e05f2f226f13f78dab5fc9a0a74f38805882d9e986c215c7957674e524",
+      "train_rows": 19556,
+      "model_val_manifest_sha256": "9572e954d7998ce0e2f26bfb380f27813f2f0669afd9b72dc542151974b4ff12",
+      "model_val_rows": 9903
+    },
+    "pmc_vqa": {
+      "config_sha256": "49220f1ddad0a903cf0cce15ed38d702885ab8cb9e6a832002df6cac6e43a71c",
+      "driver_progress_sha256": "229f1d5d89e0b05a96967c72b87e30450c550f50e778eca6b59dc43e35521b13",
+      "prior_independent_artifact_audit_sha256": "a260205a0a31aee6efdb335a87feb8cc8f678ab6ddc1cad2c7f41df6e93eca7c",
+      "train_manifest_sha256": "adefea3c93500e42af6d2acfbe2bd984c6f70649f925d2541e367773c5b4ca99",
+      "train_rows": 28490,
+      "model_val_manifest_sha256": "6ec3dbd49226d8f994c2bcde83cf496398ab57b47f43895fa6c20a06e13adace",
+      "model_val_rows": 1500
+    }
+  },
+  "checkpoint_bytes_sha256": {
+    "roco/best": "08cd132ef1097da8f64758225b3f66b7a5329a5d008accfe84e352e94cb98302",
+    "roco/last": "6df3d78684b5f5b1c8071a424f16d5e20556693b051611fdb1afaeebc73e91ca",
+    "pmc_vqa/best": "ce5262252ecca06c0d547c5edd0e2a992c31fccd90474e194e6ddad68ed0f976",
+    "pmc_vqa/last": "d3ed496636431e6d6add27c56f241159dcabf2df45e5cafe0a1bf1e1a97a1b19"
+  },
+  "initialization_chain": "Recorded ROCO init_from=null, PMC init_from=verified new ROCO BEST; no historical PMC checkpoint introduced by these configs",
+  "PMC_structural_label_filter": {
+    "report_sha256": "5910d87d30fffc27af411c1c9041e854231fe25c3df13356e8170ef3de41ab46",
+    "before": 28493,
+    "after": 28490,
+    "quarantined": 3,
+    "retained_records_order_and_all_existing_fields_unchanged": true,
+    "clinical_label_correctness_adjudicated": false
+  },
+  "historical_PMC_checkpoint_provenance": "Not certified by this audit; retain ineligible status",
+  "PMC_train_lon_test_shared_sha256_images": 33252,
+  "PMC_quality_gate": "Previously failed 124/1500 OPEN exact; byte/provenance pass does not release downstream training",
+  "limitations": [
+    "Recorded configs/artifact lineage checked, no new model-state reload or training replay",
+    "Base-model pretraining exposure and patient identity remain uncertified",
+    "No independent holdout or crop/rotation invariance certification"
+  ],
+  "elapsed_seconds": 1.1881489580009656,
+  "model_calls": 0,
+  "training_updates": 0,
+  "manifest_changes": 0,
+  "long_training_authorized": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

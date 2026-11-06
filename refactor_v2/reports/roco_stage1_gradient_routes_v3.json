@@ -1,0 +1,31 @@
+{
+  "stage": 1,
+  "loss": 0.019121456891298294,
+  "modules": {
+    "visual.": {
+      "trainable_tensors": 26,
+      "nonzero_gradients": 12
+    },
+    "qformer.": {
+      "trainable_tensors": 55,
+      "nonzero_gradients": 0
+    },
+    "fusion.": {
+      "trainable_tensors": 62,
+      "nonzero_gradients": 12
+    },
+    "img_proj.": {
+      "trainable_tensors": 4,
+      "nonzero_gradients": 4
+    },
+    "txt_proj.": {
+      "trainable_tensors": 4,
+      "nonzero_gradients": 4
+    },
+    "llm_prefix_proj.": {
+      "trainable_tensors": 0,
+      "nonzero_gradients": 0
+    }
+  },
+  "scope": "Two real ROCO images; gradient routing only"
+}

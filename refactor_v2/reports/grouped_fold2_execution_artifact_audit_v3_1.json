@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "fold": "2",
+  "scope": "Execution artifacts only; no inference or independent clinical/VQA metric validation",
+  "statistics": {
+    "TRAIN_calls": 5764,
+    "TRAIN_rows": 23050,
+    "native_eval_rows": 2868
+  },
+  "checkpoint_sha256": {
+    "last.pt": "c9243bab31728f1b600708d2c5e3738b6d0d4cdb826f6b90a184530d291b3331",
+    "optimizer.pt": "176a6b59ea26c108e3ca52c33dce69fbb397d5baa1b6b2f8d8628b622a8bee07"
+  },
+  "elapsed_seconds": 6422.134661667005,
+  "independent_quality_audit_pending": true,
+  "reserved_role_inference": false
+}

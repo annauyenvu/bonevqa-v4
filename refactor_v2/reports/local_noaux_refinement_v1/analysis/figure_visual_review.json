@@ -1,0 +1,14 @@
+{
+  "visually_reviewed": true,
+  "figure_sha256": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/analysis/comparison.png": "856d053229c5f59937f4eba7132c00ea1139227d1d8f4f84ef50c3aadabd0924",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/analysis/fold_comparison.png": "409992ab94c4918a5bcb05a8fa248cc9094bd1e74fa750e927ceac3676102d40"
+  },
+  "review_notes": [
+    "Both actual PNGs opened and visually inspected; titles, axes, legends and numeric labels readable without clipping.",
+    "Comparison chart shows four distinct variants; raw AP is not conflated with calibration-operating sensitivity/specificity.",
+    "Local original-head AP exceeds B in all five folds; operating BA is slightly lower in fold3, so not every endpoint wins every fold.",
+    "Calibration specificity target 0.90 is not guaranteed outer specificity; local outer specificity is approximately0.896.",
+    "Charts are descriptive point estimates; uncertainty must be read with bootstrap CIs in results.json and final interpretation."
+  ]
+}

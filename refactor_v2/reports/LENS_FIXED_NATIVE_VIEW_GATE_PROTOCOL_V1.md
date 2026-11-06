@@ -1,0 +1,7 @@
+# Fixed native Lens view preparation for contrastive gates
+
+Before new outcomes: use exactly historical TRAIN record indices[8,5,16,26], no image hunting or label-conditioned selection. Reuse the recovered hash-bound IMG0000044 views (alpha.5 disclosed technical mean); generate native SAM-Huge proposals for the other three with source32points/crop, crop layers0, IoU.8/stability.95, CPU point batch8instead of64. Use source view/mask filters and source renderer. For new cases drawalpha from clippedN(.5,.1) with one fixed NumPy seed42 in the frozen index order. Record skips/errors, never invent masks or add images to force eligibility.
+
+Select the first two eligible distinct image IDs in this fixed order only for interface/gradient coverage, not quality performance. Check duplicates by raster hash and retain disclosure about known components versus patients. If fewer than two are eligible, record unsupported native contrastive batch rather than pretending batch1or accumulated gradients establish negatives. No alignment label may use source fallback`radiology anatomy`; any later existing BoneVQA region-to-source-organ mapping is an explicitly disclosed supervision adaptation and must bind existing metadata.
+
+This is four fixed development cases, not cohort proposal recall or a training release. Original-only public inference remains mandatory. Native processor2048-long-edge acceptance exists on one actual17/17/17tile case; full-gradient memory must be bounded prospectively and any resolution/chunking adaptation disclosed rather than silently applied.

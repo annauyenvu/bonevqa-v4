@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_33.json",
+  "scope":"User-requested maximum practical resource throughput; currentCPU/MPS benchmarking complete, no qualitytrainingoraccuracychange",
+  "performance_policy":"FAST_EXECUTION_POLICY_V3.json",
+  "performance_narrative":"RESOURCE_ACCELERATION_MEASUREMENTS_V3.md",
+  "CPU_report_sha256":"3e70e673f16156e619dd6620fbffeb80b6e086991f3b87e63c95c7115426f801",
+  "MPS_report_sha256":"6fb18c1ab42950cceb7303ebc97c35c326c6edd1d1c67de20142fc97475bf940",
+  "hardware":{"CPU_cores":12,"performance_cores":8,"efficiency_cores":4,"RAM_GiB":24},
+  "CPU_measured_choice":{"threads":8,"median_seconds":0.6012616669977433,"CPU12_slower_percent":12.77207366042241},
+  "MPS_candidate":{"CPU_seconds":0.5787006880018453,"MPS_seconds":0.3791275619951193,"measured_speedup":1.526400995370775,"cross_device_selected_gradient_screen_passed":false,"quality_runtime_released":false},
+  "MPS_caveat":"StochasticTRAINdropoutCPUvsMPSnotmaskmatched;gradientdifferencesdoNOTisolatebackendbug. PriorMPSRNGstate-restorefailed. NeedproperlyboundGPUdeterministic/update/epoch-restart/replayqualificationbeforequalitytraining,notblinddeviceswitch.",
+  "workflow_changes":"Keepmeasured8threadCPU;residentmodelforrelateddiagnosticsandcachefixedfixtures;executeapproveddependentstagesconsecutivelywithoutintentional30minheartbeatwait;retainrequiredsinglefreshprocessreplayatstageboundary. Interop1fixedinbenchmarkNOTprovenfasterthanolddefault. NooversubscribingorblindRAMsaturation.",
+  "next_priority":"BoundGPU-specificspeed/numericalandepoch-restartgatewithoutnewqualityupdates,thenusefastestqualifiedruntimefornextTRAINerror-bearingdiagnostic. Do notclaimwholepipeline1.53xspeeduporwhole-step3ETA.",
+  "optimizer_updates":0,
+  "frozen_sources_checkpoints_or_labels_modified":false,
+  "runtime_offline":true,
+  "new_quality_training_released":false,
+  "step3_complete":false,
+  "Final_Solution_selected":false,
+  "production_released":false
+}

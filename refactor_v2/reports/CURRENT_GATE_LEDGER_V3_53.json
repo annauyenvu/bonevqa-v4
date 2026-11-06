@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_52.json",
+  "snapshot_local":"2026-10-22 approximately03:44 ICT",
+  "completed_new_folds":["1","2"],
+  "active_fold":"3",
+  "latest_logged_update":810,
+  "active_fold_total_updates":1442,
+  "active_epoch":2,
+  "active_worker_elapsed":"1h00m54s",
+  "active_worker_cpu_percent":735.5,
+  "active_worker_memory_percent":22.3,
+  "measured_window":{"updates":[780,810],"wall_clock_local":["03:42:17","03:44:19"],"seconds_per_update":4.0667},
+  "remaining_quality_updates":2072,
+  "conditional_training_execution_remaining":"Approximately2h20m to2h40m including validation/transition overhead if recent throughput and completed-fold patterns hold; independent evaluation/calibration/replay/audits are additional",
+  "fold3_epoch1_trainer_modelval":{"overall_acc":0.8685,"fracture_sensitivity":0.6842,"fracture_specificity":0.8712,"fracture_balanced_accuracy":0.7777,"fracture_auroc":0.8464},
+  "metric_scope":"Rounded native trainer modelval log diagnostics from epoch1; fixed epoch2 LAST remains the frozen evaluation checkpoint. No checkpoint selection or independent quality claim.",
+  "routing":"Seed42 native B protocol; T/V/L/P disabled; startup VisualLoRA gradient/update QC24/24 passed",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}

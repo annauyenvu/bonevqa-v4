@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "8ada0a7439db8199dbbe068db63f63e8fb867b4614caad2caa552d9a4b331c0b",
+  "payload_keys": [
+    "answer_vocab",
+    "config",
+    "extra",
+    "state"
+  ],
+  "stage2_answer_vocab_size": 500,
+  "downstream_answer_vocab_size": 127,
+  "answer_vocab_identity": false,
+  "note": "downstream vocabulary is locked from the historical FracAtlas checkpoint; shape-compatible stage-2 weights are loaded"
+}

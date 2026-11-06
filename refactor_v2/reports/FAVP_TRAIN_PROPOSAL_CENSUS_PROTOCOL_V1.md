@@ -1,0 +1,9 @@
+# Native SAMMed2D TRAIN-cohort proposal census
+
+Prospectively fixed after the four-case interface check, before this census: enumerate **all 256 unique original images in the sealed 1,164-record TRAIN cohort**, sorted by image ID, once each. Bind the complete list, TRAIN manifest, loader configuration and source/checkpoint hashes before any proposal inference. No model-validation, calibration or test images are selected. Existing small-case outputs are not used to select or replace cases.
+
+Use unchanged author RAD automatic generator settings: 50×50 point grid, IoU .8, stability .9, offset .7, box NMS .5, crop layers 0, crop NMS .7, overlap 512/1500, point downscale 2, minimum region area 400. CPU point batch 16 is the previously disclosed memory adaptation (author 256). Preserve the author BGR generator boundary. No annotations, answer labels, question types or clinical metadata enter inference or aggregation.
+
+For every image save proposal count, original raster hash/shape, elapsed time and compact proposal geometry/quality summaries. Do not save full-resolution masks, use annotation ROIs, alter thresholds, add images, stop upon finding a nonempty case, or replace zero-proposal cases. Any execution failure stops and remains recorded; no silent retries or partial-cohort completion claim. Maximum wall-clock budget two hours; disk reserve 8 GiB. This is a coverage census, not training or evaluation tuning.
+
+Report completed denominator and natural nonempty-proposal rate, counts and timings. These are accepted automatic proposals, not medical sensitivity/recall or proof of accurate localization. A complete all-zero result means the native automatic-local branch is inactive on this frozen development cohort at this source configuration; it does not prove the method fails generally. Any nonempty cases can be used later for technical route coverage, not cherry-picked performance claims. No quality release is conferred.

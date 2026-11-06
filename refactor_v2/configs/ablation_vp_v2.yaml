@@ -1,0 +1,12 @@
+_base_: fracatlas_component_clean_v2.yaml
+run_name: fracatlas_clean_vp_seed42_ce_v3
+checkpoint_allow_mismatch_prefixes:
+  - closed_head.
+  - prompt_mixer.
+  - fusion.gamma_latent
+  - fusion.lp_out.
+  - lens_fusion.
+model:
+  use_visual_prompt: true
+  use_lens: false
+  use_latent_prompt: true

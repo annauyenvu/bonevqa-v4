@@ -1,0 +1,6 @@
+_base_: lens_alignment_stage1_v3.yaml
+run_name: fracatlas_clean_l_align_shuffled_control_seed42_prompt_v3
+data:
+  loader_kwargs:
+    roi_control: shuffled
+

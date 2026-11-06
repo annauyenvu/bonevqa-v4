@@ -1,0 +1,728 @@
+{
+  "status": "passed_structural_recipe_audit",
+  "candidate_index_sha256": "efe24d7a9a2c8231cb1f6484dd400c20f3d7ee72dad43c661f815178b13b3fe4",
+  "recipes": [
+    {
+      "recipe": "b",
+      "sha256": "4018c3f04a1bd9374d7ccc2a5e7beddf6a744d5c755d578b524bd40901b6ff93",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "v",
+      "sha256": "163670082cf10157959d69e4b66ce487e1e8d96798ef1e3e2ed085dc5e17d723",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "p",
+      "sha256": "9e7519adfcede0b315fa334402e48769660e39c74b7eb67778a8725540bf6e29",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "t",
+      "sha256": "e9cd2f497892b95048a5c7b17965418451fcfb299718c97cbad519b502c33b73",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "vp",
+      "sha256": "37cf783b785a3cbdf6bdc38f20c865a5e9679fa158e08b70e3a41e5b3505ecf1",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "p_unconditioned",
+      "sha256": "cf1f130acacdedd79e3926703d0fe6b0cfc04187cea9982f4e4f775e6afd0737",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "p_shuffled_train_only",
+      "sha256": "20de59ad7b848c23e958b724e4e7c7e1f4f32e2a622cf65db6202726334a8fba",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "p_random_bank",
+      "sha256": "329c397688c80a476e3a0be539a8bebfb183ea13ca81d43380061f88e04207f2",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "p_empty_bank",
+      "sha256": "f9485129f0eb68e35bfdf3faf6e50ee28ef0d53f4c8384bf6a36ce0a2bdb34e7",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "t_irrelevant_matched",
+      "sha256": "54028418a79f96a5b6640c228c8edcbc8a304d6cba35dfc4745b9e6facc788a3",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "t_paraphrase",
+      "sha256": "6adb68c848bcccd07bd28055cc03b655ffd8b4773d1990ac409cb20526a733cf",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "v_matched",
+      "sha256": "edae1b3a0cbdfcb4a45e91398681495525c8ca5cf7cb64b31bef75d70356c7b2",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "v_shuffled",
+      "sha256": "3d2074af2753422255a6094cd9c0c29fb39825220414adf1dce33b39b2d35d6a",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_real_align",
+      "sha256": "68f4259135fb728b4011dfc6c20d7abb5e46f923fdcfb1a9b7699d0fe39f0575",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 1,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "dcl",
+      "effective_open_ce_weight": 0.0,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_real_vqa",
+      "sha256": "79f67fe2dcfcae817b1c47c66b0f8e88cb825b2001186d41d0f8d8bd7de65e6d",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_original_align",
+      "sha256": "b9abe3879791ab0fa0474a1f5aae800813e5e0917d961b83c93004e2393252f6",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 1,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "dcl",
+      "effective_open_ce_weight": 0.0,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_original_vqa",
+      "sha256": "93d4a8f83f9a3d0d82c4a16c14c15ded737f04093fac2d7f51780fc88f06b71a",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_matched_align",
+      "sha256": "0a0ff65cc3717983e3b99f951938a91844d979376b105044efe9de1cdbb709b5",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 1,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "dcl",
+      "effective_open_ce_weight": 0.0,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_matched_vqa",
+      "sha256": "e5cf068539150477a1c2b7c01c03446a3beecb2709c52371ac2c0310f986df82",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_shuffled_align",
+      "sha256": "1c28ed5b847219f0ea58bc83c64f359f4621004230ca6016f88216aa3a734b0d",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 1,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "dcl",
+      "effective_open_ce_weight": 0.0,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "l_shuffled_vqa",
+      "sha256": "e101455a97769e77280350425816432ab9ccd81140243c8fed8e81c31a3276cc",
+      "roles": {
+        "train": {
+          "rows": 11502,
+          "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015"
+        },
+        "model_val": {
+          "rows": 1432,
+          "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a"
+        },
+        "calibration": {
+          "rows": 1432,
+          "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4"
+        },
+        "test": {
+          "rows": 3632,
+          "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02"
+        }
+      },
+      "stage": 3,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint",
+        "new_fold_complete_detector_proposals"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "roco_alignment",
+      "sha256": "d0a871588b3bf85ee71899e0247c77d36b843908d4b479a923b35e76b73be5d0",
+      "roles": {
+        "train": {
+          "rows": 19556,
+          "sha256": "a99212e05f2f226f13f78dab5fc9a0a74f38805882d9e986c215c7957674e524"
+        },
+        "model_val": {
+          "rows": 9903,
+          "sha256": "9572e954d7998ce0e2f26bfb380f27813f2f0669afd9b72dc542151974b4ff12"
+        }
+      },
+      "stage": 1,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [],
+      "effective_contrastive": "dcl",
+      "effective_open_ce_weight": 1.0,
+      "passed_recipe_structure": true
+    },
+    {
+      "recipe": "pmc_alignment",
+      "sha256": "f51545b7d71f22c1c2074e9148eed1bb0410de40117cc4cdf88134a83895408b",
+      "roles": {
+        "train": {
+          "rows": 28490,
+          "sha256": "adefea3c93500e42af6d2acfbe2bd984c6f70649f925d2541e367773c5b4ca99"
+        },
+        "model_val": {
+          "rows": 1500,
+          "sha256": "6ec3dbd49226d8f994c2bcde83cf496398ab57b47f43895fa6c20a06e13adace"
+        },
+        "test": {
+          "rows": 49990,
+          "sha256": "fe306620581b5b3bb52f25a652fc862d063c7aaa145597e6756b9efc8612b4c2"
+        }
+      },
+      "stage": 2,
+      "epochs": 2,
+      "reference_device": "cpu",
+      "execution_inputs_not_yet_available": [
+        "upstream_checkpoint"
+      ],
+      "effective_contrastive": "infonce",
+      "effective_open_ce_weight": 1,
+      "passed_recipe_structure": true
+    }
+  ],
+  "count": 23,
+  "L_phase_train_settings_equal": true,
+  "P_train_budget_settings_equal": true,
+  "passed": true,
+  "long_training_authorized": false,
+  "limitations": [
+    "not measured wall-clock/FLOP equality",
+    "upstream checkpoints and full-fold proposals remain unavailable",
+    "new upstream-trained initialization needs byte-parity QC before downstream ablations",
+    "no clinical, causal superiority or final module selection claim"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "device": "cpu",
+  "build_s": 2.663,
+  "forward_s": 0.243,
+  "loss": 1.4221274852752686,
+  "finite": true,
+  "v_gate_init": 0.0,
+  "l_gate_init": 0.0,
+  "p_gate_init": 0.0,
+  "backward_s": 0.901,
+  "gate_gradients": {
+    "V": 0.0070704687386751175,
+    "L": 0.005192248150706291,
+    "P": 0.006013684440404177
+  },
+  "gradient_finite": true
+}

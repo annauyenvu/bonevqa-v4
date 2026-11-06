@@ -1,0 +1,13 @@
+# FracAtlas–upstream perceptual scope audit
+
+2026-10-21 04:23 ICT. Prior unequal-pHash neighbour scripts searched ROCO–PMC or within those datasets; the FracAtlas script searched within FracAtlas. This new scoped audit explicitly queries FracAtlas against ROCO and PMC. It does not replace earlier exact-byte audits or certify independence.
+
+The cache contains 4,026 valid FracAtlas fingerprints, 34,858 ROCO and 60,962 PMC. Its 59 FracAtlas decoder-error records are listed explicitly in `fracatlas_upstream_neighbours_v3_2/cache_coverage.json`. Every sealed fold0 role image is covered by a valid fingerprint: TRAIN2,568/model-validation321/calibration321/evaluation803. Only metadata and pixels were inspected; no labels were fitted or models evaluated on reserved roles.
+
+Radius8 BK-tree search found87 candidates (ROCO32/PMC55), none equal pHash. A separate process using independent exhaustive vectorized XOR/byte-popcount checked all385,771,320 possible path pairs and reproduced exactly the87 candidates. Boundary/duplicate-hash BK-tree fixtures also passed. Search90.742seconds; exhaustive verification7.420seconds.
+
+All120 distinct candidate images were freshly byte-hashed and re-fingerprinted; current candidate pHashes match the cache. Fresh grayscale128 pixel diagnostics found0 byte-equal pairs,0 correlation>=.985 pairs and0 normalized-MAE<=.01 pairs. Maximum correlation.803438; minimum normalized MAE.072909. Separate-process recomputation verified candidate indices/path identities, all120 raw byte hashes, all87 pixel scores and report bindings. These are candidate diagnostics, not invented clinical/patient duplicate labels. No visual adjudication claim is made.
+
+Limits: raw fingerprints were not freshly recomputed for the entire corpus. pHash radius8 does not cover every crop, rotation, composite or transformation. Zero strong candidates here is not proof of independent evaluation or patient disjointness. Existing inspected FracAtlas test remains development-informed. No dataset, sealed manifest, checkpoint, inference protocol or production guard changed.
+
+Initial newv3_1 stopped at an assertion on decoder-error cache records before output/model calls. Failed source is preserved. Separatev3_2 explicitly records exclusions and checks every sealed-role image is covered. There were0 model calls,0 optimizer updates and0 new clinical labels. Original190 technical artifacts still hash-verify unchanged. RawB remains provisional; fullstep3/confirmation/FinalSolution/production remain incomplete. See CURRENT_GATE_LEDGER_V3_14.json for artifact SHA bindings. The original report status intentionally records the pre-verification stage; the independent verification and this ledger are the subsequent completion evidence.

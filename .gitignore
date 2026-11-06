@@ -1,0 +1,17 @@
+# Large or regenerable artefacts (not part of the package)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.npz
+*.npy
+*.zip
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+.DS_Store
+*.lock
+images/

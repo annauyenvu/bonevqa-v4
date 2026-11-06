@@ -1,0 +1,115 @@
+{
+ "startup_s": 6.569336175918579,
+ "rss_gb": 3.9976806640625,
+ "repeats": 5,
+ "threads": 4,
+ "machine": "Apple M4 Pro, 24 GB",
+ "latency_ms": {
+  "detect": {
+   "n": 30,
+   "p50": 88.0,
+   "p95": 93,
+   "max": 110,
+   "min": 74
+  },
+  "closed": {
+   "n": 30,
+   "p50": 233.0,
+   "p95": 347,
+   "max": 351,
+   "min": 160
+  },
+  "open": {
+   "n": 60,
+   "p50": 417.0,
+   "p95": 658,
+   "max": 664,
+   "min": 243
+  }
+ },
+ "tests": [
+  {
+   "name": "GET /api/health",
+   "want": "Trạng thái ok, tên mô hình",
+   "ok": true
+  },
+  {
+   "name": "GET /api/info",
+   "want": "Có kết quả và giới hạn",
+   "ok": true
+  },
+  {
+   "name": "GET /api/examples",
+   "want": "Sáu ảnh mẫu",
+   "ok": true
+  },
+  {
+   "name": "POST /api/detect",
+   "want": "Tối đa ba vùng có điểm",
+   "ok": true
+  },
+  {
+   "name": "Hỏi lặp cùng ảnh, câu",
+   "want": "p_yes giống nhau",
+   "ok": true
+  },
+  {
+   "name": "Câu tiếng Việt theo mẫu",
+   "want": "Ánh xạ về câu canonical",
+   "ok": true
+  },
+  {
+   "name": "Câu ngoài tập mẫu",
+   "want": "Cờ evaluated_question = false",
+   "ok": true
+  },
+  {
+   "name": "Ảnh PNG",
+   "want": "Trả lời 200",
+   "ok": true
+  },
+  {
+   "name": "Tệp không phải ảnh",
+   "want": "Lỗi 400",
+   "ok": true
+  },
+  {
+   "name": "Ảnh lớn hơn 20 MB",
+   "want": "Lỗi 413",
+   "ok": true
+  },
+  {
+   "name": "Câu hỏi rỗng",
+   "want": "Lỗi 400 hoặc 422",
+   "ok": true
+  },
+  {
+   "name": "Nguồn gợi ý sai",
+   "want": "Lỗi 400",
+   "ok": true
+  },
+  {
+   "name": "Vùng vẽ hợp lệ",
+   "want": "Dùng đúng một vùng",
+   "ok": true
+  },
+  {
+   "name": "Bốn vùng vẽ",
+   "want": "Lỗi 400",
+   "ok": true
+  },
+  {
+   "name": "Phản hồi hợp lệ",
+   "want": "Thêm một dòng JSONL",
+   "ok": true
+  },
+  {
+   "name": "Phản hồi sai giá trị",
+   "want": "Lỗi 400",
+   "ok": true
+  }
+ ],
+ "ckpt_mb": 265.301314,
+ "det_mb": 76.057626,
+ "sensitive_threshold": 0.11015734821558
+}

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "problems": [],
+  "params": 366,
+  "tol": 0.01,
+  "zero_floor": 1e-06,
+  "worst_checked": [
+    [
+      "llm.base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight",
+      0.0007613313805859221,
+      0.2867697477340698
+    ],
+    [
+      "llm.base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight",
+      0.0004416415405954857,
+      2.9501583576202393
+    ],
+    [
+      "llm.base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight",
+      0.00019439338299675845,
+      1.0952571630477905
+    ],
+    [
+      "llm.base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight",
+      0.00019179773021880706,
+      0.4018906056880951
+    ],
+    [
+      "llm.base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight",
+      0.0001909824183565516,
+      0.7131809592247009
+    ]
+  ],
+  "loss_cpu": [
+    9.03043270111084,
+    6.663051128387451,
+    15.08306884765625,
+    16.153614044189453
+  ],
+  "loss_mps": [
+    9.030579566955566,
+    6.663049697875977,
+    15.083189964294434,
+    16.15372657775879
+  ],
+  "arm": "P",
+  "seconds": 18.718180179595947
+}

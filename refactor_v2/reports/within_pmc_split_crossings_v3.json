@@ -1,0 +1,54 @@
+{
+  "status": "reviewed",
+  "within_pmc_selected_edges": 44,
+  "cross_split_edges": [
+    {
+      "left_split": [
+        "train"
+      ],
+      "right_split": [
+        "val"
+      ],
+      "pmc": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC5524386_pone.0181580.g001.jpg",
+      "roco": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC5433079_Fig1.jpg",
+      "hamming": 2,
+      "correlation": 0.9904342378506295
+    },
+    {
+      "left_split": [
+        "test"
+      ],
+      "right_split": [
+        "train"
+      ],
+      "pmc": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC8247790_FIG2.jpg",
+      "roco": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC7529496_FIG2.jpg",
+      "hamming": 0,
+      "correlation": 0.9995827683565516
+    },
+    {
+      "left_split": [
+        "test"
+      ],
+      "right_split": [
+        "train"
+      ],
+      "pmc": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC8358233_fig0002.jpg",
+      "roco": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC7454352_awaa240-F2.jpg",
+      "hamming": 4,
+      "correlation": 0.995649091364992
+    },
+    {
+      "left_split": [
+        "test"
+      ],
+      "right_split": [
+        "train"
+      ],
+      "pmc": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC8405008_pcbi.1009281.g010.jpg",
+      "roco": "/Users/uyen/Downloads/BONEVQA/data/BONE_VQA\\BaoYen_work\\data\\pmc_vqa\\images\\PMC6822780_pcbi.1007028.g009.jpg",
+      "hamming": 0,
+      "correlation": 0.9999738727032562
+    }
+  ]
+}

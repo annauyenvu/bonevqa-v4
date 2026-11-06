@@ -1,0 +1,69 @@
+{
+  "scope": "construction-only seed42 fold0; no trained checkpoint or prompt efficacy evidence",
+  "seed": 42,
+  "device": "cpu",
+  "vocabulary_entries": 125,
+  "vocabulary_sha256": "ecda1d3a1e84ceaa288308cffd71f489d62f3de674bcd0976fc9bc6738be5bd3",
+  "data_seal_sha256": "de63fef15ba86d91a06c883f7089966285173c205aea9c0a5210c694b062c347",
+  "initial_checkpoint": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/common_initialization_seed42_fold0_v3/initial.pt",
+  "initial_checkpoint_sha256": "f1ecc67adf38db7d80fe29ec8f5e6a3cc14d797b43048076f59bae9feaa1f5b3",
+  "base_cache_audit": "refactor_v2/reports/base_cache_hashes_v3.json",
+  "base_cache_audit_sha256": "98309cab2172bbd9d161b3114082b4cb71812fa5b355b0d4be04eed93cb9a82a",
+  "variants": [
+    {
+      "variant": "B",
+      "shared_tensors": 263,
+      "missing_shared_tensors": [],
+      "different_shared_tensors": {},
+      "additional_trainable_tensors": 0,
+      "construction_seconds": 2.997357041982468,
+      "passed": true
+    },
+    {
+      "variant": "V",
+      "shared_tensors": 263,
+      "missing_shared_tensors": [],
+      "different_shared_tensors": {},
+      "additional_trainable_tensors": 2,
+      "construction_seconds": 2.051678500021808,
+      "passed": true
+    },
+    {
+      "variant": "L",
+      "shared_tensors": 263,
+      "missing_shared_tensors": [],
+      "different_shared_tensors": {},
+      "additional_trainable_tensors": 31,
+      "construction_seconds": 2.0988620840071235,
+      "passed": true
+    },
+    {
+      "variant": "P",
+      "shared_tensors": 263,
+      "missing_shared_tensors": [],
+      "different_shared_tensors": {},
+      "additional_trainable_tensors": 76,
+      "construction_seconds": 2.1400326669972856,
+      "passed": true
+    },
+    {
+      "variant": "T",
+      "shared_tensors": 263,
+      "missing_shared_tensors": [],
+      "different_shared_tensors": {},
+      "additional_trainable_tensors": 0,
+      "construction_seconds": 2.071747084002709,
+      "passed": true
+    },
+    {
+      "variant": "VP",
+      "shared_tensors": 263,
+      "missing_shared_tensors": [],
+      "different_shared_tensors": {},
+      "additional_trainable_tensors": 78,
+      "construction_seconds": 2.1375099169963505,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

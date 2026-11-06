@@ -1,0 +1,70 @@
+{
+  "criterion": "equal pHash and grayscale 128px MAE <= 0.01; candidate links, not final duplicate labels",
+  "split_pair_candidate_counts": [
+    {
+      "left": "pmc_vqa/test",
+      "right": "pmc_vqa/train",
+      "pairs": 2
+    },
+    {
+      "left": "pmc_vqa/test",
+      "right": "pmc_vqa/train_lon",
+      "pairs": 36
+    },
+    {
+      "left": "pmc_vqa/test",
+      "right": "roco/test",
+      "pairs": 731
+    },
+    {
+      "left": "pmc_vqa/test",
+      "right": "roco/train",
+      "pairs": 384
+    },
+    {
+      "left": "pmc_vqa/test",
+      "right": "roco/val",
+      "pairs": 1497
+    },
+    {
+      "left": "pmc_vqa/train",
+      "right": "pmc_vqa/train_lon",
+      "pairs": 10
+    },
+    {
+      "left": "pmc_vqa/train",
+      "right": "roco/test",
+      "pairs": 1
+    },
+    {
+      "left": "pmc_vqa/train",
+      "right": "roco/train",
+      "pairs": 951
+    },
+    {
+      "left": "pmc_vqa/train",
+      "right": "roco/val",
+      "pairs": 1
+    },
+    {
+      "left": "pmc_vqa/train_lon",
+      "right": "roco/test",
+      "pairs": 732
+    },
+    {
+      "left": "pmc_vqa/train_lon",
+      "right": "roco/train",
+      "pairs": 1294
+    },
+    {
+      "left": "pmc_vqa/train_lon",
+      "right": "roco/val",
+      "pairs": 1498
+    },
+    {
+      "left": "roco/test",
+      "right": "roco/val",
+      "pairs": 3
+    }
+  ]
+}

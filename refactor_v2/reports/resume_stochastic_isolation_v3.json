@@ -1,0 +1,74 @@
+{
+  "torch": "2.2.2",
+  "device": "mps",
+  "optimizer_steps": 0,
+  "scope": "same-process reseeded forward/backward; not full resume certification",
+  "results": [
+    {
+      "case": "train_without_checkpoint",
+      "losses": [
+        4.3633527755737305,
+        4.3633527755737305,
+        4.3633527755737305
+      ],
+      "gradient_max_differences_first_vs_second": {
+        "qformer.query": 0.0,
+        "prefix_proj.0.weight": 0.0,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.0
+      },
+      "gradient_max_differences_second_vs_third": {
+        "qformer.query": 0.0,
+        "prefix_proj.0.weight": 0.0,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.0
+      }
+    },
+    {
+      "case": "train_with_checkpoint",
+      "losses": [
+        4.3633527755737305,
+        4.3633527755737305,
+        4.3633527755737305
+      ],
+      "gradient_max_differences_first_vs_second": {
+        "qformer.query": 0.0,
+        "prefix_proj.0.weight": 0.0,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.0
+      },
+      "gradient_max_differences_second_vs_third": {
+        "qformer.query": 0.0,
+        "prefix_proj.0.weight": 0.0,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.0
+      },
+      "gradient_max_differences_vs_no_checkpoint": {
+        "qformer.query": 2.1502375602722168e-05,
+        "prefix_proj.0.weight": 3.128126263618469e-05,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.00016780238365754485,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.009954719804227352
+      }
+    },
+    {
+      "case": "eval_without_checkpoint",
+      "losses": [
+        4.359569549560547,
+        4.359569549560547,
+        4.359569549560547
+      ],
+      "gradient_max_differences_first_vs_second": {
+        "qformer.query": 0.0,
+        "prefix_proj.0.weight": 0.0,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.0
+      },
+      "gradient_max_differences_second_vs_third": {
+        "qformer.query": 0.0,
+        "prefix_proj.0.weight": 0.0,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0,
+        "llm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.0
+      }
+    }
+  ]
+}

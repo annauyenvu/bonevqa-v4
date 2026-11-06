@@ -1,0 +1,263 @@
+{
+  "scope": "frozen two-step smoke models, TRAIN-only derivative, mechanics NOT quality",
+  "parent_manifest_sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+  "subset_manifest_sha256": "08796f2a708fd5267d8efda3cb970eb0d860f23203b4e0ad60d8927ee4a98d26",
+  "images": 12,
+  "selected_qa": 4,
+  "roi_control_coverage": {
+    "real": {
+      "images": 12,
+      "with_roi": 1,
+      "proposal_counts": {
+        "IMG0000008": 0,
+        "IMG0000013": 0,
+        "IMG0000015": 0,
+        "IMG0000016": 0,
+        "IMG0000018": 0,
+        "IMG0000019": 0,
+        "IMG0000022": 0,
+        "IMG0000024": 0,
+        "IMG0000026": 0,
+        "IMG0000044": 0,
+        "IMG0000057": 0,
+        "IMG0000100": 1
+      }
+    },
+    "shuffled": {
+      "images": 12,
+      "with_roi": 1,
+      "proposal_counts": {
+        "IMG0000008": 0,
+        "IMG0000013": 0,
+        "IMG0000015": 0,
+        "IMG0000016": 0,
+        "IMG0000018": 0,
+        "IMG0000019": 1,
+        "IMG0000022": 0,
+        "IMG0000024": 0,
+        "IMG0000026": 0,
+        "IMG0000044": 0,
+        "IMG0000057": 0,
+        "IMG0000100": 0
+      }
+    },
+    "generic": {
+      "images": 12,
+      "with_roi": 12,
+      "proposal_counts": {
+        "IMG0000008": 1,
+        "IMG0000013": 1,
+        "IMG0000015": 1,
+        "IMG0000016": 1,
+        "IMG0000018": 1,
+        "IMG0000019": 1,
+        "IMG0000022": 1,
+        "IMG0000024": 1,
+        "IMG0000026": 1,
+        "IMG0000044": 1,
+        "IMG0000057": 1,
+        "IMG0000100": 1
+      }
+    },
+    "matched": {
+      "images": 12,
+      "with_roi": 1,
+      "proposal_counts": {
+        "IMG0000008": 0,
+        "IMG0000013": 0,
+        "IMG0000015": 0,
+        "IMG0000016": 0,
+        "IMG0000018": 0,
+        "IMG0000019": 0,
+        "IMG0000022": 0,
+        "IMG0000024": 0,
+        "IMG0000026": 0,
+        "IMG0000044": 0,
+        "IMG0000057": 0,
+        "IMG0000100": 1
+      }
+    },
+    "matched_all": {
+      "images": 12,
+      "with_roi": 12,
+      "proposal_counts": {
+        "IMG0000008": 1,
+        "IMG0000013": 1,
+        "IMG0000015": 1,
+        "IMG0000016": 1,
+        "IMG0000018": 1,
+        "IMG0000019": 1,
+        "IMG0000022": 1,
+        "IMG0000024": 1,
+        "IMG0000026": 1,
+        "IMG0000044": 1,
+        "IMG0000057": 1,
+        "IMG0000100": 1
+      }
+    }
+  },
+  "same_area_geometry_checks": [
+    {
+      "width_error": 0.36739349365234375,
+      "height_error": 0.22144699096679688,
+      "position_changed": true
+    },
+    {
+      "width_error": 0.36739349365234375,
+      "height_error": 0.22144699096679688,
+      "position_changed": true
+    }
+  ],
+  "annotation_pixel_audit": [
+    {
+      "image_id": "IMG0000100",
+      "lesion_pixels": 21280,
+      "matched_pixels": 21140,
+      "matched_overlap_pixels": 0
+    },
+    {
+      "image_id": "IMG0000100",
+      "lesion_pixels": 21280,
+      "matched_pixels": 21140,
+      "matched_overlap_pixels": 0
+    },
+    {
+      "image_id": "IMG0000008",
+      "lesion_pixels": 0,
+      "matched_pixels": 0,
+      "matched_overlap_pixels": 0
+    },
+    {
+      "image_id": "IMG0000008",
+      "lesion_pixels": 0,
+      "matched_pixels": 0,
+      "matched_overlap_pixels": 0
+    }
+  ],
+  "models": {
+    "V": {
+      "endpoint_max_differences": {
+        "real": {
+          "closed": 0.0,
+          "fracture": 0.0,
+          "open": 0.0
+        },
+        "shuffled": {
+          "closed": 5.7220458984375e-06,
+          "fracture": 2.980232238769531e-07,
+          "open": 0.00016498565673828125
+        },
+        "generic": {
+          "closed": 7.62939453125e-06,
+          "fracture": 5.960464477539062e-07,
+          "open": 0.00022035837173461914
+        },
+        "matched": {
+          "closed": 4.291534423828125e-06,
+          "fracture": 2.384185791015625e-07,
+          "open": 0.00022220611572265625
+        },
+        "matched_all": {
+          "closed": 5.245208740234375e-06,
+          "fracture": 2.644956111907959e-07,
+          "open": 0.00022220611572265625
+        },
+        "lesion_mask": {
+          "closed": 0.020577430725097656,
+          "fracture": 0.0034822821617126465,
+          "open": 4.076040267944336
+        },
+        "matched_nonlesion_mask": {
+          "closed": 0.012063026428222656,
+          "fracture": 0.0009690523147583008,
+          "open": 1.080094814300537
+        },
+        "background_replacement": {
+          "closed": 0.6237411499023438,
+          "fracture": 0.39938992261886597,
+          "open": 11.095800399780273
+        },
+        "proposal_pixels_neutralized": {
+          "closed": 0.07673501968383789,
+          "fracture": 0.027272522449493408,
+          "open": 4.921786308288574
+        },
+        "geometry_only": {
+          "closed": 0.5943703651428223,
+          "fracture": 0.39595308899879456,
+          "open": 11.286526679992676
+        }
+      },
+      "lens_alignment_diagnostics": {},
+      "trainable_state_unchanged": true
+    },
+    "L": {
+      "endpoint_max_differences": {
+        "real": {
+          "closed": 0.0,
+          "fracture": 0.0,
+          "open": 0.0
+        },
+        "shuffled": {
+          "closed": 0.0,
+          "fracture": 0.0,
+          "open": 0.0
+        },
+        "generic": {
+          "closed": 0.0,
+          "fracture": 0.0,
+          "open": 0.0
+        },
+        "matched": {
+          "closed": 0.0,
+          "fracture": 0.0,
+          "open": 0.0
+        },
+        "matched_all": {
+          "closed": 0.0,
+          "fracture": 0.0,
+          "open": 0.0
+        },
+        "lesion_mask": {
+          "closed": 0.01991128921508789,
+          "fracture": 0.004142194986343384,
+          "open": 1.0473060607910156
+        },
+        "matched_nonlesion_mask": {
+          "closed": 0.012563705444335938,
+          "fracture": 0.0007683634757995605,
+          "open": 0.25691795349121094
+        },
+        "background_replacement": {
+          "closed": 0.6089997291564941,
+          "fracture": 0.35661381483078003,
+          "open": 15.512598037719727
+        },
+        "proposal_pixels_neutralized": {
+          "closed": 0.0767064094543457,
+          "fracture": 0.019925415515899658,
+          "open": 2.8418126106262207
+        },
+        "geometry_only": {
+          "closed": 0.5531635284423828,
+          "fracture": 0.3611106872558594,
+          "open": 15.767472267150879
+        }
+      },
+      "lens_alignment_diagnostics": {
+        "real": 0.24476605653762817,
+        "matched": 0.24550402164459229
+      },
+      "trainable_state_unchanged": true
+    }
+  },
+  "passed_technical_mechanics": false,
+  "seconds": 32.22873216599692,
+  "limitations": [
+    "ROI annotation used ONLY for audit pixel mutations, never prompt masks/boxes",
+    "pixel conditions keep detector proposals fixed; no detector re-inference",
+    "generic/matched_all change view counts; not compute-matched comparisons",
+    "no accuracy, clinical, lesion-grounding or superiority conclusion",
+    "matched nonlesion label valid only when recorded overlap is zero"
+  ]
+}

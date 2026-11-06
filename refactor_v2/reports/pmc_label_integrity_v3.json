@@ -1,0 +1,48 @@
+{
+  "status": "label_integrity_filtered",
+  "accepted": 28490,
+  "quarantined": [
+    {
+      "image": "images/PMC4475708_fig4.jpg",
+      "question": "\"What type of retinopathy is shown in the image?\"",
+      "answer": "\" Focal pattern DFO retinopathy",
+      "choices": {
+        "A": "\"A: Focal pattern DFO retinopathy",
+        "B": "B: Central serous retinopathy",
+        "C": "C: Branch retinal vein occlusion",
+        "D": "D: Central retinal artery occlusion\""
+      },
+      "answer_label": "\"",
+      "answer_type": "CLOSED"
+    },
+    {
+      "image": "images/PMC4674821_f2.jpg",
+      "question": "What do the white arrows in images j and k indicate?",
+      "answer": "'Sharp Discontinuities'",
+      "choices": {
+        "A": "'A:Sharp Discontinuities'",
+        "B": "B:Strong Magnetic Fields",
+        "C": "C:Electric Currents",
+        "D": "D:Topographical features'"
+      },
+      "answer_label": "'",
+      "answer_type": "CLOSED"
+    },
+    {
+      "image": "images/PMC1421418_F5.jpg",
+      "question": "How many patients are represented in the 3D FEM models shown in Figures 3 and 4?",
+      "answer": "'One patient",
+      "choices": {
+        "A": "'A:One patient",
+        "B": "B:Two patients",
+        "C": "C:Three patients",
+        "D": "D:Four patients '"
+      },
+      "answer_label": "'",
+      "answer_type": "CLOSED"
+    }
+  ],
+  "source_sha256": "63a1c888ebd5cf10e1f327294fb2479f2961d39e9b9cfeb97b6e1288237292fb",
+  "output_sha256": "adefea3c93500e42af6d2acfbe2bd984c6f70649f925d2541e367773c5b4ca99",
+  "policy": "Exclude malformed labels from new train artifact; preserve source answers."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "read_only_preflight_NOT_execution_release",
+  "scope": "GM+LF only, no PF graph; future bounded P semantic-control gate after B replication evaluation",
+  "observed_blocker": "Existing frozen p/p_random_bank/p_unconditioned candidates remain candidate_not_launch_sealed and point to the weak original PMC lineage. Do not launch, silently rebind or modify frozen candidates.",
+  "required_before_any_P_run": [
+    "Complete and interpret B downstream-seed stability before choosing a reference initialization chain",
+    "Use a chosen PRE-TRAINING initialization, not a task-trained B checkpoint unless the B control receives the same added task-training budget",
+    "Create separate per-run configs/manifests; TRAIN-only vocabulary and answer bank, prior_labels empty, no expert/invented clinical labels",
+    "All shared initial tensors including type_head, closed_head and fracture_head byte-identical across B/P and matched controls within each seed",
+    "Fresh target-dimension TRAIN-only causal smoke for GM gate and each LF branch: isolated answer-loss gradients, actual optimizer updates, correct closed/fracture/open answer routes",
+    "Checkpoint bank/state provenance, independently repeated reload outputs and no inference batch-context leakage",
+    "Only original image+question passed to inference; no GT answer/type/region/ROI",
+    "Same selected data/order/seed/296step budget and runtime in any later capped P-vs-control comparison"
+  ],
+  "semantic_controls_to_prepare": ["P TRAIN-derived answer bank versus shape/row-norm-matched random bank", "conditioned LF versus equal-parameter unconditioned LF; unconditioned evaluation remains unconditioned", "B baseline plus explicit parameter/compute accounting"],
+  "shuffled_control_rule": "No scientific shuffled-context training bypass; current scoped TRAIN-only technical smoke allowance is not a general release",
+  "interpretation_rule": "Nonzero gradients, updates or gate-zero changes are necessary technical checks, not semantic efficacy. Must beat controls on appropriate VQA/clinical metrics and later matched seeds/independent honest evaluation.",
+  "calibration_reserved": true,
+  "V_L_rule_unchanged": "Only automatic clean new-fold detector proposals/original image according to protocol; annotation ROI not an automatic input",
+  "Final_Solution_modules_selected": false,
+  "training_released": false
+}

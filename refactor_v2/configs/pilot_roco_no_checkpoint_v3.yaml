@@ -1,0 +1,6 @@
+_base_: pilot_roco_caption_bridge_v3.yaml
+run_name: pilot_roco_no_checkpoint_v3
+# Diagnostic only: isolate checkpoint recomputation; not a performance recipe.
+model:
+  grad_checkpoint: false
+  llm_grad_checkpoint: false

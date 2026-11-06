@@ -1,0 +1,10 @@
+_base_: fracatlas_prompt_causal_v3.yaml
+run_name: fracatlas_clean_l_matched_all_seed42_prompt_v3
+init_from: refactor_v2/checkpoints/fracatlas_clean_l_align_matched_all_seed42_prompt_v3/best.pt
+model:
+  prompt_variant: L
+  use_lens: true
+  lens_training_only: true
+data:
+  loader_kwargs:
+    roi_control: matched_all

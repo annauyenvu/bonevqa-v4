@@ -1,0 +1,37 @@
+{
+  "scope": "4 CLOSED outer-TRAIN rows from bounded shuffled-P smoke; no OPEN or quality evidence",
+  "selected_indices": [
+    4,
+    7,
+    6,
+    3
+  ],
+  "component_ids": [
+    2731,
+    1594,
+    3643,
+    3743
+  ],
+  "donors": [
+    1,
+    2,
+    3,
+    0
+  ],
+  "all_fusion_calls_receive_exact_components": true,
+  "answer_only_gradients": {
+    "fusion.gamma_latent": 0.034867752343416214,
+    "latent.latent": 3.5246401353106194e-08,
+    "fusion.lp_ca_l.norm_q.weight": 1.9801579043132733e-08,
+    "fusion.lp_ca_i.norm_q.weight": 3.135790649366754e-08,
+    "fusion.lp_ca_mm.norm_q.weight": 1.925003800806735e-08
+  },
+  "gradients_finite": true,
+  "gate_zero_endpoint_differences": {
+    "closed": 4.082918167114258e-05,
+    "fracture": 2.4557113647460938e-05
+  },
+  "training_total_loss_qc_updated_tensor_count": 32,
+  "seconds": 3.9301505829789676,
+  "passed": true
+}

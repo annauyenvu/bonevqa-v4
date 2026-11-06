@@ -1,0 +1,5 @@
+_base_: ablation_p_v3.yaml
+run_name: control_p_consistency_off_seed42_v3
+model:
+  eta: 0.0
+  prior_labels: []

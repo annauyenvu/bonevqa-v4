@@ -1,0 +1,31 @@
+{
+  "updated_local": "2026-10-21T13:28:00+07:00",
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_31.json",
+  "scope": "Four-component zero-update gradient probe FAILED technical invariance guard; no verified gradient diagnosis",
+  "v3_1_protocol_sha256": "5d94fbb0209b581b2de22abfcc56608e546d8f01826c500b3a812508aaf66f4b",
+  "v3_1_source_sha256": "ae0a2501b340162dee430bdd8e03b21d9c021e07182efce86961f21591a395bd",
+  "v3_1_failure": "ManualCEdefaultreduction vs frozenperexampleCEthenmean_exactequalityassertion;originalsource/protocol/failedprogresspreserved;NOTevidencetrainingCEwrong",
+  "v3_2_protocol_sha256": "1336ee062ce359ae18a28ca5554e04927da2a92e456a1d638585a1ea233396dc",
+  "v3_2_source_sha256": "86114d8e629cf09aa5dd4fc99578c01f6e79e3d88aaedd1156a7be5ea7005b6e",
+  "v3_2_preflight": "Passed48dependencies,samefourTRAINexamples/checkpoints/choices,exactfrozenCEreductionrestored,zeroequalitytoleranceunchanged;notautomaticretryorlosschange",
+  "v3_2_failure": "Final combined digest(model)==before AND physicalcheckpointSHA==expected assertion;no completed results/replay. Cause and exact changed state/key not localized yet;doNOTclaimactualoptimizerupdate_or_moduleconflict",
+  "preserved_artifacts": [
+    "fullfold0_fracture_gradient_probe_v3_1/protocol.json",
+    "fullfold0_fracture_gradient_probe_v3_1/progress.json",
+    "fullfold0_fracture_gradient_probe_v3_2/protocol.json",
+    "fullfold0_fracture_gradient_probe_v3_2/progress.json"
+  ],
+  "actual_scope": "FourTRAINcanonicalexamples4knowncomponents2yes2no;evalmodeautograd;publicimages_questionsONLY;privateTRAINanswersforwardONLY;noannotationROI_GTregion_orGTtypepublicinput",
+  "postfailure_physical_LAST_rehash": "Both match original verified hashes: nativec34779eb82b9ec2dd30dac49823386afeadf2c7b7add9f60dee0715a96309626;uniform6d5d767e7d6ca2d104347bc57f867350875642558e384942256e5feff12307d0. No saved checkpoint alteration found; in-memory digest failure still requires localization.",
+  "optimizer_updates": 0,
+  "new_weights_saved": false,
+  "reserved_role_inference": false,
+  "verified_gradient_results_available": false,
+  "last_confirmed_prior_outcome": "CURRENT_GATE_LEDGER_V3_31.json verified fullTRAINsens68.56percentnative67.25percentuniform;modelval64.91percentboth;noqualitycomparisonchange",
+  "next_safe_action": "Rehashoriginalcheckpointsandseparatelyinstrumentstatekey/valuehashesafterforward/autograd/publicpredictwithidenticalinvarianceguard;localizefailurebeforeanyrepairorgradientconclusion. Preservefailedversions;no loosening assertions or extra quality training.",
+  "failure_review": "FRACTURE_GRADIENT_PROBE_FAILURE_REVIEW_V3.md",
+  "new_quality_training_released": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "datasets": {
+    "roco/train": {
+      "qa_or_caption_rows": 19989,
+      "image_paths": 19989,
+      "unique_image_hashes": 19989,
+      "missing_images": [],
+      "manifest_sha256": "77ce70ee93bbdf03812d923534a3ba641c23f9ad7b10f2c8ff946ad5bbf33f5e"
+    },
+    "roco/val": {
+      "qa_or_caption_rows": 9904,
+      "image_paths": 9904,
+      "unique_image_hashes": 9904,
+      "missing_images": [],
+      "manifest_sha256": "4aea2e44fca90736e704f7c5b9f3fc828111579ef2423e853159d7d681766b6d"
+    },
+    "roco/test": {
+      "qa_or_caption_rows": 4965,
+      "image_paths": 4965,
+      "unique_image_hashes": 4965,
+      "missing_images": [],
+      "manifest_sha256": "d9b32d2921fb9236fc4a168bfa9f97e2feaa5e8ffb87a859933d4350a8524d84"
+    },
+    "pmc_vqa/train": {
+      "qa_or_caption_rows": 30000,
+      "image_paths": 27708,
+      "unique_image_hashes": 27707,
+      "missing_images": [],
+      "manifest_sha256": "8248e6a073fee7fab3ad47a555b534578a8a56bdb2335a83afb7785999a5199c"
+    },
+    "pmc_vqa/train_lon": {
+      "qa_or_caption_rows": 78510,
+      "image_paths": 59577,
+      "unique_image_hashes": 59574,
+      "missing_images": [],
+      "manifest_sha256": "25a65080b491d28957ce97d2800de72759208ca3e2344cff13ca0f9346d3a1f6"
+    },
+    "pmc_vqa/test": {
+      "qa_or_caption_rows": 50000,
+      "image_paths": 33254,
+      "unique_image_hashes": 33252,
+      "missing_images": [],
+      "manifest_sha256": "72c182ea0fda07d1e783b45210e88f8d97ff16f679387ec19640f7799bbe677d"
+    },
+    "vqa_rad/train": {
+      "qa_or_caption_rows": 1793,
+      "image_paths": 313,
+      "unique_image_hashes": 313,
+      "missing_images": [],
+      "manifest_sha256": "f1ded09847115a1252905bf842b5fd0d37d8fabe3e4ea7ca171911516b07a310"
+    },
+    "vqa_rad/test": {
+      "qa_or_caption_rows": 451,
+      "image_paths": 203,
+      "unique_image_hashes": 203,
+      "missing_images": [],
+      "manifest_sha256": "553b6bb2f333aefb5c2e4e71ecbe8e4b525a80998fbb81b42f46aee1f7046fd4"
+    }
+  },
+  "overlaps": [
+    {
+      "left": "pmc_vqa/test",
+      "right": "pmc_vqa/train_lon",
+      "shared_sha256_images": 33252
+    },
+    {
+      "left": "pmc_vqa/train",
+      "right": "pmc_vqa/train_lon",
+      "shared_sha256_images": 26322
+    },
+    {
+      "left": "vqa_rad/test",
+      "right": "vqa_rad/train",
+      "shared_sha256_images": 202
+    }
+  ],
+  "limitations": [
+    "Exact bytes only; perceptual duplicates and label quality require further audit.",
+    "Checkpoint training provenance remains unverified."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "User-authorized throughput optimization without changing scientific meaning or disrupting active ROCO",
+  "verified_hardware": {"chip": "Apple M4 Pro", "cpu_cores": 12, "performance_cores": 8,
+    "efficiency_cores": 4, "gpu_cores": 16, "unified_memory_gib": 24},
+  "active_run": {"device": "cpu", "threads": 8, "restart_or_live_thread_change": false,
+    "idle_sleep_guard": "caffeinate -i -w30146; verified; does not override lid sleep"},
+  "observations": {"thermal_warning_recorded": false, "performance_warning_recorded": false,
+    "vm_swapins": 0, "vm_swapouts": 0, "memory_compression_present": true,
+    "power_source_reported": "AC Power; battery simultaneously reported discharging; effective charge state uncertain"},
+  "next_bounded_benchmark": "experiments/benchmark_cpu_threads_v3.py",
+  "thread_arms": [8, 10, 12],
+  "no_concurrent_benchmark_during_training": true,
+  "thread_change_release_requires": ["measured throughput improvement", "finite gradients", "update/resume QC", "new runtime binding"],
+  "gpu_status": "MPS not reproducibility-certified in installed torch2.2.2; no silent switch or checkpointing enablement",
+  "batch_size_change": "Requires controlled batch/accumulation/steps and memory pilot; never mid-run",
+  "expected_speedup": "not yet measured; no numeric promise",
+  "system_power_settings_changed": false
+}

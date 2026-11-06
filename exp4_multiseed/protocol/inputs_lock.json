@@ -1,0 +1,33 @@
+{
+  "files": {
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/checkpoints/stage2_pmcvqa_full/best.pt": "8ada0a7439db8199dbbe068db63f63e8fb867b4614caad2caa552d9a4b331c0b",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas/box_bo_phat_hien.json": "1328630a5f71d4d88ff37922393fefccce6ac7baf782c41eb9016db67dec59a2",
+    "protocol/answer_vocab.json": "36c0c32e00c113db75064257f9f845faed78ceead1712f4ab87aeb7b28281262",
+    "protocol/val_manifest.json": "76a577506a4dafab08bc625fbc8276ddb28a155557aaaac6344cea7877fa6ba6",
+    "protocol/image_content_manifest.json": "0fda2957327b1d672a850fd92b29512559a5ef687d4316b4b6ca02d96e1b5d35",
+    "protocol/train_manifest.json": "dcfe728cf569ad7d10652420f7ea6830825ab17617deadbc00297d5eeb61c5af",
+    "protocol/base_config.json": "90e722af3489291a8c22dd93ef799238383fd6e5802aca6295498f6ff4672502",
+    "protocol/test_manifest.json": "035e601e9bf92c5abf92f81e42e2948b280d3a44847c43ea14568160c2e52d5b",
+    "protocol/pretrained_files.json": "9ce1b985ab8b04207f682b9e49bd47811f49275c564d2d62a46cd999a0b5a85f",
+    "protocol/protocol.json": "1f877837d04cface0384442e57e4d615a687759c2bffd6fb29864bc1af4ec399",
+    "protocol/environment.txt": "6f4400f8997f57bfc441da02e836af2cba5bcc84c69e8fb978dbd129bc7d2058",
+    "protocol/environment.json": "6f4400f8997f57bfc441da02e836af2cba5bcc84c69e8fb978dbd129bc7d2058"
+  },
+  "pretrained": {
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/model.safetensors": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--wanglab--medsam-vit-base/snapshots/de8488bca37bb1d4fb190f612c516126d739ce3b/config.json": "930245d4ff7203cc9c10a69dba5a87c251a0be79a8b1448eea7412d4a0ef1432",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--wanglab--medsam-vit-base/snapshots/de8488bca37bb1d4fb190f612c516126d739ce3b/pytorch_model.bin": "0ef67838fba16f16c0e308eaf7a3ae6fbf4fe8e13d7a120ca932671ed9c47db0",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--wanglab--medsam-vit-base/snapshots/de8488bca37bb1d4fb190f612c516126d739ce3b/preprocessor_config.json": "225545a743c654e3c495ec6f545a0eaba57c8ba3fbbd8483b3cb1c0fc58db517",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract/snapshots/d673b8835373c6fa116d6d8006b33d48734e305d/tokenizer_config.json": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract/snapshots/d673b8835373c6fa116d6d8006b33d48734e305d/config.json": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedNLP-BiomedBERT-base-uncased-abstract/snapshots/d673b8835373c6fa116d6d8006b33d48734e305d/vocab.txt": "7b36651908a88bc38bda41b728b2a598191e0d3b553cbacf7b1e5f026d5b5b9f",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/snapshots/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_pytorch_model.bin": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be",
+    "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/hf_cache/hub/models--microsoft--BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/snapshots/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_config.json": "9a41f334a8c444678772c0ebb9ab854c97ab350bced3a17b803e258d39c23dc0"
+  }
+}

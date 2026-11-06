@@ -1,0 +1,83 @@
+{
+  "updated_local": "2026-10-20T19:52:00+07:00",
+  "scope": "Current development gate ledger; completion of a negative pilot is not full-step completion",
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_2.json",
+  "previous_ledger_sha256": "65bcf08201dc01a1ba711294952683133bf5d1cb0e6aae41a8af77a68751a26f",
+  "preserves_prior_ledgers_and_all_failed_artifacts": true,
+  "inherited_completed_geometry_diagnostic": "CURRENT_GATE_LEDGER_V3_2.json/completed_geometry_diagnostic",
+  "completed_T_bounded_screen": {
+    "report": "T_independent_quality_current_v3_3/report.json",
+    "report_sha256": "39d81a6408c5e6b35c1ba125f593d5cb5619e2c7aad1cfcdb333942bc030d310",
+    "independent_arithmetic_audit": "T_independent_quality_current_v3_3/independent_artifact_audit.json",
+    "independent_arithmetic_audit_sha256": "ceef7ac9cfe360a022a83ef3c96e3f5d4338b854110a388b5a9424c17593aa8d",
+    "same_seed": 42,
+    "same_initial_trainable_tensors": 263,
+    "T_extra_parameters": 0,
+    "updates_per_style": 296,
+    "styles": ["clinical", "irrelevant_matched", "clinical_paraphrase"],
+    "primary_checkpoint": "LAST296_only",
+    "QA_correct_each": 111,
+    "QA_total": 142,
+    "raw_B_seed42_QA_correct": 113,
+    "OPEN_correct_clinical_irrelevant_paraphrase_rawB": [50, 48, 49, 50],
+    "OPEN_total": 64,
+    "full_clinical_images": 321,
+    "clinical_AUROC_clinical_irrelevant_paraphrase_rawB": [0.8842371079213185, 0.8841706539074959, 0.8840377458798512, 0.8827086656034024],
+    "clinical_AUPRC_clinical_irrelevant_paraphrase_rawB": [0.6604492361622297, 0.6564529249105017, 0.6634169057207573, 0.6620379943123932],
+    "all_paired_primary_clinical_AUROC_AP_intervals_include_zero": true,
+    "clinical_sensitivity_specificity_tradeoff": "Clinical TP51FN6TN186FP78 versus irrelevant TP53FN4TN179FP85; fewer FP but two more FN, not clinical superiority",
+    "secondary_predeclared_inference_paraphrase": {
+      "same_clinical_trained_checkpoint": true,
+      "original_QA_correct": 111,
+      "changed_QA_correct": 79,
+      "QA_total": 142,
+      "correct_to_wrong": 43,
+      "wrong_to_correct": 11,
+      "weights_unchanged": true,
+      "interpretation": "Observed prompt-template fragility on inspected development, not a proven branch-specific cause or a new production template"
+    },
+    "fresh_process_all_answers_probabilities_metrics_exact": true,
+    "all_probability_replay_errors": 0,
+    "second_no_model_audit_all_hashes_metrics_and500_bootstraps_exact": true,
+    "QA_components": 32,
+    "clinical_components": 314,
+    "independent_confirmation": false,
+    "semantic_efficacy_gate": "NOT_PASSED_no_T_expansion_justified",
+    "quality_protocol_completed": true
+  },
+  "current_module_gates": {
+    "B": "Provisional ROCO reference only; three downstream seeds do not remove upstream/exposure/split limitations",
+    "V": "No established localization-semantic benefit over matched location control; prior diagnostic and geometry evidence retained",
+    "L": "Real lens not above matched controls; do not claim positive contribution",
+    "P": "GM+LF-only matched screen negative; PF absent; no expansion justified",
+    "T": "Bounded matched screen complete and verified; no positive semantic/clinical benefit and observed paraphrase fragility"
+  },
+  "existing_B_visual_dependency_evidence": {
+    "source": "fracatlas_scale_pilot_v3/independent_evaluation.json",
+    "scope": "Already evaluated142QA32components; descriptive, not a newly run confirmation",
+    "ROCO_correct_image_QA": 0.795774647887324,
+    "ROCO_component_disjoint_wrong_image_QA": 0.647887323943662,
+    "ROCO_correct_image_OPEN": 0.78125,
+    "ROCO_component_disjoint_wrong_image_OPEN": 0.484375,
+    "interpretation": "B does use image information on this comparison; neither pure language-only behavior nor independence from image pixels is supported. Does not replace missing V-specific matched controls."
+  },
+  "still_not_established": [
+    "All new-fold V no-ROI-capacity and image-group-shuffled controls or module-specific full resume paths",
+    "Positive supported architecture/loss refinement that improves robust model-validation behavior",
+    "Honest predeclared component-grouped nested evaluation or verified independent holdout confirmation",
+    "Clinical calibration/threshold release and a verified Final Solution"
+  ],
+  "next_safe_actions": [
+    "Prioritize error and TRAIN-only mechanism diagnosis of the provisional B/T paths; isolate biomedical-text versus LLM prompt routing before proposing a new version",
+    "If justified, predeclare one separately versioned bounded refinement with frozen ground truth and matched initialization/budgets before training; do not tune templates or thresholds on the observed robustness score",
+    "Review remaining confirmation and technical gates before matched-seed/nested runs; inspected development is not untouched confirmation",
+    "Do not expand current weak T/V/L/P, amplify gates posthoc, delete losses without evidence, or run long training"
+  ],
+  "new_training_updates_in_this_audit": 0,
+  "new_model_inference_in_this_audit": 0,
+  "calibration_or_test_inference_used": false,
+  "long_training_authorized": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

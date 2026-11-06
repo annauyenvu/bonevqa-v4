@@ -1,0 +1,18 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_69.json",
+  "snapshot_local":"2026-10-22 approximately12:30 ICT",
+  "declared_grouped_experiment_complete":true,
+  "closure_seal":"GROUPED_EXPERIMENT_CLOSURE_SEAL_V3_1.json",
+  "closure_seal_passed":true,
+  "sealed_artifacts":32,
+  "pooled_metric_values_crosschecked":20,
+  "original_technical_seal_verified_unchanged":190,
+  "exit_review":"STEP3_EXIT_REVIEW_V3_4.md",
+  "remaining_epochs_or_inference_jobs_in_completed_scope":0,
+  "process_access":"Permitted ps inspection; no matching training/evaluation jobs observed",
+  "scientific_outcome":"Technical/reproducibility gates passed. Limited raw sensitivity, no architectural superiority, calibration primary BA worse. No production promotion or automatic tuning.",
+  "next_boundary":"Current results/reporting can be retained with negative findings. Materially new quality refinement requires a separately frozen study and evaluation disclosure; original seven-step scope is not reconstructed from partial local records.",
+  "step3_complete":false,
+  "production_released":false,
+  "historical_status_note":"Earlier module_gate_status_v3.json and paper Final Solution documents are historical; this ledger and current exit review govern the completed new grouped experiment's status."
+}

@@ -1,0 +1,99 @@
+run_name: fracatlas_component_clean_v2
+seed: 42
+checkpoint_dir: refactor_v2/checkpoints
+figure_dir: refactor_v2/reports/figures
+init_from: .evaluation_runtime/checkpoints/stage2_pmcvqa_full/best.pt
+allow_random_init: false
+# Every intentionally transferred mismatch is explicit and auditable.
+checkpoint_allow_mismatch_prefixes:
+  - closed_head.
+  - prompt_mixer.
+  - fusion.gamma_latent
+  - fusion.lp_out.
+  - fracture_head.
+
+data:
+  dataset: fracatlas_component_clean
+  train_split: train
+  val_split: model_val
+  max_samples: 6000
+  val_max_samples: null
+  answer_vocab_size: 500
+  # macOS sandbox does not expose the POSIX shared-memory primitive required
+  # by multiprocessing DataLoader workers. In-process loading preserves sample
+  # order/content and avoids the OMP #179 startup deadlock.
+  num_workers: 0
+  loader_kwargs:
+    # Production-parity protocol: never consume annotation-derived lesion ROI.
+    # This path must exist before V/L training starts and is exported by the
+    # detector trained only on the component-clean train split.
+    with_masks: false
+    with_boxes: false
+    boxes_from: refactor_v2/detector_clean/boxes.json
+    boxes_as_masks: true
+
+train:
+  stage: 3
+  epochs: 2
+  batch_size: 4
+  grad_accum: 4
+  lr: 0.0001
+  weight_decay: 0.01
+  amp: false
+  eval_every_epoch: true
+  eval_max_samples: null
+  # Threshold-free model selection on the complete, fixed image-grouped
+  # model-validation cohort. Calibration uses a disjoint cohort.
+  select_metric: fracture_auprc
+  # Fail closed if gradient checkpointing silently disconnects the injected
+  # visual LoRA adapters from autograd.
+  require_visual_lora_qc: true
+  max_grad_norm: 1.0
+  log_every: 10
+
+model:
+  d_model: 768
+  n_heads: 8
+  dropout: 0.1
+  visual_backbone: biomedclip
+  image_size: 224
+  visual_lora_rank: 4
+  grad_checkpoint: true
+  use_visual_prompt: true
+  use_lens: true
+  use_latent_prompt: true
+  use_textual_prompt: true
+  use_region_in_prompt: false
+  prompt_kind: contour
+  n_masks_max: 3
+  n_query: 32
+  qformer_layers: 2
+  n_latent: 32
+  lens_layers: 2
+  lens_shuffle_r: 2
+  alpha: 1.0
+  theta: 0.1
+  beta: 0.1
+  eta: 0.01
+  lam: 0.1
+  contrastive_mode: infonce
+  contrastive_dim: 256
+  type_loss_weight: 0.1
+  use_fracture_head: true
+  fracture_loss_weight: 1.0
+  max_question_tokens: 48
+  max_answer_tokens: 32
+  max_new_tokens: 32
+  use_llm: true
+  llm_name: Qwen/Qwen2.5-0.5B-Instruct
+  llm_dtype: float32
+  llm_lora_r: 8
+  llm_lora_alpha: 16
+  llm_lora_targets: [q_proj, v_proj]
+  llm_grad_checkpoint: true
+  prior_labels: [hand, leg, hip, shoulder, mixed, fracture, no fracture, hardware, normal]
+  sam:
+    enabled: false
+    model_id: wanglab/medsam-vit-base
+    default_prompt: grid_boxes
+    grid: 2

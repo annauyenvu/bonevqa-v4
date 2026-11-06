@@ -1,0 +1,15 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_64.json",
+  "snapshot_local":"2026-10-22 approximately10:00 ICT",
+  "training_modelval_audits_complete":true,
+  "real_model_integration_gate":"grouped_public_integration_gate_v3_1/report.json",
+  "real_model_integration_passed":true,
+  "integration_scope":"All five fixed LAST models,32 inspected modelval records each,160 records exact to saved verified outputs; all trainable tensors unchanged; exact fresh-process constructor-seed replay; zero updates",
+  "reserved_runner_source":"../experiments/run_grouped_reserved_evaluation_v3_1.py",
+  "reserved_runner_status":"Implemented, not released or executed; remaining driver orchestration/role integration gate required",
+  "remaining_work":"Check driver uses only canonical calibration labels for fitting and untouched outer roles solely for final evaluation, preserves failures; bind the driver gate in scoped execution release; then serial fixed calibration/outer inference/replay, bootstrap and independent audits/reporting",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false,
+  "remaining_time":"No measured reserved-role execution runtime yet"
+}

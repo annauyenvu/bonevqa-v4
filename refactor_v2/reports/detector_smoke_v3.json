@@ -1,0 +1,32 @@
+{
+  "lich_su": [
+    {
+      "so_anh": 40,
+      "so_anh_duong": 1,
+      "so_anh_am": 39,
+      "iou_tot_nhat_tb": 0.0,
+      "ty_le_iou_tren_0_5": 0.0,
+      "ty_le_khong_tim_thay": 1.0,
+      "negative_specificity": 0.6923,
+      "negative_false_positive_rate": 0.3077,
+      "epoch": 1,
+      "loss": 0.1935,
+      "time_s": 22.6
+    }
+  ],
+  "test": {
+    "so_anh": 40,
+    "so_anh_duong": 4,
+    "so_anh_am": 36,
+    "iou_tot_nhat_tb": 0.0519,
+    "ty_le_iou_tren_0_5": 0.0,
+    "ty_le_khong_tim_thay": 0.75,
+    "negative_specificity": 0.7778,
+    "negative_false_positive_rate": 0.2222
+  },
+  "checkpoint": "refactor_v2/detector_clean_v3/smoke.pt",
+  "so_anh_train": 120,
+  "includes_negative_images": true,
+  "split_manifest": ".evaluation_runtime/data/fracatlas_component_clean/component_split_manifest.json",
+  "preprocessing_version": "bonevqa-exif-canonical-v3"
+}

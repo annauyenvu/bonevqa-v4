@@ -1,0 +1,14 @@
+{
+  "arm": "V4",
+  "device": "mps",
+  "required": [
+    "qformer.query",
+    "prefix_proj.0.weight",
+    "fracture_head.net.0.weight",
+    "local_tokens.attention.in_proj_weight"
+  ],
+  "missing": [],
+  "passed": true,
+  "loss": 6.0160603523254395,
+  "seconds": 17.748564958572388
+}

@@ -1,0 +1,94 @@
+{
+  "variant": "original",
+  "fit_from": "calibration_negatives_only",
+  "operating_point": {
+    "threshold": 0.1332134157419205,
+    "calibration_negative_n": 264,
+    "calibration_specificity": 0.9015151515151515,
+    "target_specificity": 0.9,
+    "rule": "minimal_threshold_negative_only_with_ties_nextafter"
+  },
+  "sources": {
+    "calibration": "b186051d59e0dd4b8233541a9bc17ce2e58c1bff7d0d10ff05b3c8f179d76c51",
+    "model_val": "253efbe9b28ec7497837f82d815fbb4f7d595f8a3c6345be1d1b53e598e41653",
+    "test": "b379c2469eb6da664af9397ffa55cc45105ff75c85d3c5e313a2a17393c93e2c"
+  },
+  "roles": {
+    "model_val": {
+      "raw": {
+        "AP": 0.7237215769485982,
+        "AUROC": 0.8939393939393939,
+        "sensitivity": 0.5964912280701754,
+        "specificity": 0.9318181818181818,
+        "BA": 0.7641547049441786,
+        "TP": 34,
+        "FN": 23,
+        "TN": 246,
+        "FP": 18,
+        "Brier": 0.10439114748166932,
+        "QA": 0.8877266387726639,
+        "CLOSED": 0.9023485784919654,
+        "OPEN": 0.8688,
+        "n": 1434,
+        "canonical_n": 321,
+        "threshold": 0.5
+      },
+      "spec90": {
+        "AP": 0.7237215769485982,
+        "AUROC": 0.8939393939393939,
+        "sensitivity": 0.7192982456140351,
+        "specificity": 0.8863636363636364,
+        "BA": 0.8028309409888357,
+        "TP": 41,
+        "FN": 16,
+        "TN": 234,
+        "FP": 30,
+        "Brier": 0.10439114748166932,
+        "QA": 0.8842398884239888,
+        "CLOSED": 0.896168108776267,
+        "OPEN": 0.8688,
+        "n": 1434,
+        "canonical_n": 321,
+        "threshold": 0.1332134157419205
+      }
+    },
+    "test": {
+      "raw": {
+        "AP": 0.8269973011189621,
+        "AUROC": 0.9137952956134774,
+        "sensitivity": 0.6783216783216783,
+        "specificity": 0.9681818181818181,
+        "BA": 0.8232517482517483,
+        "TP": 97,
+        "FN": 46,
+        "TN": 639,
+        "FP": 21,
+        "Brier": 0.0710061246463802,
+        "QA": 0.9163191548512649,
+        "CLOSED": 0.9288557213930348,
+        "OPEN": 0.9004410838059231,
+        "n": 3597,
+        "canonical_n": 803,
+        "threshold": 0.5
+      },
+      "spec90": {
+        "AP": 0.8269973011189621,
+        "AUROC": 0.9137952956134774,
+        "sensitivity": 0.7412587412587412,
+        "specificity": 0.9484848484848485,
+        "BA": 0.8448717948717949,
+        "TP": 106,
+        "FN": 37,
+        "TN": 626,
+        "FP": 34,
+        "Brier": 0.0710061246463802,
+        "QA": 0.9152071170419794,
+        "CLOSED": 0.926865671641791,
+        "OPEN": 0.9004410838059231,
+        "n": 3597,
+        "canonical_n": 803,
+        "threshold": 0.1332134157419205
+      }
+    }
+  }
+}

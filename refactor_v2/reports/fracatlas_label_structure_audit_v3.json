@@ -1,0 +1,50 @@
+{
+  "train": {
+    "rows": 12988,
+    "empty_questions": 0,
+    "empty_answers": 0,
+    "answer_types": {
+      "CLOSED": 7230,
+      "OPEN": 5758
+    },
+    "unique_answers": 130,
+    "duplicate_image_question_answer_rows": 0,
+    "fractured_images": 497
+  },
+  "model_val": {
+    "rows": 1434,
+    "empty_questions": 0,
+    "empty_answers": 0,
+    "answer_types": {
+      "CLOSED": 797,
+      "OPEN": 637
+    },
+    "unique_answers": 39,
+    "duplicate_image_question_answer_rows": 0,
+    "fractured_images": 50
+  },
+  "calibration": {
+    "rows": 1453,
+    "empty_questions": 0,
+    "empty_answers": 0,
+    "answer_types": {
+      "CLOSED": 803,
+      "OPEN": 650
+    },
+    "unique_answers": 43,
+    "duplicate_image_question_answer_rows": 0,
+    "fractured_images": 53
+  },
+  "test": {
+    "rows": 2443,
+    "empty_questions": 0,
+    "empty_answers": 0,
+    "answer_types": {
+      "CLOSED": 1359,
+      "OPEN": 1084
+    },
+    "unique_answers": 68,
+    "duplicate_image_question_answer_rows": 0,
+    "fractured_images": 119
+  }
+}

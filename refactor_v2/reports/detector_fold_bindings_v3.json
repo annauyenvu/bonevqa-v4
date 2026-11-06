@@ -1,0 +1,61 @@
+{
+  "status": "prepared_and_partition_verified",
+  "folds": [
+    {
+      "fold": 0,
+      "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/detector_split_v3.json",
+      "sha256": "dbf2f9acc0de96c28d9af12ce4d8b3aac521f504c9a79fbea09838daa1c21f5d",
+      "images_by_role": {
+        "train": 2568,
+        "val": 321,
+        "calibration": 321,
+        "test": 803
+      }
+    },
+    {
+      "fold": 1,
+      "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/detector_split_v3.json",
+      "sha256": "c4a55c8c4a5af2e0fca60381740326c9d56790f89333cf5a6eddc5e187a00f2d",
+      "images_by_role": {
+        "train": 2568,
+        "val": 321,
+        "calibration": 321,
+        "test": 803
+      }
+    },
+    {
+      "fold": 2,
+      "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/detector_split_v3.json",
+      "sha256": "20760fe53db67b0e28ee83d1db9c5fb3460266b8e7ae5391e4ecbdeb47ec203d",
+      "images_by_role": {
+        "train": 2568,
+        "val": 321,
+        "calibration": 321,
+        "test": 803
+      }
+    },
+    {
+      "fold": 3,
+      "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/detector_split_v3.json",
+      "sha256": "68a2f89e2cb9451aaf7683fc058c51b37c1513a20aac92ae0e96cbbdd5930faa",
+      "images_by_role": {
+        "train": 2569,
+        "val": 321,
+        "calibration": 321,
+        "test": 802
+      }
+    },
+    {
+      "fold": 4,
+      "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/detector_split_v3.json",
+      "sha256": "7dc5fb29391afd074c4a470894614565786e9cdba968318b744678e9651ba050",
+      "images_by_role": {
+        "train": 2568,
+        "val": 321,
+        "calibration": 322,
+        "test": 802
+      }
+    }
+  ],
+  "smoke_scope": "12 TRAIN-only images in disjoint singleton components; not evaluation evidence"
+}

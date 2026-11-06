@@ -1,0 +1,71 @@
+{
+  "scope": "parameter-free T route at fresh common initialization; sensitivity, NOT efficacy or robustness",
+  "checkpoint": "refactor_v2/checkpoints/common_initialization_seed42_fold0_v3/initial.pt",
+  "device": "cpu",
+  "train_indices": [
+    37,
+    0,
+    8,
+    13
+  ],
+  "optimizer_steps": 0,
+  "trainable_state_unchanged": true,
+  "endpoint_max_differences_from_clinical": {
+    "raw": {
+      "closed": 0.18149709701538086,
+      "fracture": 0.013783246278762817,
+      "open": 12.618260383605957
+    },
+    "clinical": {
+      "closed": 0.0,
+      "fracture": 0.0,
+      "open": 0.0
+    },
+    "irrelevant_matched": {
+      "closed": 0.12116098403930664,
+      "fracture": 0.05284619331359863,
+      "open": 11.631525039672852
+    },
+    "clinical_paraphrase": {
+      "closed": 0.11877584457397461,
+      "fracture": 0.028629422187805176,
+      "open": 8.416655540466309
+    }
+  },
+  "repeat_max_differences": {
+    "closed": 0.0,
+    "fracture": 0.0,
+    "open": 0.0
+  },
+  "full_question_texts_by_style": {
+    "raw": [
+      "Is there a fracture in this X-ray?",
+      "Is there a fracture in this X-ray?",
+      "Describe the finding.",
+      "Describe the finding."
+    ],
+    "clinical": [
+      "This is a bone X-ray image. Answer the question briefly. Is there a fracture in this X-ray?",
+      "This is a bone X-ray image. Answer the question briefly. Is there a fracture in this X-ray?",
+      "This is a bone X-ray image. Answer the question briefly. Describe the finding.",
+      "This is a bone X-ray image. Answer the question briefly. Describe the finding."
+    ],
+    "irrelevant_matched": [
+      "This is a plain text-based format. Answer the question briefly. Is there a fracture in this X-ray?",
+      "This is a plain text-based format. Answer the question briefly. Is there a fracture in this X-ray?",
+      "This is a plain text-based format. Answer the question briefly. Describe the finding.",
+      "This is a plain text-based format. Answer the question briefly. Describe the finding."
+    ],
+    "clinical_paraphrase": [
+      "Review the provided bone X-ray image and give a concise answer. Is there a fracture in this X-ray?",
+      "Review the provided bone X-ray image and give a concise answer. Is there a fracture in this X-ray?",
+      "Review the provided bone X-ray image and give a concise answer. Describe the finding.",
+      "Review the provided bone X-ray image and give a concise answer. Describe the finding."
+    ]
+  },
+  "matched_token_budget_report": "textual_token_budget_fold0_v3.json",
+  "seconds": 5.612408416986,
+  "passed_technical_routing": true,
+  "paraphrase_robustness_verified": false,
+  "accuracy_superiority_measured": false
+}

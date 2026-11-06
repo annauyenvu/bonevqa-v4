@@ -1,0 +1,29 @@
+{
+  "updated_local": "2026-10-21T12:54:00+07:00",
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_30.json",
+  "scope": "Frozen TRAIN-only canonical inference/replay diagnostic COMPLETE_VERIFIED; poor TRAIN sensitivity observed, cause not yet isolated",
+  "report": "fullfold0_TRAIN_canonical_diagnostic_v3_1/report.json",
+  "report_sha256": "d42aaec9314797bd0433f12c7efdcbf95cb014141ab775fa59b69ee234443fb6",
+  "protocol_sha256": "cdde7531a48fea84470f3ac33a21cc785cf18e8c2687aedfea8ceb9fef7afcc3",
+  "audit": "fullfold0_TRAIN_canonical_diagnostic_v3_1/independent_artifact_audit.json",
+  "audit_passed": true,
+  "audit_source_sha256": "48b6592adb4b0c9218dbd11a9bed6bf09055c1579b439ccb1a51a10b588fccdf",
+  "verification": "All2568canonicalTRAINidentities_order_labels_each_exact;freshprocessallpredictionprobabilitymetricsexact;allsource_physicalLASThasheschecked;independentmanualconfusions_sklearnAUROC_AP_Brier_manualECE_recomputed;0modelvalnewinference_optimizerupdates_thresholdsearches",
+  "TRAIN_results": {
+    "native": {"TP":314,"FN":144,"TN":2025,"FP":85,"sensitivity":0.6855895196506551,"specificity":0.9597156398104265,"BA":0.8226525797305408,"AUROC":0.9163776154307829,"AP":0.8098128014761297},
+    "uniform": {"TP":308,"FN":150,"TN":2030,"FP":80,"sensitivity":0.6724890829694323,"specificity":0.9620853080568721,"BA":0.8172871955131522,"AUROC":0.9168743144518721,"AP":0.8105849299267303},
+    "canonical_images":2568,"positive_images":458,"negative_images":2110,
+    "common_FN":140,"native_only_FN":4,"uniform_only_FN":10
+  },
+  "timing_seconds": {"native_firstpass":163.0529042499984,"uniform_firstpass":111.8303506250013,"total_including_replay":478.6774998750043,"artifact_audit":1.446941499998502},
+  "interpretation": "Sensitivity is low on TRAIN as well as savedmodelval(64.91percent), so errors are not exclusively a validation generalization gap. Cause NOT established; no conclusion that extra epochs/removed auxiliaries/threshold tuning would help. TRAIN-fit is not efficacy evidence.",
+  "source_only_loss_routing_observation": "Frozenforward selects canonicalyes/no for dedicatedheadBCE_posweight2110/458;closed125wayCEalsoactive;canonicalpublicinferenceusesdedicatedsigmoid_raw0.5. This is source inspection, NOT measured gradient conflict or module-failure diagnosis.",
+  "next_safe_work": "Prospectively bind a tiny TRAIN-only zero-update gradient/routing diagnostic for dedicated fracture head and shared representation/loss interactions; measure before proposing any new quality-loss/architecture candidate. No blind added epochs/seeds or modelval threshold fitting.",
+  "active_compute": "Permitted ps12:52 showed noPython/caffeinate workers; later artifact-only audit completed, no new model launched this monitor",
+  "new_quality_training_released": false,
+  "clinical_labels_created": 0,
+  "calibration_test_used": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

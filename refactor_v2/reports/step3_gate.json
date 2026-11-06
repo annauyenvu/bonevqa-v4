@@ -1,0 +1,90 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "name": "None",
+      "samples": 64,
+      "steps": 160,
+      "initial_loss": 1.7788645029067993,
+      "final_loss": 5.8039931900566444e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {},
+      "learned_gates": {
+        "visual": null,
+        "lens": null,
+        "latent": null
+      },
+      "passed": true
+    },
+    {
+      "name": "V",
+      "samples": 64,
+      "steps": 160,
+      "initial_loss": 1.5650756359100342,
+      "final_loss": 3.532975824782625e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "gamma_visual": 0.10604473203420639
+      },
+      "learned_gates": {
+        "visual": -0.14381203055381775,
+        "lens": null,
+        "latent": null
+      },
+      "passed": true
+    },
+    {
+      "name": "L",
+      "samples": 64,
+      "steps": 160,
+      "initial_loss": 1.5650756359100342,
+      "final_loss": 3.5171437048120424e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "gamma_lens": 0.03601190075278282
+      },
+      "learned_gates": {
+        "visual": null,
+        "lens": 0.1383495032787323,
+        "latent": null
+      },
+      "passed": true
+    },
+    {
+      "name": "P",
+      "samples": 64,
+      "steps": 160,
+      "initial_loss": 0.8575058579444885,
+      "final_loss": 5.6203622079920024e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "gamma_latent": 0.12305854260921478
+      },
+      "learned_gates": {
+        "visual": null,
+        "lens": null,
+        "latent": 0.172963485121727
+      },
+      "passed": true
+    },
+    {
+      "name": "VLP",
+      "samples": 64,
+      "steps": 160,
+      "initial_loss": 0.7181106805801392,
+      "final_loss": 3.824475788860582e-05,
+      "accuracy": 1.0,
+      "first_step_gate_gradients": {
+        "gamma_visual": 0.013460993766784668,
+        "gamma_lens": 0.10560043901205063,
+        "gamma_latent": 0.1129312813282013
+      },
+      "learned_gates": {
+        "visual": 0.1773594468832016,
+        "lens": -0.12222617119550705,
+        "latent": -0.13872091472148895
+      },
+      "passed": true
+    }
+  ]
+}

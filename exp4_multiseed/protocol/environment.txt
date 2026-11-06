@@ -1,0 +1,25 @@
+{
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "executable": "/Users/uyen/Downloads/BoneMedVQA/.venv/bin/python",
+  "platform": "macOS-15.2-arm64-arm-64bit",
+  "hardware": "Hardware:\n\n    Hardware Overview:\n\n      Model Name: MacBook Pro\n      Model Identifier: Mac16,8\n      Model Number: MX2H3SA/A\n      Chip: Apple M4 Pro\n      Total Number of Cores: 12 (8 performance and 4 efficiency)\n      Memory: 24 GB\n      System Firmware Version: 11881.61.3\n      OS Loader Version: 11881.61.3\n      Serial Number (system): JK2TW4YVMF\n      Hardware UUID: F21B87DC-ECC0-5EC4-B210-C39D06CF6085\n      Provisioning UDID: 00006040-001410820A92801C\n      Activation Lock Status: Enabled\n\n",
+  "torch": "2.2.2",
+  "mps_available": true,
+  "precision": "float32 all model weights and LLM in train and eval; no AMP",
+  "cpu_fallback": true,
+  "strict_sam": true,
+  "deterministic_algorithms": true,
+  "num_threads": 4,
+  "packages": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "transformers": "4.40.2",
+    "peft": "0.10.0",
+    "accelerate": "0.30.1",
+    "timm": "0.9.16",
+    "numpy": "1.26.4",
+    "Pillow": "10.3.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "open_clip_source": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/deps/open_clip"
+}

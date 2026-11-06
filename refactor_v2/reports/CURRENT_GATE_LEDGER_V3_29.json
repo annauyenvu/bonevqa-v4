@@ -1,0 +1,33 @@
+{
+  "updated_local": "2026-10-21T11:55:00+07:00",
+  "supersedes_current_status_in": "CURRENT_GATE_LEDGER_V3_28.json",
+  "scope": "Saved-prediction/label consistency diagnosis; completed fixed-pair quality conclusion unchanged",
+  "active_compute": "Successful permitted ps11:52 showed no Python/caffeinate worker; current diagnostic used standard-library artifact reads only, no model job launched",
+  "fixed_pair_verified_report_sha256": "7dc1efb3b7232f23ce821869925a371c8c652b0d184c2576e555f4fbdd12245d",
+  "diagnostic_report": "fullfold0_saved_error_diagnostic_v3_1/report.json",
+  "diagnostic_report_sha256": "955001dacfa862a590882a61315ddd410879c4738fc46f2c81adec19276aaca6",
+  "separate_readonly_verification": "fullfold0_saved_error_diagnostic_v3_1/independent_readonly_recomputation.json",
+  "diagnostic_findings": {
+    "FN_each": 20,
+    "common_FN": 19,
+    "native_only_FN": 1,
+    "uniform_only_FN": 1,
+    "TRAIN_canonical_records_checked": 2568,
+    "modelval_canonical_records_checked": 321,
+    "existing_label_field_mismatches": 0,
+    "same_image_metadata_disagreements": 0,
+    "FN_region_counts_each": {"hand":12,"leg":3,"leg and hip":3,"hand and shoulder":2},
+    "native_FN_p_yes_range":[0.01549066137522459,0.4441411793231964],
+    "uniform_FN_p_yes_range":[0.01600109599530697,0.46459218859672546]
+  },
+  "limits": "Post-hoc inspected development strata, small samples and original metadata only. Internal label consistency is not clinical adjudication; cause of persistent FN not established. No inferred clinical subtype or regional causality; scores do not justify fitting thresholds on modelval.",
+  "next_safe_work": "Bind a fixed-checkpoint TRAIN-only canonical fracture diagnostic and preflight before execution to distinguish poor TRAIN fit from a generalization gap; no added training, checkpoint selection, calibration/test inference or modelval threshold fit authorized",
+  "new_model_jobs": 0,
+  "optimizer_updates": 0,
+  "threshold_searches": 0,
+  "clinical_labels_created": 0,
+  "manifest_or_label_changes": 0,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

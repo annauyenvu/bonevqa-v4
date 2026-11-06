@@ -1,0 +1,13 @@
+{
+  "arm": "B",
+  "device": "mps",
+  "required": [
+    "qformer.query",
+    "prefix_proj.0.weight",
+    "fracture_head.net.0.weight"
+  ],
+  "missing": [],
+  "passed": true,
+  "loss": 6.256333351135254,
+  "seconds": 21.64769983291626
+}

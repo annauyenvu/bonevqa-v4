@@ -1,0 +1,25 @@
+{
+  "wall": 1793238115.7596219,
+  "dependencies": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/local_noaux_head_analysis_v3.py": "d2bd63ae78b06a78bf5cec2ba9808c742ea0bd0ca223e40c239e03bacbe0b51c",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/local_noaux_head_analysis_v4.py": "ade8a352fdde2ce9c67e23f63f3aa9eae339c1e56650f8601365bdf4c08632de",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/finalize_local_noaux_refinement_v1.py": "75a5a504ecfabdfb842d6274395dd13a750ff97ce4b2f19c95bdc3511b35fc2b",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/finalize_local_noaux_refinement_v4.py": "6c9e2962f5f5820bc9c16fccbdaaaf2f691076074f6e029a8c8b14cac8cf1e62",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/LOCAL_NOAUX_HEAD_CONTEXT_REVIEW_V3_20261029.md": "628b80d06ad2cfaa2403346716122442178e1376d20f7f7530792b4f9fefda2c",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/LOCAL_NOAUX_HEAD_ROLE_REVIEW_V4_20261029.md": "7c8a09e39c4b9dfbc3b0c84700afc26f6cfbffe21630a36a806b678807f8e0a1",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/postprocess_failure.json": "1115ab0ecb2fec8ba432936ffaddce68e892789909aea1bf68a4e993f19997ce",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/postprocess_v3_failure.json": "7cfe076ad025f84a33802c343d8dc3a9bf28a212a2e728a7491830eda69f5330",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/head_context_diagnostic_v3/receipt.json": "6a32d5bb21528b421442ed4c66aec3e37a9b99691f1e8f58d9c9be75ee367db8",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/postprocess_v4/started.json": "19f313f240e2b1d11dd3c657c3dc306aaefb0cc3f7f6afb5cc86b1487d3e8f65",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/B/head_refit/HEAD_LAST.pt": "d83774b83b74aacbaa742261b7a87d0e1fcb27da19dc00f1ecf8c3212c77b99f",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/B/head_refit/fit.json": "f369db086557c4054d148cbdb96cc146db8c96b0dfef862574fafe9f6472d126",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/B/head_refit/TRAIN_features.pt": "e7f024b21722e0fc5473c54a25da274237734d2002c3e6708b48aebd61dc6206",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/local_real_noaux/head_refit/HEAD_LAST.pt": "035023fbff332377288d21cb76e6686baf9c1ae20486332dda17d6da5bdf658a",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/local_real_noaux/head_refit/fit.json": "f28cd9156ed78576e29d4c2d11f45118a074d74683edb2c91e26f674a777a23e",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/local_noaux_refinement_v1/fold_0/local_real_noaux/head_refit/TRAIN_features.pt": "fbfbf80cd55ab83df014d7c6faf1b6d7628e2cdf53f13a08338c292fc3fddf9a"
+  },
+  "original_deadline": 1793378629.708738,
+  "existing_fitted_heads_must_not_change": true,
+  "closure_pending": true,
+  "first_binding_failure": "System Python lacks hashlib.file_digest; empty v1 release preserved, no scientific work repeated"
+}

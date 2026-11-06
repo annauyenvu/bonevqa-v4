@@ -1,0 +1,86 @@
+{
+  "scope": "current v3 evidence ledger; historical reports are not current release authority",
+  "source_script_sha256": "faf565b0e977ceeb2c1dedbe20936317e58bc14fa6ccf8ec35013acdbbaaa14c",
+  "evidence_sha256": {
+    "data_inventory_exact_v3.json": "058f51a9b7afd0aa8975276354c4b326a2a36a1438d26029dd7ba175db7492d7",
+    "perceptual_pixel_summary_v3.json": "f8b2e2e4bc7fd5dd05917ef683921634bb42e05641aa9da2cf73738430565530",
+    "checkpoint_provenance_v3.json": "51f156ace7919ca2be9b2c0e44ebfeb69a08a9f9a2d50ad03ab10fc53b3c915f",
+    "vl_bounded_quality_v3_1/completed_pilot_set_audit.json": "2eb335edb9bb72d0e4d5cab2112e7e3c5349e25a1da81539b43618e0301bb678",
+    "V_full321_development_v3_1/independent_artifact_verification.json": "74192acad36b2b3c369ff48b79cf6e07782eff1b276d60697a02c9ed9774ef19",
+    "L_full321_development_v3_1/independent_artifact_verification.json": "b6405fafd528e31b7dc73bb3b326fc048beb421d9a956f7674e4c613fe31a5e2",
+    "vl_bounded_quality_v3_1/trained_V_strength_TRAIN_only.json": "48550f0ad661ad1baf802f812793927216c39e5ba5089352789466b2829b68fe",
+    "detector640_top3_binding_v3/report.json": "cd9beeb9bb88088e3afdc084b042893341d774bdfff8ae860bdcbc359ea657ee",
+    "STEP3_TECHNICAL_REFERENCE_SEAL_V3.json": "1c0bd38966052981d078d0ebcd7e5b3dc880379474cd14b7a30e0fee2ad6e8e3",
+    "PROMPT_INTEGRATION_AND_CAUSAL_GATE_V3.md": "11946f9666c309d33428ca1431137644dbef4d474d01d1320eedd29bf3f8b26c"
+  },
+  "fixed_box_presence_ONLY_no_fitting": {
+    "images": 321,
+    "positive_images": 57,
+    "negative_images": 264,
+    "confusion_if_any_box_means_yes": {
+      "TP": 49,
+      "FN": 8,
+      "TN": 189,
+      "FP": 75
+    },
+    "sensitivity": 0.8596491228070176,
+    "specificity": 0.7159090909090909,
+    "binary_score_AUROC": 0.7877791068580542,
+    "balanced_accuracy": 0.7877791068580542,
+    "meaning": "proposal existence carries label information without lesion-pixel interpretation",
+    "limitations": "same inspected modelval, exploratory diagnostic; not a TRAIN-fitted geometry-only matched model or independent evidence"
+  },
+  "diagnostic_findings": [
+    "V route is live on four fixed TRAIN QA: nonzero answer gradients and gate-zero logit effects; no evidence of a completely disconnected branch in this diagnostic",
+    "Vreal learned gate0.004113; relative visual-stream perturbation4.50e-5 on two QA sharing one automatic-ROI image; zero on empty-ROI rows",
+    "No public-answer changes among four TRAIN QA under gate-zero; small effect is observed, but is not established as the cause of weak generalization",
+    "At this evaluation-mode TRAIN probe, selected V answer-gradient maxima exceed other-objective maxima; do not claim auxiliary-loss domination or remove contrastive loss without separate evidence",
+    "124of321 modelval images have proposals;197empty includes some positives, so automatic localization coverage limits how often semantic local information is available",
+    "Existing fixed top3 detector audit localizes26of57positive images atIoU>=0.5, not clinical VQA sensitivity"
+  ],
+  "gates": {
+    "data_and_initialization": {
+      "status": "development seals and exact inventory exist, not untouched confirmation",
+      "remaining": "perceptual screen is candidate-based, not an exhaustive guarantee; preserve PMC train_lon contamination warning and exact checkpoint chains"
+    },
+    "CPU_wiring_and_replay": {
+      "status": "tested scopes passed, 5boundedV_L LAST296 and full321 development artifacts verified",
+      "remaining": "do not extend baseline tiny CPU epoch-boundary resume certification to all module/phase/mid-epoch/runtime paths"
+    },
+    "V_semantic": {
+      "status": "not passed; location-control AUROC/AP intervals include zero, overall142QA interval includes zero",
+      "remaining": "no-ROI-capacity, image-group shuffled and TRAIN-fitted geometry-only new-fold controls not all run; absence is not permission to expand a currently weak candidate"
+    },
+    "L_semantic": {
+      "status": "not passed; real lens below matched original/location QA controls, full321 discriminative intervals include zero",
+      "remaining": "DCL/InfoNCE and pixel-(un)shuffle contribution ablations not established; do not claim exact-author reproduction or Lens benefit"
+    },
+    "P_semantic": {
+      "status": "previous GM+LF matched screen negative; PF absent",
+      "remaining": "target-consistency on/off and further contexts not all screened; no P expansion justified by current evidence"
+    },
+    "T_semantic": {
+      "status": "technical prompt/token controls only, no current quality release",
+      "remaining": "matched raw/clinical/irrelevant/paraphrase quality experiment on the approved current initialization/data remains unverified"
+    },
+    "confirmation_and_calibration": {
+      "status": "not passed",
+      "remaining": "honest component-grouped nested evaluation or verified independent holdout, then matched seeds only for supported candidates; reserved-role calibration not used to fix current development scores"
+    },
+    "Final_Solution": {
+      "status": "not selected",
+      "remaining": "B remains provisional reference; historical paper FinalSolution/old step3_gate overfit results do not establish current v3 clinical efficacy"
+    }
+  },
+  "next_safe_work": [
+    "Review a bounded TRAIN-fitted geometry-only diagnostic under exact current source/role binding before additional multimodal training",
+    "Predeclare candidate architectural/loss changes only if diagnostics support a mechanism; preserve failed candidates and forbid posthoc threshold/gate amplification",
+    "Keep remaining experiment/confirmation obligations explicit; do not label all of step3 complete because the five-arm pilot set finished"
+  ],
+  "optimizer_updates": 0,
+  "calibration_or_test_inference_used": false,
+  "long_training_authorized": false,
+  "clinical_root_cause_proven": false,
+  "step3_complete": false,
+  "production_released": false
+}

@@ -1,0 +1,41 @@
+{
+ "rule": "three earlier examples in fold 0 test, plus the first valid fold 0 test IDs in sorted order to make 3 fractured and 3 non-fractured; not selected on model output; exact byte duplicates skipped",
+ "items": [
+  {
+   "file": "mau_1.jpg",
+   "image_id": "IMG0000003",
+   "role": "fold 0 test",
+   "src": "images/Non_fractured/IMG0000003.jpg"
+  },
+  {
+   "file": "mau_2.jpg",
+   "image_id": "IMG0000007",
+   "role": "fold 0 test",
+   "src": "images/Non_fractured/IMG0000007.jpg"
+  },
+  {
+   "file": "mau_3.jpg",
+   "image_id": "IMG0000025",
+   "role": "fold 0 test",
+   "src": "images/Fractured/IMG0000025.jpg"
+  },
+  {
+   "file": "mau_4.jpg",
+   "image_id": "IMG0002355",
+   "role": "fold 0 test",
+   "src": "images/Fractured/IMG0002355.jpg"
+  },
+  {
+   "file": "mau_5.jpg",
+   "image_id": "IMG0003463",
+   "role": "fold 0 test",
+   "src": "images/Non_fractured/IMG0003463.jpg"
+  },
+  {
+   "file": "mau_6.jpg",
+   "image_id": "IMG0003871",
+   "role": "fold 0 test",
+   "src": "images/Fractured/IMG0003871.jpg"
+  }
+ ]
+}

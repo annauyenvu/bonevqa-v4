@@ -1,0 +1,5 @@
+_base_: ablation_v_v3.yaml
+run_name: fracatlas_clean_v_gate_zero_seed42_prompt_v3
+model:
+  visual_force_zero: true
+

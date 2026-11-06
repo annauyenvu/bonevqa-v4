@@ -1,0 +1,177 @@
+{
+  "0": {
+    "roles": {
+      "train": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_train.json",
+        "sha256": "7e563f65ef14d5a39bcf4966389b2f8e08e2f4fa90a7d12a677b9ee01009b015",
+        "QA": 11502,
+        "images": 2568,
+        "known_components": 2512
+      },
+      "model_val": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_model_val.json",
+        "sha256": "ab1edd0dce19099731f50a74a9c0dc37faf66a6f647c4ce72bdf000cf7ccfa7a",
+        "QA": 1432,
+        "images": 321,
+        "known_components": 314
+      },
+      "calibration": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_calibration.json",
+        "sha256": "30f06e9b355ff3c0bb14987feee0bd4f2644b9e4a89e7e48bc8d726a6f662bd4",
+        "QA": 1432,
+        "images": 321,
+        "known_components": 311
+      },
+      "test": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_0/vqa_test.json",
+        "sha256": "0c051022fb8a66ebac17ef1b4db0f49f37164282043e87b3a60bc41ae2edba02",
+        "QA": 3632,
+        "images": 803,
+        "known_components": 783
+      }
+    },
+    "historical_B": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/fullfold0_B_token_mean_seed42_v3_1/last.pt",
+    "historical_B_sha256": "c34779eb82b9ec2dd30dac49823386afeadf2c7b7add9f60dee0715a96309626",
+    "config_parent": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/fullfold0_B_uniform_screen_v3_1/token_mean.json"
+  },
+  "1": {
+    "roles": {
+      "train": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_train.json",
+        "sha256": "ed7c7985445b41c7c1453d694861285f08d678aee1cf4829fca83afb8e69aff7",
+        "QA": 11547,
+        "images": 2568,
+        "known_components": 2504
+      },
+      "model_val": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_model_val.json",
+        "sha256": "bb1948fd548fe531dd8184abf3d622adfd6aa7c8fa2acc7d71be4ff984f12acf",
+        "QA": 1422,
+        "images": 321,
+        "known_components": 316
+      },
+      "calibration": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_calibration.json",
+        "sha256": "8fc4a27b994d1509bd840d7222208b57ef0c1178dac09bc9ac0b0f1468502a34",
+        "QA": 1408,
+        "images": 321,
+        "known_components": 316
+      },
+      "test": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_1/vqa_test.json",
+        "sha256": "d7c3e3aaf8d540f512f850c8dac09e0d7f1a17286c4232f66b6f0f82e7bb6591",
+        "QA": 3621,
+        "images": 803,
+        "known_components": 784
+      }
+    },
+    "historical_B": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold1_seed42_v3_1/last.pt",
+    "historical_B_sha256": "a08ddabe6b594af4be759b85dca4f41409c49410d1215d3c5b4130a506782738",
+    "config_parent": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/grouped_native_preparation_v3_2/fold_1.json"
+  },
+  "2": {
+    "roles": {
+      "train": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_train.json",
+        "sha256": "890938d1af84f626081b241eec707b91ff7cbc47d059053556529a21589fc0ea",
+        "QA": 11525,
+        "images": 2568,
+        "known_components": 2510
+      },
+      "model_val": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_model_val.json",
+        "sha256": "68494f0ce2347b854f32326805375273c46d3b6118f41200676bfc1f0f97a7b8",
+        "QA": 1434,
+        "images": 321,
+        "known_components": 310
+      },
+      "calibration": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_calibration.json",
+        "sha256": "f457e4df51c113a3d09d06e651bda5e6f8b6f073ed68b34cabb9e61d7008cdf6",
+        "QA": 1442,
+        "images": 321,
+        "known_components": 316
+      },
+      "test": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_2/vqa_test.json",
+        "sha256": "1425ebefa438dcb69eac928b00eb29b5f411d44769553f988a67f9e591770e73",
+        "QA": 3597,
+        "images": 803,
+        "known_components": 784
+      }
+    },
+    "historical_B": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold2_seed42_v3_1/last.pt",
+    "historical_B_sha256": "c9243bab31728f1b600708d2c5e3738b6d0d4cdb826f6b90a184530d291b3331",
+    "config_parent": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/grouped_native_preparation_v3_2/fold_2.json"
+  },
+  "3": {
+    "roles": {
+      "train": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_train.json",
+        "sha256": "8e34058fe9467bb63ce7f4d69c3ab4530d4f3a8b1d9ac22c13d9250d2534fa0c",
+        "QA": 11524,
+        "images": 2569,
+        "known_components": 2511
+      },
+      "model_val": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_model_val.json",
+        "sha256": "cf78d4bc98b9efa49bd73e20d5f76e25334a3ed45232e296bb2038cecee85315",
+        "QA": 1483,
+        "images": 321,
+        "known_components": 312
+      },
+      "calibration": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_calibration.json",
+        "sha256": "e83a6654e918b91801fa39d660b7d90bdb7b4d7702202bb9ba26d5067083d484",
+        "QA": 1444,
+        "images": 321,
+        "known_components": 313
+      },
+      "test": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_3/vqa_test.json",
+        "sha256": "5844e7a9431335512abb277b18a66989411173f47c633ef0585234f0d63926f0",
+        "QA": 3547,
+        "images": 802,
+        "known_components": 784
+      }
+    },
+    "historical_B": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold3_seed42_v3_1/last.pt",
+    "historical_B_sha256": "2cb3a26bed43115b55f372e2166b100400e824724bef00eeb2756ee55e19a976",
+    "config_parent": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/grouped_native_preparation_v3_2/fold_3.json"
+  },
+  "4": {
+    "roles": {
+      "train": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_train.json",
+        "sha256": "3768eccda65dd1b122104e970abe9068ab63ecf3bb0fd1d83711c2afed80a75b",
+        "QA": 11510,
+        "images": 2568,
+        "known_components": 2509
+      },
+      "model_val": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_model_val.json",
+        "sha256": "ddc5a19d68c4a111db178de1199ed4ceea3544c7d0e20d41f25d29661943231b",
+        "QA": 1421,
+        "images": 321,
+        "known_components": 312
+      },
+      "calibration": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_calibration.json",
+        "sha256": "c51ba830f75f2dd2cb0c4a6fe9119beb95b0c44a65c0926e40c5f08349eb658d",
+        "QA": 1466,
+        "images": 322,
+        "known_components": 314
+      },
+      "test": {
+        "path": "/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/data/fracatlas_component_cv_v3/fold_4/vqa_test.json",
+        "sha256": "8464509f958bc3540785aa2663820ba4f3cb634a5f77b71ea0c79ef3fb454ee5",
+        "QA": 3601,
+        "images": 802,
+        "known_components": 785
+      }
+    },
+    "historical_B": "/Users/uyen/Downloads/BONEVQA/refactor_v2/checkpoints/grouped_native_fold4_seed42_v3_1/last.pt",
+    "historical_B_sha256": "c8ae33b6dae3594ea34c6d05cc12fd3edbb494974cd17a3d412c344c9da673a8",
+    "config_parent": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/grouped_native_preparation_v3_2/fold_4.json"
+  }
+}

@@ -1,0 +1,9 @@
+# Native epoch1 intermediate validation — 2026-10-21 08:52 ICT
+
+The existing native worker (PID 6851) is alive, epoch2 at global update1050/1438. CPU838.3% and RSS5092032KiB are process snapshots, not peak measurements. No duplicate model or training job was started by this monitor.
+
+Native epoch1 history and log agree: 1232/1432 model-validation answers correct (86.03%), OPEN539/628 (85.83%), CLOSED693/804 (86.19%). Canonical321-image fracture AUROC0.906366, AUPRC0.736130, sensitivity0.877193, specificity0.787879, balanced accuracy0.832536, Brier0.152118 and ECE10 0.207679. Trainer-reported metrics are not yet independently replayed. They are not the fixed LAST1438 primary endpoint or clinical confirmation.
+
+Training epoch1 took1684.932 seconds; launch-to-next-epoch wall time approximately1952 seconds includes initialization, validation and saving. Recent60updates took147 seconds (2.45 sec/update). Approximately388native updates remain (15.8minutes TRAIN only), followed by validation/save, the full serial uniform arm, and independent two-arm LAST inference/replay/component statistics. Conditional remaining planning: about2–3 awake hours from08:52; this is not a deadline for all of step3. Uniform runtime is not yet observed in this quality run.
+
+All41 bound runtime dependencies were rehashed with zero mismatches. Existing epoch1 last/best files remain untouched; their presence does not mean training is finished. Preserve fixed2epoch/1438update endpoints and seed42. No best-epoch selection, additional seeds, calibration/test inference or production promotion. This full-TRAIN run differs from the historical bounded pilot in training cohort, vocabulary and class weights; higher intermediate points cannot isolate one causal improvement. Current ledger: CURRENT_GATE_LEDGER_V3_23.json.

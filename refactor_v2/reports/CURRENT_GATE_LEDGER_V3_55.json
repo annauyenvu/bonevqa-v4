@@ -1,0 +1,21 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_54.json",
+  "snapshot_local":"2026-10-22 approximately04:44 ICT",
+  "completed_new_folds":["1","2","3"],
+  "active_fold":"4",
+  "latest_logged_update":170,
+  "active_fold_total_updates":1440,
+  "active_worker_elapsed":"11m55s",
+  "active_worker_cpu_percent":688.9,
+  "fold3_execution_elapsed_seconds":6537.792812916989,
+  "fold3_execution_artifact_audit":"grouped_fold3_execution_artifact_audit_v3_1.json",
+  "fold3_execution_artifact_audit_passed":true,
+  "fold3_epoch2_trainer_modelval":{"overall_acc":0.8975,"fracture_sensitivity":0.5263,"fracture_specificity":0.9280,"fracture_balanced_accuracy":0.7272,"fracture_auroc":0.8626,"fracture_auprc":0.6603},
+  "metric_scope":"Rounded native trainer modelval logs; independent prediction/metric audit pending. Sensitivity remains limited and varies across folds; no efficacy/superiority claim.",
+  "remaining_quality_updates":1270,
+  "conditional_training_execution_remaining":"Approximately1h30m to1h45m if recent throughput and completed-fold validation overhead hold; subsequent independent evaluation/calibration/replay/audits add time",
+  "routing":"Fixed seed42 native B protocol, T/V/L/P disabled",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}

@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "scope": "Recovery audit of zero-QA initial checkpoints, no quality training release",
+  "script_sha256": "5bf8883ceea7d6ff1523817b4e9dddd8086a0f8ee9b99d6d5bce0f28eddccc63",
+  "protocol_sha256": "c9a51ecb657dd27d33cc3cd0ee9643a4ae0f2c2f6993467075555fd402cb894b",
+  "exports_sha256": "a42a79a25c592e148feac3ed244398e706a5a4b2baf56f7211ebd03edbbf3dde",
+  "fresh_process_replay_sha256": "7f8bbaaa92317a57a0eff68d7a9a02da9f778ba133cf3a0247ede28e8de6a97c",
+  "original_failed_driver_progress_sha256": "0c36a520c2227841031568934e261ef7631339e9d80e39cd4bed70a3c201be6c",
+  "replay_environment_failure_record_sha256": "5955e1d6a0b8ddfee833ea02a2eeb8aa52c00606e5d06e89e1837344c825f85a",
+  "original_failed_driver_progress_preserved": true,
+  "recovery": "Only original --replay separately executed with shared-memory process permission; same offline CPU8 runtime, no model/data/source modification or duplicate export",
+  "environment_cause_limit": "Observed OpenMP SHM failure and successful separately permitted replay; exact OS root cause not exhaustively isolated",
+  "upstream_sha256": "08cd132ef1097da8f64758225b3f66b7a5329a5d008accfe84e352e94cb98302",
+  "checkpoints": {
+    "0": {
+      "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_0_PREtask.pt",
+      "sha256": "9e5ebcf40352c7e122ea4361079d8a84bb5e7989d3baac8d70daefbc7fa9d28e",
+      "bytes": 253494065
+    },
+    "1": {
+      "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_1_PREtask.pt",
+      "sha256": "861c83bc7cdec5cbe81ed5b7828932c7e6a12ce6696e2c2f243d4febce240f10",
+      "bytes": 253469041
+    },
+    "2": {
+      "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_2_PREtask.pt",
+      "sha256": "dc9dbcd172931cd407efae4546f5904be66bcc65a5dd40d3d56a803ef3bf0de4",
+      "bytes": 253462833
+    },
+    "3": {
+      "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_3_PREtask.pt",
+      "sha256": "80b2e2519c37db16f20c7b1696d2110a118746ba72ac2e478a41e8b1e19faff8",
+      "bytes": 253500401
+    },
+    "4": {
+      "path": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_4_PREtask.pt",
+      "sha256": "c16c1357ccc493a2caed8926535e67a747f258b27646e32cabe8fdc5ce08e9a2",
+      "bytes": 253478385
+    }
+  },
+  "folds": {
+    "0": {
+      "vocabulary_size": 125,
+      "TRAIN_positive_weight": 4.606986899563319,
+      "TRAIN_canonical_counts": {
+        "no": 2110,
+        "yes": 458
+      },
+      "all263_tensor_hashes_verified": true,
+      "strict_manifest_and_fresh_process_public_roundtrip": true
+    },
+    "1": {
+      "vocabulary_size": 117,
+      "TRAIN_positive_weight": 4.606986899563319,
+      "TRAIN_canonical_counts": {
+        "no": 2110,
+        "yes": 458
+      },
+      "all263_tensor_hashes_verified": true,
+      "strict_manifest_and_fresh_process_public_roundtrip": true
+    },
+    "2": {
+      "vocabulary_size": 115,
+      "TRAIN_positive_weight": 4.606986899563319,
+      "TRAIN_canonical_counts": {
+        "no": 2110,
+        "yes": 458
+      },
+      "all263_tensor_hashes_verified": true,
+      "strict_manifest_and_fresh_process_public_roundtrip": true
+    },
+    "3": {
+      "vocabulary_size": 127,
+      "TRAIN_positive_weight": 4.609170305676856,
+      "TRAIN_canonical_counts": {
+        "no": 2111,
+        "yes": 458
+      },
+      "all263_tensor_hashes_verified": true,
+      "strict_manifest_and_fresh_process_public_roundtrip": true
+    },
+    "4": {
+      "vocabulary_size": 120,
+      "TRAIN_positive_weight": 4.606986899563319,
+      "TRAIN_canonical_counts": {
+        "no": 2110,
+        "yes": 458
+      },
+      "all263_tensor_hashes_verified": true,
+      "strict_manifest_and_fresh_process_public_roundtrip": true
+    }
+  },
+  "shared_non_task_head_tensor_count": 255,
+  "shared_non_task_head_hashes_exact_across_folds": true,
+  "fold0_all263_equal_previous125vocab_gate": true,
+  "within_fold_B_uniform_parity": "One common initial file per fold available to both proposed arms; no trained arms claimed",
+  "fresh_process_replay_constructor_seed": 90211,
+  "replayed_TRAIN_prediction_records": 20,
+  "auditor_neural_model_instantiations": 0,
+  "optimizer_updates": 0,
+  "modelval_calibration_outer_inference_used": false,
+  "limits": [
+    "Only4 TRAIN inference fixtures per fold, not a quality evaluation",
+    "Zero-QA checkpoint reload is not optimizer/RNG training-resume certification",
+    "No post-training weights or per-fold learning efficacy certified",
+    "Original driver failed before recording an end-to-end elapsed report; do not invent its total runtime"
+  ],
+  "audit_elapsed_seconds": 3.364060874999268,
+  "long_training_authorized": false,
+  "step3_complete": false,
+  "Final_Solution_selected": false,
+  "production_released": false
+}

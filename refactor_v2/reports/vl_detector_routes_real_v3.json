@@ -1,0 +1,110 @@
+{
+  "scope": "technical only; smoke detector quality NOT established; no scientific superiority",
+  "device": "cpu",
+  "proposals": "refactor_v2/detector_fold0_train_only_smoke_v3/boxes.json",
+  "source": "detector-derived only, annotation ROI disabled",
+  "train_indices": [
+    290,
+    292,
+    15,
+    18
+  ],
+  "roi_image": "IMG0000100",
+  "no_roi_image": "IMG0000008",
+  "limitations": [
+    "selected for branch coverage, not unbiased efficacy",
+    "L is training-only alignment; zero direct inference contribution is intentional",
+    "full fold proposals, matched controls and held-out outcomes remain pending"
+  ],
+  "results": [
+    {
+      "variant": "V",
+      "steps": [
+        {
+          "step": 1,
+          "loss": 16.007003784179688,
+          "lens_alignment_loss": 0.0,
+          "route_gradients": {
+            "prompt_mixer.gamma_visual": 0.014630305580794811,
+            "prompt_mixer.visual_proj.0.weight": 0.0
+          }
+        },
+        {
+          "step": 2,
+          "loss": 16.313772201538086,
+          "lens_alignment_loss": 0.0,
+          "route_gradients": {
+            "prompt_mixer.gamma_visual": 0.001383527647703886,
+            "prompt_mixer.visual_proj.0.weight": 1.2360611378881003e-07
+          }
+        }
+      ],
+      "selected_updates": {
+        "prompt_mixer.gamma_visual": 0.00019512855214998126,
+        "prompt_mixer.visual_proj.0.weight": 1.0102987289428711e-05
+      },
+      "gate_zero_endpoint_differences": {
+        "closed": 5.7220458984375e-06,
+        "fracture": 2.980232238769531e-07,
+        "open": 0.00016498565673828125
+      },
+      "no_roi_inference_differences": {
+        "closed": 5.7220458984375e-06,
+        "fracture": 2.980232238769531e-07,
+        "open": 0.00016498565673828125
+      },
+      "reload_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "seconds": 13.604884208005387,
+      "passed": true
+    },
+    {
+      "variant": "L",
+      "steps": [
+        {
+          "step": 1,
+          "loss": 16.103652954101562,
+          "lens_alignment_loss": 0.9962109923362732,
+          "route_gradients": {
+            "lens_fusion.view_emb": 0.0011637333082035184,
+            "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0021877530962228775
+          }
+        },
+        {
+          "step": 2,
+          "loss": 16.603042602539062,
+          "lens_alignment_loss": 0.48860716819763184,
+          "route_gradients": {
+            "lens_fusion.view_emb": 0.000572567863855511,
+            "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.0012282936368137598
+          }
+        }
+      ],
+      "selected_updates": {
+        "lens_fusion.view_emb": 0.00017560645937919617,
+        "visual.shared_clip.visual.trunk.blocks.0.attn.qkv.lora_B.default.weight": 0.00020004977704957128
+      },
+      "gate_zero_endpoint_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "no_roi_inference_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "reload_differences": {
+        "closed": 0.0,
+        "fracture": 0.0,
+        "open": 0.0
+      },
+      "seconds": 12.137257666006917,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

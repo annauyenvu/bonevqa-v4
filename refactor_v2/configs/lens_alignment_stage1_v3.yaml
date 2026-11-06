@@ -1,0 +1,12 @@
+_base_: fracatlas_prompt_causal_v3.yaml
+run_name: fracatlas_clean_l_align_seed42_prompt_v3
+train:
+  stage: 1
+  epochs: 2
+  select_metric: val_loss
+model:
+  prompt_variant: L
+  use_lens: true
+  lens_training_only: true
+  lens_alignment_weight: 1.0
+

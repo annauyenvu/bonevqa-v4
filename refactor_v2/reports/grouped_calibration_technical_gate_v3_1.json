@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "scope": "Synthetic calibration arithmetic/optimality/negative-input checks and exact fresh-process replay only; no actual dataset, model inference or fit on reserved roles",
+  "dependencies": {
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/gate_grouped_calibration_v3_1.py": "2f382bf95ec82dd530022ecc0132f3b565eb2c3570653419cfbe04bc83ab5e62",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/experiments/grouped_calibration_v3_1.py": "67c8a05eca6afbe6d2b9209e5e094d4dca5a447afa58516980c09efeafea8a0f",
+    "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/GROUPED_EVALUATION_RULES_V3_1.json": "ba9384adb522aa241e1fdbb244de8e7ecc0d6cd786cecdcff1093895db05020b"
+  },
+  "fixture": {
+    "calibration": {
+      "passed": true,
+      "slope": 0.7526868138724945,
+      "intercept": 0.10625736755417732,
+      "n_iter": 8,
+      "warnings": [],
+      "parameters": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 1e-08,
+        "random_state": 42,
+        "fit_intercept": true,
+        "class_weight": null
+      }
+    },
+    "probabilities": [
+      0.056090467300793964,
+      0.17543829412225714,
+      0.2814686793706446,
+      0.41103575245701346,
+      0.4504306434613705,
+      0.5639723468659037,
+      0.6014344578001558,
+      0.7177176328553604,
+      0.8040605208406038,
+      0.9383512281857538
+    ],
+    "objective_derivatives": [
+      2.0113755549999723e-08,
+      2.3259857095947467e-08
+    ],
+    "negative_cases": 5
+  },
+  "elapsed_seconds": 0.551323500010767,
+  "reserved_role_inference_authorized": false,
+  "remaining_gates": "Role bindings, checkpoint freeze, public calibration/evaluation runner, bootstrap implementation and replay gates"
+}

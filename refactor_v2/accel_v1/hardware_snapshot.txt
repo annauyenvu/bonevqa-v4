@@ -1,0 +1,219 @@
+=== date
+Fri Oct 30 00:30:23 +07 2026
+=== macOS
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+=== hardware
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Pro
+      Model Identifier: Mac16,8
+      Model Number: MX2H3SA/A
+      Chip: Apple M4 Pro
+      Total Number of Cores: 12 (8 Performance and 4 Efficiency)
+      Memory: 24 GB
+      System Firmware Version: 20457.1.29
+      OS Loader Version: 20457.1.29
+      Serial Number (system): JK2TW4YVMF
+      Hardware UUID: F21B87DC-ECC0-5EC4-B210-C39D06CF6085
+      Provisioning UDID: 00006040-001410820A92801C
+      Activation Lock Status: Enabled
+
+Graphics/Displays:
+
+    Apple M4 Pro:
+
+      Chipset Model: Apple M4 Pro
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 16
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+      Displays:
+        Color LCD:
+          Display Type: Built-in Liquid Retina XDR Display
+          Resolution: 3024 x 1964 Retina
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: Yes
+          Connection Type: Internal
+
+Power:
+
+    Battery Information:
+
+      Model Information:
+          Serial Number: F5DHCJ0015A0000FWH
+          Device Name: bq40z651
+          Pack Lot Code: 0
+          PCB Lot Code: 0
+          Firmware Version: 0b00
+          Hardware Revision: 100
+          Cell Revision: 271d
+      Charge Information:
+          The battery’s charge is below the warning level: No
+          Fully Charged: No
+          Charging: No
+          State of Charge (%): 80
+      Health Information:
+          Cycle Count: 278
+          Condition: Normal
+          Maximum Capacity: 92%
+
+    System Power Settings:
+
+      AC Power:
+          System Sleep Timer (Minutes): 1
+          Disk Sleep Timer (Minutes): 10
+          Display Sleep Timer (Minutes): 0
+          Sleep on Power Button: Yes
+          Wake on LAN: Yes
+          Current Power Source: Yes
+          Hibernate Mode: 3
+          High Power Mode: No
+          Low Power Mode: Yes
+          Prioritize Network Reachability Over Sleep: No
+      Battery Power:
+          System Sleep Timer (Minutes): 1
+          Disk Sleep Timer (Minutes): 10
+          Display Sleep Timer (Minutes): 0
+          Sleep on Power Button: Yes
+          Wake on LAN: No
+          Hibernate Mode: 3
+          High Power Mode: No
+          Low Power Mode: No
+          Prioritize Network Reachability Over Sleep: No
+          Reduce Brightness: No
+
+    Hardware Configuration:
+
+      UPS Installed: No
+
+    AC Charger Information:
+
+      Connected: Yes
+      ID: 0x701c
+      Wattage (W): 68
+      Family: 0xe000400a
+      Serial Number: F16HBM0097B000000P
+      Name: 70W USB-C Power Adapter 
+      Manufacturer: Apple Inc.
+      Hardware Version: 1,0
+      Firmware Version: 1030030
+      Charging: No
+
+    Power Events:
+
+        Next Scheduled Events:
+
+              appPID: 727
+              Type: Wake
+              Scheduled By: com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefreshTimer
+              Time: 00:29 30/10/26
+              UserVisible: 0
+
+              appPID: 398
+              Type: Wake
+              Scheduled By: com.apple.alarm.user-invisible-com.apple.osanalytics.hardhighengagementtimer
+              Time: 06:51 30/10/26
+              UserVisible: 0
+
+=== cpu
+Apple M4 Pro
+hw.ncpu: 12
+hw.perflevel0.physicalcpu: 8
+hw.perflevel1.physicalcpu: 4
+hw.memsize: 25769803776
+=== power
+System-wide power settings:
+Currently in use:
+ standby              1
+ Sleep On Power Button 1
+ hibernatefile        /var/vm/sleepimage
+ powernap             1
+ networkoversleep     0
+ disksleep            10
+ sleep                1 (sleep prevented by coreaudiod, coreaudiod, runningboardd, runningboardd, runningboardd, caffeinate, caffeinate, Safari, powerd, Claude)
+ hibernatemode        3
+ ttyskeepawake        1
+ displaysleep         0 (display sleep prevented by caffeinate)
+ tcpkeepalive         1
+ powermode            1
+ womp                 1
+Note: No thermal warning level has been recorded
+Note: No performance warning level has been recorded
+Note: No CPU power status has been recorded
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=26869859)	80%; AC attached; not charging present: true
+=== memory
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                                    75232.
+Pages active:                                 538452.
+Pages inactive:                               549373.
+Pages speculative:                              1506.
+Pages throttled:                                   0.
+Pages wired down:                             184184.
+Pages purgeable:                               21453.
+"Translation faults":                    10025045450.
+Pages copy-on-write:                        28153843.
+Pages zero filled:                        9670261062.
+Pages reactivated:                         392648790.
+Pages purged:                               46437528.
+File-backed pages:                            467311.
+Anonymous pages:                              622020.
+Pages stored in compressor:                   422352.
+Pages occupied by compressor:                 182931.
+Decompressions:                            247454002.
+Compressions:                              293114500.
+Pageins:                                   759632006.
+Pageouts:                                     209976.
+Swapins:                                      825029.
+Swapouts:                                    1256746.
+vm.swapusage: total = 2048.00M  used = 444.25M  free = 1603.75M  (encrypted)
+Pageouts: 209976 
+
+System-wide memory free percentage: 75%
+=== disk
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi   172Gi     7%    484k  1.8G    0%   /
+/dev/disk3s5     460Gi   262Gi   172Gi    61%    1.5M  1.8G    0%   /System/Volumes/Data
+Claude
+ImplaStation
+Macintosh HD
+Recovery
+=== top processes
+Processes: 760 total, 3 running, 757 sleeping, 3367 threads 
+2026/10/30 00:30:24
+Load Avg: 4.72, 3.66, 2.98 
+CPU usage: 6.99% user, 13.9% sys, 79.90% idle 
+SharedLibs: 1033M resident, 163M data, 132M linkedit.
+MemRegions: 280951 total, 5125M resident, 507M private, 2097M shared.
+PhysMem: 22G used (2878M wired, 2858M compressor), 1208M unused.
+VM: 352T vsize, 57G framework vsize, 825029(0) swapins, 1256746(0) swapouts.
+Networks: packets: 88532086/71G in, 218806528/273G out.
+Disks: 525248285/11T read, 19209436/811G written.
+
+PID    COMMAND          %CPU MEM  
+77981  top              0.0  6512K
+77960  bash             0.0  1712K
+77950  biomesyncd       0.0  4096K
+77947  mdworker_shared  0.0  3152K
+77946  mdworker_shared  0.0  3104K
+77938  mdworker_shared  0.0  3200K
+77928  mdworker_shared  0.0  3136K
+77916  MailStorageManag 0.0  5744K
+77915  CloudDocsStorage 0.0  3376K
+77914  GarageBandStorag 0.0  3376K
+77913  ApplicationsStor 0.0  5632K
+77912  DeveloperStorage 0.0  4352K
+77911  Messages Storage 0.0  3568K
+77910  PhotosStorageExt 0.0  3504K
+77909  BooksStorageExte 0.0  3760K
+=== python runtimes
+/Users/uyen/Downloads/BoneMedVQA/.venv/bin/python 3.11.15 torch 2.2.2 mps True
+/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/lens_venv_v2/bin/python 3.11.15 torch 2.6.0 mps True
+/Users/uyen/Downloads/BONEVQA/.evaluation_runtime/accel_venv_v1/bin/python 3.11.15 torch 2.15.0 mps True

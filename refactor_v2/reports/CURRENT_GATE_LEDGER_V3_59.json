@@ -1,0 +1,18 @@
+{
+  "supersedes_current_status_in":"CURRENT_GATE_LEDGER_V3_58.json",
+  "snapshot_local":"2026-10-22 approximately06:44 ICT",
+  "training_status":"trained_pending_independent_evaluation",
+  "completed_new_folds":["1","2","3","4"],
+  "new_training_updates":5768,
+  "summed_worker_execution_seconds":25588.302025292986,
+  "all_four_execution_artifact_audits_passed":true,
+  "fold4_epoch2_trainer_modelval":{"overall_acc":0.9141,"fracture_sensitivity":0.6140,"fracture_specificity":0.9545,"fracture_balanced_accuracy":0.7843,"fracture_auroc":0.8992},
+  "metric_scope":"Rounded native trainer modelval diagnostics only; independent metric audit pending",
+  "modelval_evaluation_plan":"grouped_modelval_evaluation_v3_1/plan.json",
+  "modelval_evaluation_status":"Started serial offline CPU8 fixed LAST public modelval inference with fresh-process exact replay; no new optimizer updates or reserved-role inference",
+  "modelval_execution_session":15226,
+  "remaining_time":"No measured runtime for the new evaluation yet; do not infer step3 ETA from completed training duration",
+  "new_reserved_role_inference":false,
+  "step3_complete":false,
+  "production_released":false
+}
