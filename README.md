@@ -1,6 +1,6 @@
 # BoneVQA V4: detector-conditioned visual prompting for bone radiograph VQA
 
-Reproducibility package for the manuscript *Detector-Conditioned Visual Prompting for Bone Radiograph Visual Question Answering: A Leakage-Audited Five-Fold Study With Mechanism Controls* (submitted to IEEE Access).
+Reproducibility package for the manuscript *Detector-Conditioned Visual Prompting for Bone Radiograph VQA: A Leakage-Controlled Evaluation and Mechanism Analysis* (in preparation for submission to IEEE Access).
 
 The package contains the complete source code, the component-grouped five-fold splits and question-answer files, the locked analysis protocols, and the stored per-image predictions of every arm. Every statistic reported in the paper is recomputed from these predictions by the analysis scripts. Model checkpoints and raw images are not included because of their size (see [Checkpoints and images](#checkpoints-and-images)).
 
@@ -51,8 +51,9 @@ Run from `refactor_v2/`. Each command reads the stored predictions and rewrites 
 | External validation on GRAZPEDWRI-DX (Sec. IV-G) | `python -m experiments.access_external_v1 analyze` | `reports/access_v1/external/results.json` |
 | Post hoc detector extension (Section V-D) | `python -m experiments.v4_consistency_v4arm_v1` | `reports/v4_detector_ext_v1/v4arm_full.json` |
 | Post hoc availability strata and detector misses (Sec. IV-E) | `python -m experiments.access_availability_v1` | `reports/access_v1/availability.json` |
+| Post hoc proposal count, late fusion with component-bootstrap CIs (Sec. IV-E) and exact-match accuracy CI (Sec. IV-C) | `python -m experiments.access_review2_v1` | `reports/access_v1/review2.json` |
 
-The first seven commands were re-run on a fresh copy of this package before the first release and reproduced the stored files with zero numeric differences; the availability analysis was checked the same way when it was added. Bootstrap analyses use fixed seeds recorded in the scripts.
+The first seven commands were re-run on a fresh copy of this package before the first release and reproduced the stored files with zero numeric differences; the post hoc availability and late-fusion analyses were checked the same way when they were added. Bootstrap analyses use fixed seeds recorded in the scripts.
 
 ## Retrain from scratch
 
