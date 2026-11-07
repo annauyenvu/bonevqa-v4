@@ -18,7 +18,7 @@ The layout mirrors the original project root so that the scripts run unchanged.
 | `refactor_v2/reports/access_v1/` | Locked protocol (`PROTOCOL.md`) and the paper's result files |
 | `refactor_v2/reports/local_noaux_refinement_v1/` | Seed-42 five-fold predictions of B and V4 (main study) |
 | `refactor_v2/reports/v5_studies/` | Seed-43 retrained arms (B, V4, V4_flag, V4_grid, V4_placebo) and FAVP-/LaPA-/Lens-style arms |
-| `refactor_v2/reports/v4_detector_ext_v1/` | Post hoc detector-extension analysis (Section V-C) |
+| `refactor_v2/reports/v4_detector_ext_v1/` | Post hoc detector-extension analysis (Section V-D) |
 | `refactor_v2/reports/thesis_v4_checks_v1/`, `route_audit_v1/`, `v4_poststack_v1/` | Route interventions, leakage probe, robustness checks |
 | `.evaluation_runtime/data/fracatlas_component_cv_v3/` | Five outer folds: TRAIN / model-validation / calibration / test QA files and component manifest |
 | `.evaluation_runtime/data/fracatlas_component_clean/` | Component-clean manifests used for detector training |
@@ -49,9 +49,10 @@ Run from `refactor_v2/`. Each command reads the stored predictions and rewrites 
 | Question wording and semantic router (Sec. IV-F) | `python -m experiments.access_routing_v1 analyze` | `reports/access_v1/routing/results.json` |
 | Paraphrase set | `python -m experiments.access_paraphrase_analyze_v1` | `reports/access_v1/paraphrase/results.json` |
 | External validation on GRAZPEDWRI-DX (Sec. IV-G) | `python -m experiments.access_external_v1 analyze` | `reports/access_v1/external/results.json` |
-| Post hoc detector extension (Section V-C) | `python -m experiments.v4_consistency_v4arm_v1` | `reports/v4_detector_ext_v1/v4arm_full.json` |
+| Post hoc detector extension (Section V-D) | `python -m experiments.v4_consistency_v4arm_v1` | `reports/v4_detector_ext_v1/v4arm_full.json` |
+| Post hoc availability strata and detector misses (Sec. IV-E) | `python -m experiments.access_availability_v1` | `reports/access_v1/availability.json` |
 
-All seven commands were re-run on a fresh copy of this package before release and reproduced the stored files with zero numeric differences. Bootstrap analyses use fixed seeds recorded in the scripts.
+The first seven commands were re-run on a fresh copy of this package before the first release and reproduced the stored files with zero numeric differences; the availability analysis was checked the same way when it was added. Bootstrap analyses use fixed seeds recorded in the scripts.
 
 ## Retrain from scratch
 
