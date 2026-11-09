@@ -25,6 +25,7 @@ The layout mirrors the original project root so that the scripts run unchanged.
 | `.evaluation_runtime/data/external_grazpedwri/` | GRAZPEDWRI-DX metadata and file list for the external cohort |
 | `exp4_multiseed/`, `mandatory_experiments_20261011/` | Code and protocols of the earlier sealed studies (leakage audit, Section IV-B) |
 | `tools/relocate.py` | Rewrites the original absolute root to your clone location |
+| `tools/repro_check.sh`, `tools/compare_json.py` | Clean-clone reproduction test of the analysis commands |
 
 ## Setup
 
@@ -52,8 +53,18 @@ Run from `refactor_v2/`. Each command reads the stored predictions and rewrites 
 | Post hoc detector extension (Section V-D) | `python -m experiments.v4_consistency_v4arm_v1` | `reports/v4_detector_ext_v1/v4arm_full.json` |
 | Post hoc availability strata and detector misses (Sec. IV-E) | `python -m experiments.access_availability_v1` | `reports/access_v1/availability.json` |
 | Post hoc proposal count, late fusion with component-bootstrap CIs (Sec. IV-E) and exact-match accuracy CI (Sec. IV-C) | `python -m experiments.access_review2_v1` | `reports/access_v1/review2.json` |
+| Third-revision checks: proposals by fold role (Sec. IV-E), mean of folds and within-fold ranks (Sec. III-I, IV-C), paired component permutation tests (Sec. IV-C, IV-E), negation exact match and sensitivity by detector score (Supplementary S1, S2) | `python experiments/access_review3_v1.py .. reports/access_v1/review3/posthoc.json reports/access_v1/review3/detector_scores.json` | `reports/access_v1/review3/posthoc.json` |
 
-The first seven commands were re-run on a fresh copy of this package before the first release and reproduced the stored files with zero numeric differences; the post hoc availability and late-fusion analyses were checked the same way when they were added. Bootstrap analyses use fixed seeds recorded in the scripts.
+The first seven commands were re-run on a fresh copy of this package before the first release and reproduced the stored files with zero numeric differences; the post hoc availability and late-fusion analyses were checked the same way when they were added. Bootstrap and permutation analyses use fixed seeds recorded in the scripts.
+
+`tools/repro_check.sh <this repository> <empty work dir> <python>` repeats that clean-clone test for every command above: it exports the committed tree to a new path, runs `tools/relocate.py`, checks that the inputs exist, reruns each command and compares the regenerated file with the committed one (`tools/compare_json.py`; path strings are ignored).
+
+Two third-revision inputs need data that are not in this package, so their outputs are stored instead:
+
+| Paper content | Script | Needs | Stored output |
+|---|---|---|---|
+| Detector scores of the kept proposals (input of the last row above; Supplementary S1) | `experiments/access_detector_rescore_v1.py` | fold detector checkpoints, FracAtlas images | `reports/access_v1/review3/detector_scores.json` |
+| Overlap of FracAtlas with the ROCO and PMC-VQA pretraining pools (Sec. III-C, Supplementary Fig. S1) | `experiments/access_pretraining_overlap_v1.py` | FracAtlas, ROCO and PMC-VQA images | `reports/access_v1/review3/pretraining_overlap.json` |
 
 ## Retrain from scratch
 
