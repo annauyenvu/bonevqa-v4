@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "checks": {
+    "P.v4_parity_fracture_logit": {
+      "pass": true,
+      "detail": "max|dlogit|=4.47e-08, LocalTokens init identical=True"
+    },
+    "P.identity_init_V4-G_equals_V4": {
+      "pass": true,
+      "detail": "max|dlogit|=0.00e+00"
+    },
+    "P.identity_init_V4-GC_equals_V4": {
+      "pass": true,
+      "detail": "max|dlogit|=0.00e+00"
+    },
+    "A.fixture_supervision": {
+      "pass": true,
+      "detail": "gt mask px>0 on fractured, negatives per fractured=[4, 4] relax=[['strict', 'strict', 'strict', 'strict'], ['strict', 'strict', 'strict', 'strict']]"
+    },
+    "A.losses_finite": {
+      "pass": true,
+      "detail": "loss=12.7160 ground=1.0404 contrast=1.9378 recovery=3.7311"
+    },
+    "A.ground_to_visual_lora": {
+      "pass": true,
+      "detail": "24 LoRA tensors, sum|g|=8.193e-01"
+    },
+    "A.ground_to_fusion": {
+      "pass": true,
+      "detail": "['local_tokens.attention.in_proj_bias', 'local_tokens.attention.in_proj_weight', 'local_tokens.attention.out_proj.bias', 'local_tokens.attention.out_proj.weight', 'local_tokens.question.weight']"
+    },
+    "A.ground_to_head": {
+      "pass": true,
+      "detail": "18 tensors"
+    },
+    "A.ground_does_not_touch_downstream": {
+      "pass": true,
+      "detail": "unexpected=[]"
+    },
+    "A.contrast_to_visual_lora": {
+      "pass": true,
+      "detail": "24 LoRA tensors, sum|g|=6.025e+02"
+    },
+    "A.contrast_to_fusion_query": {
+      "pass": true,
+      "detail": "|g(local_tokens.question)|=6.880e+03"
+    },
+    "A.contrast_projections": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_recovery_gate": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_global_fracture_head": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_lesion_pool": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_les_head": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_fusion": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_fracture_head": {
+      "pass": true,
+      "detail": ""
+    },
+    "A.total_reaches_ground_head.c_attn": {
+      "pass": true,
+      "detail": ""
+    },
+    "S.ground_head_has_no_box_channel": {
+      "pass": true,
+      "detail": "conv in_channels=128"
+    },
+    "S.ground_head_ignores_box_map": {
+      "pass": true,
+      "detail": ""
+    },
+    "S.ground_head_reads_crop_content": {
+      "pass": true,
+      "detail": "row with crop moves by 1.86e-02; m=0 row unchanged"
+    },
+    "S.no_scalar_evidence_into_lesion_token": {
+      "pass": true,
+      "detail": "[]"
+    },
+    "S.fracture_logit_independent_of_Mhat_scalars": {
+      "pass": true,
+      "detail": "d logit_local / d (LSE, max, mean of M_hat) is structurally zero"
+    },
+    "B.dlogit_local/dM": {
+      "pass": true,
+      "detail": "1.465e+00"
+    },
+    "B.dx_f/dM (feeds ClosedHead+LLM prefix)": {
+      "pass": true,
+      "detail": "5.079e-02"
+    },
+    "B.dclosed_logits/dM": {
+      "pass": true,
+      "detail": "3.079e+00"
+    },
+    "B.dp_final/dM": {
+      "pass": true,
+      "detail": "1.153e-01"
+    },
+    "B.intervention_changes_p_local": {
+      "pass": true,
+      "detail": "{'no_lesion': {'p_local': 0.0013352930545806885, 'x_f': 0.07818055152893066, 'closed': 0.011444568634033203}, 'blob': {'p_local': 0.07173323631286621, 'x_f': 0.07721507549285889, 'closed': 0.012352943420410156}}"
+    },
+    "B.intervention_changes_x_f": {
+      "pass": true,
+      "detail": ""
+    },
+    "B.m0_rows_use_pure_global": {
+      "pass": true,
+      "detail": "m=0 rows=1"
+    },
+    "F.flag_invariant_to_crop_content_and_location": {
+      "pass": true,
+      "detail": "0.00e+00"
+    },
+    "F.crop_arm_sensitive_to_crop_content": {
+      "pass": true,
+      "detail": "9.20e-05"
+    },
+    "C.eval_refuses_gt_masks.predict_batch": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_masks.infer": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_masks.forward": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_boxes.predict_batch": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_boxes.infer": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_boxes.forward": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_contrast_crops.predict_batch": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_contrast_crops.infer": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_contrast_crops.forward": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_legacy_masks.predict_batch": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_legacy_masks.infer": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_legacy_masks.forward": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_legacy_boxes.predict_batch": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_legacy_boxes.infer": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_legacy_boxes.forward": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_as_proposal_source.predict_batch": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_as_proposal_source.infer": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.eval_refuses_gt_as_proposal_source.forward": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.infer_requires_eval": {
+      "pass": true,
+      "detail": ""
+    },
+    "C.clean_eval_ok": {
+      "pass": true,
+      "detail": "[0.4198, 0.4353, 0.4176, 0.5629]"
+    }
+  },
+  "wall_seconds": 38.38236689567566,
+  "init_from": "/Users/uyen/Downloads/BONEVQA/refactor_v2/reports/perfold_PREtask_roundtrip_v3_1/fold_0_PREtask.pt",
+  "torch": "2.2.2",
+  "device": "cpu",
+  "fixture": [
+    "IMG0000019",
+    "IMG0000044",
+    "IMG0000008",
+    "IMG0000000"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "role": "test",
+  "fold": "4",
+  "n": 802,
+  "fractured": 143,
+  "components": 785,
+  "reference": "B_v4cf_frcnn",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "B_v4cf_frcnn": {
+      "auprc": 0.7967660314392251,
+      "auroc": 0.9132506340397083,
+      "sens@0.5": 0.5944055944055944,
+      "spec@0.5": 0.9620637329286799,
+      "m_rate_fractured": 0.8111888111888111,
+      "m_rate_nonfractured": 0.33687405159332323,
+      "sens@0.5_m1": 0.646551724137931,
+      "sens@0.5_m0": 0.37037037037037035,
+      "n_pos_m0": 27,
+      "proposals_file": null,
+      "checkpoint_sha256": "bda4fbd5c1f2c2a057ac93c14a542d85c43be6e67301f86d137f16ee4b967370"
+    },
+    "A_v4_sealed_frcnn": {
+      "auprc": 0.7943791221144453,
+      "auroc": 0.920816664367499,
+      "sens@0.5": 0.6783216783216783,
+      "spec@0.5": 0.960546282245827,
+      "m_rate_fractured": 0.8111888111888111,
+      "m_rate_nonfractured": 0.33687405159332323,
+      "sens@0.5_m1": 0.7844827586206896,
+      "sens@0.5_m0": 0.2222222222222222,
+      "n_pos_m0": 27,
+      "proposals_file": null,
+      "checkpoint_sha256": "21d1a941190ee980d1f96cc79c9f729fe5f32fc28031500556cbc8e2d9656840"
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": 0.7954644616646926,
+      "auroc": 0.9161688084298099,
+      "sens@0.5": 0.6853146853146853,
+      "spec@0.5": 0.9468892261001517,
+      "m_rate_fractured": 0.8601398601398601,
+      "m_rate_nonfractured": 0.2883156297420334,
+      "sens@0.5_m1": 0.7886178861788617,
+      "sens@0.5_m0": 0.05,
+      "n_pos_m0": 20,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_4/proposals_fold4.json",
+      "checkpoint_sha256": "09b9fe77a57200a2dd0dfa947b3f2941fc6190001c10208fc8ee313d827bb1b2"
+    },
+    "J_v4cf_yolojoint_btxrd": {
+      "auprc": 0.7982225253415959,
+      "auroc": 0.9155108927491326,
+      "sens@0.5": 0.6853146853146853,
+      "spec@0.5": 0.9484066767830045,
+      "m_rate_fractured": 0.8601398601398601,
+      "m_rate_nonfractured": 0.2883156297420334,
+      "sens@0.5_m1": 0.7723577235772358,
+      "sens@0.5_m0": 0.15,
+      "n_pos_m0": 20,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_4/proposals_fold4.json",
+      "checkpoint_sha256": "4fab7f33a6e83a06e586890421bcacf3fc88c6931d9357c68f334ca8dcdc6196"
+    }
+  },
+  "diff_vs_reference": {
+    "A_v4_sealed_frcnn": {
+      "auprc": {
+        "diff": -0.0023869093247798068,
+        "ci95": [
+          -0.0262,
+          0.0221
+        ]
+      },
+      "auroc": {
+        "diff": 0.007566030327790685,
+        "ci95": [
+          -0.0046,
+          0.0234
+        ]
+      }
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": {
+        "diff": -0.0013015697745324406,
+        "ci95": [
+          -0.0412,
+          0.0393
+        ]
+      },
+      "auroc": {
+        "diff": 0.0029181743901015578,
+        "ci95": [
+          -0.0177,
+          0.0246
+        ]
+      }
+    },
+    "J_v4cf_yolojoint_btxrd": {
+      "auprc": {
+        "diff": 0.0014564939023707923,
+        "ci95": [
+          -0.0378,
+          0.0414
+        ]
+      },
+      "auroc": {
+        "diff": 0.0022602587094242566,
+        "ci95": [
+          -0.0174,
+          0.0233
+        ]
+      }
+    }
+  }
+}

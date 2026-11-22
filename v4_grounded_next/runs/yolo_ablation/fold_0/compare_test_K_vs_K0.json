@@ -1,0 +1,59 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "K0_v4cf_kgempty",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "K0_v4cf_kgempty": {
+      "auprc": 0.800210598815025,
+      "auroc": 0.9294871794871795,
+      "sens@0.5": 0.7272727272727273,
+      "spec@0.5": 0.9363636363636364,
+      "m_rate_fractured": 0.9230769230769231,
+      "m_rate_nonfractured": 0.3090909090909091,
+      "sens@0.5_m1": 0.7651515151515151,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 11,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "ca313ed6f64575dfc09c7077d2dcaa1f8847561158708d420e417a7c543220e1"
+    },
+    "K_v4cf_kg": {
+      "auprc": 0.8139199061914785,
+      "auroc": 0.9337571519389701,
+      "sens@0.5": 0.6923076923076923,
+      "spec@0.5": 0.9454545454545454,
+      "m_rate_fractured": 0.9230769230769231,
+      "m_rate_nonfractured": 0.3090909090909091,
+      "sens@0.5_m1": 0.7272727272727273,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 11,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "986b302749fef05ed62c7cbe7ff085758eff40af08eb461fce7021740062aae3"
+    }
+  },
+  "diff_vs_reference": {
+    "K_v4cf_kg": {
+      "auprc": {
+        "diff": 0.013709307376453483,
+        "ci95": [
+          0.0039,
+          0.0239
+        ]
+      },
+      "auroc": {
+        "diff": 0.004269972451790616,
+        "ci95": [
+          -0.0,
+          0.0092
+        ]
+      }
+    }
+  }
+}

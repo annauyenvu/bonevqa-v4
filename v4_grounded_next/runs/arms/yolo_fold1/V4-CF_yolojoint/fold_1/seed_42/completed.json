@@ -1,0 +1,39 @@
+{
+  "arm": "V4-CF",
+  "fold": "1",
+  "seed": 42,
+  "overrides": {},
+  "updates": 1444,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 722,
+      "mean_task": 1.544792797540324,
+      "n_task": 2887,
+      "n_ground": 0,
+      "n_contrast": 0,
+      "n_recovery": 0
+    },
+    {
+      "epoch": 2,
+      "updates": 1444,
+      "mean_task": 0.8719824414544135,
+      "n_task": 2887,
+      "n_ground": 0,
+      "n_contrast": 0,
+      "n_recovery": 0
+    }
+  ],
+  "model_val": {
+    "n": 321,
+    "prevalence": 0.17757009345794392,
+    "auprc": 0.9013006596021362,
+    "auroc": 0.9590643274853802,
+    "sens@0.5_m1": 0.9772727272727273,
+    "n_pos_m1": 44,
+    "sens@0.5_m0": 0.23076923076923078,
+    "n_pos_m0": 13,
+    "spec@0.5": 0.9545454545454546
+  },
+  "seconds": 5446.838530778885
+}

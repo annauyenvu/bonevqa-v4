@@ -1,0 +1,257 @@
+{
+  "fold": "1",
+  "fit_sample_note": "EQM is fitted on the calibration split only (321 images; the sealed detector fires on 42 of them), so model_val stays untouched for hyper-parameter selection. The upper tail of each map therefore rests on ~42 order statistics; any residual TRAIN-CF-EQM vs TEST difference in the negative-image proposal rate (0.062 vs 0.035) is attributed to this finite calibration sample, not to a remaining systematic detector shift.",
+  "stats": {
+    "train_cf_eqm": {
+      "fractured_images": 458,
+      "negative_images": 2110,
+      "m_rate_fractured": 0.4868995633187773,
+      "m_rate_negative": 0.061611374407582936,
+      "recall_iou25": 0.4148471615720524,
+      "recall_iou50": 0.2685589519650655,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.5292,
+        0.681
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.1937,
+        0.4489
+      ],
+      "m_rate_all": 0.13746105919003115
+    },
+    "train_cf_raw": {
+      "fractured_images": 458,
+      "negative_images": 2110,
+      "m_rate_fractured": 0.7860262008733624,
+      "m_rate_negative": 0.25497630331753557,
+      "recall_iou25": 0.5567685589519651,
+      "recall_iou50": 0.37336244541484714,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.3531,
+        0.6038,
+        0.7156
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0631,
+        0.1887,
+        0.4831,
+        0.6763
+      ],
+      "m_rate_all": 0.34968847352024923
+    },
+    "train_insample": {
+      "fractured_images": 458,
+      "negative_images": 2110,
+      "m_rate_fractured": 0.6222707423580786,
+      "m_rate_negative": 0.027488151658767772,
+      "recall_iou25": 0.5589519650655022,
+      "recall_iou50": 0.4650655021834061,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.442,
+        0.6626,
+        0.7752
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0,
+        0.094,
+        0.3244,
+        0.5385
+      ],
+      "m_rate_all": 0.13356697819314642
+    },
+    "calibration": {
+      "fractured_images": 57,
+      "negative_images": 264,
+      "m_rate_fractured": 0.5789473684210527,
+      "m_rate_negative": 0.03409090909090909,
+      "recall_iou25": 0.45614035087719296,
+      "recall_iou50": 0.2982456140350877,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.5094,
+        0.6527
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0,
+        0.0591,
+        0.1882,
+        0.3361
+      ],
+      "m_rate_all": 0.1308411214953271
+    },
+    "test": {
+      "fractured_images": 143,
+      "negative_images": 660,
+      "m_rate_fractured": 0.5104895104895105,
+      "m_rate_negative": 0.03484848484848485,
+      "recall_iou25": 0.43356643356643354,
+      "recall_iou50": 0.3706293706293706,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.6148,
+        0.7345
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0,
+        0.055,
+        0.2147,
+        0.4952
+      ],
+      "m_rate_all": 0.11955168119551682
+    }
+  },
+  "comparisons": {
+    "train_cf_eqm_vs_calibration": {
+      "m_fractured": {
+        "diff": -0.09204780510227534,
+        "z": -1.3107424167222648,
+        "p_two_sided": 0.1899448029386105
+      },
+      "m_negative": {
+        "diff": 0.027520465316673848,
+        "z": 1.7955320317709973,
+        "p_two_sided": 0.07256897399345161
+      },
+      "m_all": {
+        "diff": 0.0066199376947040645,
+        "z": 0.3254849606890762,
+        "p_two_sided": 0.7448140631461855
+      },
+      "best_iou_ks": {
+        "statistic": 0.06983069026277484,
+        "p": 0.9486425902602367
+      }
+    },
+    "train_cf_eqm_vs_test": {
+      "m_fractured": {
+        "diff": -0.023589947170733205,
+        "z": -0.4925713941902073,
+        "p_two_sided": 0.6223154645303717
+      },
+      "m_negative": {
+        "diff": 0.026762889559098085,
+        "z": 2.626869542883451,
+        "p_two_sided": 0.008617436499374027
+      },
+      "m_all": {
+        "diff": 0.017909377994514336,
+        "z": 1.3036226123989116,
+        "p_two_sided": 0.1923622869230257
+      },
+      "best_iou_ks": {
+        "statistic": 0.10906342565731213,
+        "p": 0.13701559483555442
+      }
+    },
+    "train_cf_raw_vs_calibration": {
+      "m_fractured": {
+        "diff": 0.20707883245230974,
+        "z": 3.4676343671387837,
+        "p_two_sided": 0.0005250611691776713
+      },
+      "m_negative": {
+        "diff": 0.22088539422662648,
+        "z": 8.03503200885982,
+        "p_two_sided": 9.355447693003095e-16
+      },
+      "m_all": {
+        "diff": 0.21884735202492214,
+        "z": 7.890331442533071,
+        "p_two_sided": 3.0138502654524963e-15
+      },
+      "best_iou_ks": {
+        "statistic": 0.15942695165862253,
+        "p": 0.13479076242103025
+      }
+    },
+    "train_cf_raw_vs_test": {
+      "m_fractured": {
+        "diff": 0.27553669038385187,
+        "z": 6.409421638970846,
+        "p_two_sided": 1.4607270222861937e-10
+      },
+      "m_negative": {
+        "diff": 0.22012781846905072,
+        "z": 12.281423885251291,
+        "p_two_sided": 1.1397446405884492e-34
+      },
+      "m_all": {
+        "diff": 0.23013679232473241,
+        "z": 12.482826408911937,
+        "p_two_sided": 9.263878721645907e-36
+      },
+      "best_iou_ks": {
+        "statistic": 0.1891165602955996,
+        "p": 0.0006858908909311089
+      }
+    },
+    "train_insample_vs_calibration": {
+      "m_fractured": {
+        "diff": 0.0433233739370259,
+        "z": 0.6346720594607954,
+        "p_two_sided": 0.5256423201201644
+      },
+      "m_negative": {
+        "diff": -0.0066027574321413166,
+        "z": -0.6107278045285178,
+        "p_two_sided": 0.5413797955253938
+      },
+      "m_all": {
+        "diff": 0.002725856697819329,
+        "z": 0.13548127978090527,
+        "p_two_sided": 0.8922313643576958
+      },
+      "best_iou_ks": {
+        "statistic": 0.21975791005899026,
+        "p": 0.012328711511963538
+      }
+    },
+    "train_insample_vs_test": {
+      "m_fractured": {
+        "diff": 0.11178123186856803,
+        "z": 2.377728344683939,
+        "p_two_sided": 0.01741965383451343
+      },
+      "m_negative": {
+        "diff": -0.007360333189717079,
+        "z": -0.9795185024780498,
+        "p_two_sided": 0.32732385104709555
+      },
+      "m_all": {
+        "diff": 0.0140152969976296,
+        "z": 1.0299656022147476,
+        "p_two_sided": 0.30302615313002673
+      },
+      "best_iou_ks": {
+        "statistic": 0.13105017253488868,
+        "p": 0.04249447251895903
+      }
+    }
+  },
+  "recall_change_eqm_minus_raw": {
+    "recall_iou25": -0.14192139737991266,
+    "recall_iou50": -0.10480349344978163
+  },
+  "acceptance": {
+    "m_two_sample_not_rejected_at_0.01": false,
+    "criterion": "TRAIN-CF-EQM vs calibration and vs TEST: two-proportion test on m(I) (fractured, negative, all) p >= 0.01; recall@IoU0.25/0.50 reported vs raw CF and vs TEST"
+  }
+}

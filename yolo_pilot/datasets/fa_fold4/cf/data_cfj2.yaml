@@ -1,0 +1,10 @@
+path: /Users/uyen/Downloads/BONEVQA/yolo_pilot/datasets
+train:
+  - fa_fold4/cf/inner2_train_os3.txt
+  - btxrd_pilot/images/train
+val:
+  - fa_fold4/images/val
+  - btxrd_pilot/images/val
+names:
+  0: fracture
+  1: bone_lesion

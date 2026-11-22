@@ -1,0 +1,686 @@
+{
+ "seed": 20261116,
+ "source": "/Users/uyen/Downloads/BONEVQA/yolo_pilot/data_raw/btxrd/BTXRD",
+ "split": "/Users/uyen/Downloads/BONEVQA/yolo_pilot/datasets/btxrd_pilot/gt.json",
+ "negative_sampling_prior_train": {
+  "subtype": {
+   "osteosarcoma": 165,
+   "synovial osteochondroma": 29,
+   "giant cell tumor": 22,
+   "simple bone cyst": 88,
+   "osteochondroma": 443,
+   "multiple osteochondromas": 116,
+   "osteofibroma": 15
+  },
+  "bone": {
+   "foot": 50,
+   "humerus": 94,
+   "tibia": 346,
+   "femur": 252,
+   "hip bone": 47,
+   "fibula": 130,
+   "ulna": 29,
+   "radius": 36,
+   "hand": 54
+  },
+  "limb": {
+   "lower limb": 1358,
+   "upper limb": 587,
+   "pelvis": 113
+  },
+  "view": {
+   "frontal": 1217,
+   "oblique": 157,
+   "lateral": 684
+  }
+ },
+ "images_with_two_subtypes_no_diagnosis_question": [
+  "BT_IMG001276"
+ ],
+ "roles": {
+  "train": {
+   "images": 2058,
+   "tumor_images": 942,
+   "qa": 11144,
+   "qa_per_image": {
+    "3": 181,
+    "4": 396,
+    "5": 492,
+    "6": 517,
+    "7": 321,
+    "8": 151
+   },
+   "by_type": {
+    "CLOSED": 6113,
+    "OPEN": 5031
+   },
+   "closed_yes_no": {
+    "yes": 2673,
+    "no": 3440
+   },
+   "clinical_context_rows": 115,
+   "canonical": {
+    "tumor": {
+     "no": 1116,
+     "yes": 942
+    },
+    "malignancy": {
+     "no": 765,
+     "yes": 177
+    },
+    "diagnosis": {
+     "osteochondroma": 443,
+     "osteosarcoma": 165,
+     "multiple osteochondromas": 116,
+     "simple bone cyst": 88,
+     "other benign bone tumor": 51,
+     "synovial osteochondroma": 29,
+     "giant cell tumor": 22,
+     "osteofibroma": 15,
+     "other malignant bone tumor": 12
+    }
+   },
+   "open_answers_not_in_train_vocab": 0,
+   "diagnosis_without_image": {
+    "n": 941,
+    "majority": 0.471,
+    "age_decade": 0.471,
+    "age_decade_sex": 0.479,
+    "age_decade_sex_limb": 0.523
+   },
+   "question_only_baseline": {
+    "Are there multiple bone lesions?": {
+     "n": 225,
+     "answers": 2,
+     "acc_template_majority": 0.858,
+     "acc_question_text_only": 0.858
+    },
+    "Describe the finding.": {
+     "n": 1228,
+     "answers": 216,
+     "acc_template_majority": 0.341,
+     "acc_question_text_only": 0.341
+    },
+    "How many bone lesions are visible?": {
+     "n": 390,
+     "answers": 6,
+     "acc_template_majority": 0.713,
+     "acc_question_text_only": 0.713
+    },
+    "Is the bone lesion benign or malignant?": {
+     "n": 131,
+     "answers": 2,
+     "acc_template_majority": 0.832,
+     "acc_question_text_only": 0.832
+    },
+    "Is the bone lesion benign?": {
+     "n": 244,
+     "answers": 2,
+     "acc_template_majority": 0.82,
+     "acc_question_text_only": 0.82
+    },
+    "Is the bone lesion malignant?": {
+     "n": 942,
+     "answers": 2,
+     "acc_template_majority": 0.812,
+     "acc_question_text_only": 0.812
+    },
+    "Is the diagnosis [subtype]?": {
+     "n": 246,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.667
+    },
+    "Is the lesion located in the [bone]?": {
+     "n": 231,
+     "answers": 2,
+     "acc_template_majority": 0.502,
+     "acc_question_text_only": 0.584
+    },
+    "Is there a bone tumor in this X-ray?": {
+     "n": 2058,
+     "answers": 2,
+     "acc_template_majority": 0.542,
+     "acc_question_text_only": 0.542
+    },
+    "Is this [view] view X-ray?": {
+     "n": 1075,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.589
+    },
+    "Is this an X-ray of the [limb]?": {
+     "n": 1092,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.661
+    },
+    "What abnormality is seen in this X-ray?": {
+     "n": 352,
+     "answers": 2,
+     "acc_template_majority": 0.696,
+     "acc_question_text_only": 0.696
+    },
+    "What is the most likely diagnosis?": {
+     "n": 941,
+     "answers": 9,
+     "acc_template_majority": 0.471,
+     "acc_question_text_only": 0.471
+    },
+    "What type of imaging is this?": {
+     "n": 406,
+     "answers": 1,
+     "acc_template_majority": 1.0,
+     "acc_question_text_only": 1.0
+    },
+    "Where is the lesion located?": {
+     "n": 124,
+     "answers": 62,
+     "acc_template_majority": 0.097,
+     "acc_question_text_only": 0.097
+    },
+    "Which body region is shown in this X-ray?": {
+     "n": 1227,
+     "answers": 3,
+     "acc_template_majority": 0.663,
+     "acc_question_text_only": 0.663
+    },
+    "Which bone or joint is affected by the lesion?": {
+     "n": 117,
+     "answers": 17,
+     "acc_template_majority": 0.291,
+     "acc_question_text_only": 0.291
+    },
+    "[age, sex] What is the most likely diagnosis?": {
+     "n": 115,
+     "answers": 8,
+     "acc_template_majority": 0.426,
+     "acc_question_text_only": 0.835
+    }
+   }
+  },
+  "val": {
+   "images": 293,
+   "tumor_images": 134,
+   "qa": 1576,
+   "qa_per_image": {
+    "3": 33,
+    "4": 52,
+    "5": 70,
+    "6": 70,
+    "7": 45,
+    "8": 23
+   },
+   "by_type": {
+    "CLOSED": 866,
+    "OPEN": 710
+   },
+   "closed_yes_no": {
+    "yes": 359,
+    "no": 507
+   },
+   "clinical_context_rows": 24,
+   "canonical": {
+    "tumor": {
+     "no": 159,
+     "yes": 134
+    },
+    "malignancy": {
+     "no": 122,
+     "yes": 12
+    },
+    "diagnosis": {
+     "osteochondroma": 65,
+     "simple bone cyst": 16,
+     "osteosarcoma": 11,
+     "multiple osteochondromas": 11,
+     "osteofibroma": 10,
+     "giant cell tumor": 9,
+     "synovial osteochondroma": 9,
+     "other benign bone tumor": 2,
+     "other malignant bone tumor": 1
+    }
+   },
+   "open_answers_not_in_train_vocab": 21,
+   "diagnosis_without_image": {
+    "n": 134,
+    "majority": 0.485,
+    "age_decade": 0.485,
+    "age_decade_sex": 0.418,
+    "age_decade_sex_limb": 0.403
+   },
+   "question_only_baseline": {
+    "Are there multiple bone lesions?": {
+     "n": 41,
+     "answers": 2,
+     "acc_template_majority": 0.951,
+     "acc_question_text_only": 0.951
+    },
+    "Describe the finding.": {
+     "n": 177,
+     "answers": 48,
+     "acc_template_majority": 0.305,
+     "acc_question_text_only": 0.305
+    },
+    "How many bone lesions are visible?": {
+     "n": 51,
+     "answers": 3,
+     "acc_template_majority": 0.627,
+     "acc_question_text_only": 0.627
+    },
+    "Is the bone lesion benign or malignant?": {
+     "n": 16,
+     "answers": 1,
+     "acc_template_majority": 1.0,
+     "acc_question_text_only": 1.0
+    },
+    "Is the bone lesion benign?": {
+     "n": 31,
+     "answers": 2,
+     "acc_template_majority": 0.903,
+     "acc_question_text_only": 0.903
+    },
+    "Is the bone lesion malignant?": {
+     "n": 134,
+     "answers": 2,
+     "acc_template_majority": 0.91,
+     "acc_question_text_only": 0.91
+    },
+    "Is the diagnosis [subtype]?": {
+     "n": 41,
+     "answers": 2,
+     "acc_template_majority": 0.512,
+     "acc_question_text_only": 0.732
+    },
+    "Is the lesion located in the [bone]?": {
+     "n": 26,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.346
+    },
+    "Is there a bone tumor in this X-ray?": {
+     "n": 293,
+     "answers": 2,
+     "acc_template_majority": 0.543,
+     "acc_question_text_only": 0.543
+    },
+    "Is this [view] view X-ray?": {
+     "n": 157,
+     "answers": 2,
+     "acc_template_majority": 0.503,
+     "acc_question_text_only": 0.58
+    },
+    "Is this an X-ray of the [limb]?": {
+     "n": 143,
+     "answers": 2,
+     "acc_template_majority": 0.503,
+     "acc_question_text_only": 0.566
+    },
+    "What abnormality is seen in this X-ray?": {
+     "n": 47,
+     "answers": 2,
+     "acc_template_majority": 0.702,
+     "acc_question_text_only": 0.702
+    },
+    "What is the most likely diagnosis?": {
+     "n": 134,
+     "answers": 9,
+     "acc_template_majority": 0.485,
+     "acc_question_text_only": 0.485
+    },
+    "What type of imaging is this?": {
+     "n": 49,
+     "answers": 1,
+     "acc_template_majority": 1.0,
+     "acc_question_text_only": 1.0
+    },
+    "Where is the lesion located?": {
+     "n": 19,
+     "answers": 14,
+     "acc_template_majority": 0.053,
+     "acc_question_text_only": 0.053
+    },
+    "Which body region is shown in this X-ray?": {
+     "n": 174,
+     "answers": 3,
+     "acc_template_majority": 0.626,
+     "acc_question_text_only": 0.626
+    },
+    "Which bone or joint is affected by the lesion?": {
+     "n": 19,
+     "answers": 7,
+     "acc_template_majority": 0.316,
+     "acc_question_text_only": 0.316
+    },
+    "[age, sex] What is the most likely diagnosis?": {
+     "n": 24,
+     "answers": 8,
+     "acc_template_majority": 0.417,
+     "acc_question_text_only": 0.125
+    }
+   }
+  },
+  "test": {
+   "images": 587,
+   "tumor_images": 269,
+   "qa": 3193,
+   "qa_per_image": {
+    "3": 59,
+    "4": 100,
+    "5": 140,
+    "6": 151,
+    "7": 86,
+    "8": 51
+   },
+   "by_type": {
+    "CLOSED": 1746,
+    "OPEN": 1447
+   },
+   "closed_yes_no": {
+    "yes": 756,
+    "no": 990
+   },
+   "clinical_context_rows": 28,
+   "canonical": {
+    "tumor": {
+     "no": 318,
+     "yes": 269
+    },
+    "malignancy": {
+     "no": 223,
+     "yes": 46
+    },
+    "diagnosis": {
+     "osteochondroma": 120,
+     "multiple osteochondromas": 41,
+     "osteosarcoma": 39,
+     "other benign bone tumor": 19,
+     "giant cell tumor": 14,
+     "simple bone cyst": 13,
+     "osteofibroma": 8,
+     "synovial osteochondroma": 8,
+     "other malignant bone tumor": 7
+    }
+   },
+   "open_answers_not_in_train_vocab": 57,
+   "diagnosis_without_image": {
+    "n": 269,
+    "majority": 0.446,
+    "age_decade": 0.446,
+    "age_decade_sex": 0.431,
+    "age_decade_sex_limb": 0.398
+   },
+   "question_only_baseline": {
+    "Are there multiple bone lesions?": {
+     "n": 65,
+     "answers": 2,
+     "acc_template_majority": 0.862,
+     "acc_question_text_only": 0.862
+    },
+    "Describe the finding.": {
+     "n": 363,
+     "answers": 91,
+     "acc_template_majority": 0.355,
+     "acc_question_text_only": 0.355
+    },
+    "How many bone lesions are visible?": {
+     "n": 103,
+     "answers": 5,
+     "acc_template_majority": 0.66,
+     "acc_question_text_only": 0.66
+    },
+    "Is the bone lesion benign or malignant?": {
+     "n": 40,
+     "answers": 2,
+     "acc_template_majority": 0.825,
+     "acc_question_text_only": 0.825
+    },
+    "Is the bone lesion benign?": {
+     "n": 59,
+     "answers": 2,
+     "acc_template_majority": 0.847,
+     "acc_question_text_only": 0.847
+    },
+    "Is the bone lesion malignant?": {
+     "n": 269,
+     "answers": 2,
+     "acc_template_majority": 0.829,
+     "acc_question_text_only": 0.829
+    },
+    "Is the diagnosis [subtype]?": {
+     "n": 74,
+     "answers": 2,
+     "acc_template_majority": 0.514,
+     "acc_question_text_only": 0.595
+    },
+    "Is the lesion located in the [bone]?": {
+     "n": 71,
+     "answers": 2,
+     "acc_template_majority": 0.493,
+     "acc_question_text_only": 0.549
+    },
+    "Is there a bone tumor in this X-ray?": {
+     "n": 587,
+     "answers": 2,
+     "acc_template_majority": 0.542,
+     "acc_question_text_only": 0.542
+    },
+    "Is this [view] view X-ray?": {
+     "n": 327,
+     "answers": 2,
+     "acc_template_majority": 0.498,
+     "acc_question_text_only": 0.575
+    },
+    "Is this an X-ray of the [limb]?": {
+     "n": 294,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.67
+    },
+    "What abnormality is seen in this X-ray?": {
+     "n": 120,
+     "answers": 2,
+     "acc_template_majority": 0.717,
+     "acc_question_text_only": 0.717
+    },
+    "What is the most likely diagnosis?": {
+     "n": 269,
+     "answers": 9,
+     "acc_template_majority": 0.446,
+     "acc_question_text_only": 0.446
+    },
+    "What type of imaging is this?": {
+     "n": 113,
+     "answers": 1,
+     "acc_template_majority": 1.0,
+     "acc_question_text_only": 1.0
+    },
+    "Where is the lesion located?": {
+     "n": 32,
+     "answers": 23,
+     "acc_template_majority": 0.125,
+     "acc_question_text_only": 0.125
+    },
+    "Which body region is shown in this X-ray?": {
+     "n": 350,
+     "answers": 3,
+     "acc_template_majority": 0.666,
+     "acc_question_text_only": 0.666
+    },
+    "Which bone or joint is affected by the lesion?": {
+     "n": 29,
+     "answers": 10,
+     "acc_template_majority": 0.414,
+     "acc_question_text_only": 0.414
+    },
+    "[age, sex] What is the most likely diagnosis?": {
+     "n": 28,
+     "answers": 8,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.143
+    }
+   }
+  },
+  "external": {
+   "images": 808,
+   "tumor_images": 522,
+   "qa": 4691,
+   "qa_per_image": {
+    "3": 43,
+    "4": 110,
+    "5": 167,
+    "6": 222,
+    "7": 173,
+    "8": 93
+   },
+   "by_type": {
+    "CLOSED": 2556,
+    "OPEN": 2135
+   },
+   "closed_yes_no": {
+    "yes": 1241,
+    "no": 1315
+   },
+   "clinical_context_rows": 62,
+   "canonical": {
+    "tumor": {
+     "yes": 522,
+     "no": 286
+    },
+    "malignancy": {
+     "no": 415,
+     "yes": 107
+    },
+    "diagnosis": {
+     "osteochondroma": 125,
+     "multiple osteochondromas": 95,
+     "simple bone cyst": 89,
+     "osteosarcoma": 82,
+     "giant cell tumor": 48,
+     "other benign bone tumor": 43,
+     "other malignant bone tumor": 25,
+     "osteofibroma": 11,
+     "synovial osteochondroma": 4
+    }
+   },
+   "open_answers_not_in_train_vocab": 148,
+   "diagnosis_without_image": {
+    "n": 522,
+    "majority": 0.239,
+    "age_decade": 0.239,
+    "age_decade_sex": 0.218,
+    "age_decade_sex_limb": 0.23
+   },
+   "question_only_baseline": {
+    "Are there multiple bone lesions?": {
+     "n": 127,
+     "answers": 2,
+     "acc_template_majority": 0.843,
+     "acc_question_text_only": 0.843
+    },
+    "Describe the finding.": {
+     "n": 487,
+     "answers": 167,
+     "acc_template_majority": 0.191,
+     "acc_question_text_only": 0.191
+    },
+    "How many bone lesions are visible?": {
+     "n": 131,
+     "answers": 7,
+     "acc_template_majority": 0.588,
+     "acc_question_text_only": 0.588
+    },
+    "Is the bone lesion benign or malignant?": {
+     "n": 70,
+     "answers": 2,
+     "acc_template_majority": 0.8,
+     "acc_question_text_only": 0.8
+    },
+    "Is the bone lesion benign?": {
+     "n": 124,
+     "answers": 2,
+     "acc_template_majority": 0.847,
+     "acc_question_text_only": 0.847
+    },
+    "Is the bone lesion malignant?": {
+     "n": 522,
+     "answers": 2,
+     "acc_template_majority": 0.795,
+     "acc_question_text_only": 0.795
+    },
+    "Is the diagnosis [subtype]?": {
+     "n": 137,
+     "answers": 2,
+     "acc_template_majority": 0.504,
+     "acc_question_text_only": 0.511
+    },
+    "Is the lesion located in the [bone]?": {
+     "n": 156,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.487
+    },
+    "Is there a bone tumor in this X-ray?": {
+     "n": 808,
+     "answers": 2,
+     "acc_template_majority": 0.354,
+     "acc_question_text_only": 0.354
+    },
+    "Is this [view] view X-ray?": {
+     "n": 352,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.571
+    },
+    "Is this an X-ray of the [limb]?": {
+     "n": 330,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.582
+    },
+    "What abnormality is seen in this X-ray?": {
+     "n": 144,
+     "answers": 2,
+     "acc_template_majority": 0.5,
+     "acc_question_text_only": 0.5
+    },
+    "What is the most likely diagnosis?": {
+     "n": 522,
+     "answers": 9,
+     "acc_template_majority": 0.239,
+     "acc_question_text_only": 0.239
+    },
+    "What type of imaging is this?": {
+     "n": 123,
+     "answers": 1,
+     "acc_template_majority": 1.0,
+     "acc_question_text_only": 1.0
+    },
+    "Where is the lesion located?": {
+     "n": 62,
+     "answers": 35,
+     "acc_template_majority": 0.032,
+     "acc_question_text_only": 0.032
+    },
+    "Which body region is shown in this X-ray?": {
+     "n": 471,
+     "answers": 3,
+     "acc_template_majority": 0.575,
+     "acc_question_text_only": 0.575
+    },
+    "Which bone or joint is affected by the lesion?": {
+     "n": 63,
+     "answers": 14,
+     "acc_template_majority": 0.143,
+     "acc_question_text_only": 0.143
+    },
+    "[age, sex] What is the most likely diagnosis?": {
+     "n": 62,
+     "answers": 7,
+     "acc_template_majority": 0.274,
+     "acc_question_text_only": 0.097
+    }
+   }
+  }
+ }
+}

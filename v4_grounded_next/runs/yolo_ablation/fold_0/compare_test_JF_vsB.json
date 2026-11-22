@@ -1,0 +1,59 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "B_v4cf_frcnn",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "B_v4cf_frcnn": {
+      "auprc": 0.7323540321970565,
+      "auroc": 0.8948188175460903,
+      "sens@0.5": 0.6573426573426573,
+      "spec@0.5": 0.9212121212121213,
+      "m_rate_fractured": 0.8461538461538461,
+      "m_rate_nonfractured": 0.32272727272727275,
+      "sens@0.5_m1": 0.7107438016528925,
+      "sens@0.5_m0": 0.36363636363636365,
+      "n_pos_m0": 22,
+      "proposals_file": null,
+      "checkpoint_sha256": "d3bb76d32f50b2cd31113256b8c58de9d10d3c3d30958e18f53d4dd5fa66f30b"
+    },
+    "JF_v4cf_yolojoint_btxrd_r0.02": {
+      "auprc": 0.8631485155665428,
+      "auroc": 0.9407183725365543,
+      "sens@0.5": 0.7832167832167832,
+      "spec@0.5": 0.9727272727272728,
+      "m_rate_fractured": 0.6783216783216783,
+      "m_rate_nonfractured": 0.015151515151515152,
+      "sens@0.5_m1": 0.979381443298969,
+      "sens@0.5_m0": 0.3695652173913043,
+      "n_pos_m0": 46,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.02/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "3b2081b1701214e88fd110eb2243422c5929081fa71f1d725630197c1fc0401d"
+    }
+  },
+  "diff_vs_reference": {
+    "JF_v4cf_yolojoint_btxrd_r0.02": {
+      "auprc": {
+        "diff": 0.1307944833694863,
+        "ci95": [
+          0.0843,
+          0.1819
+        ]
+      },
+      "auroc": {
+        "diff": 0.04589955499046405,
+        "ci95": [
+          0.0275,
+          0.0678
+        ]
+      }
+    }
+  }
+}

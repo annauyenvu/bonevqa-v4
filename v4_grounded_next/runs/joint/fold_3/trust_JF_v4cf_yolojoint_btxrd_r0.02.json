@@ -1,0 +1,132 @@
+{
+  "schema": "vg-trust-v1",
+  "name": "JF_v4cf_yolojoint_btxrd_r0.02",
+  "tag": "final_fold3/V4-CF_yolojoint_btxrd_r0.02",
+  "fold": "3",
+  "checkpoint_sha256": "1cecc9ff889e93ed5a091d4c3409fe54d52ce58d0748208ddb9e9aea7e3f3b89",
+  "fitted": "2026-11-21T09:55:56",
+  "fitted_on": {
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/yolo_ablation/fold_3/JF_v4cf_yolojoint_btxrd_r0.02_calibration.json": "bbbe59207c406769e556059728fbe1a699557a8f4d510b176ed686f73b0b0dbd",
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/joint/fold_3/ref_JF_v4cf_yolojoint_btxrd_r0.02_model_val.json": "59cc05abb745815e9be444c517a1d24ebdb1c120ae17ee2564f87eb17bc0bccd",
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_3/proposals_fold3.json": "ea5e0719c29edb870f7e7caae9ee38901570d5df7c445ed8cd0c67ee7623548d",
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/btxrd_fold3/proposals_btxrd_insample.json": "96426b1736d38ef7aab3c44e0abcc4a739ec9ccd39925604134fb90a9896ae51"
+  },
+  "fit_roles": {
+    "fracture": "calibration",
+    "tumor": "model_val",
+    "malignancy": "model_val",
+    "diagnosis": "model_val"
+  },
+  "endpoints": {
+    "fracture": {
+      "n": 321,
+      "positives": 57,
+      "accuracy": 0.9127725856697819,
+      "head": {
+        "coef": [
+          0.9322864085866883
+        ],
+        "intercept": -0.7816993785050863,
+        "threshold": {
+          "0.90": 0.8126335054872204,
+          "0.80": 0.8918276142406176
+        },
+        "val_auroc_correct": 0.7499999999999999
+      },
+      "head_detector": {
+        "coef": [
+          0.6796584170243387,
+          -1.6206108056289583,
+          -5.186312724972974,
+          4.855339295372591
+        ],
+        "intercept": 0.5339952365558809,
+        "threshold": {
+          "0.90": 0.8559505841000703,
+          "0.80": 0.9144576466312865
+        },
+        "val_auroc_correct": 0.8721355436372501
+      }
+    },
+    "tumor": {
+      "n": 293,
+      "positives": 134,
+      "accuracy": 0.8088737201365188,
+      "head": {
+        "coef": [
+          0.33975905322292677
+        ],
+        "intercept": 0.2556672849348926,
+        "threshold": {
+          "0.90": 0.6818041679066558,
+          "0.80": 0.745926140836637
+        },
+        "val_auroc_correct": 0.6540084388185655
+      },
+      "head_detector": {
+        "coef": [
+          0.23996558567784487,
+          -1.0449643151407604,
+          -1.6272542573086113,
+          4.316838251376083
+        ],
+        "intercept": 0.6214312477649104,
+        "threshold": {
+          "0.90": 0.7140043836408708,
+          "0.80": 0.7577693576122806
+        },
+        "val_auroc_correct": 0.7096142254370102
+      }
+    },
+    "malignancy": {
+      "n": 134,
+      "positives": 12,
+      "accuracy": 0.9253731343283582,
+      "head": {
+        "coef": [
+          0.541672849055903
+        ],
+        "intercept": 1.219501597877581,
+        "threshold": {
+          "0.90": 0.8118923070029871,
+          "0.80": 0.8675555724506756
+        },
+        "val_auroc_correct": 0.7419354838709677
+      },
+      "head_detector": {
+        "coef": [
+          0.5471655011340243,
+          0.42104730093697196,
+          0.39534208394136694,
+          -1.4967230949622157
+        ],
+        "intercept": 1.0758639664789713,
+        "threshold": {
+          "0.90": 0.8259183092805287,
+          "0.80": 0.8823937035104947
+        },
+        "val_auroc_correct": 0.7379032258064516
+      }
+    }
+  },
+  "diagnosis": {
+    "n": 134,
+    "candidates": [
+      "giant cell tumor",
+      "multiple osteochondromas",
+      "osteochondroma",
+      "osteofibroma",
+      "osteosarcoma",
+      "other benign bone tumor",
+      "other malignant bone tumor",
+      "simple bone cyst",
+      "synovial osteochondroma"
+    ],
+    "temperature": 1.6,
+    "accuracy": 0.4925373134328358,
+    "threshold": {
+      "0.90": 0.2925409139824417,
+      "0.80": 0.3197036792096211
+    }
+  }
+}

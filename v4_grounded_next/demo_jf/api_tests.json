@@ -1,0 +1,86 @@
+[
+ {
+  "test": "GET /api/health",
+  "expect": "200, mô hình JF",
+  "pass": true,
+  "got": "JF · fold 0"
+ },
+ {
+  "test": "POST /api/detect, ảnh gãy",
+  "expect": "200, có hộp lớp gãy",
+  "pass": true,
+  "got": 1
+ },
+ {
+  "test": "POST /api/detect, ảnh u",
+  "expect": "200, có hộp lớp tổn thương",
+  "pass": true,
+  "got": 2
+ },
+ {
+  "test": "Câu gãy tiếng Việt",
+  "expect": "định tuyến câu chuẩn, có quyết định tin cậy",
+  "pass": true,
+  "got": "answer"
+ },
+ {
+  "test": "Câu có u tiếng Việt",
+  "expect": "hộp lớp tổn thương, có quyết định tin cậy",
+  "pass": true,
+  "got": "answer"
+ },
+ {
+  "test": "Câu lành/ác",
+  "expect": "câu chuẩn ác tính, có quyết định tin cậy",
+  "pass": true,
+  "got": "defer"
+ },
+ {
+  "test": "Câu chẩn đoán",
+  "expect": "ba chẩn đoán đứng đầu",
+  "pass": true,
+  "got": [
+   "sarcoma xương",
+   "đa u xương sụn",
+   "u xương sụn"
+  ]
+ },
+ {
+  "test": "Câu mở khác",
+  "expect": "trả lời, đánh dấu chưa hiệu chỉnh",
+  "pass": true,
+  "got": "leg"
+ },
+ {
+  "test": "Câu hỏi rỗng",
+  "expect": "400 hoặc 422",
+  "pass": true,
+  "got": 422
+ },
+ {
+  "test": "Ảnh lớn hơn 20 MB",
+  "expect": "413",
+  "pass": true,
+  "got": 413
+ },
+ {
+  "test": "Tệp không phải ảnh",
+  "expect": "400",
+  "pass": true,
+  "got": 400
+ },
+ {
+  "test": "Phản hồi sai định dạng",
+  "expect": "400",
+  "pass": true,
+  "got": 400
+ },
+ {
+  "test": "Ghi phản hồi",
+  "expect": "200, đã lưu",
+  "pass": true,
+  "got": {
+   "saved": true
+  }
+ }
+]

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": {
+    "D.eval_identity": {
+      "pass": true,
+      "detail": "max|d|=0.0e+00"
+    },
+    "D.dropped_rows_exact": {
+      "pass": true,
+      "detail": "max|d|=0.0e+00, dropped=1/4"
+    },
+    "D.kept_rows_exact": {
+      "pass": true,
+      "detail": "max|d|=0.0e+00"
+    },
+    "D.dropped_rows_no_xf_grad": {
+      "pass": true,
+      "detail": "0.0e+00"
+    },
+    "D.dropped_rows_use_h_les": {
+      "pass": true,
+      "detail": "5.04e+02"
+    },
+    "D.dropped_rows_reach_M_hat": {
+      "pass": true,
+      "detail": "sum|grad| ground_head=4.74e+01"
+    }
+  },
+  "p": 0.3,
+  "seconds": 9.630364894866943
+}

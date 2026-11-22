@@ -1,0 +1,146 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "A_v4_sealed_frcnn",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "A_v4_sealed_frcnn": {
+      "auprc": 0.7398607592904637,
+      "auroc": 0.8993642720915449,
+      "sens@0.5": 0.6363636363636364,
+      "spec@0.5": 0.9409090909090909,
+      "m_rate_fractured": 0.8461538461538461,
+      "m_rate_nonfractured": 0.32272727272727275,
+      "sens@0.5_m1": 0.7024793388429752,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 22,
+      "proposals_file": null,
+      "checkpoint_sha256": "bbcc7d494aae1a5b01377bb7684c0c31d677aa0eb71a237f96d3390e8daae356"
+    },
+    "B_v4cf_frcnn": {
+      "auprc": 0.7323540321970565,
+      "auroc": 0.8948188175460903,
+      "sens@0.5": 0.6573426573426573,
+      "spec@0.5": 0.9212121212121213,
+      "m_rate_fractured": 0.8461538461538461,
+      "m_rate_nonfractured": 0.32272727272727275,
+      "sens@0.5_m1": 0.7107438016528925,
+      "sens@0.5_m0": 0.36363636363636365,
+      "n_pos_m0": 22,
+      "proposals_file": null,
+      "checkpoint_sha256": "d3bb76d32f50b2cd31113256b8c58de9d10d3c3d30958e18f53d4dd5fa66f30b"
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": 0.7844714483529027,
+      "auroc": 0.9321360457724094,
+      "sens@0.5": 0.6783216783216783,
+      "spec@0.5": 0.9545454545454546,
+      "m_rate_fractured": 0.9230769230769231,
+      "m_rate_nonfractured": 0.3090909090909091,
+      "sens@0.5_m1": 0.7121212121212122,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 11,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "3083f89a3cb56ff5d63bebaebf6bdfaadce66b5e0fafb2e9f0578c1ef384e612"
+    },
+    "J_v4cf_yolojoint_btxrd": {
+      "auprc": 0.7986150365770709,
+      "auroc": 0.9306314897223988,
+      "sens@0.5": 0.6923076923076923,
+      "spec@0.5": 0.9484848484848485,
+      "m_rate_fractured": 0.9230769230769231,
+      "m_rate_nonfractured": 0.3090909090909091,
+      "sens@0.5_m1": 0.7272727272727273,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 11,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "66e9e070f20eb097ce5de740ab87d0d374512249036913e89d0b6b4112bb4217"
+    },
+    "JF_v4cf_yolojoint_btxrd_r0.02": {
+      "auprc": 0.8631485155665428,
+      "auroc": 0.9407183725365543,
+      "sens@0.5": 0.7832167832167832,
+      "spec@0.5": 0.9727272727272728,
+      "m_rate_fractured": 0.6783216783216783,
+      "m_rate_nonfractured": 0.015151515151515152,
+      "sens@0.5_m1": 0.979381443298969,
+      "sens@0.5_m0": 0.3695652173913043,
+      "n_pos_m0": 46,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.02/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "3b2081b1701214e88fd110eb2243422c5929081fa71f1d725630197c1fc0401d"
+    }
+  },
+  "diff_vs_reference": {
+    "B_v4cf_frcnn": {
+      "auprc": {
+        "diff": -0.007506727093407162,
+        "ci95": [
+          -0.0299,
+          0.0146
+        ]
+      },
+      "auroc": {
+        "diff": -0.00454545454545463,
+        "ci95": [
+          -0.0153,
+          0.0061
+        ]
+      }
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": {
+        "diff": 0.044610689062439035,
+        "ci95": [
+          -0.0008,
+          0.091
+        ]
+      },
+      "auroc": {
+        "diff": 0.03277177368086448,
+        "ci95": [
+          0.0114,
+          0.0559
+        ]
+      }
+    },
+    "J_v4cf_yolojoint_btxrd": {
+      "auprc": {
+        "diff": 0.058754277286607204,
+        "ci95": [
+          0.0164,
+          0.103
+        ]
+      },
+      "auroc": {
+        "diff": 0.03126721763085394,
+        "ci95": [
+          0.0125,
+          0.0522
+        ]
+      }
+    },
+    "JF_v4cf_yolojoint_btxrd_r0.02": {
+      "auprc": {
+        "diff": 0.12328775627607913,
+        "ci95": [
+          0.0763,
+          0.1743
+        ]
+      },
+      "auroc": {
+        "diff": 0.04135410044500942,
+        "ci95": [
+          0.0225,
+          0.0641
+        ]
+      }
+    }
+  }
+}

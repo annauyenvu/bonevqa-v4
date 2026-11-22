@@ -1,0 +1,132 @@
+{
+  "schema": "vg-trust-v1",
+  "name": "J_v4cf_yolojoint_btxrd",
+  "tag": "joint_fold4/V4-CF_yolojoint_btxrd",
+  "fold": "4",
+  "checkpoint_sha256": "4fab7f33a6e83a06e586890421bcacf3fc88c6931d9357c68f334ca8dcdc6196",
+  "fitted": "2026-11-21T23:25:04",
+  "fitted_on": {
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/yolo_ablation/fold_4/J_v4cf_yolojoint_btxrd_calibration.json": "3b9ae13a54bbe0aa3229aff0ae4eb777b3809a2f8802e1187c9eb70926537fcc",
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/joint/fold_4/ref_J_v4cf_yolojoint_btxrd_model_val.json": "acb40215ea4e79e36e997e36c0ede1b127dac10b0d69cbb24faafff7a4764ea7",
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_4/proposals_fold4.json": "9ebcd85d8550f687bb215ae252f52b3fe063d8323ca0c9f7931ec2d8746699c9",
+    "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/btxrd_fold4/proposals_btxrd_insample.json": "2a0cbbae28a344820b7a6369e6405855a1e0784f7369cec937797fa6dbd191e0"
+  },
+  "fit_roles": {
+    "fracture": "calibration",
+    "tumor": "model_val",
+    "malignancy": "model_val",
+    "diagnosis": "model_val"
+  },
+  "endpoints": {
+    "fracture": {
+      "n": 322,
+      "positives": 57,
+      "accuracy": 0.8913043478260869,
+      "head": {
+        "coef": [
+          0.7357148708537717
+        ],
+        "intercept": -0.07073323983020431,
+        "threshold": {
+          "0.90": 0.7369379776590314,
+          "0.80": 0.8527661844169213
+        },
+        "val_auroc_correct": 0.7969138875062219
+      },
+      "head_detector": {
+        "coef": [
+          0.53868732874666,
+          -3.1158993128912678,
+          -3.672372280584586,
+          6.214460648433294
+        ],
+        "intercept": 1.253696202052161,
+        "threshold": {
+          "0.90": 0.706535282818543,
+          "0.80": 0.8948798256927956
+        },
+        "val_auroc_correct": 0.8965654554504728
+      }
+    },
+    "tumor": {
+      "n": 293,
+      "positives": 134,
+      "accuracy": 0.7747440273037542,
+      "head": {
+        "coef": [
+          0.6586954726442072
+        ],
+        "intercept": -0.641263534729145,
+        "threshold": {
+          "0.90": 0.5346807358714986,
+          "0.80": 0.6377655849135113
+        },
+        "val_auroc_correct": 0.7533707115204913
+      },
+      "head_detector": {
+        "coef": [
+          0.5440966745094907,
+          -1.1067878120780519,
+          -1.0890976021474679,
+          6.699344457102833
+        ],
+        "intercept": -0.4098235919451149,
+        "threshold": {
+          "0.90": 0.4910656709594189,
+          "0.80": 0.6201146564222617
+        },
+        "val_auroc_correct": 0.81591242824723
+      }
+    },
+    "malignancy": {
+      "n": 134,
+      "positives": 12,
+      "accuracy": 0.9104477611940298,
+      "head": {
+        "coef": [
+          0.8553108784249442
+        ],
+        "intercept": -0.24713053742921925,
+        "threshold": {
+          "0.90": 0.7758056207611435,
+          "0.80": 0.8831203490133155
+        },
+        "val_auroc_correct": 0.7827868852459017
+      },
+      "head_detector": {
+        "coef": [
+          0.37546240445771417,
+          0.037482166932216614,
+          0.56196488880456,
+          -4.3861895087664164
+        ],
+        "intercept": 1.7630133061270234,
+        "threshold": {
+          "0.90": 0.8434938342269441,
+          "0.80": 0.9523352897650402
+        },
+        "val_auroc_correct": 0.8401639344262295
+      }
+    }
+  },
+  "diagnosis": {
+    "n": 134,
+    "candidates": [
+      "giant cell tumor",
+      "multiple osteochondromas",
+      "osteochondroma",
+      "osteofibroma",
+      "osteosarcoma",
+      "other benign bone tumor",
+      "other malignant bone tumor",
+      "simple bone cyst",
+      "synovial osteochondroma"
+    ],
+    "temperature": 1.6,
+    "accuracy": 0.5298507462686567,
+    "threshold": {
+      "0.90": 0.29961482738741074,
+      "0.80": 0.325610850608379
+    }
+  }
+}

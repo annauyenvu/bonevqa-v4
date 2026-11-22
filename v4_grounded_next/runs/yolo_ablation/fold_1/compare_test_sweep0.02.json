@@ -1,0 +1,88 @@
+{
+  "role": "test",
+  "fold": "1",
+  "n": 803,
+  "fractured": 143,
+  "components": 784,
+  "reference": "B_v4cf_frcnn",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "B_v4cf_frcnn": {
+      "auprc": 0.7317901655718622,
+      "auroc": 0.8965246874337783,
+      "sens@0.5": 0.4825174825174825,
+      "spec@0.5": 0.9757575757575757,
+      "m_rate_fractured": 0.5104895104895105,
+      "m_rate_nonfractured": 0.03484848484848485,
+      "sens@0.5_m1": 0.684931506849315,
+      "sens@0.5_m0": 0.2714285714285714,
+      "n_pos_m0": 70,
+      "proposals_file": null,
+      "checkpoint_sha256": "2a7c1f0123b8b2e94ce34bfb740f06b33d24b39e5bcc8cc4359eb0f0eb8ca1d7"
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": 0.8175502542181632,
+      "auroc": 0.928215723670269,
+      "sens@0.5": 0.7412587412587412,
+      "spec@0.5": 0.9484848484848485,
+      "m_rate_fractured": 0.6643356643356644,
+      "m_rate_nonfractured": 0.05,
+      "sens@0.5_m1": 0.968421052631579,
+      "sens@0.5_m0": 0.2916666666666667,
+      "n_pos_m0": 48,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_1/proposals_fold1.json",
+      "checkpoint_sha256": "53ce8283d6fe5c148eec0f8fa97b5e1c0706b64247be3109499e4d30a441cefb"
+    },
+    "D2_sweep_r0.02": {
+      "auprc": 0.8287544829391886,
+      "auroc": 0.9338419156600974,
+      "sens@0.5": 0.7202797202797203,
+      "spec@0.5": 0.9575757575757575,
+      "m_rate_fractured": 0.5734265734265734,
+      "m_rate_nonfractured": 0.019696969696969695,
+      "sens@0.5_m1": 0.975609756097561,
+      "sens@0.5_m0": 0.3770491803278688,
+      "n_pos_m0": 61,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.02/fold_1/proposals_fold1.json",
+      "checkpoint_sha256": "8509d974baf86c44a1495a81ce06c722a5f38f63f541762a74fc1be2c12756d7"
+    }
+  },
+  "diff_vs_reference": {
+    "D2_v4cf_yolojoint": {
+      "auprc": {
+        "diff": 0.08576008864630102,
+        "ci95": [
+          0.0376,
+          0.135
+        ]
+      },
+      "auroc": {
+        "diff": 0.03169103623649072,
+        "ci95": [
+          0.0103,
+          0.0542
+        ]
+      }
+    },
+    "D2_sweep_r0.02": {
+      "auprc": {
+        "diff": 0.09696431736732647,
+        "ci95": [
+          0.0487,
+          0.1454
+        ]
+      },
+      "auroc": {
+        "diff": 0.03731722822631911,
+        "ci95": [
+          0.0174,
+          0.059
+        ]
+      }
+    }
+  }
+}

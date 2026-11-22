@@ -1,0 +1,420 @@
+{
+  "name": "J_v4cf_yolojoint_btxrd",
+  "trust_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/joint/fold_4/trust_J_v4cf_yolojoint_btxrd.json",
+  "trust_sha256": "12c711b031ad3c89ed8e8b81c67475124f9231676046cea86f143b06fd47ea86",
+  "n_boot": 2000,
+  "seed": 20261114,
+  "endpoints": {
+    "fracture": {
+      "test": {
+        "n": 802,
+        "positives": 143,
+        "accuracy": 0.9014962593516209,
+        "signals": {
+          "head": {
+            "auroc_correct": 0.7185776563895162,
+            "0.90": {
+              "coverage": 0.9451371571072319,
+              "accuracy_all": 0.9014962593516209,
+              "accuracy_answered": 0.9221635883905013,
+              "gain": 0.020667329038880355,
+              "gain_ci95": [
+                0.010262737481070422,
+                0.032362528357310405
+              ],
+              "share_of_errors_deferred": 0.25316455696202533,
+              "accuracy_deferred": 0.5454545454545454,
+              "missed_positives_all": 45,
+              "missed_positives_answered": 35
+            },
+            "0.80": {
+              "coverage": 0.8478802992518704,
+              "accuracy_all": 0.9014962593516209,
+              "accuracy_answered": 0.9411764705882353,
+              "gain": 0.03968021123661436,
+              "gain_ci95": [
+                0.025200404367849934,
+                0.05521961966044699
+              ],
+              "share_of_errors_deferred": 0.4936708860759494,
+              "accuracy_deferred": 0.680327868852459,
+              "missed_positives_all": 45,
+              "missed_positives_answered": 21
+            }
+          },
+          "head_detector": {
+            "auroc_correct": 0.880788556821962,
+            "0.90": {
+              "coverage": 0.9189526184538653,
+              "accuracy_all": 0.9014962593516209,
+              "accuracy_answered": 0.9430122116689281,
+              "gain": 0.0415159523173072,
+              "gain_ci95": [
+                0.02773924647549502,
+                0.05733733227635918
+              ],
+              "share_of_errors_deferred": 0.46835443037974683,
+              "accuracy_deferred": 0.4307692307692308,
+              "missed_positives_all": 45,
+              "missed_positives_answered": 29
+            },
+            "0.80": {
+              "coverage": 0.8341645885286783,
+              "accuracy_all": 0.9014962593516209,
+              "accuracy_answered": 0.9656203288490284,
+              "gain": 0.06412406949740745,
+              "gain_ci95": [
+                0.04697129562774854,
+                0.08216526337324369
+              ],
+              "share_of_errors_deferred": 0.7088607594936709,
+              "accuracy_deferred": 0.5789473684210527,
+              "missed_positives_all": 45,
+              "missed_positives_answered": 21
+            }
+          }
+        }
+      }
+    },
+    "tumor": {
+      "test": {
+        "n": 587,
+        "positives": 269,
+        "accuracy": 0.8432708688245315,
+        "signals": {
+          "head": {
+            "auroc_correct": 0.7507026789635485,
+            "0.90": {
+              "coverage": 0.8654173764906303,
+              "accuracy_all": 0.8432708688245315,
+              "accuracy_answered": 0.8937007874015748,
+              "gain": 0.050429918577043265,
+              "gain_ci95": [
+                0.03133240770869826,
+                0.0717200201622791
+              ],
+              "share_of_errors_deferred": 0.41304347826086957,
+              "accuracy_deferred": 0.5189873417721519,
+              "missed_positives_all": 50,
+              "missed_positives_answered": 32
+            },
+            "0.80": {
+              "coverage": 0.7836456558773425,
+              "accuracy_all": 0.8432708688245315,
+              "accuracy_answered": 0.9043478260869565,
+              "gain": 0.06107695726242501,
+              "gain_ci95": [
+                0.03891379198180229,
+                0.08506881936069603
+              ],
+              "share_of_errors_deferred": 0.5217391304347826,
+              "accuracy_deferred": 0.6220472440944882,
+              "missed_positives_all": 50,
+              "missed_positives_answered": 29
+            }
+          },
+          "head_detector": {
+            "auroc_correct": 0.8208827404479578,
+            "0.90": {
+              "coverage": 0.8960817717206133,
+              "accuracy_all": 0.8432708688245315,
+              "accuracy_answered": 0.8973384030418251,
+              "gain": 0.0540675342172936,
+              "gain_ci95": [
+                0.034817856521858384,
+                0.07513236161970253
+              ],
+              "share_of_errors_deferred": 0.41304347826086957,
+              "accuracy_deferred": 0.3770491803278688,
+              "missed_positives_all": 50,
+              "missed_positives_answered": 33
+            },
+            "0.80": {
+              "coverage": 0.7955706984667802,
+              "accuracy_all": 0.8432708688245315,
+              "accuracy_answered": 0.9186295503211992,
+              "gain": 0.07535868149666769,
+              "gain_ci95": [
+                0.05109995808299491,
+                0.10110515734569908
+              ],
+              "share_of_errors_deferred": 0.5869565217391305,
+              "accuracy_deferred": 0.55,
+              "missed_positives_all": 50,
+              "missed_positives_answered": 27
+            }
+          }
+        }
+      },
+      "external": {
+        "n": 808,
+        "positives": 522,
+        "accuracy": 0.7673267326732673,
+        "signals": {
+          "head": {
+            "auroc_correct": 0.6422872340425532,
+            "0.90": {
+              "coverage": 0.8452970297029703,
+              "accuracy_all": 0.7673267326732673,
+              "accuracy_answered": 0.7950219619326501,
+              "gain": 0.027695229259382725,
+              "gain_ci95": [
+                0.013384995783216802,
+                0.04343151163939774
+              ],
+              "share_of_errors_deferred": 0.2553191489361702,
+              "accuracy_deferred": 0.616,
+              "missed_positives_all": 109,
+              "missed_positives_answered": 85
+            },
+            "0.80": {
+              "coverage": 0.7611386138613861,
+              "accuracy_all": 0.7673267326732673,
+              "accuracy_answered": 0.8065040650406504,
+              "gain": 0.03917733236738308,
+              "gain_ci95": [
+                0.019355557579048974,
+                0.06023145722993762
+              ],
+              "share_of_errors_deferred": 0.3670212765957447,
+              "accuracy_deferred": 0.6424870466321243,
+              "missed_positives_all": 109,
+              "missed_positives_answered": 74
+            }
+          },
+          "head_detector": {
+            "auroc_correct": 0.7635724090597116,
+            "0.90": {
+              "coverage": 0.8923267326732673,
+              "accuracy_all": 0.7673267326732673,
+              "accuracy_answered": 0.8030513176144244,
+              "gain": 0.035724584941157045,
+              "gain_ci95": [
+                0.021761123015719593,
+                0.051531582588605254
+              ],
+              "share_of_errors_deferred": 0.24468085106382978,
+              "accuracy_deferred": 0.47126436781609193,
+              "missed_positives_all": 109,
+              "missed_positives_answered": 87
+            },
+            "0.80": {
+              "coverage": 0.7883663366336634,
+              "accuracy_all": 0.7673267326732673,
+              "accuracy_answered": 0.8288854003139717,
+              "gain": 0.06155866764070439,
+              "gain_ci95": [
+                0.041964171027676904,
+                0.08147116466987996
+              ],
+              "share_of_errors_deferred": 0.42021276595744683,
+              "accuracy_deferred": 0.5380116959064327,
+              "missed_positives_all": 109,
+              "missed_positives_answered": 72
+            }
+          }
+        }
+      }
+    },
+    "malignancy": {
+      "test": {
+        "n": 269,
+        "positives": 46,
+        "accuracy": 0.8513011152416357,
+        "signals": {
+          "head": {
+            "auroc_correct": 0.7949781659388646,
+            "0.90": {
+              "coverage": 0.8513011152416357,
+              "accuracy_all": 0.8513011152416357,
+              "accuracy_answered": 0.9082969432314411,
+              "gain": 0.0569958279898054,
+              "gain_ci95": [
+                0.028110990714734926,
+                0.08922432293656453
+              ],
+              "share_of_errors_deferred": 0.475,
+              "accuracy_deferred": 0.525,
+              "missed_positives_all": 24,
+              "missed_positives_answered": 20
+            },
+            "0.80": {
+              "coverage": 0.758364312267658,
+              "accuracy_all": 0.8513011152416357,
+              "accuracy_answered": 0.9215686274509803,
+              "gain": 0.07026751220934468,
+              "gain_ci95": [
+                0.0327846155247724,
+                0.10822964494293953
+              ],
+              "share_of_errors_deferred": 0.6,
+              "accuracy_deferred": 0.6307692307692307,
+              "missed_positives_all": 24,
+              "missed_positives_answered": 16
+            }
+          },
+          "head_detector": {
+            "auroc_correct": 0.7943231441048033,
+            "0.90": {
+              "coverage": 0.862453531598513,
+              "accuracy_all": 0.8513011152416357,
+              "accuracy_answered": 0.896551724137931,
+              "gain": 0.0452506088962954,
+              "gain_ci95": [
+                0.013139193713081787,
+                0.08056372549019597
+              ],
+              "share_of_errors_deferred": 0.4,
+              "accuracy_deferred": 0.5675675675675675,
+              "missed_positives_all": 24,
+              "missed_positives_answered": 24
+            },
+            "0.80": {
+              "coverage": 0.7397769516728625,
+              "accuracy_all": 0.8513011152416357,
+              "accuracy_answered": 0.9346733668341709,
+              "gain": 0.08337225159253525,
+              "gain_ci95": [
+                0.04223932530965935,
+                0.12618008099818057
+              ],
+              "share_of_errors_deferred": 0.675,
+              "accuracy_deferred": 0.6142857142857143,
+              "missed_positives_all": 24,
+              "missed_positives_answered": 13
+            }
+          }
+        }
+      },
+      "external": {
+        "n": 522,
+        "positives": 107,
+        "accuracy": 0.7950191570881227,
+        "signals": {
+          "head": {
+            "auroc_correct": 0.6208760274743835,
+            "0.90": {
+              "coverage": 0.8218390804597702,
+              "accuracy_all": 0.7950191570881227,
+              "accuracy_answered": 0.8414918414918415,
+              "gain": 0.04647268440371888,
+              "gain_ci95": [
+                0.027345451714573154,
+                0.06672899027933994
+              ],
+              "share_of_errors_deferred": 0.3644859813084112,
+              "accuracy_deferred": 0.5806451612903226,
+              "missed_positives_all": 74,
+              "missed_positives_answered": 65
+            },
+            "0.80": {
+              "coverage": 0.7145593869731801,
+              "accuracy_all": 0.7950191570881227,
+              "accuracy_answered": 0.8445040214477212,
+              "gain": 0.049484864359598535,
+              "gain_ci95": [
+                0.026109012689244978,
+                0.07295242577668772
+              ],
+              "share_of_errors_deferred": 0.45794392523364486,
+              "accuracy_deferred": 0.6711409395973155,
+              "missed_positives_all": 74,
+              "missed_positives_answered": 58
+            }
+          },
+          "head_detector": {
+            "auroc_correct": 0.6523364485981309,
+            "0.90": {
+              "coverage": 0.8888888888888888,
+              "accuracy_all": 0.7950191570881227,
+              "accuracy_answered": 0.8383620689655172,
+              "gain": 0.043342911877394585,
+              "gain_ci95": [
+                0.024300720379857012,
+                0.064527743646183
+              ],
+              "share_of_errors_deferred": 0.29906542056074764,
+              "accuracy_deferred": 0.4482758620689655,
+              "missed_positives_all": 74,
+              "missed_positives_answered": 74
+            },
+            "0.80": {
+              "coverage": 0.7164750957854407,
+              "accuracy_all": 0.7950191570881227,
+              "accuracy_answered": 0.8422459893048129,
+              "gain": 0.04722683221669022,
+              "gain_ci95": [
+                0.022794197518686936,
+                0.07126616769466493
+              ],
+              "share_of_errors_deferred": 0.4485981308411215,
+              "accuracy_deferred": 0.6756756756756757,
+              "missed_positives_all": 74,
+              "missed_positives_answered": 59
+            }
+          }
+        }
+      }
+    },
+    "diagnosis": {
+      "test": {
+        "n": 269,
+        "accuracy": 0.550185873605948,
+        "top3_contains_truth": 0.7881040892193308,
+        "0.90": {
+          "coverage": 0.8736059479553904,
+          "accuracy_all": 0.550185873605948,
+          "accuracy_answered": 0.5872340425531914,
+          "gain": 0.0370481689472435,
+          "gain_ci95": [
+            0.012886760092391548,
+            0.06441254977484458
+          ],
+          "share_of_errors_deferred": 0.19834710743801653,
+          "accuracy_deferred": 0.29411764705882354
+        },
+        "0.80": {
+          "coverage": 0.758364312267658,
+          "accuracy_all": 0.550185873605948,
+          "accuracy_answered": 0.6176470588235294,
+          "gain": 0.06746118521758149,
+          "gain_ci95": [
+            0.030539485024779146,
+            0.10943358175334304
+          ],
+          "share_of_errors_deferred": 0.35537190082644626,
+          "accuracy_deferred": 0.3384615384615385
+        }
+      },
+      "external": {
+        "n": 522,
+        "accuracy": 0.289272030651341,
+        "top3_contains_truth": 0.6264367816091954,
+        "0.90": {
+          "coverage": 0.9137931034482759,
+          "accuracy_all": 0.289272030651341,
+          "accuracy_answered": 0.29979035639413,
+          "gain": 0.010518325742788992,
+          "gain_ci95": [
+            -0.00062079909575143,
+            0.021015051329593616
+          ],
+          "share_of_errors_deferred": 0.09973045822102426,
+          "accuracy_deferred": 0.17777777777777778
+        },
+        "0.80": {
+          "coverage": 0.8180076628352491,
+          "accuracy_all": 0.289272030651341,
+          "accuracy_answered": 0.3091334894613583,
+          "gain": 0.01986145881001733,
+          "gain_ci95": [
+            -0.000554411231044212,
+            0.04012654302765125
+          ],
+          "share_of_errors_deferred": 0.20485175202156333,
+          "accuracy_deferred": 0.2
+        }
+      }
+    }
+  }
+}

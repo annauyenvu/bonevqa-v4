@@ -1,0 +1,49 @@
+{
+  "arm": "V4-GC",
+  "fold": "0",
+  "seed": 42,
+  "overrides": {
+    "vg_lambda_contrast": 0.33
+  },
+  "updates": 1438,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 719,
+      "mean_task": 1.614355231201346,
+      "mean_ground": 0.13848410747743486,
+      "mean_contrast": 0.09384324020999463,
+      "n_task": 2876,
+      "n_ground": 2876,
+      "n_contrast": 2876,
+      "n_recovery": 0
+    },
+    {
+      "epoch": 2,
+      "updates": 1438,
+      "mean_task": 1.0066990897030943,
+      "mean_ground": 0.13546755578695358,
+      "mean_contrast": 0.04515637437223047,
+      "n_task": 2876,
+      "n_ground": 2876,
+      "n_contrast": 2876,
+      "n_recovery": 0
+    }
+  ],
+  "model_val": {
+    "n": 321,
+    "prevalence": 0.17757009345794392,
+    "auprc": 0.7869651540754171,
+    "auroc": 0.9387958532695374,
+    "sens@0.5_m1": 0.7346938775510204,
+    "n_pos_m1": 49,
+    "sens@0.5_m0": 0.375,
+    "n_pos_m0": 8,
+    "spec@0.5": 0.9393939393939394,
+    "pointing_game": 0.22807017543859648,
+    "energy_in_gt": 0.22645426281776868,
+    "energy_chance": 0.026047261009667023,
+    "pointing_game_m1": 0.2653061224489796
+  },
+  "seconds": 11969.233162879944
+}

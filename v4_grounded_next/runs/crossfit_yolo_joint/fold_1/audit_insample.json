@@ -1,0 +1,82 @@
+{
+  "target_nonfractured_rate_model_val": 0.03409090909090909,
+  "thresholds": {
+    "outer": 0.22003868222236633
+  },
+  "train_insample": {
+    "m_rate_fractured": 0.9650655021834061,
+    "m_rate_nonfractured": 0.017061611374407582,
+    "mean_props_nonfractured": 0.01848341232227488,
+    "recall_top3_iou0.1": 0.9585152838427947,
+    "recall_top3_iou0.3": 0.9585152838427947,
+    "recall_top3_iou0.5": 0.9585152838427947,
+    "image_AP_smax": 0.9855950086224079,
+    "image_AUROC_smax": 0.9962933835551232,
+    "best_iou_quantiles_fractured": [
+      0.775,
+      0.836,
+      0.883,
+      0.92,
+      0.942
+    ],
+    "images": 2568,
+    "fractured": 458
+  },
+  "model_val": {
+    "m_rate_fractured": 0.7719298245614035,
+    "m_rate_nonfractured": 0.03409090909090909,
+    "mean_props_nonfractured": 0.03409090909090909,
+    "recall_top3_iou0.1": 0.7017543859649122,
+    "recall_top3_iou0.3": 0.7017543859649122,
+    "recall_top3_iou0.5": 0.5789473684210527,
+    "image_AP_smax": 0.8305944912246809,
+    "image_AUROC_smax": 0.9249069643806486,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.632,
+      0.748,
+      0.814
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "calibration": {
+    "m_rate_fractured": 0.5614035087719298,
+    "m_rate_nonfractured": 0.022727272727272728,
+    "mean_props_nonfractured": 0.022727272727272728,
+    "recall_top3_iou0.1": 0.543859649122807,
+    "recall_top3_iou0.3": 0.543859649122807,
+    "recall_top3_iou0.5": 0.5087719298245614,
+    "image_AP_smax": 0.7781157339733469,
+    "image_AUROC_smax": 0.9046717171717171,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.51,
+      0.76,
+      0.842
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "test": {
+    "m_rate_fractured": 0.6643356643356644,
+    "m_rate_nonfractured": 0.05,
+    "mean_props_nonfractured": 0.05303030303030303,
+    "recall_top3_iou0.1": 0.6083916083916084,
+    "recall_top3_iou0.3": 0.5594405594405595,
+    "recall_top3_iou0.5": 0.5314685314685315,
+    "image_AP_smax": 0.7708295936110989,
+    "image_AUROC_smax": 0.9049480822208095,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.543,
+      0.768,
+      0.844
+    ],
+    "images": 803,
+    "fractured": 143
+  }
+}

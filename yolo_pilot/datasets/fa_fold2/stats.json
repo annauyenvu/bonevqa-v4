@@ -1,0 +1,26 @@
+{
+  "train": {
+    "images": 2568,
+    "fractured": 458,
+    "boxes": 592,
+    "exif_rotated": 13
+  },
+  "val": {
+    "images": 321,
+    "fractured": 57,
+    "boxes": 73,
+    "exif_rotated": 2
+  },
+  "cal": {
+    "images": 321,
+    "fractured": 57,
+    "boxes": 66,
+    "exif_rotated": 3
+  },
+  "test": {
+    "images": 803,
+    "fractured": 143,
+    "boxes": 189,
+    "exif_rotated": 7
+  }
+}

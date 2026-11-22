@@ -1,0 +1,28 @@
+{
+  "de_tai": "Phát triển hệ thống hội thoại trực quan về ảnh y khoa xương có dùng gợi ý",
+  "bac_dao_tao": "Luận văn thạc sĩ",
+  "hoc_vien": "Vũ Đình Bảo Uyên",
+  "nganh": "Trí tuệ nhân tạo",
+  "co_so_dao_tao": "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM",
+  "giang_vien_huong_dan": "PGS.TS. Lý Quốc Ngọc",
+  "nam": "2026",
+  "ket_qua": {
+    "pham_vi": "Cấu hình cuối JF, checkpoint fold 0: FracAtlas test 803 ảnh (143 ảnh gãy); BTXRD test 587 ảnh (trung tâm 1) và external 808 ảnh (trung tâm 2, 3). Một seed.",
+    "bang": [
+      {"chi_so": "AUPRC phát hiện gãy (FracAtlas)", "test": "0,863", "ext": "—"},
+      {"chi_so": "AUROC có u (BTXRD)", "test": "0,907", "ext": "0,813"},
+      {"chi_so": "AUROC lành/ác (BTXRD)", "test": "0,881", "ext": "0,614"},
+      {"chi_so": "Độ chính xác chẩn đoán 9 loại (BTXRD)", "test": "0,546", "ext": "0,287"},
+      {"chi_so": "Gãy: độ chính xác trên câu được trả lời (lớp tin cậy, ~80%)", "test": "0,968", "ext": "—"}
+    ],
+    "delta": "Kết quả nhiều fold và khoảng tin cậy nằm trong luận văn. Checkpoint này chưa từng huấn luyện trên các ảnh mẫu."
+  },
+  "gioi_han": [
+    "Sản phẩm nghiên cứu, chưa được kiểm định lâm sàng.",
+    "Hộp là đề xuất của detector, không phải xác nhận vị trí tổn thương; lợi ích của mô hình chủ yếu đến từ tín hiệu có hộp đáng tin, chưa chứng minh mô hình đọc đúng vị trí.",
+    "Câu trả lời âm khi không có hộp không dùng để loại trừ tổn thương.",
+    "Chẩn đoán tên u xương chỉ đáng tin với u xương sụn, sarcoma xương và một phần nang xương đơn độc.",
+    "Mỗi câu hỏi được trả lời độc lập; các câu trả lời trên cùng ảnh có thể không nhất quán.",
+    "Chỉ đánh giá với các mẫu câu hỏi tiếng Anh sinh tự động; tiếng Việt được ánh xạ sang các mẫu đó."
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "B_v4cf_frcnn",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "B_v4cf_frcnn": {
+      "auprc": 0.7323540321970565,
+      "auroc": 0.8948188175460903,
+      "sens@0.5": 0.6573426573426573,
+      "spec@0.5": 0.9212121212121213,
+      "m_rate_fractured": 0.8461538461538461,
+      "m_rate_nonfractured": 0.32272727272727275,
+      "sens@0.5_m1": 0.7107438016528925,
+      "sens@0.5_m0": 0.36363636363636365,
+      "n_pos_m0": 22,
+      "proposals_file": null,
+      "checkpoint_sha256": "d3bb76d32f50b2cd31113256b8c58de9d10d3c3d30958e18f53d4dd5fa66f30b"
+    },
+    "A_v4_sealed_frcnn": {
+      "auprc": 0.7398607592904637,
+      "auroc": 0.8993642720915449,
+      "sens@0.5": 0.6363636363636364,
+      "spec@0.5": 0.9409090909090909,
+      "m_rate_fractured": 0.8461538461538461,
+      "m_rate_nonfractured": 0.32272727272727275,
+      "sens@0.5_m1": 0.7024793388429752,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 22,
+      "proposals_file": null,
+      "checkpoint_sha256": "bbcc7d494aae1a5b01377bb7684c0c31d677aa0eb71a237f96d3390e8daae356"
+    },
+    "C_v4_yolo_insample": {
+      "auprc": 0.7503285195077275,
+      "auroc": 0.9113477431659249,
+      "sens@0.5": 0.6993006993006993,
+      "spec@0.5": 0.9272727272727272,
+      "m_rate_fractured": 0.8251748251748252,
+      "m_rate_nonfractured": 0.25303030303030305,
+      "sens@0.5_m1": 0.8220338983050848,
+      "sens@0.5_m0": 0.12,
+      "n_pos_m0": 25,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo/fold_0/proposals_fold0_insample.json",
+      "checkpoint_sha256": "ad940689441463b5be37807b3008cdb4e5fdb6f6f1b68d2372db74e1d71daa3b"
+    },
+    "C2_v4_yolojoint_insample": {
+      "auprc": 0.8183843527176179,
+      "auroc": 0.9404005085823267,
+      "sens@0.5": 0.7622377622377622,
+      "spec@0.5": 0.9333333333333333,
+      "m_rate_fractured": 0.9230769230769231,
+      "m_rate_nonfractured": 0.3090909090909091,
+      "sens@0.5_m1": 0.8181818181818182,
+      "sens@0.5_m0": 0.09090909090909091,
+      "n_pos_m0": 11,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_0/proposals_fold0_insample.json",
+      "checkpoint_sha256": "a2958d9167300162279f3229edc233164d4c6c42dbc4b1132a5abf3554235a02"
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": 0.7844714483529027,
+      "auroc": 0.9321360457724094,
+      "sens@0.5": 0.6783216783216783,
+      "spec@0.5": 0.9545454545454546,
+      "m_rate_fractured": 0.9230769230769231,
+      "m_rate_nonfractured": 0.3090909090909091,
+      "sens@0.5_m1": 0.7121212121212122,
+      "sens@0.5_m0": 0.2727272727272727,
+      "n_pos_m0": 11,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "3083f89a3cb56ff5d63bebaebf6bdfaadce66b5e0fafb2e9f0578c1ef384e612"
+    }
+  },
+  "diff_vs_reference": {
+    "A_v4_sealed_frcnn": {
+      "auprc": {
+        "diff": 0.007506727093407162,
+        "ci95": [
+          -0.0146,
+          0.0299
+        ]
+      },
+      "auroc": {
+        "diff": 0.00454545454545463,
+        "ci95": [
+          -0.0061,
+          0.0153
+        ]
+      }
+    },
+    "C_v4_yolo_insample": {
+      "auprc": {
+        "diff": 0.017974487310670972,
+        "ci95": [
+          -0.0308,
+          0.0664
+        ]
+      },
+      "auroc": {
+        "diff": 0.016528925619834656,
+        "ci95": [
+          -0.0077,
+          0.041
+        ]
+      }
+    },
+    "C2_v4_yolojoint_insample": {
+      "auprc": {
+        "diff": 0.08603032052056137,
+        "ci95": [
+          0.0389,
+          0.1337
+        ]
+      },
+      "auroc": {
+        "diff": 0.04558169103623644,
+        "ci95": [
+          0.0208,
+          0.0711
+        ]
+      }
+    },
+    "D2_v4cf_yolojoint": {
+      "auprc": {
+        "diff": 0.0521174161558462,
+        "ci95": [
+          0.0108,
+          0.0938
+        ]
+      },
+      "auroc": {
+        "diff": 0.03731722822631911,
+        "ci95": [
+          0.0185,
+          0.058
+        ]
+      }
+    }
+  }
+}

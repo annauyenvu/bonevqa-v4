@@ -1,0 +1,30 @@
+{
+  "arm": "V4",
+  "fold": "0",
+  "seed": 42,
+  "overrides": {},
+  "updates": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 2,
+      "mean_task": 10.747026801109314,
+      "n_task": 8,
+      "n_ground": 0,
+      "n_contrast": 0,
+      "n_recovery": 0
+    }
+  ],
+  "model_val": {
+    "n": 8,
+    "prevalence": 0.25,
+    "auprc": 0.20833333333333331,
+    "auroc": 0.08333333333333331,
+    "sens@0.5_m1": 1.0,
+    "n_pos_m1": 2,
+    "sens@0.5_m0": null,
+    "n_pos_m0": 0,
+    "spec@0.5": 0.0
+  },
+  "seconds": 14.749640941619873
+}

@@ -1,0 +1,67 @@
+{
+  "lesion_box_AP50": {
+    "val": {
+      "images": 293,
+      "tumor_images": 134,
+      "AP50": 0.5071666543604995,
+      "recall_top3_iou0.5_conf0.25": 0.4626865671641791,
+      "fire_rate_normal_conf0.25": 0.03773584905660377,
+      "image_AUROC_tumor": 0.8746362526987703
+    },
+    "test": {
+      "images": 587,
+      "tumor_images": 269,
+      "AP50": 0.5404484540154858,
+      "recall_top3_iou0.5_conf0.25": 0.6059479553903345,
+      "fire_rate_normal_conf0.25": 0.0440251572327044,
+      "image_AUROC_tumor": 0.9191975871501719
+    },
+    "external": {
+      "images": 808,
+      "tumor_images": 522,
+      "AP50": 0.472247675394682,
+      "recall_top3_iou0.5_conf0.25": 0.5383141762452107,
+      "fire_rate_normal_conf0.25": 0.0944055944055944,
+      "image_AUROC_tumor": 0.8488800471559093
+    }
+  },
+  "fracture_class_on_btxrd": {
+    "yolo_fa": {
+      "threshold": 0.017310231924057007,
+      "test": {
+        "fire_rate_tumor": 0.4944237918215613,
+        "fire_rate_normal": 0.4276729559748428,
+        "fracture_box_on_lesion_iou0.3": 0.137546468401487
+      },
+      "external": {
+        "fire_rate_tumor": 0.6015325670498084,
+        "fire_rate_normal": 0.479020979020979,
+        "fracture_box_on_lesion_iou0.3": 0.22413793103448276
+      }
+    },
+    "yolo_fa_btxrd": {
+      "threshold": 0.0023547580931335688,
+      "test": {
+        "fire_rate_tumor": 0.011152416356877323,
+        "fire_rate_normal": 0.006289308176100629,
+        "fracture_box_on_lesion_iou0.3": 0.0
+      },
+      "external": {
+        "fire_rate_tumor": 0.07088122605363985,
+        "fire_rate_normal": 0.024475524475524476,
+        "fracture_box_on_lesion_iou0.3": 0.022988505747126436
+      }
+    }
+  },
+  "lesion_class_on_fracatlas_test_conf0.25": {
+    "fire_rate_fractured": 0.0,
+    "fire_rate_nonfractured": 0.0,
+    "lesion_box_on_fracture_iou0.3": 0.0
+  },
+  "source_shortcut_normals_only": {
+    "n_btxrd_normal": 318,
+    "n_fracatlas_nonfractured": 660,
+    "AUROC_lesion_score_predicts_btxrd": 0.9110968172288927,
+    "AUROC_fracture_score_predicts_fracatlas": 0.699861825805222
+  }
+}

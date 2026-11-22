@@ -1,0 +1,31 @@
+{
+  "seed": 20261114,
+  "pseudo_patients": 1857,
+  "largest_group": 15,
+  "roles": {
+    "train": {
+      "images": 2058,
+      "tumor": 942,
+      "malignant": 177,
+      "boxes": 1120
+    },
+    "val": {
+      "images": 293,
+      "tumor": 134,
+      "malignant": 12,
+      "boxes": 147
+    },
+    "test": {
+      "images": 587,
+      "tumor": 269,
+      "malignant": 46,
+      "boxes": 348
+    },
+    "external": {
+      "images": 808,
+      "tumor": 522,
+      "malignant": 107,
+      "boxes": 711
+    }
+  }
+}

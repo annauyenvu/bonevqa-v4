@@ -1,0 +1,7094 @@
+{
+  "name": "J_s44_v4cf_yolojoint_btxrd",
+  "role": "test",
+  "fold": "0",
+  "tag": "joint_fold0_s44/V4-CF_yolojoint_btxrd",
+  "arm": "V4-CF",
+  "joint_training": true,
+  "checkpoint_sha256": "3fbb88ae22c35729b49cd6999a44d217336b1816d263e1790e648f0633e1fd9a",
+  "btxrd_vqa_sha256": "73985dbf5b530b2044f4b69383e5f81d07f19c786f353f3c112350bb9b946453",
+  "btxrd_proposals_sha256": "758637f4ac189f81e0e8075b5c5b9f87c0816d202ae45caf183fc74169950fdb",
+  "metrics": {
+    "tumor": {
+      "n": 587,
+      "prevalence": 0.45826235093696766,
+      "auprc": 0.9215269692434359,
+      "auroc": 0.9335764887423722,
+      "sens@0.5": 0.8475836431226765,
+      "spec@0.5": 0.8805031446540881,
+      "accuracy@0.5": 0.8654173764906303,
+      "m_rate_pos": 0.895910780669145,
+      "m_rate_neg": 0.2389937106918239,
+      "auroc_of_proposal_flag": 0.8284585349886606
+    },
+    "malignancy": {
+      "n": 269,
+      "prevalence": 0.17100371747211895,
+      "auprc": 0.5708686146129099,
+      "auroc": 0.8392474166504191,
+      "sens@0.5": 0.08695652173913043,
+      "spec@0.5": 1.0,
+      "accuracy@0.5": 0.8438661710037175,
+      "m_rate_pos": 0.8913043478260869,
+      "m_rate_neg": 0.8968609865470852,
+      "auroc_of_proposal_flag": 0.49722168063950084
+    },
+    "diagnosis": {
+      "n": 269,
+      "accuracy": 0.5130111524163569,
+      "balanced_accuracy": 0.20641025641025643,
+      "macro_f1": 0.1590982997516573,
+      "recall_by_class": {
+        "giant cell tumor": 0.0,
+        "multiple osteochondromas": 0.0,
+        "osteochondroma": 0.8833333333333333,
+        "osteofibroma": 0.0,
+        "osteosarcoma": 0.7435897435897436,
+        "other benign bone tumor": 0.0,
+        "other malignant bone tumor": 0.0,
+        "simple bone cyst": 0.23076923076923078,
+        "synovial osteochondroma": 0.0
+      },
+      "n_by_class": {
+        "giant cell tumor": 14,
+        "multiple osteochondromas": 41,
+        "osteochondroma": 120,
+        "osteofibroma": 8,
+        "osteosarcoma": 39,
+        "other benign bone tumor": 19,
+        "other malignant bone tumor": 7,
+        "simple bone cyst": 13,
+        "synovial osteochondroma": 8
+      },
+      "answers_outside_label_set": 0
+    }
+  },
+  "seconds": 148.63689303398132,
+  "rows": {
+    "tumor": [
+      {
+        "image_id": "BT_IMG000002",
+        "y": 1,
+        "p_yes": 0.9541341066360474,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000003",
+        "y": 1,
+        "p_yes": 0.9606423377990723,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000008",
+        "y": 1,
+        "p_yes": 0.9643522500991821,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000009",
+        "y": 1,
+        "p_yes": 0.9272398352622986,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000011",
+        "y": 1,
+        "p_yes": 0.2288742959499359,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000012",
+        "y": 1,
+        "p_yes": 0.0523686483502388,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000017",
+        "y": 1,
+        "p_yes": 0.9554681777954102,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000018",
+        "y": 1,
+        "p_yes": 0.8966402411460876,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000019",
+        "y": 1,
+        "p_yes": 0.8948355913162231,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000020",
+        "y": 1,
+        "p_yes": 0.9098978638648987,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000021",
+        "y": 1,
+        "p_yes": 0.9444666504859924,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000024",
+        "y": 1,
+        "p_yes": 0.005556310527026653,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000025",
+        "y": 1,
+        "p_yes": 0.9375835061073303,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000030",
+        "y": 1,
+        "p_yes": 0.9721547961235046,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000031",
+        "y": 1,
+        "p_yes": 0.9542398452758789,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000040",
+        "y": 1,
+        "p_yes": 0.9620255827903748,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000041",
+        "y": 1,
+        "p_yes": 0.9858971238136292,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000044",
+        "y": 1,
+        "p_yes": 0.8572394847869873,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000045",
+        "y": 1,
+        "p_yes": 0.9763837456703186,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000050",
+        "y": 1,
+        "p_yes": 0.974326491355896,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000051",
+        "y": 1,
+        "p_yes": 0.02828366681933403,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000052",
+        "y": 1,
+        "p_yes": 0.9648274183273315,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000063",
+        "y": 1,
+        "p_yes": 0.980452835559845,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000064",
+        "y": 1,
+        "p_yes": 0.9775567650794983,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000072",
+        "y": 1,
+        "p_yes": 0.9522028565406799,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000073",
+        "y": 1,
+        "p_yes": 0.9575930237770081,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000074",
+        "y": 1,
+        "p_yes": 0.9608922004699707,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000075",
+        "y": 1,
+        "p_yes": 0.12025070935487747,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000108",
+        "y": 1,
+        "p_yes": 0.9197298288345337,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000109",
+        "y": 1,
+        "p_yes": 0.9673967957496643,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000110",
+        "y": 1,
+        "p_yes": 0.939975380897522,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000111",
+        "y": 1,
+        "p_yes": 0.9734605550765991,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000137",
+        "y": 1,
+        "p_yes": 0.9639357328414917,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000138",
+        "y": 1,
+        "p_yes": 0.9656593799591064,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000139",
+        "y": 1,
+        "p_yes": 0.9481835961341858,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000140",
+        "y": 1,
+        "p_yes": 0.9607524275779724,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000158",
+        "y": 1,
+        "p_yes": 0.9425795674324036,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000159",
+        "y": 1,
+        "p_yes": 0.9642930030822754,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000177",
+        "y": 1,
+        "p_yes": 0.9932034015655518,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000178",
+        "y": 1,
+        "p_yes": 0.9746649861335754,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000179",
+        "y": 1,
+        "p_yes": 0.9583770036697388,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000187",
+        "y": 1,
+        "p_yes": 0.9536964893341064,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000188",
+        "y": 1,
+        "p_yes": 0.9931458830833435,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000202",
+        "y": 1,
+        "p_yes": 0.9794007539749146,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000228",
+        "y": 1,
+        "p_yes": 0.9963411092758179,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000229",
+        "y": 1,
+        "p_yes": 0.9964882731437683,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000238",
+        "y": 1,
+        "p_yes": 0.9629946351051331,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000239",
+        "y": 1,
+        "p_yes": 0.77308589220047,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000260",
+        "y": 1,
+        "p_yes": 0.9828394055366516,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000271",
+        "y": 1,
+        "p_yes": 0.0405522957444191,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000274",
+        "y": 1,
+        "p_yes": 0.9084488749504089,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000276",
+        "y": 1,
+        "p_yes": 0.9941748976707458,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000277",
+        "y": 1,
+        "p_yes": 0.9440832734107971,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000283",
+        "y": 1,
+        "p_yes": 0.033228445798158646,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000285",
+        "y": 1,
+        "p_yes": 0.9860750436782837,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000287",
+        "y": 1,
+        "p_yes": 0.8118659257888794,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000288",
+        "y": 1,
+        "p_yes": 0.31574100255966187,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000301",
+        "y": 1,
+        "p_yes": 0.978364109992981,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000302",
+        "y": 1,
+        "p_yes": 0.991431713104248,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000303",
+        "y": 1,
+        "p_yes": 0.7631590962409973,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000304",
+        "y": 1,
+        "p_yes": 0.10388946533203125,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000310",
+        "y": 1,
+        "p_yes": 0.9902157783508301,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000311",
+        "y": 1,
+        "p_yes": 0.9798427224159241,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000320",
+        "y": 1,
+        "p_yes": 0.013347510248422623,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000321",
+        "y": 1,
+        "p_yes": 0.9665722846984863,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000327",
+        "y": 1,
+        "p_yes": 0.09892265498638153,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000332",
+        "y": 1,
+        "p_yes": 0.009400335140526295,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000333",
+        "y": 1,
+        "p_yes": 0.026005396619439125,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000343",
+        "y": 1,
+        "p_yes": 0.9970623850822449,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000344",
+        "y": 1,
+        "p_yes": 0.988235354423523,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000345",
+        "y": 1,
+        "p_yes": 0.9654878377914429,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000346",
+        "y": 1,
+        "p_yes": 0.49655598402023315,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000347",
+        "y": 1,
+        "p_yes": 0.9367515444755554,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000349",
+        "y": 1,
+        "p_yes": 0.04320241138339043,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000350",
+        "y": 1,
+        "p_yes": 0.6752979755401611,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000362",
+        "y": 1,
+        "p_yes": 0.9953791499137878,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000363",
+        "y": 1,
+        "p_yes": 0.9313138127326965,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000368",
+        "y": 1,
+        "p_yes": 0.9950549602508545,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000372",
+        "y": 1,
+        "p_yes": 0.019195739179849625,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000379",
+        "y": 1,
+        "p_yes": 0.012103691697120667,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000380",
+        "y": 1,
+        "p_yes": 0.9581626057624817,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000385",
+        "y": 1,
+        "p_yes": 0.9952378869056702,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000412",
+        "y": 1,
+        "p_yes": 0.9760788083076477,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000413",
+        "y": 1,
+        "p_yes": 0.9494548439979553,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000416",
+        "y": 1,
+        "p_yes": 0.015296941623091698,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000424",
+        "y": 1,
+        "p_yes": 0.9964690208435059,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000425",
+        "y": 1,
+        "p_yes": 0.9696111083030701,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000426",
+        "y": 1,
+        "p_yes": 0.6226888298988342,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000427",
+        "y": 1,
+        "p_yes": 0.9548950791358948,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000428",
+        "y": 1,
+        "p_yes": 0.8344188332557678,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000440",
+        "y": 1,
+        "p_yes": 0.9929627776145935,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000441",
+        "y": 1,
+        "p_yes": 0.7032681703567505,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000443",
+        "y": 1,
+        "p_yes": 0.014474846422672272,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000444",
+        "y": 1,
+        "p_yes": 0.72845059633255,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000453",
+        "y": 1,
+        "p_yes": 0.7753667235374451,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000454",
+        "y": 1,
+        "p_yes": 0.6830364465713501,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000459",
+        "y": 1,
+        "p_yes": 0.9507703185081482,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000460",
+        "y": 1,
+        "p_yes": 0.9419213533401489,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000463",
+        "y": 1,
+        "p_yes": 0.983694314956665,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000464",
+        "y": 1,
+        "p_yes": 0.9574459791183472,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000465",
+        "y": 1,
+        "p_yes": 0.9698060750961304,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000466",
+        "y": 1,
+        "p_yes": 0.9460174441337585,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000467",
+        "y": 1,
+        "p_yes": 0.6640285849571228,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000468",
+        "y": 1,
+        "p_yes": 0.8639956116676331,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000469",
+        "y": 1,
+        "p_yes": 0.233980193734169,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000470",
+        "y": 1,
+        "p_yes": 0.5671127438545227,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000471",
+        "y": 1,
+        "p_yes": 0.7188814878463745,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000488",
+        "y": 1,
+        "p_yes": 0.8915621042251587,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000489",
+        "y": 1,
+        "p_yes": 0.7154732346534729,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000490",
+        "y": 1,
+        "p_yes": 0.15271547436714172,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000492",
+        "y": 1,
+        "p_yes": 0.024374106898903847,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000493",
+        "y": 1,
+        "p_yes": 0.18823330104351044,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000502",
+        "y": 1,
+        "p_yes": 0.07462359964847565,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000515",
+        "y": 1,
+        "p_yes": 0.974550187587738,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000542",
+        "y": 1,
+        "p_yes": 0.9823572635650635,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000561",
+        "y": 1,
+        "p_yes": 0.996582567691803,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000562",
+        "y": 1,
+        "p_yes": 0.956287145614624,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000576",
+        "y": 1,
+        "p_yes": 0.06745481491088867,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000601",
+        "y": 1,
+        "p_yes": 0.9830154776573181,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000602",
+        "y": 1,
+        "p_yes": 0.9764531254768372,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000604",
+        "y": 1,
+        "p_yes": 0.7027895450592041,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000628",
+        "y": 1,
+        "p_yes": 0.005374510306864977,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000629",
+        "y": 1,
+        "p_yes": 0.00508255185559392,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000630",
+        "y": 1,
+        "p_yes": 0.012450527399778366,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000637",
+        "y": 1,
+        "p_yes": 0.04259466752409935,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000642",
+        "y": 1,
+        "p_yes": 0.817790687084198,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000659",
+        "y": 1,
+        "p_yes": 0.9852559566497803,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000660",
+        "y": 1,
+        "p_yes": 0.9711511731147766,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000661",
+        "y": 1,
+        "p_yes": 0.9749204516410828,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000662",
+        "y": 1,
+        "p_yes": 0.9839402437210083,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000663",
+        "y": 1,
+        "p_yes": 0.9545528292655945,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000664",
+        "y": 1,
+        "p_yes": 0.9591657519340515,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000665",
+        "y": 1,
+        "p_yes": 0.07283840328454971,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000666",
+        "y": 1,
+        "p_yes": 0.9691033363342285,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000667",
+        "y": 1,
+        "p_yes": 0.9730244278907776,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000668",
+        "y": 1,
+        "p_yes": 0.9609856009483337,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000669",
+        "y": 1,
+        "p_yes": 0.9906315803527832,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000670",
+        "y": 1,
+        "p_yes": 0.9709146618843079,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000672",
+        "y": 1,
+        "p_yes": 0.4028392434120178,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000677",
+        "y": 1,
+        "p_yes": 0.9555138349533081,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000678",
+        "y": 1,
+        "p_yes": 0.9503496289253235,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000681",
+        "y": 1,
+        "p_yes": 0.9924919009208679,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000684",
+        "y": 1,
+        "p_yes": 0.9878344535827637,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000685",
+        "y": 1,
+        "p_yes": 0.9676756262779236,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000702",
+        "y": 1,
+        "p_yes": 0.8087127208709717,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000707",
+        "y": 1,
+        "p_yes": 0.05381244793534279,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000725",
+        "y": 1,
+        "p_yes": 0.9930500984191895,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000726",
+        "y": 1,
+        "p_yes": 0.980979859828949,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000731",
+        "y": 1,
+        "p_yes": 0.3092271089553833,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000736",
+        "y": 1,
+        "p_yes": 0.7445369362831116,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000737",
+        "y": 1,
+        "p_yes": 0.9912110567092896,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000738",
+        "y": 1,
+        "p_yes": 0.8631470799446106,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000741",
+        "y": 1,
+        "p_yes": 0.5417268872261047,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000783",
+        "y": 1,
+        "p_yes": 0.9889400005340576,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000784",
+        "y": 1,
+        "p_yes": 0.9835017919540405,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000798",
+        "y": 1,
+        "p_yes": 0.9802824258804321,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000799",
+        "y": 1,
+        "p_yes": 0.985877513885498,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000802",
+        "y": 1,
+        "p_yes": 0.9728754758834839,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000803",
+        "y": 1,
+        "p_yes": 0.9841387867927551,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000829",
+        "y": 1,
+        "p_yes": 0.9796238541603088,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000830",
+        "y": 1,
+        "p_yes": 0.9770165085792542,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000839",
+        "y": 1,
+        "p_yes": 0.947813093662262,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000840",
+        "y": 1,
+        "p_yes": 0.9426239132881165,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000846",
+        "y": 1,
+        "p_yes": 0.9832831621170044,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000847",
+        "y": 1,
+        "p_yes": 0.9805091619491577,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000856",
+        "y": 1,
+        "p_yes": 0.9950322508811951,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000857",
+        "y": 1,
+        "p_yes": 0.9777073860168457,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000861",
+        "y": 1,
+        "p_yes": 0.5194261074066162,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000881",
+        "y": 1,
+        "p_yes": 0.9742599129676819,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000901",
+        "y": 1,
+        "p_yes": 0.963286280632019,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000909",
+        "y": 1,
+        "p_yes": 0.9614444971084595,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000913",
+        "y": 1,
+        "p_yes": 0.99189293384552,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000914",
+        "y": 1,
+        "p_yes": 0.9831684231758118,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000915",
+        "y": 1,
+        "p_yes": 0.9714619517326355,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000916",
+        "y": 1,
+        "p_yes": 0.9695926904678345,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000929",
+        "y": 1,
+        "p_yes": 0.9734086990356445,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000931",
+        "y": 1,
+        "p_yes": 0.9949223399162292,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000952",
+        "y": 1,
+        "p_yes": 0.9822890758514404,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000954",
+        "y": 1,
+        "p_yes": 0.9945530295372009,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000955",
+        "y": 1,
+        "p_yes": 0.9829002022743225,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000971",
+        "y": 1,
+        "p_yes": 0.9923152327537537,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000972",
+        "y": 1,
+        "p_yes": 0.9572622179985046,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000997",
+        "y": 1,
+        "p_yes": 0.9912632703781128,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000998",
+        "y": 1,
+        "p_yes": 0.9954532980918884,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000999",
+        "y": 1,
+        "p_yes": 0.9577237367630005,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001000",
+        "y": 1,
+        "p_yes": 0.9462404251098633,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001001",
+        "y": 1,
+        "p_yes": 0.9588578939437866,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001024",
+        "y": 1,
+        "p_yes": 0.9634822010993958,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001037",
+        "y": 1,
+        "p_yes": 0.9819275736808777,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001038",
+        "y": 1,
+        "p_yes": 0.9710884690284729,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001042",
+        "y": 1,
+        "p_yes": 0.9937083721160889,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001043",
+        "y": 1,
+        "p_yes": 0.04611999914050102,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001044",
+        "y": 1,
+        "p_yes": 0.9924811720848083,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001045",
+        "y": 1,
+        "p_yes": 0.982759416103363,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001052",
+        "y": 1,
+        "p_yes": 0.009804298169910908,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001053",
+        "y": 1,
+        "p_yes": 0.9641098976135254,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001059",
+        "y": 1,
+        "p_yes": 0.9961768388748169,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001067",
+        "y": 1,
+        "p_yes": 0.9935811161994934,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001068",
+        "y": 1,
+        "p_yes": 0.8948035836219788,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001069",
+        "y": 1,
+        "p_yes": 0.017999758943915367,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001072",
+        "y": 1,
+        "p_yes": 0.9943535327911377,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001073",
+        "y": 1,
+        "p_yes": 0.9648768305778503,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001092",
+        "y": 1,
+        "p_yes": 0.991584300994873,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001093",
+        "y": 1,
+        "p_yes": 0.9786003232002258,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001094",
+        "y": 1,
+        "p_yes": 0.9914129376411438,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001095",
+        "y": 1,
+        "p_yes": 0.9806791543960571,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001096",
+        "y": 1,
+        "p_yes": 0.9661186337471008,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001097",
+        "y": 1,
+        "p_yes": 0.9938471913337708,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001116",
+        "y": 1,
+        "p_yes": 0.9772359132766724,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001126",
+        "y": 1,
+        "p_yes": 0.9504048228263855,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001127",
+        "y": 1,
+        "p_yes": 0.9231457114219666,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001133",
+        "y": 1,
+        "p_yes": 0.9905877709388733,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001134",
+        "y": 1,
+        "p_yes": 0.957749605178833,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001135",
+        "y": 1,
+        "p_yes": 0.9697839021682739,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001144",
+        "y": 1,
+        "p_yes": 0.9935444593429565,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001159",
+        "y": 1,
+        "p_yes": 0.9718424081802368,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001178",
+        "y": 1,
+        "p_yes": 0.9460693001747131,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001179",
+        "y": 1,
+        "p_yes": 0.7998678684234619,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001180",
+        "y": 1,
+        "p_yes": 0.8783094882965088,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001181",
+        "y": 1,
+        "p_yes": 0.9675928354263306,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001182",
+        "y": 1,
+        "p_yes": 0.9898198843002319,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001183",
+        "y": 1,
+        "p_yes": 0.973004162311554,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001192",
+        "y": 1,
+        "p_yes": 0.96533203125,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001193",
+        "y": 1,
+        "p_yes": 0.9658218622207642,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001194",
+        "y": 1,
+        "p_yes": 0.9221421480178833,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001195",
+        "y": 1,
+        "p_yes": 0.9598009586334229,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001203",
+        "y": 1,
+        "p_yes": 0.0457492396235466,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001206",
+        "y": 1,
+        "p_yes": 0.9973545670509338,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001214",
+        "y": 1,
+        "p_yes": 0.9641554951667786,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001217",
+        "y": 1,
+        "p_yes": 0.9950774312019348,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001218",
+        "y": 1,
+        "p_yes": 0.9845035672187805,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001219",
+        "y": 1,
+        "p_yes": 0.973543107509613,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001228",
+        "y": 1,
+        "p_yes": 0.9954447150230408,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001229",
+        "y": 1,
+        "p_yes": 0.9792683124542236,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001230",
+        "y": 1,
+        "p_yes": 0.9806343913078308,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001232",
+        "y": 1,
+        "p_yes": 0.7398834824562073,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001243",
+        "y": 1,
+        "p_yes": 0.9519039392471313,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001244",
+        "y": 1,
+        "p_yes": 0.9585665464401245,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001245",
+        "y": 1,
+        "p_yes": 0.969558835029602,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001246",
+        "y": 1,
+        "p_yes": 0.9708046317100525,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001248",
+        "y": 1,
+        "p_yes": 0.220607727766037,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001252",
+        "y": 1,
+        "p_yes": 0.06630450487136841,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001254",
+        "y": 1,
+        "p_yes": 0.8845717906951904,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001257",
+        "y": 1,
+        "p_yes": 0.993111252784729,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001280",
+        "y": 1,
+        "p_yes": 0.9504952430725098,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001281",
+        "y": 1,
+        "p_yes": 0.9526774287223816,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001284",
+        "y": 1,
+        "p_yes": 0.008303849026560783,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001285",
+        "y": 1,
+        "p_yes": 0.9617595076560974,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001286",
+        "y": 1,
+        "p_yes": 0.9803377389907837,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001287",
+        "y": 1,
+        "p_yes": 0.9624418020248413,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001288",
+        "y": 1,
+        "p_yes": 0.9120829105377197,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001291",
+        "y": 1,
+        "p_yes": 0.020283609628677368,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001292",
+        "y": 1,
+        "p_yes": 0.8059269785881042,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001301",
+        "y": 1,
+        "p_yes": 0.9898796677589417,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001302",
+        "y": 1,
+        "p_yes": 0.9900897145271301,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001303",
+        "y": 1,
+        "p_yes": 0.9768385291099548,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001304",
+        "y": 1,
+        "p_yes": 0.991643488407135,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001305",
+        "y": 1,
+        "p_yes": 0.9859713912010193,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001306",
+        "y": 1,
+        "p_yes": 0.970026969909668,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001307",
+        "y": 1,
+        "p_yes": 0.9869421124458313,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001322",
+        "y": 1,
+        "p_yes": 0.9853402376174927,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001327",
+        "y": 1,
+        "p_yes": 0.9604668617248535,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001328",
+        "y": 1,
+        "p_yes": 0.9740913510322571,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001330",
+        "y": 1,
+        "p_yes": 0.985843300819397,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001331",
+        "y": 1,
+        "p_yes": 0.9945178627967834,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001332",
+        "y": 1,
+        "p_yes": 0.9947636723518372,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001335",
+        "y": 1,
+        "p_yes": 0.995999813079834,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001344",
+        "y": 1,
+        "p_yes": 0.994670569896698,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001345",
+        "y": 1,
+        "p_yes": 0.9912765622138977,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001896",
+        "y": 0,
+        "p_yes": 0.03054502047598362,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001897",
+        "y": 0,
+        "p_yes": 0.012952780351042747,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001898",
+        "y": 0,
+        "p_yes": 0.8994831442832947,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001899",
+        "y": 0,
+        "p_yes": 0.0727572813630104,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001933",
+        "y": 0,
+        "p_yes": 0.004564529750496149,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001934",
+        "y": 0,
+        "p_yes": 0.22722512483596802,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001937",
+        "y": 0,
+        "p_yes": 0.008805056102573872,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001938",
+        "y": 0,
+        "p_yes": 0.042866356670856476,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001939",
+        "y": 0,
+        "p_yes": 0.011777831241488457,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001940",
+        "y": 0,
+        "p_yes": 0.017565712332725525,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001941",
+        "y": 0,
+        "p_yes": 0.007476557046175003,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001942",
+        "y": 0,
+        "p_yes": 0.006856786552816629,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001988",
+        "y": 0,
+        "p_yes": 0.007464994676411152,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001989",
+        "y": 0,
+        "p_yes": 0.0172242671251297,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001996",
+        "y": 0,
+        "p_yes": 0.008386419154703617,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001997",
+        "y": 0,
+        "p_yes": 0.8323121070861816,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001998",
+        "y": 0,
+        "p_yes": 0.7340521216392517,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001999",
+        "y": 0,
+        "p_yes": 0.008816445246338844,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002000",
+        "y": 0,
+        "p_yes": 0.04925422742962837,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002007",
+        "y": 0,
+        "p_yes": 0.004691191017627716,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002031",
+        "y": 0,
+        "p_yes": 0.005667803343385458,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002032",
+        "y": 0,
+        "p_yes": 0.013355844654142857,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002033",
+        "y": 0,
+        "p_yes": 0.004082418512552977,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002034",
+        "y": 0,
+        "p_yes": 0.0047141206450760365,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002035",
+        "y": 0,
+        "p_yes": 0.013311299495398998,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002125",
+        "y": 0,
+        "p_yes": 0.003260781755670905,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002130",
+        "y": 0,
+        "p_yes": 0.0024591239634901285,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002131",
+        "y": 0,
+        "p_yes": 0.9668538570404053,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002134",
+        "y": 0,
+        "p_yes": 0.004800159949809313,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002135",
+        "y": 0,
+        "p_yes": 0.004138548392802477,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002136",
+        "y": 0,
+        "p_yes": 0.007480693981051445,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002137",
+        "y": 0,
+        "p_yes": 0.008855261839926243,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002138",
+        "y": 0,
+        "p_yes": 0.030582601204514503,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002145",
+        "y": 0,
+        "p_yes": 0.0036611699033528566,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002152",
+        "y": 0,
+        "p_yes": 0.027064405381679535,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002153",
+        "y": 0,
+        "p_yes": 0.40505945682525635,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002154",
+        "y": 0,
+        "p_yes": 0.9864807724952698,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002173",
+        "y": 0,
+        "p_yes": 0.03438933566212654,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002189",
+        "y": 0,
+        "p_yes": 0.010302706621587276,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002190",
+        "y": 0,
+        "p_yes": 0.25882673263549805,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002191",
+        "y": 0,
+        "p_yes": 0.027451207861304283,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002202",
+        "y": 0,
+        "p_yes": 0.03177831321954727,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002203",
+        "y": 0,
+        "p_yes": 0.014884420670568943,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002204",
+        "y": 0,
+        "p_yes": 0.0065789236687123775,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002205",
+        "y": 0,
+        "p_yes": 0.669032871723175,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002206",
+        "y": 0,
+        "p_yes": 0.08696367591619492,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002207",
+        "y": 0,
+        "p_yes": 0.006632800213992596,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002208",
+        "y": 0,
+        "p_yes": 0.012232871726155281,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002209",
+        "y": 0,
+        "p_yes": 0.0029055550694465637,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002210",
+        "y": 0,
+        "p_yes": 0.01684262417256832,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002211",
+        "y": 0,
+        "p_yes": 0.007196720689535141,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002212",
+        "y": 0,
+        "p_yes": 0.03870784118771553,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002213",
+        "y": 0,
+        "p_yes": 0.005068496335297823,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002216",
+        "y": 0,
+        "p_yes": 0.0050722104497253895,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002217",
+        "y": 0,
+        "p_yes": 0.003971397876739502,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002218",
+        "y": 0,
+        "p_yes": 0.0064027984626591206,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002247",
+        "y": 0,
+        "p_yes": 0.010468107648193836,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002248",
+        "y": 0,
+        "p_yes": 0.019123200327157974,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002256",
+        "y": 0,
+        "p_yes": 0.08716653287410736,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002257",
+        "y": 0,
+        "p_yes": 0.06144683435559273,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002258",
+        "y": 0,
+        "p_yes": 0.3830065131187439,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002259",
+        "y": 0,
+        "p_yes": 0.050366178154945374,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002271",
+        "y": 0,
+        "p_yes": 0.0029213919769972563,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002272",
+        "y": 0,
+        "p_yes": 0.018212709575891495,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002273",
+        "y": 0,
+        "p_yes": 0.00420768465846777,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002274",
+        "y": 0,
+        "p_yes": 0.02242399752140045,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002275",
+        "y": 0,
+        "p_yes": 0.03886017948389053,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002276",
+        "y": 0,
+        "p_yes": 0.013813761994242668,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002277",
+        "y": 0,
+        "p_yes": 0.2520045042037964,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002278",
+        "y": 0,
+        "p_yes": 0.8964632153511047,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002279",
+        "y": 0,
+        "p_yes": 0.002785760909318924,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002280",
+        "y": 0,
+        "p_yes": 0.014408632181584835,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002281",
+        "y": 0,
+        "p_yes": 0.6781997084617615,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002282",
+        "y": 0,
+        "p_yes": 0.9578357338905334,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002283",
+        "y": 0,
+        "p_yes": 0.5723628997802734,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002284",
+        "y": 0,
+        "p_yes": 0.072868213057518,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002285",
+        "y": 0,
+        "p_yes": 0.003773211967200041,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002293",
+        "y": 0,
+        "p_yes": 0.0025537859182804823,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002300",
+        "y": 0,
+        "p_yes": 0.01747581735253334,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002301",
+        "y": 0,
+        "p_yes": 0.002991936868056655,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002312",
+        "y": 0,
+        "p_yes": 0.0028213029727339745,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002317",
+        "y": 0,
+        "p_yes": 0.003623983357101679,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002328",
+        "y": 0,
+        "p_yes": 0.007137252017855644,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002329",
+        "y": 0,
+        "p_yes": 0.005666427779942751,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002330",
+        "y": 0,
+        "p_yes": 0.07672076672315598,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002331",
+        "y": 0,
+        "p_yes": 0.007181102875620127,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002332",
+        "y": 0,
+        "p_yes": 0.007107079960405827,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002333",
+        "y": 0,
+        "p_yes": 0.007895479910075665,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002354",
+        "y": 0,
+        "p_yes": 0.5895823836326599,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002361",
+        "y": 0,
+        "p_yes": 0.006050781812518835,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002362",
+        "y": 0,
+        "p_yes": 0.09366567432880402,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002363",
+        "y": 0,
+        "p_yes": 0.03288789093494415,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002364",
+        "y": 0,
+        "p_yes": 0.007454805541783571,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002365",
+        "y": 0,
+        "p_yes": 0.4752882719039917,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002366",
+        "y": 0,
+        "p_yes": 0.03259163349866867,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002374",
+        "y": 0,
+        "p_yes": 0.010838971473276615,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002375",
+        "y": 0,
+        "p_yes": 0.0066474131308496,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002376",
+        "y": 0,
+        "p_yes": 0.0055894129909574986,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002377",
+        "y": 0,
+        "p_yes": 0.007920507341623306,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002391",
+        "y": 0,
+        "p_yes": 0.24566340446472168,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002392",
+        "y": 0,
+        "p_yes": 0.005167657509446144,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002393",
+        "y": 0,
+        "p_yes": 0.06714308261871338,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002394",
+        "y": 0,
+        "p_yes": 0.010771344415843487,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002395",
+        "y": 0,
+        "p_yes": 0.00822434388101101,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002396",
+        "y": 0,
+        "p_yes": 0.8887443542480469,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002397",
+        "y": 0,
+        "p_yes": 0.011168363504111767,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002398",
+        "y": 0,
+        "p_yes": 0.008762410841882229,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002399",
+        "y": 0,
+        "p_yes": 0.012258019298315048,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002400",
+        "y": 0,
+        "p_yes": 0.01181319821625948,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002419",
+        "y": 0,
+        "p_yes": 0.0056313942186534405,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002445",
+        "y": 0,
+        "p_yes": 0.003289035987108946,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002446",
+        "y": 0,
+        "p_yes": 0.008159836754202843,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002450",
+        "y": 0,
+        "p_yes": 0.01059806253761053,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002452",
+        "y": 0,
+        "p_yes": 0.012656181119382381,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002454",
+        "y": 0,
+        "p_yes": 0.023796705529093742,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002455",
+        "y": 0,
+        "p_yes": 0.02301669307053089,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002456",
+        "y": 0,
+        "p_yes": 0.012397999875247478,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002457",
+        "y": 0,
+        "p_yes": 0.009558825753629208,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002497",
+        "y": 0,
+        "p_yes": 0.05530432239174843,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002507",
+        "y": 0,
+        "p_yes": 0.007732508238404989,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002508",
+        "y": 0,
+        "p_yes": 0.009490341879427433,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002527",
+        "y": 0,
+        "p_yes": 0.005265416111797094,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002528",
+        "y": 0,
+        "p_yes": 0.6954385638237,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002529",
+        "y": 0,
+        "p_yes": 0.005334124900400639,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002530",
+        "y": 0,
+        "p_yes": 0.014413388445973396,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002531",
+        "y": 0,
+        "p_yes": 0.0034232616890221834,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002532",
+        "y": 0,
+        "p_yes": 0.003436204046010971,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002539",
+        "y": 0,
+        "p_yes": 0.0065836249850690365,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002540",
+        "y": 0,
+        "p_yes": 0.014943097718060017,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002541",
+        "y": 0,
+        "p_yes": 0.014251536689698696,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002554",
+        "y": 0,
+        "p_yes": 0.0041395979933440685,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002555",
+        "y": 0,
+        "p_yes": 0.0061189839616417885,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002558",
+        "y": 0,
+        "p_yes": 0.00650586886331439,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002559",
+        "y": 0,
+        "p_yes": 0.007522843312472105,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002560",
+        "y": 0,
+        "p_yes": 0.010384594090282917,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002561",
+        "y": 0,
+        "p_yes": 0.004462144337594509,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002583",
+        "y": 0,
+        "p_yes": 0.027102487161755562,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002585",
+        "y": 0,
+        "p_yes": 0.0162757970392704,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002641",
+        "y": 0,
+        "p_yes": 0.03011557087302208,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002642",
+        "y": 0,
+        "p_yes": 0.0136405685916543,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002643",
+        "y": 0,
+        "p_yes": 0.012910964898765087,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002644",
+        "y": 0,
+        "p_yes": 0.009318188764154911,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002645",
+        "y": 0,
+        "p_yes": 0.01178085058927536,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002646",
+        "y": 0,
+        "p_yes": 0.015377343632280827,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002647",
+        "y": 0,
+        "p_yes": 0.010852763429284096,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002648",
+        "y": 0,
+        "p_yes": 0.007597009651362896,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002650",
+        "y": 0,
+        "p_yes": 0.0055557359009981155,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002651",
+        "y": 0,
+        "p_yes": 0.022824309766292572,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002652",
+        "y": 0,
+        "p_yes": 0.9444010257720947,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002653",
+        "y": 0,
+        "p_yes": 0.010762308724224567,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002654",
+        "y": 0,
+        "p_yes": 0.016163645312190056,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002655",
+        "y": 0,
+        "p_yes": 0.0025832040701061487,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002656",
+        "y": 0,
+        "p_yes": 0.0032654344104230404,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002657",
+        "y": 0,
+        "p_yes": 0.025283820927143097,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002659",
+        "y": 0,
+        "p_yes": 0.0053291283547878265,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002670",
+        "y": 0,
+        "p_yes": 0.015145073644816875,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002671",
+        "y": 0,
+        "p_yes": 0.0048210639506578445,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002673",
+        "y": 0,
+        "p_yes": 0.007969176396727562,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002674",
+        "y": 0,
+        "p_yes": 0.008559377864003181,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002675",
+        "y": 0,
+        "p_yes": 0.006120822858065367,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002676",
+        "y": 0,
+        "p_yes": 0.006725556217133999,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002677",
+        "y": 0,
+        "p_yes": 0.023045463487505913,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002678",
+        "y": 0,
+        "p_yes": 0.006810072343796492,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002714",
+        "y": 0,
+        "p_yes": 0.004752492532134056,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002724",
+        "y": 0,
+        "p_yes": 0.018878472968935966,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002725",
+        "y": 0,
+        "p_yes": 0.010401135310530663,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002726",
+        "y": 0,
+        "p_yes": 0.46040409803390503,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002727",
+        "y": 0,
+        "p_yes": 0.005529689136892557,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002732",
+        "y": 0,
+        "p_yes": 0.014266932383179665,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002733",
+        "y": 0,
+        "p_yes": 0.8283188939094543,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002734",
+        "y": 0,
+        "p_yes": 0.011332683265209198,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002735",
+        "y": 0,
+        "p_yes": 0.0055468883365392685,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002744",
+        "y": 0,
+        "p_yes": 0.04912630096077919,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002747",
+        "y": 0,
+        "p_yes": 0.004025811329483986,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002749",
+        "y": 0,
+        "p_yes": 0.00263313390314579,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002752",
+        "y": 0,
+        "p_yes": 0.0046901581808924675,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002753",
+        "y": 0,
+        "p_yes": 0.003292276756837964,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002757",
+        "y": 0,
+        "p_yes": 0.005683297757059336,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002758",
+        "y": 0,
+        "p_yes": 0.008166863583028316,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002765",
+        "y": 0,
+        "p_yes": 0.007309442386031151,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002774",
+        "y": 0,
+        "p_yes": 0.8933226466178894,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002789",
+        "y": 0,
+        "p_yes": 0.02871187962591648,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002807",
+        "y": 0,
+        "p_yes": 0.0078197056427598,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002816",
+        "y": 0,
+        "p_yes": 0.023863540962338448,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002821",
+        "y": 0,
+        "p_yes": 0.006917471066117287,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002839",
+        "y": 0,
+        "p_yes": 0.5352081656455994,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002867",
+        "y": 0,
+        "p_yes": 0.254781037569046,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002868",
+        "y": 0,
+        "p_yes": 0.0053830076940357685,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002869",
+        "y": 0,
+        "p_yes": 0.04265442490577698,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002870",
+        "y": 0,
+        "p_yes": 0.004759327042847872,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002872",
+        "y": 0,
+        "p_yes": 0.009144110605120659,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002873",
+        "y": 0,
+        "p_yes": 0.9876153469085693,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002874",
+        "y": 0,
+        "p_yes": 0.003878764808177948,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002877",
+        "y": 0,
+        "p_yes": 0.133585587143898,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002894",
+        "y": 0,
+        "p_yes": 0.0032320681493729353,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002895",
+        "y": 0,
+        "p_yes": 0.23240742087364197,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002896",
+        "y": 0,
+        "p_yes": 0.0032637505792081356,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002897",
+        "y": 0,
+        "p_yes": 0.8624427318572998,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002902",
+        "y": 0,
+        "p_yes": 0.002267742995172739,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002903",
+        "y": 0,
+        "p_yes": 0.004474977031350136,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002904",
+        "y": 0,
+        "p_yes": 0.0035527742002159357,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002905",
+        "y": 0,
+        "p_yes": 0.004803660325706005,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002906",
+        "y": 0,
+        "p_yes": 0.003253261325880885,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002913",
+        "y": 0,
+        "p_yes": 0.006020296365022659,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002914",
+        "y": 0,
+        "p_yes": 0.002641685539856553,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002915",
+        "y": 0,
+        "p_yes": 0.005755849182605743,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002916",
+        "y": 0,
+        "p_yes": 0.0028781797736883163,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002917",
+        "y": 0,
+        "p_yes": 0.0038528263103216887,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002918",
+        "y": 0,
+        "p_yes": 0.9669011235237122,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002919",
+        "y": 0,
+        "p_yes": 0.018659912049770355,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002920",
+        "y": 0,
+        "p_yes": 0.003978124354034662,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002921",
+        "y": 0,
+        "p_yes": 0.02427530661225319,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002922",
+        "y": 0,
+        "p_yes": 0.007611194625496864,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002923",
+        "y": 0,
+        "p_yes": 0.9765685796737671,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002924",
+        "y": 0,
+        "p_yes": 0.00723400991410017,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002925",
+        "y": 0,
+        "p_yes": 0.005139840301126242,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002929",
+        "y": 0,
+        "p_yes": 0.8305931687355042,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002930",
+        "y": 0,
+        "p_yes": 0.005184009671211243,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002940",
+        "y": 0,
+        "p_yes": 0.02516496554017067,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002941",
+        "y": 0,
+        "p_yes": 0.005165437236428261,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002942",
+        "y": 0,
+        "p_yes": 0.01629951037466526,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002943",
+        "y": 0,
+        "p_yes": 0.0055395811796188354,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002944",
+        "y": 0,
+        "p_yes": 0.006756307557225227,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002945",
+        "y": 0,
+        "p_yes": 0.0059846569783985615,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002946",
+        "y": 0,
+        "p_yes": 0.9821141362190247,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG002953",
+        "y": 0,
+        "p_yes": 0.003092727856710553,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002954",
+        "y": 0,
+        "p_yes": 0.004579569213092327,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002955",
+        "y": 0,
+        "p_yes": 0.004117915872484446,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002957",
+        "y": 0,
+        "p_yes": 0.004628920927643776,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002958",
+        "y": 0,
+        "p_yes": 0.02868971973657608,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002967",
+        "y": 0,
+        "p_yes": 0.00695032486692071,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG002968",
+        "y": 0,
+        "p_yes": 0.020248327404260635,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003022",
+        "y": 0,
+        "p_yes": 0.010816755704581738,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003023",
+        "y": 0,
+        "p_yes": 0.004873611032962799,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003024",
+        "y": 0,
+        "p_yes": 0.0070836725644767284,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003028",
+        "y": 0,
+        "p_yes": 0.007483296561986208,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003031",
+        "y": 0,
+        "p_yes": 0.009816336445510387,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003032",
+        "y": 0,
+        "p_yes": 0.004787113983184099,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003033",
+        "y": 0,
+        "p_yes": 0.005652117542922497,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003034",
+        "y": 0,
+        "p_yes": 0.0055263894610106945,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003035",
+        "y": 0,
+        "p_yes": 0.021291634067893028,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003036",
+        "y": 0,
+        "p_yes": 0.0169833991676569,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003042",
+        "y": 0,
+        "p_yes": 0.005900128744542599,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003052",
+        "y": 0,
+        "p_yes": 0.0056548654101789,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003053",
+        "y": 0,
+        "p_yes": 0.014387636445462704,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003054",
+        "y": 0,
+        "p_yes": 0.7122851014137268,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003055",
+        "y": 0,
+        "p_yes": 0.0032953135669231415,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003058",
+        "y": 0,
+        "p_yes": 0.0075085340067744255,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003059",
+        "y": 0,
+        "p_yes": 0.011082439683377743,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003064",
+        "y": 0,
+        "p_yes": 0.003907239064574242,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003077",
+        "y": 0,
+        "p_yes": 0.004417952615767717,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003080",
+        "y": 0,
+        "p_yes": 0.005767400376498699,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003086",
+        "y": 0,
+        "p_yes": 0.9316020011901855,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003087",
+        "y": 0,
+        "p_yes": 0.938275158405304,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003088",
+        "y": 0,
+        "p_yes": 0.6596112847328186,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003089",
+        "y": 0,
+        "p_yes": 0.010387451387941837,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003090",
+        "y": 0,
+        "p_yes": 0.9571309089660645,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003091",
+        "y": 0,
+        "p_yes": 0.011267135851085186,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003102",
+        "y": 0,
+        "p_yes": 0.9849252104759216,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003103",
+        "y": 0,
+        "p_yes": 0.007282559294253588,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003113",
+        "y": 0,
+        "p_yes": 0.9247599244117737,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003114",
+        "y": 0,
+        "p_yes": 0.012484672479331493,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003123",
+        "y": 0,
+        "p_yes": 0.002492487197741866,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003124",
+        "y": 0,
+        "p_yes": 0.021395588293671608,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003125",
+        "y": 0,
+        "p_yes": 0.008318886160850525,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003126",
+        "y": 0,
+        "p_yes": 0.0030161035247147083,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003139",
+        "y": 0,
+        "p_yes": 0.01196190994232893,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003151",
+        "y": 0,
+        "p_yes": 0.3453173339366913,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003152",
+        "y": 0,
+        "p_yes": 0.0028023882769048214,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003153",
+        "y": 0,
+        "p_yes": 0.9635193943977356,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003154",
+        "y": 0,
+        "p_yes": 0.07166599482297897,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003172",
+        "y": 0,
+        "p_yes": 0.019352657720446587,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003202",
+        "y": 0,
+        "p_yes": 0.30077481269836426,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003203",
+        "y": 0,
+        "p_yes": 0.8800566792488098,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003204",
+        "y": 0,
+        "p_yes": 0.024242417886853218,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003205",
+        "y": 0,
+        "p_yes": 0.01604636386036873,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003206",
+        "y": 0,
+        "p_yes": 0.02501724474132061,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003207",
+        "y": 0,
+        "p_yes": 0.006206018850207329,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003208",
+        "y": 0,
+        "p_yes": 0.007036563009023666,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003264",
+        "y": 0,
+        "p_yes": 0.0941937044262886,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003265",
+        "y": 0,
+        "p_yes": 0.016101129353046417,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003287",
+        "y": 0,
+        "p_yes": 0.021560009568929672,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003288",
+        "y": 0,
+        "p_yes": 0.01641378365457058,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003298",
+        "y": 0,
+        "p_yes": 0.0046403720043599606,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003299",
+        "y": 0,
+        "p_yes": 0.010428490117192268,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003314",
+        "y": 0,
+        "p_yes": 0.2489933967590332,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003315",
+        "y": 0,
+        "p_yes": 0.007900598458945751,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003316",
+        "y": 0,
+        "p_yes": 0.8953245282173157,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003319",
+        "y": 0,
+        "p_yes": 0.07003908604383469,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003324",
+        "y": 0,
+        "p_yes": 0.0192963145673275,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003325",
+        "y": 0,
+        "p_yes": 0.016955217346549034,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003335",
+        "y": 0,
+        "p_yes": 0.650844156742096,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003342",
+        "y": 0,
+        "p_yes": 0.5873020887374878,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003344",
+        "y": 0,
+        "p_yes": 0.05622885748744011,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003349",
+        "y": 0,
+        "p_yes": 0.01283124927431345,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003350",
+        "y": 0,
+        "p_yes": 0.1695430725812912,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003357",
+        "y": 0,
+        "p_yes": 0.004315388388931751,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003363",
+        "y": 0,
+        "p_yes": 0.006287634838372469,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003364",
+        "y": 0,
+        "p_yes": 0.01584968902170658,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003365",
+        "y": 0,
+        "p_yes": 0.012685333378612995,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003369",
+        "y": 0,
+        "p_yes": 0.6124069094657898,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003370",
+        "y": 0,
+        "p_yes": 0.820298969745636,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003372",
+        "y": 0,
+        "p_yes": 0.004158223979175091,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003373",
+        "y": 0,
+        "p_yes": 0.007894479669630527,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003379",
+        "y": 0,
+        "p_yes": 0.004351363051682711,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003380",
+        "y": 0,
+        "p_yes": 0.009909042157232761,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003381",
+        "y": 0,
+        "p_yes": 0.027474265545606613,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003395",
+        "y": 0,
+        "p_yes": 0.006529489532113075,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003396",
+        "y": 0,
+        "p_yes": 0.01183853019028902,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003397",
+        "y": 0,
+        "p_yes": 0.004641423467546701,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003398",
+        "y": 0,
+        "p_yes": 0.006148774176836014,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003399",
+        "y": 0,
+        "p_yes": 0.010434573516249657,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003400",
+        "y": 0,
+        "p_yes": 0.011035771109163761,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003433",
+        "y": 0,
+        "p_yes": 0.0041031548753380775,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003438",
+        "y": 0,
+        "p_yes": 0.14191120862960815,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003439",
+        "y": 0,
+        "p_yes": 0.6861064434051514,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG003440",
+        "y": 0,
+        "p_yes": 0.015533707104623318,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG003441",
+        "y": 0,
+        "p_yes": 0.018505917862057686,
+        "m": false
+      }
+    ],
+    "malignancy": [
+      {
+        "image_id": "BT_IMG000002",
+        "y": 1,
+        "p_yes": 0.18986167013645172,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000003",
+        "y": 1,
+        "p_yes": 0.14550231397151947,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000008",
+        "y": 1,
+        "p_yes": 0.3702189028263092,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000009",
+        "y": 1,
+        "p_yes": 0.17681486904621124,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000011",
+        "y": 1,
+        "p_yes": 0.0243391003459692,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000012",
+        "y": 1,
+        "p_yes": 0.02810887061059475,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000017",
+        "y": 1,
+        "p_yes": 0.3958757519721985,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000018",
+        "y": 1,
+        "p_yes": 0.20080572366714478,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000019",
+        "y": 1,
+        "p_yes": 0.11032293736934662,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000020",
+        "y": 1,
+        "p_yes": 0.17370621860027313,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000021",
+        "y": 1,
+        "p_yes": 0.1099371686577797,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000024",
+        "y": 1,
+        "p_yes": 0.016299786046147346,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000025",
+        "y": 1,
+        "p_yes": 0.10924207419157028,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000030",
+        "y": 1,
+        "p_yes": 0.0762118473649025,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000031",
+        "y": 1,
+        "p_yes": 0.06063494086265564,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000040",
+        "y": 1,
+        "p_yes": 0.34903067350387573,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000041",
+        "y": 1,
+        "p_yes": 0.21839004755020142,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000044",
+        "y": 1,
+        "p_yes": 0.09799586236476898,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000045",
+        "y": 1,
+        "p_yes": 0.3833519220352173,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000050",
+        "y": 1,
+        "p_yes": 0.44479814171791077,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000051",
+        "y": 1,
+        "p_yes": 0.05825826898217201,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000052",
+        "y": 1,
+        "p_yes": 0.25241538882255554,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000063",
+        "y": 1,
+        "p_yes": 0.42757853865623474,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000064",
+        "y": 1,
+        "p_yes": 0.4502688944339752,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000072",
+        "y": 1,
+        "p_yes": 0.5072275996208191,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000073",
+        "y": 1,
+        "p_yes": 0.5028846263885498,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000074",
+        "y": 1,
+        "p_yes": 0.2039564847946167,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000075",
+        "y": 1,
+        "p_yes": 0.0069268918596208096,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000108",
+        "y": 1,
+        "p_yes": 0.1276685893535614,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000109",
+        "y": 1,
+        "p_yes": 0.22637322545051575,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000110",
+        "y": 1,
+        "p_yes": 0.15767669677734375,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000111",
+        "y": 1,
+        "p_yes": 0.1965959072113037,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000137",
+        "y": 1,
+        "p_yes": 0.4554992914199829,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000138",
+        "y": 1,
+        "p_yes": 0.5177323222160339,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000139",
+        "y": 1,
+        "p_yes": 0.23808294534683228,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000140",
+        "y": 1,
+        "p_yes": 0.28626397252082825,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000158",
+        "y": 1,
+        "p_yes": 0.4805036783218384,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000159",
+        "y": 1,
+        "p_yes": 0.5079635381698608,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000177",
+        "y": 1,
+        "p_yes": 0.011645912192761898,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000178",
+        "y": 1,
+        "p_yes": 0.35058900713920593,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000179",
+        "y": 1,
+        "p_yes": 0.264043390750885,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000187",
+        "y": 1,
+        "p_yes": 0.41129058599472046,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000188",
+        "y": 1,
+        "p_yes": 0.1228376030921936,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000202",
+        "y": 1,
+        "p_yes": 0.34592288732528687,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000228",
+        "y": 1,
+        "p_yes": 0.026930397376418114,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000229",
+        "y": 1,
+        "p_yes": 0.05828249827027321,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000238",
+        "y": 0,
+        "p_yes": 0.025132911279797554,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000239",
+        "y": 0,
+        "p_yes": 0.009740684181451797,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000260",
+        "y": 0,
+        "p_yes": 0.20800483226776123,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000271",
+        "y": 0,
+        "p_yes": 0.03067590855062008,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000274",
+        "y": 0,
+        "p_yes": 0.22409796714782715,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000276",
+        "y": 0,
+        "p_yes": 0.01015544030815363,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000277",
+        "y": 0,
+        "p_yes": 0.004767279606312513,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000283",
+        "y": 0,
+        "p_yes": 0.01151206623762846,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000285",
+        "y": 0,
+        "p_yes": 0.0048157572746276855,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000287",
+        "y": 0,
+        "p_yes": 0.040801092982292175,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000288",
+        "y": 0,
+        "p_yes": 0.03648105636239052,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000301",
+        "y": 0,
+        "p_yes": 0.013154450803995132,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000302",
+        "y": 0,
+        "p_yes": 0.004141103941947222,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000303",
+        "y": 0,
+        "p_yes": 0.01219329982995987,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000304",
+        "y": 0,
+        "p_yes": 0.010385858826339245,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000310",
+        "y": 0,
+        "p_yes": 0.004123786464333534,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000311",
+        "y": 0,
+        "p_yes": 0.004834459163248539,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000320",
+        "y": 0,
+        "p_yes": 0.0045586139895021915,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000321",
+        "y": 0,
+        "p_yes": 0.1204909160733223,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000327",
+        "y": 0,
+        "p_yes": 0.0030142085161060095,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000332",
+        "y": 0,
+        "p_yes": 0.05034104734659195,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000333",
+        "y": 0,
+        "p_yes": 0.05955196171998978,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000343",
+        "y": 0,
+        "p_yes": 0.004880391992628574,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000344",
+        "y": 0,
+        "p_yes": 0.05875321105122566,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000345",
+        "y": 0,
+        "p_yes": 0.0061663235537707806,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000346",
+        "y": 0,
+        "p_yes": 0.01604621298611164,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000347",
+        "y": 0,
+        "p_yes": 0.04461033642292023,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000349",
+        "y": 0,
+        "p_yes": 0.003880723612383008,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000350",
+        "y": 0,
+        "p_yes": 0.006711179856210947,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000362",
+        "y": 0,
+        "p_yes": 0.032186295837163925,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000363",
+        "y": 0,
+        "p_yes": 0.0057705179788172245,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000368",
+        "y": 0,
+        "p_yes": 0.006506010890007019,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000372",
+        "y": 0,
+        "p_yes": 0.0034185266122221947,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000379",
+        "y": 0,
+        "p_yes": 0.0038167922757565975,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000380",
+        "y": 0,
+        "p_yes": 0.007060541771352291,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000385",
+        "y": 0,
+        "p_yes": 0.01132467295974493,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000412",
+        "y": 0,
+        "p_yes": 0.17477348446846008,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000413",
+        "y": 0,
+        "p_yes": 0.007002041209489107,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000416",
+        "y": 0,
+        "p_yes": 0.00339330337010324,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000424",
+        "y": 0,
+        "p_yes": 0.015394052490592003,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000425",
+        "y": 0,
+        "p_yes": 0.013939479365944862,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000426",
+        "y": 0,
+        "p_yes": 0.006699885707348585,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000427",
+        "y": 0,
+        "p_yes": 0.041207071393728256,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000428",
+        "y": 0,
+        "p_yes": 0.019411610439419746,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000440",
+        "y": 0,
+        "p_yes": 0.0065361675806343555,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000441",
+        "y": 0,
+        "p_yes": 0.0035885844845324755,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000443",
+        "y": 0,
+        "p_yes": 0.005806236062198877,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000444",
+        "y": 0,
+        "p_yes": 0.0045970347709953785,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000453",
+        "y": 0,
+        "p_yes": 0.056777194142341614,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000454",
+        "y": 0,
+        "p_yes": 0.05076012387871742,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000459",
+        "y": 0,
+        "p_yes": 0.30590465664863586,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000460",
+        "y": 0,
+        "p_yes": 0.17725591361522675,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000463",
+        "y": 0,
+        "p_yes": 0.04457820579409599,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000464",
+        "y": 0,
+        "p_yes": 0.06009330600500107,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000465",
+        "y": 0,
+        "p_yes": 0.01967700757086277,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000466",
+        "y": 0,
+        "p_yes": 0.18667933344841003,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000467",
+        "y": 0,
+        "p_yes": 0.08801275491714478,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000468",
+        "y": 0,
+        "p_yes": 0.14055514335632324,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000469",
+        "y": 0,
+        "p_yes": 0.06859617680311203,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000470",
+        "y": 0,
+        "p_yes": 0.004421641118824482,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000471",
+        "y": 0,
+        "p_yes": 0.004514001309871674,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000488",
+        "y": 0,
+        "p_yes": 0.050477318465709686,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000489",
+        "y": 0,
+        "p_yes": 0.02653273567557335,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000490",
+        "y": 0,
+        "p_yes": 0.004375401884317398,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000492",
+        "y": 0,
+        "p_yes": 0.0029331969562917948,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000493",
+        "y": 0,
+        "p_yes": 0.008493820205330849,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000502",
+        "y": 0,
+        "p_yes": 0.014550969004631042,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000515",
+        "y": 0,
+        "p_yes": 0.008446305990219116,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000542",
+        "y": 0,
+        "p_yes": 0.026010656729340553,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000561",
+        "y": 0,
+        "p_yes": 0.007221842650324106,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000562",
+        "y": 0,
+        "p_yes": 0.016521116718649864,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000576",
+        "y": 0,
+        "p_yes": 0.0067801401019096375,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000601",
+        "y": 0,
+        "p_yes": 0.057477764785289764,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000602",
+        "y": 0,
+        "p_yes": 0.03376675397157669,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000604",
+        "y": 0,
+        "p_yes": 0.10881419479846954,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000628",
+        "y": 0,
+        "p_yes": 0.0029631711076945066,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000629",
+        "y": 0,
+        "p_yes": 0.008425612933933735,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000630",
+        "y": 0,
+        "p_yes": 0.01220211386680603,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000637",
+        "y": 0,
+        "p_yes": 0.0029712386894971132,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000642",
+        "y": 0,
+        "p_yes": 0.06995663791894913,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000659",
+        "y": 0,
+        "p_yes": 0.1527416706085205,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000660",
+        "y": 0,
+        "p_yes": 0.08675172924995422,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000661",
+        "y": 0,
+        "p_yes": 0.49853554368019104,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000662",
+        "y": 0,
+        "p_yes": 0.4046698212623596,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000663",
+        "y": 0,
+        "p_yes": 0.054268728941679,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000664",
+        "y": 0,
+        "p_yes": 0.30950331687927246,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000665",
+        "y": 0,
+        "p_yes": 0.0077033997513353825,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG000666",
+        "y": 0,
+        "p_yes": 0.015555940568447113,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000667",
+        "y": 0,
+        "p_yes": 0.06096583977341652,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000668",
+        "y": 0,
+        "p_yes": 0.3265882730484009,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000669",
+        "y": 0,
+        "p_yes": 0.12183056026697159,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000670",
+        "y": 0,
+        "p_yes": 0.08380557596683502,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000672",
+        "y": 0,
+        "p_yes": 0.00561150535941124,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000677",
+        "y": 0,
+        "p_yes": 0.37075164914131165,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000678",
+        "y": 0,
+        "p_yes": 0.32705000042915344,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000681",
+        "y": 0,
+        "p_yes": 0.006158779840916395,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000684",
+        "y": 0,
+        "p_yes": 0.0054243700578808784,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000685",
+        "y": 0,
+        "p_yes": 0.004998104181140661,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000702",
+        "y": 0,
+        "p_yes": 0.014586511999368668,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000707",
+        "y": 0,
+        "p_yes": 0.016536295413970947,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000725",
+        "y": 0,
+        "p_yes": 0.013439730741083622,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000726",
+        "y": 0,
+        "p_yes": 0.0053313965909183025,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000731",
+        "y": 0,
+        "p_yes": 0.00353382364846766,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000736",
+        "y": 0,
+        "p_yes": 0.005693589802831411,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000737",
+        "y": 0,
+        "p_yes": 0.007170188240706921,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000738",
+        "y": 0,
+        "p_yes": 0.008375940844416618,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000741",
+        "y": 0,
+        "p_yes": 0.011390953324735165,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000783",
+        "y": 0,
+        "p_yes": 0.015352909453213215,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000784",
+        "y": 0,
+        "p_yes": 0.004985343664884567,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000798",
+        "y": 0,
+        "p_yes": 0.05244586616754532,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000799",
+        "y": 0,
+        "p_yes": 0.15307258069515228,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000802",
+        "y": 0,
+        "p_yes": 0.23262012004852295,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000803",
+        "y": 0,
+        "p_yes": 0.3021775186061859,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000829",
+        "y": 0,
+        "p_yes": 0.3771398365497589,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000830",
+        "y": 0,
+        "p_yes": 0.15594619512557983,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000839",
+        "y": 0,
+        "p_yes": 0.3258171081542969,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000840",
+        "y": 0,
+        "p_yes": 0.35618579387664795,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000846",
+        "y": 0,
+        "p_yes": 0.027844887226819992,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000847",
+        "y": 0,
+        "p_yes": 0.006251808255910873,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000856",
+        "y": 0,
+        "p_yes": 0.009080217219889164,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000857",
+        "y": 0,
+        "p_yes": 0.009829484857618809,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000861",
+        "y": 0,
+        "p_yes": 0.01199356745928526,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000881",
+        "y": 0,
+        "p_yes": 0.12215250730514526,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000901",
+        "y": 0,
+        "p_yes": 0.026595285162329674,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000909",
+        "y": 0,
+        "p_yes": 0.0038917013444006443,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000913",
+        "y": 0,
+        "p_yes": 0.05000435933470726,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000914",
+        "y": 0,
+        "p_yes": 0.21416357159614563,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000915",
+        "y": 0,
+        "p_yes": 0.2128683626651764,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000916",
+        "y": 0,
+        "p_yes": 0.13472962379455566,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000929",
+        "y": 0,
+        "p_yes": 0.021774187684059143,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000931",
+        "y": 0,
+        "p_yes": 0.005821151193231344,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000952",
+        "y": 0,
+        "p_yes": 0.005176386330276728,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000954",
+        "y": 0,
+        "p_yes": 0.010039242915809155,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000955",
+        "y": 0,
+        "p_yes": 0.018965771421790123,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000971",
+        "y": 0,
+        "p_yes": 0.021473050117492676,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000972",
+        "y": 0,
+        "p_yes": 0.09557592868804932,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000997",
+        "y": 0,
+        "p_yes": 0.03841758146882057,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000998",
+        "y": 0,
+        "p_yes": 0.017062639817595482,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG000999",
+        "y": 0,
+        "p_yes": 0.18156465888023376,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001000",
+        "y": 0,
+        "p_yes": 0.21344728767871857,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001001",
+        "y": 0,
+        "p_yes": 0.3187251091003418,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001024",
+        "y": 0,
+        "p_yes": 0.3029683232307434,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001037",
+        "y": 0,
+        "p_yes": 0.005351779982447624,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001038",
+        "y": 0,
+        "p_yes": 0.0042008450254797935,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001042",
+        "y": 0,
+        "p_yes": 0.008404930122196674,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001043",
+        "y": 0,
+        "p_yes": 0.002677270444110036,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001044",
+        "y": 0,
+        "p_yes": 0.008919195272028446,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001045",
+        "y": 0,
+        "p_yes": 0.01024111732840538,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001052",
+        "y": 0,
+        "p_yes": 0.03292856737971306,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001053",
+        "y": 0,
+        "p_yes": 0.24014519155025482,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001059",
+        "y": 0,
+        "p_yes": 0.008404032327234745,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001067",
+        "y": 0,
+        "p_yes": 0.008075074292719364,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001068",
+        "y": 0,
+        "p_yes": 0.004386878572404385,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001069",
+        "y": 0,
+        "p_yes": 0.009342080913484097,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001072",
+        "y": 0,
+        "p_yes": 0.010052245110273361,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001073",
+        "y": 0,
+        "p_yes": 0.0066296691074967384,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001092",
+        "y": 0,
+        "p_yes": 0.017726358026266098,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001093",
+        "y": 0,
+        "p_yes": 0.08273539692163467,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001094",
+        "y": 0,
+        "p_yes": 0.016921313479542732,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001095",
+        "y": 0,
+        "p_yes": 0.01211482658982277,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001096",
+        "y": 0,
+        "p_yes": 0.023738374933600426,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001097",
+        "y": 0,
+        "p_yes": 0.010727635584771633,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001116",
+        "y": 0,
+        "p_yes": 0.3435784876346588,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001126",
+        "y": 0,
+        "p_yes": 0.0951123833656311,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001127",
+        "y": 0,
+        "p_yes": 0.11493810266256332,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001133",
+        "y": 0,
+        "p_yes": 0.009539189748466015,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001134",
+        "y": 0,
+        "p_yes": 0.17223124206066132,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001135",
+        "y": 0,
+        "p_yes": 0.3224606513977051,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001144",
+        "y": 0,
+        "p_yes": 0.007050513289868832,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001159",
+        "y": 0,
+        "p_yes": 0.04639149457216263,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001178",
+        "y": 0,
+        "p_yes": 0.02729426883161068,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001179",
+        "y": 0,
+        "p_yes": 0.013737693428993225,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001180",
+        "y": 0,
+        "p_yes": 0.015711775049567223,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001181",
+        "y": 0,
+        "p_yes": 0.20016297698020935,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001182",
+        "y": 0,
+        "p_yes": 0.09073688834905624,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001183",
+        "y": 0,
+        "p_yes": 0.04446618631482124,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001192",
+        "y": 0,
+        "p_yes": 0.07115279138088226,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001193",
+        "y": 0,
+        "p_yes": 0.0835210382938385,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001194",
+        "y": 0,
+        "p_yes": 0.05806935951113701,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001195",
+        "y": 0,
+        "p_yes": 0.16418209671974182,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001203",
+        "y": 0,
+        "p_yes": 0.006184717174619436,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001206",
+        "y": 0,
+        "p_yes": 0.019139911979436874,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001214",
+        "y": 0,
+        "p_yes": 0.21147337555885315,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001217",
+        "y": 0,
+        "p_yes": 0.005254816729575396,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001218",
+        "y": 0,
+        "p_yes": 0.005330589599907398,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001219",
+        "y": 0,
+        "p_yes": 0.016939112916588783,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001228",
+        "y": 0,
+        "p_yes": 0.04545492306351662,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001229",
+        "y": 0,
+        "p_yes": 0.07512606680393219,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001230",
+        "y": 0,
+        "p_yes": 0.12198308855295181,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001232",
+        "y": 0,
+        "p_yes": 0.003888399340212345,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001243",
+        "y": 0,
+        "p_yes": 0.33110255002975464,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001244",
+        "y": 0,
+        "p_yes": 0.2174428105354309,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001245",
+        "y": 0,
+        "p_yes": 0.2260030210018158,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001246",
+        "y": 0,
+        "p_yes": 0.047539934515953064,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001248",
+        "y": 0,
+        "p_yes": 0.02029886655509472,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001252",
+        "y": 0,
+        "p_yes": 0.003210406983271241,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001254",
+        "y": 0,
+        "p_yes": 0.003409826895222068,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001257",
+        "y": 0,
+        "p_yes": 0.005335709545761347,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001280",
+        "y": 0,
+        "p_yes": 0.28958263993263245,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001281",
+        "y": 0,
+        "p_yes": 0.2875858545303345,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001284",
+        "y": 0,
+        "p_yes": 0.0040909964591264725,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001285",
+        "y": 0,
+        "p_yes": 0.022462883964180946,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001286",
+        "y": 0,
+        "p_yes": 0.01419068407267332,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001287",
+        "y": 0,
+        "p_yes": 0.09565245360136032,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001288",
+        "y": 0,
+        "p_yes": 0.03727443888783455,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001291",
+        "y": 0,
+        "p_yes": 0.022127751260995865,
+        "m": false
+      },
+      {
+        "image_id": "BT_IMG001292",
+        "y": 0,
+        "p_yes": 0.05719007924199104,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001301",
+        "y": 0,
+        "p_yes": 0.08314687758684158,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001302",
+        "y": 0,
+        "p_yes": 0.07252936065196991,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001303",
+        "y": 0,
+        "p_yes": 0.1330241560935974,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001304",
+        "y": 0,
+        "p_yes": 0.011255073361098766,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001305",
+        "y": 0,
+        "p_yes": 0.0441940575838089,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001306",
+        "y": 0,
+        "p_yes": 0.22872048616409302,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001307",
+        "y": 0,
+        "p_yes": 0.01878279633820057,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001322",
+        "y": 0,
+        "p_yes": 0.0068530431017279625,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001327",
+        "y": 0,
+        "p_yes": 0.005765689071267843,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001328",
+        "y": 0,
+        "p_yes": 0.014768136665225029,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001330",
+        "y": 0,
+        "p_yes": 0.0665651261806488,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001331",
+        "y": 0,
+        "p_yes": 0.007859228178858757,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001332",
+        "y": 0,
+        "p_yes": 0.0049682012759149075,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001335",
+        "y": 0,
+        "p_yes": 0.021671228110790253,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001344",
+        "y": 0,
+        "p_yes": 0.016745464876294136,
+        "m": true
+      },
+      {
+        "image_id": "BT_IMG001345",
+        "y": 0,
+        "p_yes": 0.006188536994159222,
+        "m": true
+      }
+    ],
+    "diagnosis": [
+      {
+        "image_id": "BT_IMG000002",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000003",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000008",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000009",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000011",
+        "gt": "other malignant bone tumor",
+        "pred": "other benign bone tumor",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000012",
+        "gt": "other malignant bone tumor",
+        "pred": "other benign bone tumor",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000017",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000018",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000019",
+        "gt": "other malignant bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000020",
+        "gt": "other malignant bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000021",
+        "gt": "other malignant bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000024",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000025",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000030",
+        "gt": "other malignant bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000031",
+        "gt": "other malignant bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000040",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000041",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000044",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000045",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000050",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000051",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000052",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000063",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000064",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000072",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000073",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000074",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000075",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000108",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000109",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000110",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000111",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000137",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000138",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000139",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000140",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000158",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000159",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000177",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000178",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000179",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000187",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000188",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000202",
+        "gt": "osteosarcoma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000228",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000229",
+        "gt": "osteosarcoma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000238",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000239",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000260",
+        "gt": "osteochondroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000271",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000274",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000276",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000277",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000283",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000285",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000287",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000288",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000301",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000302",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000303",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000304",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000310",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000311",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000320",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000321",
+        "gt": "osteochondroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000327",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000332",
+        "gt": "giant cell tumor",
+        "pred": "simple bone cyst",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000333",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000343",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000344",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000345",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000346",
+        "gt": "giant cell tumor",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000347",
+        "gt": "giant cell tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000349",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000350",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000362",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000363",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000368",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000372",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000379",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000380",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000385",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000412",
+        "gt": "osteofibroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000413",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000416",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000424",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000425",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000426",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000427",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000428",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000440",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000441",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000443",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000444",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000453",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000454",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000459",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000460",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000463",
+        "gt": "giant cell tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000464",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000465",
+        "gt": "giant cell tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000466",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000467",
+        "gt": "simple bone cyst",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000468",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000469",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000470",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000471",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000488",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000489",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000490",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000492",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000493",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000502",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000515",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000542",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000561",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000562",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000576",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000601",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000602",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000604",
+        "gt": "osteochondroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000628",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000629",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000630",
+        "gt": "simple bone cyst",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000637",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000642",
+        "gt": "simple bone cyst",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000659",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000660",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000661",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000662",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000663",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000664",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000665",
+        "gt": "multiple osteochondromas",
+        "pred": "simple bone cyst",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000666",
+        "gt": "multiple osteochondromas",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000667",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000668",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000669",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000670",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000672",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000677",
+        "gt": "simple bone cyst",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000678",
+        "gt": "simple bone cyst",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000681",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000684",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000685",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000702",
+        "gt": "simple bone cyst",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000707",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000725",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000726",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000731",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000736",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000737",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000738",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000741",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000783",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000784",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000798",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000799",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000802",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000803",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000829",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000830",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000839",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000840",
+        "gt": "giant cell tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000846",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000847",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000856",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000857",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000861",
+        "gt": "multiple osteochondromas",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000881",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000901",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000909",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000913",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000914",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000915",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000916",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000929",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000931",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000952",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000954",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000955",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG000971",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000972",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000997",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000998",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG000999",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001000",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001001",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001024",
+        "gt": "osteochondroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001037",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001038",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001042",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001043",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001044",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001045",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001052",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001053",
+        "gt": "osteochondroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001059",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001067",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001068",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001069",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001072",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001073",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001092",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001093",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001094",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001095",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001096",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001097",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001116",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001126",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001127",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001133",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001134",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001135",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001144",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001159",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001178",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001179",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001180",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001181",
+        "gt": "osteochondroma",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001182",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001183",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001192",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001193",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001194",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001195",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001203",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001206",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001214",
+        "gt": "simple bone cyst",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001217",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001218",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001219",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001228",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001229",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001230",
+        "gt": "synovial osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001232",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001243",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001244",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001245",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001246",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001248",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001252",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001254",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001257",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001280",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001281",
+        "gt": "multiple osteochondromas",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001284",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001285",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001286",
+        "gt": "other benign bone tumor",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001287",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001288",
+        "gt": "other benign bone tumor",
+        "pred": "osteosarcoma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001291",
+        "gt": "osteochondroma",
+        "pred": "simple bone cyst",
+        "m": false,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001292",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001301",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001302",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001303",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001304",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001305",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001306",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001307",
+        "gt": "multiple osteochondromas",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001322",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001327",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001328",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001330",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001331",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001332",
+        "gt": "osteofibroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": false
+      },
+      {
+        "image_id": "BT_IMG001335",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001344",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      },
+      {
+        "image_id": "BT_IMG001345",
+        "gt": "osteochondroma",
+        "pred": "osteochondroma",
+        "m": true,
+        "correct": true
+      }
+    ]
+  }
+}

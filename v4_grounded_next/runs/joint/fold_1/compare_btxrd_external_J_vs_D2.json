@@ -1,0 +1,114 @@
+{
+  "role": "external",
+  "reference": "D2_v4cf_yolojoint",
+  "n_boot": 2000,
+  "seed": 20261114,
+  "checkpoints": {
+    "D2_v4cf_yolojoint": "53ce8283d6fe5c148eec0f8fa97b5e1c0706b64247be3109499e4d30a441cefb",
+    "J_v4cf_yolojoint_btxrd": "5364f746418847a9e823bd43cd5d4c77e2bf9c7f967212067b2ba9e1b5c56c12"
+  },
+  "endpoints": {
+    "tumor": {
+      "n": 808,
+      "groups": 402,
+      "metrics": {
+        "D2_v4cf_yolojoint": {
+          "auprc": 0.8960325811436363,
+          "auroc": 0.7985424537148674
+        },
+        "J_v4cf_yolojoint_btxrd": {
+          "auprc": 0.8912833221998822,
+          "auroc": 0.7845296465986121
+        }
+      },
+      "diff_vs_reference": {
+        "J_v4cf_yolojoint_btxrd": {
+          "auprc": {
+            "diff": -0.004749258943754109,
+            "ci95": [
+              -0.02397748898483545,
+              0.014244691156854873
+            ],
+            "resamples": 2000
+          },
+          "auroc": {
+            "diff": -0.0140128071162553,
+            "ci95": [
+              -0.04907252523347629,
+              0.02183795061079106
+            ],
+            "resamples": 2000
+          }
+        }
+      }
+    },
+    "malignancy": {
+      "n": 522,
+      "groups": 287,
+      "metrics": {
+        "D2_v4cf_yolojoint": {
+          "auprc": 0.3041188744577339,
+          "auroc": 0.536290958225425
+        },
+        "J_v4cf_yolojoint_btxrd": {
+          "auprc": 0.3772865153788194,
+          "auroc": 0.5676387794167324
+        }
+      },
+      "diff_vs_reference": {
+        "J_v4cf_yolojoint_btxrd": {
+          "auprc": {
+            "diff": 0.07316764092108552,
+            "ci95": [
+              0.0012987481985018857,
+              0.14077131706162052
+            ],
+            "resamples": 2000
+          },
+          "auroc": {
+            "diff": 0.0313478211913073,
+            "ci95": [
+              -0.02039051850463473,
+              0.07678852924175952
+            ],
+            "resamples": 2000
+          }
+        }
+      }
+    },
+    "diagnosis": {
+      "n": 522,
+      "groups": 287,
+      "metrics": {
+        "D2_v4cf_yolojoint": {
+          "accuracy": 0.0,
+          "balanced_accuracy": 0.0
+        },
+        "J_v4cf_yolojoint_btxrd": {
+          "accuracy": 0.27011494252873564,
+          "balanced_accuracy": 0.14388898344335307
+        }
+      },
+      "diff_vs_reference": {
+        "J_v4cf_yolojoint_btxrd": {
+          "accuracy": {
+            "diff": 0.27011494252873564,
+            "ci95": [
+              0.21873933966861597,
+              0.32307353140686457
+            ],
+            "resamples": 2000
+          },
+          "balanced_accuracy": {
+            "diff": 0.14388898344335307,
+            "ci95": [
+              0.12526532256580464,
+              0.17320467806538437
+            ],
+            "resamples": 2000
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checkpoint": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit/fold_3/inner_1/LAST.pt",
+  "sha256": "e09cab13c6b09098d18136410f9c51aa3322c2b52dcd4ddc8896f33da7a97b07",
+  "train_ids": 2055,
+  "held_out": 514,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 560,
+      "mean_loss": 0.10644220728427171
+    },
+    {
+      "epoch": 2,
+      "updates": 1120,
+      "mean_loss": 0.1576191142733608
+    }
+  ],
+  "updates": 1120,
+  "wall_seconds": 920.6031889915466
+}

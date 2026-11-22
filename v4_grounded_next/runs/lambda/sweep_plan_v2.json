@@ -1,0 +1,44 @@
+{
+  "written_before_any_v2_run": true,
+  "supersedes": "sweep_plan.json (v1 design: box footprint into GroundingHead, M_hat scalars into the logit). The v1 V4-G run was stopped at 200/719 updates on request and is not reported (log in aborted_v1/).",
+  "design": {
+    "vg_ground_input": "vlq",
+    "vg_pool_read": "feature",
+    "vg_pool_init": "identity"
+  },
+  "fold": "0",
+  "seed": 42,
+  "device": "mps",
+  "train_proposals": "crossfit (V4-CF/G/GC/GCR)",
+  "budget": "first 719 updates (= V4 epoch 1) of the sealed fold-0 schedule; LR curve over the full 1438; LAST.pt saved for every run",
+  "runs": [
+    {
+      "tag": "fold0/V4-G",
+      "arm": "V4-G",
+      "lambda_contrast": 0.0
+    },
+    {
+      "tag": "fold0/V4-GC_lc0.11",
+      "arm": "V4-GC",
+      "lambda_contrast": 0.11
+    },
+    {
+      "tag": "fold0/V4-GC_lc0.33",
+      "arm": "V4-GC",
+      "lambda_contrast": 0.33
+    },
+    {
+      "tag": "fold0/V4-GC_lc1.1",
+      "arm": "V4-GC",
+      "lambda_contrast": 1.1
+    }
+  ],
+  "then": [
+    "fold0/V4-GCR with the selected lambda_contrast",
+    "fold0/V4-CF"
+  ],
+  "lambda_ground": 1.0,
+  "selection_rule": "Among V4-GC candidates with model_val canonical AUPRC >= AUPRC(V4-G) - 0.01, pick the largest model_val energy_in_gt; ties within 0.005 -> smaller lambda. If none qualify, pick the smallest lambda and report it.",
+  "caveat": "model_val has ~57 fractured canonical images; AUPRC SE ~0.04: screening, not evidence. TEST is not read.",
+  "after_training": "scripts.mechanism_tests on model_val (M_hat vs box map, spatial permutation of M_hat, lesion occlusion)"
+}

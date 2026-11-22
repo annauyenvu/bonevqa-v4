@@ -1,0 +1,147 @@
+{
+  "tag": "fold0/V4-G",
+  "tol": 0.02,
+  "passed": false,
+  "microbatches": [
+    {
+      "microbatch": 0,
+      "indices": [
+        5766,
+        10316,
+        9712,
+        2556
+      ],
+      "loss_cpu": 0.5201379060745239,
+      "loss_mps": 0.5201377272605896,
+      "cpu_grad_norm": 7.23173835171703,
+      "worst_rel_err": [
+        [
+          "fusion.txt_sa.norm1.weight",
+          3.8189249430385135
+        ],
+        [
+          "fusion.txt_sa.norm1.bias",
+          0.0007612284391354686
+        ],
+        [
+          "les_head.1.weight",
+          1.5865235160044022e-06
+        ],
+        [
+          "closed_head.net.3.weight",
+          6.697456576824759e-07
+        ],
+        [
+          "fusion.proj_i.0.weight",
+          3.1739359971492476e-07
+        ]
+      ],
+      "pass": false
+    },
+    {
+      "microbatch": 1,
+      "indices": [
+        1554,
+        9184,
+        4286,
+        9780
+      ],
+      "loss_cpu": 0.4624263048171997,
+      "loss_mps": 0.46242642402648926,
+      "cpu_grad_norm": 11.251813251231983,
+      "worst_rel_err": [
+        [
+          "fusion.txt_sa.norm1.bias",
+          1.9153342619328861
+        ],
+        [
+          "ground_head.c_norm.bias",
+          1.8781022054626604
+        ],
+        [
+          "fusion.txt_sa.norm1.weight",
+          1.8632852576894985
+        ],
+        [
+          "prefix_proj.2.weight",
+          2.560885233965806e-05
+        ],
+        [
+          "llm.base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight",
+          1.5118510084424689e-05
+        ]
+      ],
+      "pass": false
+    },
+    {
+      "microbatch": 2,
+      "indices": [
+        3379,
+        982,
+        3180,
+        11439
+      ],
+      "loss_cpu": 0.6155173778533936,
+      "loss_mps": 0.6155495643615723,
+      "cpu_grad_norm": 11.006281031773606,
+      "worst_rel_err": [
+        [
+          "fusion.txt_sa.norm1.weight",
+          0.0010982087604468644
+        ],
+        [
+          "fusion.txt_sa.norm1.bias",
+          0.0010917241081560846
+        ],
+        [
+          "prefix_proj.2.weight",
+          0.00012873122130426057
+        ],
+        [
+          "llm.base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight",
+          0.00010110726679190746
+        ],
+        [
+          "llm.base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight",
+          9.894819108644044e-05
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "microbatch": 3,
+      "indices": [
+        7664,
+        6353,
+        6310,
+        9256
+      ],
+      "loss_cpu": 2.947347640991211,
+      "loss_mps": 2.9473342895507812,
+      "cpu_grad_norm": 64.34805393794741,
+      "worst_rel_err": [
+        [
+          "fusion.txt_sa.norm1.bias",
+          0.27823702003436507
+        ],
+        [
+          "fusion.txt_sa.norm1.weight",
+          0.27266487409530854
+        ],
+        [
+          "prefix_proj.2.weight",
+          1.6115191892530515e-05
+        ],
+        [
+          "llm.base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight",
+          1.0393328803621778e-05
+        ],
+        [
+          "llm.base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight",
+          9.825273599719442e-06
+        ]
+      ],
+      "pass": false
+    }
+  ]
+}

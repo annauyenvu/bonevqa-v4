@@ -1,0 +1,114 @@
+{
+  "role": "test",
+  "reference": "J_v4cf_yolojoint_btxrd",
+  "n_boot": 2000,
+  "seed": 20261114,
+  "checkpoints": {
+    "J_v4cf_yolojoint_btxrd": "4fab7f33a6e83a06e586890421bcacf3fc88c6931d9357c68f334ca8dcdc6196",
+    "JF_v4cf_yolojoint_btxrd_r0.02": "c512f2151dbd59210ac627ca1a57ede01d393b92157bb0ec2b7dc7eef5dbd7ab"
+  },
+  "endpoints": {
+    "tumor": {
+      "n": 587,
+      "groups": 290,
+      "metrics": {
+        "J_v4cf_yolojoint_btxrd": {
+          "auprc": 0.9074115459689868,
+          "auroc": 0.9087465806270604
+        },
+        "JF_v4cf_yolojoint_btxrd_r0.02": {
+          "auprc": 0.8867666748640918,
+          "auroc": 0.9028898085151155
+        }
+      },
+      "diff_vs_reference": {
+        "JF_v4cf_yolojoint_btxrd_r0.02": {
+          "auprc": {
+            "diff": -0.02064487110489499,
+            "ci95": [
+              -0.049038407828432454,
+              0.005650061469632062
+            ],
+            "resamples": 2000
+          },
+          "auroc": {
+            "diff": -0.005856772111944908,
+            "ci95": [
+              -0.025087086434863397,
+              0.014190091100724977
+            ],
+            "resamples": 2000
+          }
+        }
+      }
+    },
+    "malignancy": {
+      "n": 269,
+      "groups": 150,
+      "metrics": {
+        "J_v4cf_yolojoint_btxrd": {
+          "auprc": 0.6234944918133245,
+          "auroc": 0.8266718658607916
+        },
+        "JF_v4cf_yolojoint_btxrd_r0.02": {
+          "auprc": 0.6221998636839033,
+          "auroc": 0.8630337297718854
+        }
+      },
+      "diff_vs_reference": {
+        "JF_v4cf_yolojoint_btxrd_r0.02": {
+          "auprc": {
+            "diff": -0.0012946281294211603,
+            "ci95": [
+              -0.10898688521412424,
+              0.12257678565919918
+            ],
+            "resamples": 2000
+          },
+          "auroc": {
+            "diff": 0.03636186391109386,
+            "ci95": [
+              -0.03985435746909304,
+              0.12363387978142082
+            ],
+            "resamples": 2000
+          }
+        }
+      }
+    },
+    "diagnosis": {
+      "n": 269,
+      "groups": 150,
+      "metrics": {
+        "J_v4cf_yolojoint_btxrd": {
+          "accuracy": 0.5390334572490706,
+          "balanced_accuracy": 0.24138176638176637
+        },
+        "JF_v4cf_yolojoint_btxrd_r0.02": {
+          "accuracy": 0.516728624535316,
+          "balanced_accuracy": 0.2031408519213397
+        }
+      },
+      "diff_vs_reference": {
+        "JF_v4cf_yolojoint_btxrd_r0.02": {
+          "accuracy": {
+            "diff": -0.022304832713754608,
+            "ci95": [
+              -0.05883442265795208,
+              0.014391095818996927
+            ],
+            "resamples": 2000
+          },
+          "balanced_accuracy": {
+            "diff": -0.038240914460426656,
+            "ci95": [
+              -0.0676791506461619,
+              -0.0062927042093709465
+            ],
+            "resamples": 2000
+          }
+        }
+      }
+    }
+  }
+}

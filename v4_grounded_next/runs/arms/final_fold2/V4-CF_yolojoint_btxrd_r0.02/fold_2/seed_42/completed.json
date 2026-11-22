@@ -1,0 +1,93 @@
+{
+  "arm": "V4-CF",
+  "fold": "2",
+  "seed": 42,
+  "overrides": {},
+  "joint": true,
+  "updates": 2834,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 1417,
+      "mean_loss_fracatlas": 1.3504994365785434,
+      "mean_loss_btxrd": 1.1716001930821096,
+      "n_fracatlas": 2882,
+      "n_btxrd": 2786
+    },
+    {
+      "epoch": 2,
+      "updates": 2834,
+      "mean_loss_fracatlas": 0.7628429330016779,
+      "mean_loss_btxrd": 0.640274256128184,
+      "n_fracatlas": 2882,
+      "n_btxrd": 2786
+    }
+  ],
+  "model_val": {
+    "n": 321,
+    "prevalence": 0.17757009345794392,
+    "auprc": 0.7609126103509096,
+    "auroc": 0.8761297182349814,
+    "sens@0.5_m1": 0.9655172413793104,
+    "n_pos_m1": 29,
+    "sens@0.5_m0": 0.25,
+    "n_pos_m0": 28,
+    "spec@0.5": 0.9772727272727273
+  },
+  "btxrd_model_val": {
+    "tumor": {
+      "n": 293,
+      "prevalence": 0.45733788395904434,
+      "auprc": 0.8478967910775674,
+      "auroc": 0.8373228198629494,
+      "sens@0.5": 0.5746268656716418,
+      "spec@0.5": 0.89937106918239,
+      "accuracy@0.5": 0.7508532423208191,
+      "m_rate_pos": 0.4626865671641791,
+      "m_rate_neg": 0.018867924528301886,
+      "auroc_of_proposal_flag": 0.7219093213179386
+    },
+    "malignancy": {
+      "n": 134,
+      "prevalence": 0.08955223880597014,
+      "auprc": 0.5750233229623981,
+      "auroc": 0.8210382513661203,
+      "sens@0.5": 0.0,
+      "spec@0.5": 1.0,
+      "accuracy@0.5": 0.9104477611940298,
+      "m_rate_pos": 0.5833333333333334,
+      "m_rate_neg": 0.45081967213114754,
+      "auroc_of_proposal_flag": 0.566256830601093
+    },
+    "diagnosis": {
+      "n": 134,
+      "accuracy": 0.4925373134328358,
+      "balanced_accuracy": 0.22183372183372185,
+      "macro_f1": 0.16781822472879382,
+      "recall_by_class": {
+        "giant cell tumor": 0.0,
+        "multiple osteochondromas": 0.0,
+        "osteochondroma": 0.7692307692307693,
+        "osteofibroma": 0.0,
+        "osteosarcoma": 0.7272727272727273,
+        "other benign bone tumor": 0.0,
+        "other malignant bone tumor": 0.0,
+        "simple bone cyst": 0.5,
+        "synovial osteochondroma": 0.0
+      },
+      "n_by_class": {
+        "giant cell tumor": 9,
+        "multiple osteochondromas": 11,
+        "osteochondroma": 65,
+        "osteofibroma": 10,
+        "osteosarcoma": 11,
+        "other benign bone tumor": 2,
+        "other malignant bone tumor": 1,
+        "simple bone cyst": 16,
+        "synovial osteochondroma": 9
+      },
+      "answers_outside_label_set": 0
+    }
+  },
+  "seconds": 8684.463054656982
+}

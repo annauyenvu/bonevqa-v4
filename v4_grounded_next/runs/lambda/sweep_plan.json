@@ -1,0 +1,31 @@
+{
+  "written_before_any_sweep_run": true,
+  "fold": "0",
+  "seed": 42,
+  "device": "mps",
+  "train_proposals": "crossfit",
+  "budget": "first 719 updates (= V4 epoch 1) of the sealed fold-0 schedule; LR curve over the full 1438",
+  "runs": [
+    {
+      "arm": "V4-G",
+      "lambda_contrast": 0.0
+    },
+    {
+      "arm": "V4-GC",
+      "lambda_contrast": 0.11
+    },
+    {
+      "arm": "V4-GC",
+      "lambda_contrast": 0.33
+    },
+    {
+      "arm": "V4-GC",
+      "lambda_contrast": 1.1
+    }
+  ],
+  "lambda_ground": 1.0,
+  "grid_rationale": "probe_fold0_mps.json: at lambda=1, median ||g_contrast||/||g_task|| on visual LoRA = 0.90 -> grid targets ratio 0.1/0.3/1.0",
+  "selection_rule": "Among V4-GC candidates with model_val canonical AUPRC >= AUPRC(V4-G) - 0.01, pick the largest model_val energy_in_gt (softmax(ell) mass inside GT, fractured images); ties within 0.005 -> smaller lambda. If none qualify, report and pick the smallest lambda.",
+  "caveat": "model_val has ~57 fractured canonical images; AUPRC SE is about 0.04, so this is screening, not evidence. Test is never read.",
+  "test_role_read": false
+}

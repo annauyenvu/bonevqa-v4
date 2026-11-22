@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": {
+    "R.gamma1_exact": {
+      "pass": true,
+      "detail": "max|dz|=0.0e+00"
+    },
+    "R.gamma2_formula": {
+      "pass": true,
+      "detail": "max|d|=2.2e-09"
+    },
+    "R.gamma_no_underflow": {
+      "pass": true,
+      "detail": "sum=[1.0, 1.0]"
+    },
+    "R.detach_eval_identity": {
+      "pass": true,
+      "detail": "max|d|=0.0e+00"
+    },
+    "R.detach_task_no_ground": {
+      "pass": true,
+      "detail": "max|grad| ground_head=0.0e+00"
+    },
+    "R.detach_task_reaches": {
+      "pass": true,
+      "detail": "readout={'lesion_pool.token.weight': '4.7e+02', 'lesion_pool.emphasis.weight': '2.4e+02', 'les_head.0.weight': '2.7e+01', 'les_head.1.weight': '1.8e+03'} visual=1.6e+03"
+    },
+    "R.ground_loss_reaches": {
+      "pass": true,
+      "detail": "sum|grad|=4.0e+04"
+    },
+    "R.nodetach_task_ground": {
+      "pass": true,
+      "detail": "sum|grad| ground_head=3.4e+02"
+    },
+    "R.scope_h_les": {
+      "pass": true,
+      "detail": "high-lr params=['les_head.0.weight', 'les_head.0.bias', 'les_head.1.weight', 'les_head.1.bias']"
+    }
+  },
+  "seconds": 25.74573016166687
+}

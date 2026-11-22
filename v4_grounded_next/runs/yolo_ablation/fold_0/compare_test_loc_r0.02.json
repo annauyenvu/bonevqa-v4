@@ -1,0 +1,88 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "D2_sweep_r0.02",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "D2_sweep_r0.02": {
+      "auprc": 0.8521284765379513,
+      "auroc": 0.9355795719432083,
+      "sens@0.5": 0.7692307692307693,
+      "spec@0.5": 0.9772727272727273,
+      "m_rate_fractured": 0.6783216783216783,
+      "m_rate_nonfractured": 0.015151515151515152,
+      "sens@0.5_m1": 0.9690721649484536,
+      "sens@0.5_m0": 0.34782608695652173,
+      "n_pos_m0": 46,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.02/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "2c3d40c27398fe80f0062f1a63688d32114a104f45f1e37a606aaabcc2d533eb"
+    },
+    "D2_sweep_r0.02_placebo": {
+      "auprc": 0.8471587305355515,
+      "auroc": 0.9342233524051706,
+      "sens@0.5": 0.7202797202797203,
+      "spec@0.5": 0.9772727272727273,
+      "m_rate_fractured": 0.6783216783216783,
+      "m_rate_nonfractured": 0.015151515151515152,
+      "sens@0.5_m1": 0.8969072164948454,
+      "sens@0.5_m0": 0.34782608695652173,
+      "n_pos_m0": 46,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.02/fold_0/proposals_fold0_placebo.json",
+      "checkpoint_sha256": "2c3d40c27398fe80f0062f1a63688d32114a104f45f1e37a606aaabcc2d533eb"
+    },
+    "D2_sweep_r0.02_oracleloc": {
+      "auprc": 0.8529488890131909,
+      "auroc": 0.9358656495020131,
+      "sens@0.5": 0.7902097902097902,
+      "spec@0.5": 0.9772727272727273,
+      "m_rate_fractured": 0.6783216783216783,
+      "m_rate_nonfractured": 0.015151515151515152,
+      "sens@0.5_m1": 1.0,
+      "sens@0.5_m0": 0.34782608695652173,
+      "n_pos_m0": 46,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.02/fold_0/proposals_fold0_oracleloc.json",
+      "checkpoint_sha256": "2c3d40c27398fe80f0062f1a63688d32114a104f45f1e37a606aaabcc2d533eb"
+    }
+  },
+  "diff_vs_reference": {
+    "D2_sweep_r0.02_placebo": {
+      "auprc": {
+        "diff": -0.004969746002399855,
+        "ci95": [
+          -0.0181,
+          0.0095
+        ]
+      },
+      "auroc": {
+        "diff": -0.0013562195380376618,
+        "ci95": [
+          -0.0029,
+          -0.0001
+        ]
+      }
+    },
+    "D2_sweep_r0.02_oracleloc": {
+      "auprc": {
+        "diff": 0.0008204124752395625,
+        "ci95": [
+          -0.0028,
+          0.0049
+        ]
+      },
+      "auroc": {
+        "diff": 0.00028607755880483143,
+        "ci95": [
+          -0.0002,
+          0.0009
+        ]
+      }
+    }
+  }
+}

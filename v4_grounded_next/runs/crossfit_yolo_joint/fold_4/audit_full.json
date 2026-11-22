@@ -1,0 +1,216 @@
+{
+  "target_nonfractured_rate_model_val": 0.29924242424242425,
+  "thresholds": {
+    "outer": 0.014326825737953186,
+    "inner0": 0.011495002545416355,
+    "inner1": 0.010628115385770798,
+    "inner2": 0.002035916317254305
+  },
+  "train_insample": {
+    "m_rate_fractured": 1.0,
+    "m_rate_nonfractured": 0.26919431279620853,
+    "mean_props_nonfractured": 0.4,
+    "recall_top3_iou0.1": 1.0,
+    "recall_top3_iou0.3": 0.9934497816593887,
+    "recall_top3_iou0.5": 0.9934497816593887,
+    "image_AP_smax": 0.9853414514531535,
+    "image_AUROC_smax": 0.9965086197975952,
+    "best_iou_quantiles_fractured": [
+      0.781,
+      0.842,
+      0.889,
+      0.924,
+      0.944
+    ],
+    "images": 2568,
+    "fractured": 458
+  },
+  "model_val": {
+    "m_rate_fractured": 0.8771929824561403,
+    "m_rate_nonfractured": 0.29924242424242425,
+    "mean_props_nonfractured": 0.48863636363636365,
+    "recall_top3_iou0.1": 0.7017543859649122,
+    "recall_top3_iou0.3": 0.7017543859649122,
+    "recall_top3_iou0.5": 0.6842105263157895,
+    "image_AP_smax": 0.8008716893409449,
+    "image_AUROC_smax": 0.8935406698564593,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.666,
+      0.764,
+      0.833
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "calibration": {
+    "m_rate_fractured": 0.8771929824561403,
+    "m_rate_nonfractured": 0.29056603773584905,
+    "mean_props_nonfractured": 0.42641509433962266,
+    "recall_top3_iou0.1": 0.7894736842105263,
+    "recall_top3_iou0.3": 0.7719298245614035,
+    "recall_top3_iou0.5": 0.631578947368421,
+    "image_AP_smax": 0.7760425529072493,
+    "image_AUROC_smax": 0.9006289308176101,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.333,
+      0.596,
+      0.74,
+      0.818
+    ],
+    "images": 322,
+    "fractured": 57
+  },
+  "test": {
+    "m_rate_fractured": 0.8601398601398601,
+    "m_rate_nonfractured": 0.2883156297420334,
+    "mean_props_nonfractured": 0.40667678300455234,
+    "recall_top3_iou0.1": 0.7412587412587412,
+    "recall_top3_iou0.3": 0.7132867132867133,
+    "recall_top3_iou0.5": 0.5874125874125874,
+    "image_AP_smax": 0.776833949099991,
+    "image_AUROC_smax": 0.8935556097923321,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.629,
+      0.769,
+      0.838
+    ],
+    "images": 802,
+    "fractured": 143
+  },
+  "inner0_on_model_val": {
+    "m_rate_fractured": 0.8771929824561403,
+    "m_rate_nonfractured": 0.29924242424242425,
+    "mean_props_nonfractured": 0.5151515151515151,
+    "recall_top3_iou0.1": 0.6666666666666666,
+    "recall_top3_iou0.3": 0.6491228070175439,
+    "recall_top3_iou0.5": 0.631578947368421,
+    "image_AP_smax": 0.8332916795672561,
+    "image_AUROC_smax": 0.923278841041999,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.625,
+      0.752,
+      0.835
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "inner0_on_heldout": {
+    "m_rate_fractured": 0.8609271523178808,
+    "m_rate_nonfractured": 0.3194842406876791,
+    "mean_props_nonfractured": 0.5444126074498568,
+    "recall_top3_iou0.1": 0.7019867549668874,
+    "recall_top3_iou0.3": 0.6754966887417219,
+    "recall_top3_iou0.5": 0.6026490066225165,
+    "image_AP_smax": 0.7392293495172987,
+    "image_AUROC_smax": 0.873911269663561,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.601,
+      0.763,
+      0.837
+    ],
+    "images": 849,
+    "fractured": 151
+  },
+  "inner1_on_model_val": {
+    "m_rate_fractured": 0.9122807017543859,
+    "m_rate_nonfractured": 0.29924242424242425,
+    "mean_props_nonfractured": 0.45454545454545453,
+    "recall_top3_iou0.1": 0.7192982456140351,
+    "recall_top3_iou0.3": 0.6842105263157895,
+    "recall_top3_iou0.5": 0.631578947368421,
+    "image_AP_smax": 0.8007852962185418,
+    "image_AUROC_smax": 0.9147727272727273,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.639,
+      0.768,
+      0.847
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "inner1_on_heldout": {
+    "m_rate_fractured": 0.8513513513513513,
+    "m_rate_nonfractured": 0.3174825174825175,
+    "mean_props_nonfractured": 0.48391608391608393,
+    "recall_top3_iou0.1": 0.7837837837837838,
+    "recall_top3_iou0.3": 0.7432432432432432,
+    "recall_top3_iou0.5": 0.6351351351351351,
+    "image_AP_smax": 0.7485317530035127,
+    "image_AUROC_smax": 0.8716688716688716,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.277,
+      0.637,
+      0.768,
+      0.831
+    ],
+    "images": 863,
+    "fractured": 148
+  },
+  "inner2_on_model_val": {
+    "m_rate_fractured": 0.8771929824561403,
+    "m_rate_nonfractured": 0.29924242424242425,
+    "mean_props_nonfractured": 0.5113636363636364,
+    "recall_top3_iou0.1": 0.7017543859649122,
+    "recall_top3_iou0.3": 0.7017543859649122,
+    "recall_top3_iou0.5": 0.631578947368421,
+    "image_AP_smax": 0.813293211491371,
+    "image_AUROC_smax": 0.8842371079213185,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.624,
+      0.748,
+      0.833
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "inner2_on_heldout": {
+    "m_rate_fractured": 0.9245283018867925,
+    "m_rate_nonfractured": 0.33715925394548063,
+    "mean_props_nonfractured": 0.5724533715925395,
+    "recall_top3_iou0.1": 0.7987421383647799,
+    "recall_top3_iou0.3": 0.7547169811320755,
+    "recall_top3_iou0.5": 0.6729559748427673,
+    "image_AP_smax": 0.8049439822753651,
+    "image_AUROC_smax": 0.9115752145312797,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.322,
+      0.626,
+      0.764,
+      0.853
+    ],
+    "images": 856,
+    "fractured": 159
+  },
+  "train_cf": {
+    "images": 2568,
+    "fractured": 458,
+    "m_rate_fractured": 0.8799126637554585,
+    "m_rate_nonfractured": 0.3246445497630332,
+    "mean_props_nonfractured": 0.533175355450237,
+    "recall_top3_iou0.1": 0.7620087336244541,
+    "recall_top3_iou0.3": 0.7248908296943232,
+    "recall_top3_iou0.5": 0.6375545851528385,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.168,
+      0.621,
+      0.766,
+      0.841
+    ]
+  }
+}

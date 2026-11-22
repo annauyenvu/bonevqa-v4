@@ -1,0 +1,512 @@
+{
+  "fold": "0",
+  "role": "model_val",
+  "limit": null,
+  "n_occlusion_images": 56,
+  "occlusion_relax_levels": [
+    "foreground_only",
+    "strict"
+  ],
+  "arms": {
+    "fold0/V4-GC-dp30_e2": {
+      "arm": "V4-GC",
+      "overrides": {
+        "vg_lambda_contrast": 0.33,
+        "vg_xf_droppath": 0.3
+      },
+      "checkpoint_sha256": "006685aa81cc91ab0954149efefec64fc93131d56b93c536eac23dcdaef13954",
+      "T1_mhat_vs_box": {
+        "all_m1": {
+          "n": 124,
+          "spearman_mhat_box": 0.16549093552151087,
+          "mass_in_box": 0.08539530561539586,
+          "box_area_chance": 0.03402732060566162
+        },
+        "fractured_box_hits_gt": {
+          "n": 48,
+          "mass_in_gt": 0.10441130477314194,
+          "gt_area_chance": 0.025935374149659865,
+          "pointing_game_gt": 0.041666666666666664,
+          "mass_in_box": 0.12530751329419823,
+          "box_area_chance": 0.032525510204081634,
+          "pointing_game_box": 0.041666666666666664,
+          "spearman_mhat_box": 0.218900258487109,
+          "mass_in_gt_minus_chance": {
+            "mean": 0.07847593062348207,
+            "ci95": [
+              0.05070784306335114,
+              0.10968074163454294
+            ],
+            "p_signflip": 9.999000099990002e-05,
+            "n": 48
+          },
+          "mass_in_gt_minus_mass_in_box": {
+            "mean": -0.020896208521056298,
+            "ci95": [
+              -0.042470805411204,
+              -0.0025245956838670335
+            ],
+            "p_signflip": 0.0408959104089591,
+            "n": 48
+          }
+        },
+        "fractured_box_misses_gt": {
+          "n": 1,
+          "mass_in_gt": 0.05569250136613846,
+          "gt_area_chance": 0.01020408163265306,
+          "pointing_game_gt": 0.0,
+          "mass_in_box": 0.029663003981113434,
+          "box_area_chance": 0.02040816326530612,
+          "pointing_game_box": 0.0,
+          "spearman_mhat_box": 0.1416489051909427,
+          "mass_in_gt_minus_chance": {
+            "mean": 0.0454884197334854,
+            "ci95": [
+              0.0454884197334854,
+              0.0454884197334854
+            ],
+            "p_signflip": 1.0,
+            "n": 1
+          },
+          "mass_in_gt_minus_mass_in_box": {
+            "mean": 0.026029497385025024,
+            "ci95": [
+              0.026029497385025024,
+              0.026029497385025024
+            ],
+            "p_signflip": 1.0,
+            "n": 1
+          }
+        },
+        "fractured_m0": {
+          "n": 8,
+          "mass_in_gt": 0.06083569233305752,
+          "gt_area_chance": 0.028698979591836732,
+          "pointing_game_gt": 0.0,
+          "mass_in_gt_minus_chance": {
+            "mean": 0.03213671274122079,
+            "ci95": [
+              0.01019640980699404,
+              0.05530720165971073
+            ],
+            "p_signflip": 0.0423957604239576,
+            "n": 8
+          }
+        }
+      },
+      "T2_spatial_shift": {
+        "base_auprc": 0.7662960193749023,
+        "perm_s0": {
+          "mean_abs_dp_fractured": 0.0318109979853034,
+          "mean_abs_dp_negative": 0.01750300138872152,
+          "max_abs_dp": 0.22262966632843018,
+          "decision_flips@0.5": 3,
+          "auprc": 0.756566389209394,
+          "d_auprc": -0.009729630165508318,
+          "dp_fractured_signed": {
+            "mean": -0.0045368757523727,
+            "ci95": [
+              -0.01803190038022482,
+              0.010238477853032744
+            ],
+            "p_signflip": 0.5296470352964704,
+            "n": 57
+          }
+        },
+        "perm_s1": {
+          "mean_abs_dp_fractured": 0.02430585166439414,
+          "mean_abs_dp_negative": 0.0180576222586696,
+          "max_abs_dp": 0.27746182680130005,
+          "decision_flips@0.5": 2,
+          "auprc": 0.7647184761735999,
+          "d_auprc": -0.0015775432013024338,
+          "dp_fractured_signed": {
+            "mean": -0.003646351209139092,
+            "ci95": [
+              -0.0131904210699232,
+              0.006135759151156729
+            ],
+            "p_signflip": 0.48455154484551544,
+            "n": 57
+          }
+        },
+        "perm_s2": {
+          "mean_abs_dp_fractured": 0.02151444930125747,
+          "mean_abs_dp_negative": 0.018743740313573544,
+          "max_abs_dp": 0.28860220313072205,
+          "decision_flips@0.5": 4,
+          "auprc": 0.753913300088567,
+          "d_auprc": -0.012382719286335275,
+          "dp_fractured_signed": {
+            "mean": 0.0003597600418224669,
+            "ci95": [
+              -0.008983934460504548,
+              0.009736675375750528
+            ],
+            "p_signflip": 0.9408059194080592,
+            "n": 57
+          }
+        },
+        "roll_7_7": {
+          "mean_abs_dp_fractured": 0.035855441174486226,
+          "mean_abs_dp_negative": 0.024208883246363697,
+          "max_abs_dp": 0.3043355941772461,
+          "decision_flips@0.5": 3,
+          "auprc": 0.7472947743310234,
+          "d_auprc": -0.0190012450438789,
+          "dp_fractured_signed": {
+            "mean": 0.011736163771466204,
+            "ci95": [
+              -0.003366387090847273,
+              0.030128809624930128
+            ],
+            "p_signflip": 0.1678832116788321,
+            "n": 57
+          }
+        }
+      },
+      "T3_occlusion": {
+        "mean|redetect": {
+          "d_lesion": 0.09812285900781197,
+          "d_background": -0.02337710532758917,
+          "D=d_lesion-d_background": {
+            "mean": 0.12149996433540114,
+            "ci95": [
+              0.04523236140696253,
+              0.20190650901855955
+            ],
+            "p_signflip": 0.001999800019998,
+            "n": 56
+          }
+        },
+        "mean|fixed": {
+          "d_lesion": 0.009167699875043971,
+          "d_background": -0.023271144168185338,
+          "D=d_lesion-d_background": {
+            "mean": 0.03243884404322931,
+            "ci95": [
+              -0.023040884810810288,
+              0.08459001218730752
+            ],
+            "p_signflip": 0.24217578242175783,
+            "n": 56
+          }
+        },
+        "mean|proposal_lost_rate": {
+          "lesion": 0.4107142857142857,
+          "background": 0.0
+        },
+        "blur5|redetect": {
+          "d_lesion": 0.07742815426484283,
+          "d_background": -0.05215413073476936,
+          "D=d_lesion-d_background": {
+            "mean": 0.1295822849996122,
+            "ci95": [
+              0.059826832632578,
+              0.20356406017863216
+            ],
+            "p_signflip": 0.00039996000399960006,
+            "n": 56
+          }
+        },
+        "blur5|fixed": {
+          "d_lesion": 0.049002404125141244,
+          "d_background": -0.028492123769995357,
+          "D=d_lesion-d_background": {
+            "mean": 0.0774945278951366,
+            "ci95": [
+              0.02798436299828132,
+              0.12626394927810303
+            ],
+            "p_signflip": 0.0012998700129987,
+            "n": 56
+          }
+        },
+        "blur5|proposal_lost_rate": {
+          "lesion": 0.16071428571428573,
+          "background": 0.017857142857142856
+        },
+        "inpaint|redetect": {
+          "d_lesion": 0.12854831193440727,
+          "d_background": -0.039912356479492574,
+          "D=d_lesion-d_background": {
+            "mean": 0.16846066841389984,
+            "ci95": [
+              0.08513497085013433,
+              0.25194075810787675
+            ],
+            "p_signflip": 0.00029997000299970003,
+            "n": 56
+          }
+        },
+        "inpaint|fixed": {
+          "d_lesion": 0.10580930609389075,
+          "d_background": -0.019122838541599258,
+          "D=d_lesion-d_background": {
+            "mean": 0.12493214463549,
+            "ci95": [
+              0.06329532653921853,
+              0.19195128828238742
+            ],
+            "p_signflip": 0.00029997000299970003,
+            "n": 56
+          }
+        },
+        "inpaint|proposal_lost_rate": {
+          "lesion": 0.23214285714285715,
+          "background": 0.017857142857142856
+        }
+      }
+    },
+    "fold0/V4-GC_e2": {
+      "arm": "V4-GC",
+      "overrides": {
+        "vg_lambda_contrast": 0.33
+      },
+      "checkpoint_sha256": "537cd40a710a0c854612894c4810d96df44dad9a8162d9f4ceb31e752d27c328",
+      "T1_mhat_vs_box": {
+        "all_m1": {
+          "n": 124,
+          "spearman_mhat_box": 0.2094722793556114,
+          "mass_in_box": 0.20949317996139377,
+          "box_area_chance": 0.03402732060566162
+        },
+        "fractured_box_hits_gt": {
+          "n": 48,
+          "mass_in_gt": 0.23713140767843774,
+          "gt_area_chance": 0.025935374149659865,
+          "pointing_game_gt": 0.2708333333333333,
+          "mass_in_box": 0.25827621653297683,
+          "box_area_chance": 0.032525510204081634,
+          "pointing_game_box": 0.3125,
+          "spearman_mhat_box": 0.24822548662607144,
+          "mass_in_gt_minus_chance": {
+            "mean": 0.2111960335287779,
+            "ci95": [
+              0.15175447442903156,
+              0.2747058271707275
+            ],
+            "p_signflip": 9.999000099990002e-05,
+            "n": 48
+          },
+          "mass_in_gt_minus_mass_in_box": {
+            "mean": -0.021144808854539104,
+            "ci95": [
+              -0.06759752166252199,
+              0.023092050008344196
+            ],
+            "p_signflip": 0.3762623737626237,
+            "n": 48
+          }
+        },
+        "fractured_box_misses_gt": {
+          "n": 1,
+          "mass_in_gt": 0.18948690593242645,
+          "gt_area_chance": 0.01020408163265306,
+          "pointing_game_gt": 0.0,
+          "mass_in_box": 0.07393353432416916,
+          "box_area_chance": 0.02040816326530612,
+          "pointing_game_box": 0.0,
+          "spearman_mhat_box": 0.17464771526207032,
+          "mass_in_gt_minus_chance": {
+            "mean": 0.17928282429977338,
+            "ci95": [
+              0.17928282429977338,
+              0.17928282429977338
+            ],
+            "p_signflip": 1.0,
+            "n": 1
+          },
+          "mass_in_gt_minus_mass_in_box": {
+            "mean": 0.1155533716082573,
+            "ci95": [
+              0.1155533716082573,
+              0.1155533716082573
+            ],
+            "p_signflip": 1.0,
+            "n": 1
+          }
+        },
+        "fractured_m0": {
+          "n": 8,
+          "mass_in_gt": 0.06257775179983582,
+          "gt_area_chance": 0.028698979591836732,
+          "pointing_game_gt": 0.0,
+          "mass_in_gt_minus_chance": {
+            "mean": 0.03387877220799909,
+            "ci95": [
+              0.006083338743018415,
+              0.06532723497485324
+            ],
+            "p_signflip": 0.08459154084591541,
+            "n": 8
+          }
+        }
+      },
+      "T2_spatial_shift": {
+        "base_auprc": 0.7869651540754171,
+        "perm_s0": {
+          "mean_abs_dp_fractured": 0.008567286214154018,
+          "mean_abs_dp_negative": 0.003471387659594642,
+          "max_abs_dp": 0.11477601528167725,
+          "decision_flips@0.5": 1,
+          "auprc": 0.7836412869180469,
+          "d_auprc": -0.0033238671573702083,
+          "dp_fractured_signed": {
+            "mean": 0.0018692538959153911,
+            "ci95": [
+              -0.003585088221193406,
+              0.006658362679520683
+            ],
+            "p_signflip": 0.49725027497250274,
+            "n": 57
+          }
+        },
+        "perm_s1": {
+          "mean_abs_dp_fractured": 0.00720257553876492,
+          "mean_abs_dp_negative": 0.003209103783416195,
+          "max_abs_dp": 0.11215585470199585,
+          "decision_flips@0.5": 0,
+          "auprc": 0.7790160193227178,
+          "d_auprc": -0.007949134752699316,
+          "dp_fractured_signed": {
+            "mean": 0.0013323256974680383,
+            "ci95": [
+              -0.003935994507302925,
+              0.005517721722278283
+            ],
+            "p_signflip": 0.6512348765123488,
+            "n": 57
+          }
+        },
+        "perm_s2": {
+          "mean_abs_dp_fractured": 0.0076461653796988625,
+          "mean_abs_dp_negative": 0.0034083494101651013,
+          "max_abs_dp": 0.14701831340789795,
+          "decision_flips@0.5": 0,
+          "auprc": 0.7805376475182826,
+          "d_auprc": -0.0064275065571345324,
+          "dp_fractured_signed": {
+            "mean": 0.0002657132746096243,
+            "ci95": [
+              -0.006180833696773083,
+              0.004660128904756023
+            ],
+            "p_signflip": 0.9806019398060194,
+            "n": 57
+          }
+        },
+        "roll_7_7": {
+          "mean_abs_dp_fractured": 0.01073640825128869,
+          "mean_abs_dp_negative": 0.0050070658105665425,
+          "max_abs_dp": 0.16975009441375732,
+          "decision_flips@0.5": 0,
+          "auprc": 0.7794209121821782,
+          "d_auprc": -0.007544241893238879,
+          "dp_fractured_signed": {
+            "mean": 0.004893560632409756,
+            "ci95": [
+              -0.001817784782430119,
+              0.01098398901521429
+            ],
+            "p_signflip": 0.14578542145785423,
+            "n": 57
+          }
+        }
+      },
+      "T3_occlusion": {
+        "mean|redetect": {
+          "d_lesion": 0.0822568612638861,
+          "d_background": -0.015515220916963049,
+          "D=d_lesion-d_background": {
+            "mean": 0.09777208218084914,
+            "ci95": [
+              0.018379978954993537,
+              0.18423297884414425
+            ],
+            "p_signflip": 0.0188981101889811,
+            "n": 56
+          }
+        },
+        "mean|fixed": {
+          "d_lesion": 0.006482882990634867,
+          "d_background": -0.013701005206842507,
+          "D=d_lesion-d_background": {
+            "mean": 0.020183888197477375,
+            "ci95": [
+              -0.045611978373210176,
+              0.08220341732656514
+            ],
+            "p_signflip": 0.5396460353964604,
+            "n": 56
+          }
+        },
+        "mean|proposal_lost_rate": {
+          "lesion": 0.4107142857142857,
+          "background": 0.0
+        },
+        "blur5|redetect": {
+          "d_lesion": 0.05523671780247241,
+          "d_background": -0.043590996314638426,
+          "D=d_lesion-d_background": {
+            "mean": 0.09882771411711085,
+            "ci95": [
+              0.030156233023660498,
+              0.17208344998103306
+            ],
+            "p_signflip": 0.0064993500649935,
+            "n": 56
+          }
+        },
+        "blur5|fixed": {
+          "d_lesion": 0.037137960882059166,
+          "d_background": -0.02332068735267967,
+          "D=d_lesion-d_background": {
+            "mean": 0.060458648234738836,
+            "ci95": [
+              0.008553265061294824,
+              0.11190203858123972
+            ],
+            "p_signflip": 0.022297770222977704,
+            "n": 56
+          }
+        },
+        "blur5|proposal_lost_rate": {
+          "lesion": 0.16071428571428573,
+          "background": 0.017857142857142856
+        },
+        "inpaint|redetect": {
+          "d_lesion": 0.11724112680115338,
+          "d_background": -0.03444030734577349,
+          "D=d_lesion-d_background": {
+            "mean": 0.15168143414692686,
+            "ci95": [
+              0.0686282161153345,
+              0.2373195459308591
+            ],
+            "p_signflip": 0.0005999400059994001,
+            "n": 56
+          }
+        },
+        "inpaint|fixed": {
+          "d_lesion": 0.08633145679985839,
+          "d_background": -0.01855158672801086,
+          "D=d_lesion-d_background": {
+            "mean": 0.10488304352786924,
+            "ci95": [
+              0.047640548622108654,
+              0.16710789461119088
+            ],
+            "p_signflip": 0.0006999300069993001,
+            "n": 56
+          }
+        },
+        "inpaint|proposal_lost_rate": {
+          "lesion": 0.23214285714285715,
+          "background": 0.017857142857142856
+        }
+      }
+    }
+  },
+  "seconds": 317.0676589012146
+}

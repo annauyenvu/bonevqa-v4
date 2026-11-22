@@ -1,0 +1,88 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "D2_sweep_rmax",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "D2_sweep_rmax": {
+      "auprc": 0.7747386972107562,
+      "auroc": 0.9256516211061666,
+      "sens@0.5": 0.6853146853146853,
+      "spec@0.5": 0.9515151515151515,
+      "m_rate_fractured": 0.972027972027972,
+      "m_rate_nonfractured": 0.42424242424242425,
+      "sens@0.5_m1": 0.697841726618705,
+      "sens@0.5_m0": 0.25,
+      "n_pos_m0": 4,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/rmax/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "2cc8ff5ff4981e6fe90ecf59cd5aeff15e8ed3d49afa106d4b82701ecf921ba6"
+    },
+    "D2_sweep_rmax_placebo": {
+      "auprc": 0.7036973799590844,
+      "auroc": 0.8863848272939182,
+      "sens@0.5": 0.4755244755244755,
+      "spec@0.5": 0.9712121212121212,
+      "m_rate_fractured": 0.972027972027972,
+      "m_rate_nonfractured": 0.42424242424242425,
+      "sens@0.5_m1": 0.48201438848920863,
+      "sens@0.5_m0": 0.25,
+      "n_pos_m0": 4,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/rmax/fold_0/proposals_fold0_placebo.json",
+      "checkpoint_sha256": "2cc8ff5ff4981e6fe90ecf59cd5aeff15e8ed3d49afa106d4b82701ecf921ba6"
+    },
+    "D2_sweep_rmax_oracleloc": {
+      "auprc": 0.7845430095507527,
+      "auroc": 0.9295083704174614,
+      "sens@0.5": 0.6713286713286714,
+      "spec@0.5": 0.9515151515151515,
+      "m_rate_fractured": 0.972027972027972,
+      "m_rate_nonfractured": 0.42424242424242425,
+      "sens@0.5_m1": 0.6834532374100719,
+      "sens@0.5_m0": 0.25,
+      "n_pos_m0": 4,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/rmax/fold_0/proposals_fold0_oracleloc.json",
+      "checkpoint_sha256": "2cc8ff5ff4981e6fe90ecf59cd5aeff15e8ed3d49afa106d4b82701ecf921ba6"
+    }
+  },
+  "diff_vs_reference": {
+    "D2_sweep_rmax_placebo": {
+      "auprc": {
+        "diff": -0.07104131725167173,
+        "ci95": [
+          -0.1071,
+          -0.0341
+        ]
+      },
+      "auroc": {
+        "diff": -0.0392667938122484,
+        "ci95": [
+          -0.0537,
+          -0.0249
+        ]
+      }
+    },
+    "D2_sweep_rmax_oracleloc": {
+      "auprc": {
+        "diff": 0.009804312339996568,
+        "ci95": [
+          -0.0023,
+          0.0242
+        ]
+      },
+      "auroc": {
+        "diff": 0.0038567493112947604,
+        "ci95": [
+          -0.0037,
+          0.0123
+        ]
+      }
+    }
+  }
+}

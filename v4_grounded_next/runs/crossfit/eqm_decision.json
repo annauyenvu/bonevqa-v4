@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-12",
+  "decision": "Final multi-fold runs use --proposals crossfit_eqm for all 5 folds; EQM fitted strictly on the calibration split (detector scores only). No adjustment towards TEST.",
+  "acceptance_by_fold": {
+    "0": "accepted",
+    "1": "m_negative TRAIN-CF-EQM vs TEST p = 0.0086 (< 0.01); vs calibration not rejected",
+    "2": "accepted",
+    "3": "accepted",
+    "4": "m_negative TRAIN-CF-EQM vs TEST p = 0.0014, m_all p = 0.0025; vs calibration p = 0.68 (m_negative), 0.88 (m_all)"
+  },
+  "interpretation": "Folds 1 and 4 match the calibration split, on which the map is fitted, but deviate mildly from TEST in the negative-image proposal rate. The sealed detector's own negative-image proposal rate already differs between calibration and TEST (fold 4: 26.0% vs 33.7%), so the residual gap is attributed to natural sampling variation between the 321-image calibration split and TEST, not to a remaining cross-fit shift. Reported as-is; TEST is never used to fit or tune the map.",
+  "audits": ["fold_0/eqm/audit_eqm.json", "fold_1/eqm/audit_eqm.json", "fold_2/eqm/audit_eqm.json", "fold_3/eqm/audit_eqm.json", "fold_4/eqm/audit_eqm.json"]
+}

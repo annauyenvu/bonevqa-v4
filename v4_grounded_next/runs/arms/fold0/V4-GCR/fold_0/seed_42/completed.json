@@ -1,0 +1,39 @@
+{
+  "arm": "V4-GCR",
+  "fold": "0",
+  "seed": 42,
+  "overrides": {
+    "vg_lambda_contrast": 0.33
+  },
+  "updates": 719,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 719,
+      "mean_task": 1.655572694215939,
+      "mean_ground": 0.13862527593542046,
+      "mean_contrast": 0.09770185829769976,
+      "mean_recovery": 2.217443175251528,
+      "n_task": 2876,
+      "n_ground": 2876,
+      "n_contrast": 2876,
+      "n_recovery": 1812
+    }
+  ],
+  "model_val": {
+    "n": 321,
+    "prevalence": 0.17757009345794392,
+    "auprc": 0.7496641727219313,
+    "auroc": 0.9215178096757044,
+    "sens@0.5_m1": 0.7755102040816326,
+    "n_pos_m1": 49,
+    "sens@0.5_m0": 0.5,
+    "n_pos_m0": 8,
+    "spec@0.5": 0.8977272727272727,
+    "pointing_game": 0.19298245614035087,
+    "energy_in_gt": 0.10732096812704153,
+    "energy_chance": 0.026047261009667023,
+    "pointing_game_m1": 0.22448979591836735
+  },
+  "seconds": 3088.116381883621
+}

@@ -1,0 +1,54 @@
+{
+ "time": "2026-11-21 16:34",
+ "machine": "macOS-27.0.1-arm64-arm-64bit",
+ "health": {
+  "status": "ok",
+  "model": "JF · fold 0",
+  "checkpoint_sha256": "3b2081b17012",
+  "detector": "yolo_pilot/runs/yolo/fa_btxrd_os3/weights/best.pt",
+  "device": "cpu (4 luồng)",
+  "v4_thresholds": {
+   "0": 0.2263493835926056,
+   "1": 0.12208414822816849
+  },
+  "display_thresholds": {
+   "0": 0.11003421540802524,
+   "1": 0.12573981266954667
+  },
+  "btxrd_level": "0.10"
+ },
+ "images": 10,
+ "repeats": 3,
+ "latency_ms": {
+  "detect": {
+   "n": 30,
+   "p50": 628,
+   "p95": 1325,
+   "max": 1415
+  },
+  "fracture": {
+   "n": 30,
+   "p50": 1048,
+   "p95": 1723,
+   "max": 2122
+  },
+  "tumor": {
+   "n": 30,
+   "p50": 1032,
+   "p95": 1700,
+   "max": 2199
+  },
+  "open": {
+   "n": 30,
+   "p50": 918,
+   "p95": 1418,
+   "max": 1767
+  },
+  "diagnosis": {
+   "n": 30,
+   "p50": 2122,
+   "p95": 2877,
+   "max": 2926
+  }
+ }
+}

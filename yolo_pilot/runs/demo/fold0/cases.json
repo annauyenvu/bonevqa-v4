@@ -1,0 +1,129 @@
+{
+  "fold": 0,
+  "detector_threshold_own_best": {
+    "0": 0.11003421540802524,
+    "1": 0.12573981266954667
+  },
+  "fracture": {
+    "qualifying": 86,
+    "fractured_no_hardware_test": 129
+  },
+  "benign_test": {
+    "qualifying": 151
+  },
+  "malignant_test": {
+    "qualifying": 24
+  },
+  "diagnosis_correct_by_class": {
+    "test": {
+      "osteosarcoma": 30,
+      "osteochondroma": 115,
+      "simple bone cyst": 2
+    },
+    "external": {
+      "osteochondroma": 104,
+      "osteosarcoma": 42,
+      "multiple osteochondromas": 1,
+      "simple bone cyst": 3
+    }
+  },
+  "diagnosis_n_by_class": {
+    "test": {
+      "osteosarcoma": 39,
+      "other malignant bone tumor": 7,
+      "other benign bone tumor": 19,
+      "osteochondroma": 120,
+      "simple bone cyst": 13,
+      "giant cell tumor": 14,
+      "osteofibroma": 8,
+      "multiple osteochondromas": 41,
+      "synovial osteochondroma": 8
+    },
+    "external": {
+      "multiple osteochondromas": 95,
+      "osteochondroma": 125,
+      "osteosarcoma": 82,
+      "simple bone cyst": 89,
+      "other malignant bone tumor": 25,
+      "giant cell tumor": 48,
+      "synovial osteochondroma": 4,
+      "osteofibroma": 11,
+      "other benign bone tumor": 43
+    }
+  },
+  "picked": {
+    "fracture": [
+      "IMG0000025",
+      "IMG0002322",
+      "IMG0002587",
+      "IMG0004376"
+    ],
+    "benign": [
+      "BT_IMG000238",
+      "BT_IMG000669",
+      "BT_IMG001092",
+      "BT_IMG001345"
+    ],
+    "malignant": [
+      "BT_IMG000002",
+      "BT_IMG000045",
+      "BT_IMG000137",
+      "BT_IMG000229"
+    ],
+    "diagnosis_correct": [
+      [
+        "test",
+        "BT_IMG000276"
+      ],
+      [
+        "test",
+        "BT_IMG001345"
+      ],
+      [
+        "test",
+        "BT_IMG000002"
+      ],
+      [
+        "test",
+        "BT_IMG000202"
+      ],
+      [
+        "external",
+        "BT_IMG001548"
+      ],
+      [
+        "external",
+        "BT_IMG001614"
+      ],
+      [
+        "external",
+        "BT_IMG001440"
+      ]
+    ],
+    "diagnosis_wrong": [
+      [
+        "test",
+        "BT_IMG000465"
+      ],
+      [
+        "test",
+        "BT_IMG000602"
+      ],
+      [
+        "test",
+        "BT_IMG001135"
+      ],
+      [
+        "test",
+        "BT_IMG000677"
+      ]
+    ]
+  },
+  "files": [
+    "/Users/uyen/Downloads/BONEVQA/yolo_pilot/runs/demo/fold0/1_gay_xuong.png",
+    "/Users/uyen/Downloads/BONEVQA/yolo_pilot/runs/demo/fold0/2_u_lanh.png",
+    "/Users/uyen/Downloads/BONEVQA/yolo_pilot/runs/demo/fold0/3_u_ac.png",
+    "/Users/uyen/Downloads/BONEVQA/yolo_pilot/runs/demo/fold0/4_chan_doan_dung.png",
+    "/Users/uyen/Downloads/BONEVQA/yolo_pilot/runs/demo/fold0/5_chan_doan_sai.png"
+  ]
+}

@@ -7,15 +7,15 @@ reported numbers. Run this once after cloning:
     python tools/relocate.py            # rewrite to the directory that contains tools/
     python tools/relocate.py --check    # only count the files that would change
 
-Only text files (.py, .sh, .yaml, .yml, .json, .md, .txt) under refactor_v2/, exp4_multiseed/
-and mandatory_experiments_20261011/ are touched. Use git to see or revert the changes.
+Only text files (.py, .sh, .yaml, .yml, .json, .md, .txt) under refactor_v2/, exp4_multiseed/,
+mandatory_experiments_20261011/, v4_grounded_next/, yolo_pilot/, paper_jf/ and thesis_jf/ are touched. Use git to see or revert the changes.
 """
 import argparse
 from pathlib import Path
 
 OLD = "/Users/uyen/Downloads/BONEVQA"
 SUFFIXES = {".py", ".sh", ".yaml", ".yml", ".json", ".md", ".txt"}
-DIRS = ("refactor_v2", "exp4_multiseed", "mandatory_experiments_20261011")
+DIRS = ("refactor_v2", "exp4_multiseed", "mandatory_experiments_20261011", "v4_grounded_next", "yolo_pilot", "paper_jf", "thesis_jf")
 
 
 def main() -> None:

@@ -1,0 +1,82 @@
+{
+  "target_nonfractured_rate_model_val": 0.29924242424242425,
+  "thresholds": {
+    "outer": 0.014326825737953186
+  },
+  "train_insample": {
+    "m_rate_fractured": 1.0,
+    "m_rate_nonfractured": 0.26919431279620853,
+    "mean_props_nonfractured": 0.4,
+    "recall_top3_iou0.1": 1.0,
+    "recall_top3_iou0.3": 0.9934497816593887,
+    "recall_top3_iou0.5": 0.9934497816593887,
+    "image_AP_smax": 0.9853414514531535,
+    "image_AUROC_smax": 0.9965086197975952,
+    "best_iou_quantiles_fractured": [
+      0.781,
+      0.842,
+      0.889,
+      0.924,
+      0.944
+    ],
+    "images": 2568,
+    "fractured": 458
+  },
+  "model_val": {
+    "m_rate_fractured": 0.8771929824561403,
+    "m_rate_nonfractured": 0.29924242424242425,
+    "mean_props_nonfractured": 0.48863636363636365,
+    "recall_top3_iou0.1": 0.7017543859649122,
+    "recall_top3_iou0.3": 0.7017543859649122,
+    "recall_top3_iou0.5": 0.6842105263157895,
+    "image_AP_smax": 0.8008716893409449,
+    "image_AUROC_smax": 0.8935406698564593,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.666,
+      0.764,
+      0.833
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "calibration": {
+    "m_rate_fractured": 0.8771929824561403,
+    "m_rate_nonfractured": 0.29056603773584905,
+    "mean_props_nonfractured": 0.42641509433962266,
+    "recall_top3_iou0.1": 0.7894736842105263,
+    "recall_top3_iou0.3": 0.7719298245614035,
+    "recall_top3_iou0.5": 0.631578947368421,
+    "image_AP_smax": 0.7760425529072493,
+    "image_AUROC_smax": 0.9006289308176101,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.333,
+      0.596,
+      0.74,
+      0.818
+    ],
+    "images": 322,
+    "fractured": 57
+  },
+  "test": {
+    "m_rate_fractured": 0.8601398601398601,
+    "m_rate_nonfractured": 0.2883156297420334,
+    "mean_props_nonfractured": 0.40667678300455234,
+    "recall_top3_iou0.1": 0.7412587412587412,
+    "recall_top3_iou0.3": 0.7132867132867133,
+    "recall_top3_iou0.5": 0.5874125874125874,
+    "image_AP_smax": 0.776833949099991,
+    "image_AUROC_smax": 0.8935556097923321,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.0,
+      0.629,
+      0.769,
+      0.838
+    ],
+    "images": 802,
+    "fractured": 143
+  }
+}

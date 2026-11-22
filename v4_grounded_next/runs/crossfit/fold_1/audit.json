@@ -1,0 +1,96 @@
+{
+  "fold": "1",
+  "stats": {
+    "train_cf": {
+      "fractured_images": 458,
+      "negative_images": 2110,
+      "m_rate_fractured": 0.7860262008733624,
+      "m_rate_negative": 0.25497630331753557,
+      "recall_iou25": 0.5567685589519651,
+      "recall_iou50": 0.37336244541484714,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.3531,
+        0.6038,
+        0.7156
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0631,
+        0.1887,
+        0.4831,
+        0.6763
+      ]
+    },
+    "train_insample": {
+      "fractured_images": 458,
+      "negative_images": 2110,
+      "m_rate_fractured": 0.6222707423580786,
+      "m_rate_negative": 0.027488151658767772,
+      "recall_iou25": 0.5589519650655022,
+      "recall_iou50": 0.4650655021834061,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.442,
+        0.6626,
+        0.7752
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0,
+        0.094,
+        0.3244,
+        0.5385
+      ]
+    },
+    "test": {
+      "fractured_images": 143,
+      "negative_images": 660,
+      "m_rate_fractured": 0.5104895104895105,
+      "m_rate_negative": 0.03484848484848485,
+      "recall_iou25": 0.43356643356643354,
+      "recall_iou50": 0.3706293706293706,
+      "best_iou_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.6148,
+        0.7345
+      ],
+      "smax_fractured_quantiles": [
+        0.0,
+        0.0,
+        0.055,
+        0.2147,
+        0.4952
+      ]
+    }
+  },
+  "comparisons": {
+    "train_cf_vs_test": {
+      "m_rate": {
+        "diff": 0.27553669038385187,
+        "z": 6.409421638970846,
+        "p_two_sided": 1.4607270222861937e-10
+      },
+      "best_iou_ks": {
+        "statistic": 0.1891165602955996,
+        "p": 0.0006858908909311089
+      }
+    },
+    "train_insample_vs_test": {
+      "m_rate": {
+        "diff": 0.11178123186856803,
+        "z": 2.377728344683939,
+        "p_two_sided": 0.01741965383451343
+      },
+      "best_iou_ks": {
+        "statistic": 0.13105017253488868,
+        "p": 0.04249447251895903
+      }
+    }
+  },
+  "criterion": "train_cf m_rate and IoU distribution should be statistically indistinguishable from test (|diff| small, p>0.05), unlike train_insample (V4: 82.0% vs 75.9%)."
+}

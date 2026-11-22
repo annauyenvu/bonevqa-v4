@@ -1,0 +1,3079 @@
+{
+  "metrics": {
+    "n": 321,
+    "prevalence": 0.17757009345794392,
+    "auprc": 0.7535403121382388,
+    "auroc": 0.9294258373205742,
+    "sens@0.5_m1": 0.7959183673469388,
+    "n_pos_m1": 49,
+    "sens@0.5_m0": 0.25,
+    "n_pos_m0": 8,
+    "spec@0.5": 0.9090909090909091,
+    "pointing_game": 0.21052631578947367,
+    "energy_in_gt": 0.1555599793873466,
+    "energy_chance": 0.026047261009667023,
+    "pointing_game_m1": 0.24489795918367346
+  },
+  "rows": [
+    {
+      "image_id": "IMG0000009",
+      "y": 0,
+      "m": true,
+      "p_final": 0.34523868560791016,
+      "p_local": 0.34523868560791016,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000010",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10231274366378784,
+      "p_local": 0.10231274366378784,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000041",
+      "y": 0,
+      "m": true,
+      "p_final": 0.08623006194829941,
+      "p_local": 0.08623006194829941,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000060",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12309590727090836,
+      "p_local": 0.12309590727090836,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000092",
+      "y": 1,
+      "m": false,
+      "p_final": 0.9607736468315125,
+      "p_local": 0.9607736468315125,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.04775874316692352,
+      "gt_area_frac": 0.030612244897959183
+    },
+    {
+      "image_id": "IMG0000097",
+      "y": 0,
+      "m": true,
+      "p_final": 0.08407431095838547,
+      "p_local": 0.08407431095838547,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000121",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04232697933912277,
+      "p_local": 0.04232697933912277,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000143",
+      "y": 1,
+      "m": true,
+      "p_final": 0.721298098564148,
+      "p_local": 0.721298098564148,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.01166195422410965,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0000205",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9612939953804016,
+      "p_local": 0.9612939953804016,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000227",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05656784027814865,
+      "p_local": 0.05656784027814865,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000239",
+      "y": 0,
+      "m": true,
+      "p_final": 0.560123085975647,
+      "p_local": 0.560123085975647,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000250",
+      "y": 0,
+      "m": false,
+      "p_final": 0.042134061455726624,
+      "p_local": 0.042134061455726624,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000270",
+      "y": 0,
+      "m": true,
+      "p_final": 0.4561166763305664,
+      "p_local": 0.4561166763305664,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000271",
+      "y": 0,
+      "m": true,
+      "p_final": 0.33183565735816956,
+      "p_local": 0.33183565735816956,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000293",
+      "y": 0,
+      "m": false,
+      "p_final": 0.037134621292352676,
+      "p_local": 0.037134621292352676,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000303",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14915810525417328,
+      "p_local": 0.14915810525417328,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000307",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9929245710372925,
+      "p_local": 0.9929245710372925,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.17803892493247986,
+      "gt_area_frac": 0.05612244897959184
+    },
+    {
+      "image_id": "IMG0000314",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09055046737194061,
+      "p_local": 0.09055046737194061,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000315",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05891133099794388,
+      "p_local": 0.05891133099794388,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000325",
+      "y": 0,
+      "m": true,
+      "p_final": 0.16332091391086578,
+      "p_local": 0.16332091391086578,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000331",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06423506140708923,
+      "p_local": 0.06423506140708923,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000339",
+      "y": 0,
+      "m": false,
+      "p_final": 0.13550114631652832,
+      "p_local": 0.13550114631652832,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000355",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04012254998087883,
+      "p_local": 0.04012254998087883,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000382",
+      "y": 0,
+      "m": false,
+      "p_final": 0.1509026736021042,
+      "p_local": 0.1509026736021042,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000387",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03681844100356102,
+      "p_local": 0.03681844100356102,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000393",
+      "y": 0,
+      "m": false,
+      "p_final": 0.07579148560762405,
+      "p_local": 0.07579148560762405,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000397",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09498769789934158,
+      "p_local": 0.09498769789934158,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000413",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03259912505745888,
+      "p_local": 0.03259912505745888,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000414",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10500193387269974,
+      "p_local": 0.10500193387269974,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000417",
+      "y": 0,
+      "m": false,
+      "p_final": 0.20405817031860352,
+      "p_local": 0.20405817031860352,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000430",
+      "y": 0,
+      "m": true,
+      "p_final": 0.08707843720912933,
+      "p_local": 0.08707843720912933,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000441",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09994509816169739,
+      "p_local": 0.09994509816169739,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000449",
+      "y": 0,
+      "m": false,
+      "p_final": 0.069664366543293,
+      "p_local": 0.069664366543293,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000491",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05508876591920853,
+      "p_local": 0.05508876591920853,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000521",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04744238778948784,
+      "p_local": 0.04744238778948784,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000524",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14559344947338104,
+      "p_local": 0.14559344947338104,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000526",
+      "y": 0,
+      "m": false,
+      "p_final": 0.08100279420614243,
+      "p_local": 0.08100279420614243,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000534",
+      "y": 0,
+      "m": true,
+      "p_final": 0.1777815818786621,
+      "p_local": 0.1777815818786621,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000542",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03376571089029312,
+      "p_local": 0.03376571089029312,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000568",
+      "y": 0,
+      "m": true,
+      "p_final": 0.272354394197464,
+      "p_local": 0.272354394197464,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000580",
+      "y": 0,
+      "m": true,
+      "p_final": 0.6286100149154663,
+      "p_local": 0.6286100149154663,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000583",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0394674651324749,
+      "p_local": 0.0394674651324749,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000625",
+      "y": 0,
+      "m": false,
+      "p_final": 0.18503332138061523,
+      "p_local": 0.18503332138061523,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000640",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12321387976408005,
+      "p_local": 0.12321387976408005,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000656",
+      "y": 0,
+      "m": true,
+      "p_final": 0.04397080838680267,
+      "p_local": 0.04397080838680267,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000704",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09686024487018585,
+      "p_local": 0.09686024487018585,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000707",
+      "y": 0,
+      "m": true,
+      "p_final": 0.09168728440999985,
+      "p_local": 0.09168728440999985,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000708",
+      "y": 0,
+      "m": false,
+      "p_final": 0.040039513260126114,
+      "p_local": 0.040039513260126114,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000718",
+      "y": 0,
+      "m": true,
+      "p_final": 0.1435161530971527,
+      "p_local": 0.1435161530971527,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000726",
+      "y": 0,
+      "m": true,
+      "p_final": 0.0568353533744812,
+      "p_local": 0.0568353533744812,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000728",
+      "y": 0,
+      "m": false,
+      "p_final": 0.20405031740665436,
+      "p_local": 0.20405031740665436,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000739",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10207083076238632,
+      "p_local": 0.10207083076238632,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000744",
+      "y": 0,
+      "m": true,
+      "p_final": 0.21440362930297852,
+      "p_local": 0.21440362930297852,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000750",
+      "y": 1,
+      "m": true,
+      "p_final": 0.5842481255531311,
+      "p_local": 0.5842481255531311,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.05915474519133568,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0000751",
+      "y": 1,
+      "m": true,
+      "p_final": 0.31842443346977234,
+      "p_local": 0.31842443346977234,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.21203334629535675,
+      "gt_area_frac": 0.030612244897959183
+    },
+    {
+      "image_id": "IMG0000769",
+      "y": 0,
+      "m": true,
+      "p_final": 0.17307400703430176,
+      "p_local": 0.17307400703430176,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000771",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9431641697883606,
+      "p_local": 0.9431641697883606,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000782",
+      "y": 0,
+      "m": false,
+      "p_final": 0.11493824422359467,
+      "p_local": 0.11493824422359467,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000788",
+      "y": 0,
+      "m": true,
+      "p_final": 0.08927366137504578,
+      "p_local": 0.08927366137504578,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000790",
+      "y": 0,
+      "m": true,
+      "p_final": 0.10051573067903519,
+      "p_local": 0.10051573067903519,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000818",
+      "y": 0,
+      "m": true,
+      "p_final": 0.8118159770965576,
+      "p_local": 0.8118159770965576,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000842",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03177802637219429,
+      "p_local": 0.03177802637219429,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000843",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04096796363592148,
+      "p_local": 0.04096796363592148,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000847",
+      "y": 0,
+      "m": true,
+      "p_final": 0.5553708076477051,
+      "p_local": 0.5553708076477051,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000858",
+      "y": 0,
+      "m": false,
+      "p_final": 0.08215481787919998,
+      "p_local": 0.08215481787919998,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000868",
+      "y": 0,
+      "m": true,
+      "p_final": 0.16872355341911316,
+      "p_local": 0.16872355341911316,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000869",
+      "y": 0,
+      "m": true,
+      "p_final": 0.5833219885826111,
+      "p_local": 0.5833219885826111,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000878",
+      "y": 0,
+      "m": true,
+      "p_final": 0.34072670340538025,
+      "p_local": 0.34072670340538025,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000896",
+      "y": 0,
+      "m": false,
+      "p_final": 0.058475930243730545,
+      "p_local": 0.058475930243730545,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000914",
+      "y": 0,
+      "m": true,
+      "p_final": 0.2458643913269043,
+      "p_local": 0.2458643913269043,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000916",
+      "y": 0,
+      "m": true,
+      "p_final": 0.7883082032203674,
+      "p_local": 0.7883082032203674,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000934",
+      "y": 0,
+      "m": false,
+      "p_final": 0.02981225959956646,
+      "p_local": 0.02981225959956646,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000944",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05829116702079773,
+      "p_local": 0.05829116702079773,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000945",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05031714215874672,
+      "p_local": 0.05031714215874672,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000946",
+      "y": 0,
+      "m": true,
+      "p_final": 0.1637265980243683,
+      "p_local": 0.1637265980243683,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000952",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03558862581849098,
+      "p_local": 0.03558862581849098,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000974",
+      "y": 0,
+      "m": false,
+      "p_final": 0.043635111302137375,
+      "p_local": 0.043635111302137375,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000975",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10702314972877502,
+      "p_local": 0.10702314972877502,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000981",
+      "y": 0,
+      "m": false,
+      "p_final": 0.07257349044084549,
+      "p_local": 0.07257349044084549,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000990",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06750921905040741,
+      "p_local": 0.06750921905040741,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000992",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03345150128006935,
+      "p_local": 0.03345150128006935,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000995",
+      "y": 0,
+      "m": false,
+      "p_final": 0.041838280856609344,
+      "p_local": 0.041838280856609344,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0000996",
+      "y": 0,
+      "m": true,
+      "p_final": 0.23514027893543243,
+      "p_local": 0.23514027893543243,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001000",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12743595242500305,
+      "p_local": 0.12743595242500305,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001022",
+      "y": 0,
+      "m": false,
+      "p_final": 0.044731393456459045,
+      "p_local": 0.044731393456459045,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001045",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10412540286779404,
+      "p_local": 0.10412540286779404,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001047",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03925572335720062,
+      "p_local": 0.03925572335720062,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001049",
+      "y": 0,
+      "m": true,
+      "p_final": 0.13431988656520844,
+      "p_local": 0.13431988656520844,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001065",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09400118887424469,
+      "p_local": 0.09400118887424469,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001128",
+      "y": 0,
+      "m": false,
+      "p_final": 0.047596752643585205,
+      "p_local": 0.047596752643585205,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001134",
+      "y": 0,
+      "m": true,
+      "p_final": 0.08276046812534332,
+      "p_local": 0.08276046812534332,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001219",
+      "y": 0,
+      "m": false,
+      "p_final": 0.051884111016988754,
+      "p_local": 0.051884111016988754,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001220",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04224105924367905,
+      "p_local": 0.04224105924367905,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001230",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05167847499251366,
+      "p_local": 0.05167847499251366,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001242",
+      "y": 0,
+      "m": true,
+      "p_final": 0.07120416313409805,
+      "p_local": 0.07120416313409805,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001244",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05360126495361328,
+      "p_local": 0.05360126495361328,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001253",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12294018268585205,
+      "p_local": 0.12294018268585205,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001267",
+      "y": 0,
+      "m": false,
+      "p_final": 0.026558203622698784,
+      "p_local": 0.026558203622698784,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001279",
+      "y": 0,
+      "m": true,
+      "p_final": 0.19086389243602753,
+      "p_local": 0.19086389243602753,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001297",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09525687992572784,
+      "p_local": 0.09525687992572784,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001298",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06554783135652542,
+      "p_local": 0.06554783135652542,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001306",
+      "y": 0,
+      "m": false,
+      "p_final": 0.041990309953689575,
+      "p_local": 0.041990309953689575,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001310",
+      "y": 0,
+      "m": false,
+      "p_final": 0.037368617951869965,
+      "p_local": 0.037368617951869965,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001329",
+      "y": 0,
+      "m": false,
+      "p_final": 0.08591616153717041,
+      "p_local": 0.08591616153717041,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001335",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0658620223402977,
+      "p_local": 0.0658620223402977,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001336",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05241016671061516,
+      "p_local": 0.05241016671061516,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001338",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14447744190692902,
+      "p_local": 0.14447744190692902,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001356",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12753444910049438,
+      "p_local": 0.12753444910049438,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001371",
+      "y": 0,
+      "m": true,
+      "p_final": 0.7644591331481934,
+      "p_local": 0.7644591331481934,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001398",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10513516515493393,
+      "p_local": 0.10513516515493393,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001402",
+      "y": 0,
+      "m": true,
+      "p_final": 0.06934531033039093,
+      "p_local": 0.06934531033039093,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001403",
+      "y": 0,
+      "m": false,
+      "p_final": 0.08659110218286514,
+      "p_local": 0.08659110218286514,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001417",
+      "y": 0,
+      "m": false,
+      "p_final": 0.041989054530858994,
+      "p_local": 0.041989054530858994,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001421",
+      "y": 0,
+      "m": false,
+      "p_final": 0.049833573400974274,
+      "p_local": 0.049833573400974274,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001426",
+      "y": 0,
+      "m": false,
+      "p_final": 0.11141400039196014,
+      "p_local": 0.11141400039196014,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001428",
+      "y": 1,
+      "m": true,
+      "p_final": 0.7946049571037292,
+      "p_local": 0.7946049571037292,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.2546549439430237,
+      "gt_area_frac": 0.04081632653061224
+    },
+    {
+      "image_id": "IMG0001429",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04169267416000366,
+      "p_local": 0.04169267416000366,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001440",
+      "y": 1,
+      "m": true,
+      "p_final": 0.8425474762916565,
+      "p_local": 0.8425474762916565,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.1157391369342804,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0001444",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04373335838317871,
+      "p_local": 0.04373335838317871,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001447",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03875556215643883,
+      "p_local": 0.03875556215643883,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001471",
+      "y": 0,
+      "m": true,
+      "p_final": 0.08692943304777145,
+      "p_local": 0.08692943304777145,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001483",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05403092876076698,
+      "p_local": 0.05403092876076698,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001502",
+      "y": 0,
+      "m": false,
+      "p_final": 0.034729357808828354,
+      "p_local": 0.034729357808828354,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001515",
+      "y": 0,
+      "m": false,
+      "p_final": 0.13156726956367493,
+      "p_local": 0.13156726956367493,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001544",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10709361732006073,
+      "p_local": 0.10709361732006073,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001546",
+      "y": 1,
+      "m": false,
+      "p_final": 0.3696415424346924,
+      "p_local": 0.3696415424346924,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.004686595406383276,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0001555",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03408706188201904,
+      "p_local": 0.03408706188201904,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001556",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03892047330737114,
+      "p_local": 0.03892047330737114,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001567",
+      "y": 0,
+      "m": false,
+      "p_final": 0.11243006587028503,
+      "p_local": 0.11243006587028503,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001574",
+      "y": 0,
+      "m": false,
+      "p_final": 0.30017244815826416,
+      "p_local": 0.30017244815826416,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001584",
+      "y": 0,
+      "m": false,
+      "p_final": 0.11754509806632996,
+      "p_local": 0.11754509806632996,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001618",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10783126205205917,
+      "p_local": 0.10783126205205917,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001619",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0920567736029625,
+      "p_local": 0.0920567736029625,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001622",
+      "y": 0,
+      "m": true,
+      "p_final": 0.46997982263565063,
+      "p_local": 0.46997982263565063,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001623",
+      "y": 0,
+      "m": true,
+      "p_final": 0.16331423819065094,
+      "p_local": 0.16331423819065094,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001625",
+      "y": 0,
+      "m": false,
+      "p_final": 0.07187823951244354,
+      "p_local": 0.07187823951244354,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001629",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06272115558385849,
+      "p_local": 0.06272115558385849,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001635",
+      "y": 0,
+      "m": true,
+      "p_final": 0.1772117018699646,
+      "p_local": 0.1772117018699646,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001641",
+      "y": 0,
+      "m": true,
+      "p_final": 0.0608513168990612,
+      "p_local": 0.0608513168990612,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001648",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04653004929423332,
+      "p_local": 0.04653004929423332,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001653",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06724714487791061,
+      "p_local": 0.06724714487791061,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001657",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04624653607606888,
+      "p_local": 0.04624653607606888,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001669",
+      "y": 0,
+      "m": false,
+      "p_final": 0.11240289360284805,
+      "p_local": 0.11240289360284805,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001696",
+      "y": 0,
+      "m": false,
+      "p_final": 0.052863944321870804,
+      "p_local": 0.052863944321870804,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001754",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05591236427426338,
+      "p_local": 0.05591236427426338,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001765",
+      "y": 0,
+      "m": false,
+      "p_final": 0.221714049577713,
+      "p_local": 0.221714049577713,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001785",
+      "y": 0,
+      "m": false,
+      "p_final": 0.1281452775001526,
+      "p_local": 0.1281452775001526,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001786",
+      "y": 0,
+      "m": false,
+      "p_final": 0.138563334941864,
+      "p_local": 0.138563334941864,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001794",
+      "y": 0,
+      "m": false,
+      "p_final": 0.15992100536823273,
+      "p_local": 0.15992100536823273,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001796",
+      "y": 0,
+      "m": true,
+      "p_final": 0.2598496675491333,
+      "p_local": 0.2598496675491333,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001799",
+      "y": 0,
+      "m": false,
+      "p_final": 0.040564559400081635,
+      "p_local": 0.040564559400081635,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001801",
+      "y": 0,
+      "m": true,
+      "p_final": 0.37080496549606323,
+      "p_local": 0.37080496549606323,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001814",
+      "y": 0,
+      "m": true,
+      "p_final": 0.31993523240089417,
+      "p_local": 0.31993523240089417,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001826",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05032955855131149,
+      "p_local": 0.05032955855131149,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001849",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12200531363487244,
+      "p_local": 0.12200531363487244,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001858",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03453249856829643,
+      "p_local": 0.03453249856829643,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001871",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0707099586725235,
+      "p_local": 0.0707099586725235,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001874",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04534776881337166,
+      "p_local": 0.04534776881337166,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001900",
+      "y": 0,
+      "m": true,
+      "p_final": 0.07192426174879074,
+      "p_local": 0.07192426174879074,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001923",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9904403686523438,
+      "p_local": 0.9904403686523438,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001951",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06689765304327011,
+      "p_local": 0.06689765304327011,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001965",
+      "y": 1,
+      "m": true,
+      "p_final": 0.5920634269714355,
+      "p_local": 0.5920634269714355,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.05915994942188263,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0001983",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04667343944311142,
+      "p_local": 0.04667343944311142,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0001995",
+      "y": 0,
+      "m": true,
+      "p_final": 0.25574052333831787,
+      "p_local": 0.25574052333831787,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002010",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9954630732536316,
+      "p_local": 0.9954630732536316,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002092",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03477603197097778,
+      "p_local": 0.03477603197097778,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002096",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04878917708992958,
+      "p_local": 0.04878917708992958,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002104",
+      "y": 0,
+      "m": true,
+      "p_final": 0.3854529559612274,
+      "p_local": 0.3854529559612274,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002117",
+      "y": 0,
+      "m": false,
+      "p_final": 0.20025388896465302,
+      "p_local": 0.20025388896465302,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002146",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06409469991922379,
+      "p_local": 0.06409469991922379,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002158",
+      "y": 0,
+      "m": true,
+      "p_final": 0.2884909510612488,
+      "p_local": 0.2884909510612488,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002170",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09991952031850815,
+      "p_local": 0.09991952031850815,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002172",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0290275439620018,
+      "p_local": 0.0290275439620018,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002220",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0449773371219635,
+      "p_local": 0.0449773371219635,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002231",
+      "y": 0,
+      "m": true,
+      "p_final": 0.7959452867507935,
+      "p_local": 0.7959452867507935,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002240",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12795448303222656,
+      "p_local": 0.12795448303222656,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002244",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06118588149547577,
+      "p_local": 0.06118588149547577,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002261",
+      "y": 0,
+      "m": true,
+      "p_final": 0.2550256550312042,
+      "p_local": 0.2550256550312042,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002279",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9968966245651245,
+      "p_local": 0.9968966245651245,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002281",
+      "y": 0,
+      "m": false,
+      "p_final": 0.3904372751712799,
+      "p_local": 0.3904372751712799,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002288",
+      "y": 0,
+      "m": false,
+      "p_final": 0.1358572244644165,
+      "p_local": 0.1358572244644165,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002308",
+      "y": 1,
+      "m": true,
+      "p_final": 0.08189137279987335,
+      "p_local": 0.08189137279987335,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.021697882562875748,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002326",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9222627878189087,
+      "p_local": 0.9222627878189087,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.11887766420841217,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002332",
+      "y": 1,
+      "m": true,
+      "p_final": 0.4111294448375702,
+      "p_local": 0.4111294448375702,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.07191327959299088,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0002336",
+      "y": 1,
+      "m": true,
+      "p_final": 0.5190514922142029,
+      "p_local": 0.5190514922142029,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.00762538705021143,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002338",
+      "y": 1,
+      "m": true,
+      "p_final": 0.23578283190727234,
+      "p_local": 0.23578283190727234,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.03865647315979004,
+      "gt_area_frac": 0.03571428571428571
+    },
+    {
+      "image_id": "IMG0002366",
+      "y": 1,
+      "m": true,
+      "p_final": 0.998630940914154,
+      "p_local": 0.998630940914154,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.3275892734527588,
+      "gt_area_frac": 0.05612244897959184
+    },
+    {
+      "image_id": "IMG0002380",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9979265928268433,
+      "p_local": 0.9979265928268433,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.14446203410625458,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002398",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9698770046234131,
+      "p_local": 0.9698770046234131,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.03007010743021965,
+      "gt_area_frac": 0.015306122448979591
+    },
+    {
+      "image_id": "IMG0002408",
+      "y": 1,
+      "m": true,
+      "p_final": 0.8140488266944885,
+      "p_local": 0.8140488266944885,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.13657547533512115,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002409",
+      "y": 1,
+      "m": true,
+      "p_final": 0.970125138759613,
+      "p_local": 0.970125138759613,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.11162799596786499,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002413",
+      "y": 1,
+      "m": true,
+      "p_final": 0.7301687598228455,
+      "p_local": 0.7301687598228455,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.4716014862060547,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002420",
+      "y": 1,
+      "m": true,
+      "p_final": 0.36023908853530884,
+      "p_local": 0.36023908853530884,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.1405334621667862,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002425",
+      "y": 1,
+      "m": true,
+      "p_final": 0.2861824631690979,
+      "p_local": 0.2861824631690979,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.023653067648410797,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0002446",
+      "y": 1,
+      "m": true,
+      "p_final": 0.8187981247901917,
+      "p_local": 0.8187981247901917,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.6411588191986084,
+      "gt_area_frac": 0.030612244897959183
+    },
+    {
+      "image_id": "IMG0002449",
+      "y": 1,
+      "m": true,
+      "p_final": 0.338693231344223,
+      "p_local": 0.338693231344223,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.009521091356873512,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0002475",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9992990493774414,
+      "p_local": 0.9992990493774414,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.2547481656074524,
+      "gt_area_frac": 0.04591836734693878
+    },
+    {
+      "image_id": "IMG0002496",
+      "y": 1,
+      "m": true,
+      "p_final": 0.7982686758041382,
+      "p_local": 0.7982686758041382,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.0645228773355484,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002524",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9877233505249023,
+      "p_local": 0.9877233505249023,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.3611675202846527,
+      "gt_area_frac": 0.025510204081632654
+    },
+    {
+      "image_id": "IMG0002568",
+      "y": 1,
+      "m": false,
+      "p_final": 0.17384988069534302,
+      "p_local": 0.17384988069534302,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.14051923155784607,
+      "gt_area_frac": 0.04081632653061224
+    },
+    {
+      "image_id": "IMG0002572",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9993164539337158,
+      "p_local": 0.9993164539337158,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.2738478183746338,
+      "gt_area_frac": 0.0663265306122449
+    },
+    {
+      "image_id": "IMG0002580",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9941258430480957,
+      "p_local": 0.9941258430480957,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.22810494899749756,
+      "gt_area_frac": 0.015306122448979591
+    },
+    {
+      "image_id": "IMG0002586",
+      "y": 1,
+      "m": true,
+      "p_final": 0.999371349811554,
+      "p_local": 0.999371349811554,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.24042129516601562,
+      "gt_area_frac": 0.025510204081632654
+    },
+    {
+      "image_id": "IMG0002589",
+      "y": 1,
+      "m": false,
+      "p_final": 0.9914611577987671,
+      "p_local": 0.9914611577987671,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.17319738864898682,
+      "gt_area_frac": 0.05102040816326531
+    },
+    {
+      "image_id": "IMG0002592",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9908959269523621,
+      "p_local": 0.9908959269523621,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.22741451859474182,
+      "gt_area_frac": 0.030612244897959183
+    },
+    {
+      "image_id": "IMG0002620",
+      "y": 1,
+      "m": false,
+      "p_final": 0.3422742486000061,
+      "p_local": 0.3422742486000061,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.026038408279418945,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002639",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09181738644838333,
+      "p_local": 0.09181738644838333,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002644",
+      "y": 0,
+      "m": true,
+      "p_final": 0.3736076354980469,
+      "p_local": 0.3736076354980469,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002656",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03874116763472557,
+      "p_local": 0.03874116763472557,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002684",
+      "y": 0,
+      "m": false,
+      "p_final": 0.13611724972724915,
+      "p_local": 0.13611724972724915,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002745",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9962956309318542,
+      "p_local": 0.9962956309318542,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.1687610149383545,
+      "gt_area_frac": 0.025510204081632654
+    },
+    {
+      "image_id": "IMG0002746",
+      "y": 1,
+      "m": true,
+      "p_final": 0.732451319694519,
+      "p_local": 0.732451319694519,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.022217266261577606,
+      "gt_area_frac": 0.025510204081632654
+    },
+    {
+      "image_id": "IMG0002750",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9991349577903748,
+      "p_local": 0.9991349577903748,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.24539412558078766,
+      "gt_area_frac": 0.03571428571428571
+    },
+    {
+      "image_id": "IMG0002754",
+      "y": 0,
+      "m": false,
+      "p_final": 0.040471285581588745,
+      "p_local": 0.040471285581588745,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002758",
+      "y": 0,
+      "m": false,
+      "p_final": 0.07365598529577255,
+      "p_local": 0.07365598529577255,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002790",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9995717406272888,
+      "p_local": 0.9995717406272888,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.17446410655975342,
+      "gt_area_frac": 0.05102040816326531
+    },
+    {
+      "image_id": "IMG0002798",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09267844259738922,
+      "p_local": 0.09267844259738922,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002800",
+      "y": 0,
+      "m": false,
+      "p_final": 0.027959315106272697,
+      "p_local": 0.027959315106272697,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002808",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10136814415454865,
+      "p_local": 0.10136814415454865,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002810",
+      "y": 1,
+      "m": true,
+      "p_final": 0.928493857383728,
+      "p_local": 0.928493857383728,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.08928170055150986,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002818",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05816739797592163,
+      "p_local": 0.05816739797592163,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002833",
+      "y": 1,
+      "m": false,
+      "p_final": 0.3120647668838501,
+      "p_local": 0.3120647668838501,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.20765423774719238,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0002852",
+      "y": 0,
+      "m": false,
+      "p_final": 0.029466751962900162,
+      "p_local": 0.029466751962900162,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002854",
+      "y": 0,
+      "m": true,
+      "p_final": 0.07170630246400833,
+      "p_local": 0.07170630246400833,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002868",
+      "y": 0,
+      "m": true,
+      "p_final": 0.945233166217804,
+      "p_local": 0.945233166217804,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002871",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04126700758934021,
+      "p_local": 0.04126700758934021,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002880",
+      "y": 0,
+      "m": false,
+      "p_final": 0.038999348878860474,
+      "p_local": 0.038999348878860474,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002895",
+      "y": 0,
+      "m": false,
+      "p_final": 0.035888392478227615,
+      "p_local": 0.035888392478227615,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002899",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09092497080564499,
+      "p_local": 0.09092497080564499,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002919",
+      "y": 0,
+      "m": false,
+      "p_final": 0.13843567669391632,
+      "p_local": 0.13843567669391632,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002950",
+      "y": 0,
+      "m": true,
+      "p_final": 0.7919861674308777,
+      "p_local": 0.7919861674308777,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002975",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03952525556087494,
+      "p_local": 0.03952525556087494,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0002996",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09100696444511414,
+      "p_local": 0.09100696444511414,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003002",
+      "y": 0,
+      "m": false,
+      "p_final": 0.27904242277145386,
+      "p_local": 0.27904242277145386,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003025",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05123163387179375,
+      "p_local": 0.05123163387179375,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003030",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04282596707344055,
+      "p_local": 0.04282596707344055,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003053",
+      "y": 0,
+      "m": false,
+      "p_final": 0.17933624982833862,
+      "p_local": 0.17933624982833862,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003099",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0880577564239502,
+      "p_local": 0.0880577564239502,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003104",
+      "y": 0,
+      "m": false,
+      "p_final": 0.17752012610435486,
+      "p_local": 0.17752012610435486,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003125",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14276285469532013,
+      "p_local": 0.14276285469532013,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003143",
+      "y": 0,
+      "m": true,
+      "p_final": 0.09818617254495621,
+      "p_local": 0.09818617254495621,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003154",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03932517021894455,
+      "p_local": 0.03932517021894455,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003176",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05238856002688408,
+      "p_local": 0.05238856002688408,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003187",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05492369830608368,
+      "p_local": 0.05492369830608368,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003191",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14834140241146088,
+      "p_local": 0.14834140241146088,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003211",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14472579956054688,
+      "p_local": 0.14472579956054688,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003232",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0770338773727417,
+      "p_local": 0.0770338773727417,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003243",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04174848273396492,
+      "p_local": 0.04174848273396492,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003284",
+      "y": 0,
+      "m": true,
+      "p_final": 0.23976364731788635,
+      "p_local": 0.23976364731788635,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003286",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06486593931913376,
+      "p_local": 0.06486593931913376,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003312",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9934064149856567,
+      "p_local": 0.9934064149856567,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.14688877761363983,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0003332",
+      "y": 1,
+      "m": true,
+      "p_final": 0.997305154800415,
+      "p_local": 0.997305154800415,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.12582144141197205,
+      "gt_area_frac": 0.015306122448979591
+    },
+    {
+      "image_id": "IMG0003345",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03669784218072891,
+      "p_local": 0.03669784218072891,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003366",
+      "y": 0,
+      "m": true,
+      "p_final": 0.09122820943593979,
+      "p_local": 0.09122820943593979,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003371",
+      "y": 0,
+      "m": false,
+      "p_final": 0.20895418524742126,
+      "p_local": 0.20895418524742126,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003372",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9917723536491394,
+      "p_local": 0.9917723536491394,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003375",
+      "y": 1,
+      "m": false,
+      "p_final": 0.27168166637420654,
+      "p_local": 0.27168166637420654,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.0849308967590332,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0003378",
+      "y": 0,
+      "m": false,
+      "p_final": 0.11457202583551407,
+      "p_local": 0.11457202583551407,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003382",
+      "y": 1,
+      "m": true,
+      "p_final": 0.4925539195537567,
+      "p_local": 0.4925539195537567,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.11310237646102905,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0003394",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9935967922210693,
+      "p_local": 0.9935967922210693,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.24413570761680603,
+      "gt_area_frac": 0.015306122448979591
+    },
+    {
+      "image_id": "IMG0003396",
+      "y": 1,
+      "m": true,
+      "p_final": 0.746253252029419,
+      "p_local": 0.746253252029419,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.2617696225643158,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0003405",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04427885264158249,
+      "p_local": 0.04427885264158249,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003408",
+      "y": 0,
+      "m": false,
+      "p_final": 0.07700632512569427,
+      "p_local": 0.07700632512569427,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003414",
+      "y": 0,
+      "m": true,
+      "p_final": 0.5784820914268494,
+      "p_local": 0.5784820914268494,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003440",
+      "y": 0,
+      "m": false,
+      "p_final": 0.02951003611087799,
+      "p_local": 0.02951003611087799,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003441",
+      "y": 0,
+      "m": false,
+      "p_final": 0.03683476895093918,
+      "p_local": 0.03683476895093918,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003486",
+      "y": 0,
+      "m": true,
+      "p_final": 0.3696148991584778,
+      "p_local": 0.3696148991584778,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003500",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06409371644258499,
+      "p_local": 0.06409371644258499,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003518",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14811840653419495,
+      "p_local": 0.14811840653419495,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003537",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12348059564828873,
+      "p_local": 0.12348059564828873,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003538",
+      "y": 0,
+      "m": false,
+      "p_final": 0.16467319428920746,
+      "p_local": 0.16467319428920746,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003539",
+      "y": 0,
+      "m": false,
+      "p_final": 0.036024682223796844,
+      "p_local": 0.036024682223796844,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003540",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0458940789103508,
+      "p_local": 0.0458940789103508,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003554",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9975661039352417,
+      "p_local": 0.9975661039352417,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003570",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10754744708538055,
+      "p_local": 0.10754744708538055,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003579",
+      "y": 0,
+      "m": true,
+      "p_final": 0.5390942692756653,
+      "p_local": 0.5390942692756653,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003587",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9120563268661499,
+      "p_local": 0.9120563268661499,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.1974964737892151,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0003588",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9990105628967285,
+      "p_local": 0.9990105628967285,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.17483404278755188,
+      "gt_area_frac": 0.03571428571428571
+    },
+    {
+      "image_id": "IMG0003591",
+      "y": 0,
+      "m": false,
+      "p_final": 0.030401868745684624,
+      "p_local": 0.030401868745684624,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003592",
+      "y": 0,
+      "m": true,
+      "p_final": 0.18744812905788422,
+      "p_local": 0.18744812905788422,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003596",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12868531048297882,
+      "p_local": 0.12868531048297882,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003598",
+      "y": 0,
+      "m": false,
+      "p_final": 0.08327694237232208,
+      "p_local": 0.08327694237232208,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003602",
+      "y": 0,
+      "m": false,
+      "p_final": 0.050175320357084274,
+      "p_local": 0.050175320357084274,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003610",
+      "y": 0,
+      "m": true,
+      "p_final": 0.5903304219245911,
+      "p_local": 0.5903304219245911,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003621",
+      "y": 0,
+      "m": false,
+      "p_final": 0.12148279696702957,
+      "p_local": 0.12148279696702957,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003641",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04312087222933769,
+      "p_local": 0.04312087222933769,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003646",
+      "y": 0,
+      "m": true,
+      "p_final": 0.503083348274231,
+      "p_local": 0.503083348274231,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003672",
+      "y": 0,
+      "m": false,
+      "p_final": 0.05925975367426872,
+      "p_local": 0.05925975367426872,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003675",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09413231164216995,
+      "p_local": 0.09413231164216995,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003684",
+      "y": 0,
+      "m": false,
+      "p_final": 0.14124630391597748,
+      "p_local": 0.14124630391597748,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003687",
+      "y": 0,
+      "m": false,
+      "p_final": 0.038755811750888824,
+      "p_local": 0.038755811750888824,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003704",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9992380142211914,
+      "p_local": 0.9992380142211914,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.12070087343454361,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0003732",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09724981337785721,
+      "p_local": 0.09724981337785721,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003742",
+      "y": 0,
+      "m": false,
+      "p_final": 0.09259378165006638,
+      "p_local": 0.09259378165006638,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003766",
+      "y": 1,
+      "m": true,
+      "p_final": 0.2681405246257782,
+      "p_local": 0.2681405246257782,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.3134920597076416,
+      "gt_area_frac": 0.05102040816326531
+    },
+    {
+      "image_id": "IMG0003773",
+      "y": 0,
+      "m": true,
+      "p_final": 0.8045743703842163,
+      "p_local": 0.8045743703842163,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003788",
+      "y": 0,
+      "m": true,
+      "p_final": 0.34300437569618225,
+      "p_local": 0.34300437569618225,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003813",
+      "y": 1,
+      "m": true,
+      "p_final": 0.6866330504417419,
+      "p_local": 0.6866330504417419,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.05749664455652237,
+      "gt_area_frac": 0.00510204081632653
+    },
+    {
+      "image_id": "IMG0003815",
+      "y": 0,
+      "m": false,
+      "p_final": 0.04176928102970123,
+      "p_local": 0.04176928102970123,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003817",
+      "y": 0,
+      "m": false,
+      "p_final": 0.08544466644525528,
+      "p_local": 0.08544466644525528,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003847",
+      "y": 1,
+      "m": true,
+      "p_final": 0.29554465413093567,
+      "p_local": 0.29554465413093567,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.12886789441108704,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0003856",
+      "y": 0,
+      "m": false,
+      "p_final": 0.06216801702976227,
+      "p_local": 0.06216801702976227,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003860",
+      "y": 0,
+      "m": true,
+      "p_final": 0.253945529460907,
+      "p_local": 0.253945529460907,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003889",
+      "y": 0,
+      "m": false,
+      "p_final": 0.0656929463148117,
+      "p_local": 0.0656929463148117,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003891",
+      "y": 0,
+      "m": false,
+      "p_final": 0.235454261302948,
+      "p_local": 0.235454261302948,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003903",
+      "y": 0,
+      "m": true,
+      "p_final": 0.1612437516450882,
+      "p_local": 0.1612437516450882,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003905",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9866553544998169,
+      "p_local": 0.9866553544998169,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.21744464337825775,
+      "gt_area_frac": 0.02040816326530612
+    },
+    {
+      "image_id": "IMG0003930",
+      "y": 0,
+      "m": false,
+      "p_final": 0.1448436826467514,
+      "p_local": 0.1448436826467514,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003940",
+      "y": 0,
+      "m": false,
+      "p_final": 0.07636000961065292,
+      "p_local": 0.07636000961065292,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0003992",
+      "y": 0,
+      "m": false,
+      "p_final": 0.19293293356895447,
+      "p_local": 0.19293293356895447,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004002",
+      "y": 0,
+      "m": true,
+      "p_final": 0.6704345941543579,
+      "p_local": 0.6704345941543579,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004004",
+      "y": 0,
+      "m": true,
+      "p_final": 0.31802529096603394,
+      "p_local": 0.31802529096603394,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004020",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10727708786725998,
+      "p_local": 0.10727708786725998,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004114",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9991349577903748,
+      "p_local": 0.9991349577903748,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.3134762644767761,
+      "gt_area_frac": 0.04591836734693878
+    },
+    {
+      "image_id": "IMG0004116",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9962956309318542,
+      "p_local": 0.9962956309318542,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.05598887801170349,
+      "gt_area_frac": 0.01020408163265306
+    },
+    {
+      "image_id": "IMG0004138",
+      "y": 0,
+      "m": false,
+      "p_final": 0.10136814415454865,
+      "p_local": 0.10136814415454865,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004151",
+      "y": 1,
+      "m": true,
+      "p_final": 0.9995717406272888,
+      "p_local": 0.9995717406272888,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": true,
+      "energy_in_gt": 0.13820531964302063,
+      "gt_area_frac": 0.03571428571428571
+    },
+    {
+      "image_id": "IMG0004193",
+      "y": 0,
+      "m": true,
+      "p_final": 0.9452332854270935,
+      "p_local": 0.9452332854270935,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004225",
+      "y": 0,
+      "m": false,
+      "p_final": 0.13843567669391632,
+      "p_local": 0.13843567669391632,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004277",
+      "y": 0,
+      "m": false,
+      "p_final": 0.27904242277145386,
+      "p_local": 0.27904242277145386,
+      "p_global": null,
+      "alpha": null
+    },
+    {
+      "image_id": "IMG0004337",
+      "y": 1,
+      "m": false,
+      "p_final": 0.09629694372415543,
+      "p_local": 0.09629694372415543,
+      "p_global": null,
+      "alpha": null,
+      "point_hit": false,
+      "energy_in_gt": 0.03606044501066208,
+      "gt_area_frac": 0.03571428571428571
+    }
+  ]
+}

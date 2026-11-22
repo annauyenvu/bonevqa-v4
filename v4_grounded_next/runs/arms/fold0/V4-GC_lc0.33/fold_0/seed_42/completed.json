@@ -1,0 +1,38 @@
+{
+  "arm": "V4-GC",
+  "fold": "0",
+  "seed": 42,
+  "overrides": {
+    "vg_lambda_contrast": 0.33
+  },
+  "updates": 719,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 719,
+      "mean_task": 1.6283921766326723,
+      "mean_ground": 0.13848869563925392,
+      "mean_contrast": 0.09386179490605492,
+      "n_task": 2876,
+      "n_ground": 2876,
+      "n_contrast": 2876,
+      "n_recovery": 0
+    }
+  ],
+  "model_val": {
+    "n": 321,
+    "prevalence": 0.17757009345794392,
+    "auprc": 0.7466440016670594,
+    "auroc": 0.9314859117490697,
+    "sens@0.5_m1": 0.8163265306122449,
+    "n_pos_m1": 49,
+    "sens@0.5_m0": 0.25,
+    "n_pos_m0": 8,
+    "spec@0.5": 0.9015151515151515,
+    "pointing_game": 0.22807017543859648,
+    "energy_in_gt": 0.15630270735148274,
+    "energy_chance": 0.026047261009667023,
+    "pointing_game_m1": 0.2653061224489796
+  },
+  "seconds": 5885.023069858551
+}

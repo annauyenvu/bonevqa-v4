@@ -1,0 +1,216 @@
+{
+  "target_nonfractured_rate_model_val": 0.48484848484848486,
+  "thresholds": {
+    "outer": 0.001002024975605309,
+    "inner0": 0.002341407584026456,
+    "inner1": 0.0037907082587480545,
+    "inner2": 0.0031029253732413054
+  },
+  "train_insample": {
+    "m_rate_fractured": 1.0,
+    "m_rate_nonfractured": 0.44670772145902415,
+    "mean_props_nonfractured": 0.8612032212221696,
+    "recall_top3_iou0.1": 1.0,
+    "recall_top3_iou0.3": 1.0,
+    "recall_top3_iou0.5": 0.9956331877729258,
+    "image_AP_smax": 0.9955957305750255,
+    "image_AUROC_smax": 0.9989584604659726,
+    "best_iou_quantiles_fractured": [
+      0.807,
+      0.858,
+      0.903,
+      0.932,
+      0.953
+    ],
+    "images": 2569,
+    "fractured": 458
+  },
+  "model_val": {
+    "m_rate_fractured": 0.9649122807017544,
+    "m_rate_nonfractured": 0.44696969696969696,
+    "mean_props_nonfractured": 0.8901515151515151,
+    "recall_top3_iou0.1": 0.7894736842105263,
+    "recall_top3_iou0.3": 0.7719298245614035,
+    "recall_top3_iou0.5": 0.6842105263157895,
+    "image_AP_smax": 0.8404826809811576,
+    "image_AUROC_smax": 0.9354066985645934,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.464,
+      0.668,
+      0.773,
+      0.889
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "calibration": {
+    "m_rate_fractured": 0.9473684210526315,
+    "m_rate_nonfractured": 0.48484848484848486,
+    "mean_props_nonfractured": 0.8977272727272727,
+    "recall_top3_iou0.1": 0.7894736842105263,
+    "recall_top3_iou0.3": 0.7017543859649122,
+    "recall_top3_iou0.5": 0.5789473684210527,
+    "image_AP_smax": 0.794658694033142,
+    "image_AUROC_smax": 0.8956007442849548,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.197,
+      0.598,
+      0.747,
+      0.819
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "test": {
+    "m_rate_fractured": 0.958041958041958,
+    "m_rate_nonfractured": 0.49013657056145676,
+    "mean_props_nonfractured": 0.992412746585736,
+    "recall_top3_iou0.1": 0.8531468531468531,
+    "recall_top3_iou0.3": 0.8041958041958042,
+    "recall_top3_iou0.5": 0.6923076923076923,
+    "image_AP_smax": 0.8319127111698666,
+    "image_AUROC_smax": 0.9249021085136412,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.414,
+      0.664,
+      0.771,
+      0.835
+    ],
+    "images": 802,
+    "fractured": 143
+  },
+  "inner0_on_model_val": {
+    "m_rate_fractured": 0.9122807017543859,
+    "m_rate_nonfractured": 0.48484848484848486,
+    "mean_props_nonfractured": 1.0909090909090908,
+    "recall_top3_iou0.1": 0.7543859649122807,
+    "recall_top3_iou0.3": 0.7368421052631579,
+    "recall_top3_iou0.5": 0.6140350877192983,
+    "image_AP_smax": 0.7897120884412416,
+    "image_AUROC_smax": 0.8776581605528974,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.22,
+      0.6,
+      0.781,
+      0.824
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "inner0_on_heldout": {
+    "m_rate_fractured": 0.9230769230769231,
+    "m_rate_nonfractured": 0.5416078984485191,
+    "mean_props_nonfractured": 1.2045133991537376,
+    "recall_top3_iou0.1": 0.7552447552447552,
+    "recall_top3_iou0.3": 0.7272727272727273,
+    "recall_top3_iou0.5": 0.6153846153846154,
+    "image_AP_smax": 0.7779977009281172,
+    "image_AUROC_smax": 0.8889699862901556,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.131,
+      0.601,
+      0.726,
+      0.808
+    ],
+    "images": 852,
+    "fractured": 143
+  },
+  "inner1_on_model_val": {
+    "m_rate_fractured": 0.9122807017543859,
+    "m_rate_nonfractured": 0.48484848484848486,
+    "mean_props_nonfractured": 0.9621212121212122,
+    "recall_top3_iou0.1": 0.7894736842105263,
+    "recall_top3_iou0.3": 0.7543859649122807,
+    "recall_top3_iou0.5": 0.6140350877192983,
+    "image_AP_smax": 0.7689592977104251,
+    "image_AUROC_smax": 0.8819776714513556,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.386,
+      0.605,
+      0.697,
+      0.871
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "inner1_on_heldout": {
+    "m_rate_fractured": 0.8867924528301887,
+    "m_rate_nonfractured": 0.49145299145299143,
+    "mean_props_nonfractured": 0.8974358974358975,
+    "recall_top3_iou0.1": 0.7358490566037735,
+    "recall_top3_iou0.3": 0.6792452830188679,
+    "recall_top3_iou0.5": 0.5849056603773585,
+    "image_AP_smax": 0.7612668309463503,
+    "image_AUROC_smax": 0.8706301850955939,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.022,
+      0.599,
+      0.746,
+      0.827
+    ],
+    "images": 861,
+    "fractured": 159
+  },
+  "inner2_on_model_val": {
+    "m_rate_fractured": 0.9122807017543859,
+    "m_rate_nonfractured": 0.48484848484848486,
+    "mean_props_nonfractured": 0.9393939393939394,
+    "recall_top3_iou0.1": 0.8070175438596491,
+    "recall_top3_iou0.3": 0.7543859649122807,
+    "recall_top3_iou0.5": 0.6666666666666666,
+    "image_AP_smax": 0.7465120908428969,
+    "image_AUROC_smax": 0.8789872408293461,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.305,
+      0.617,
+      0.765,
+      0.813
+    ],
+    "images": 321,
+    "fractured": 57
+  },
+  "inner2_on_heldout": {
+    "m_rate_fractured": 0.9551282051282052,
+    "m_rate_nonfractured": 0.4957142857142857,
+    "mean_props_nonfractured": 0.9714285714285714,
+    "recall_top3_iou0.1": 0.8397435897435898,
+    "recall_top3_iou0.3": 0.7756410256410257,
+    "recall_top3_iou0.5": 0.6474358974358975,
+    "image_AP_smax": 0.7852293433266114,
+    "image_AUROC_smax": 0.9041758241758242,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.35,
+      0.62,
+      0.738,
+      0.809
+    ],
+    "images": 856,
+    "fractured": 156
+  },
+  "train_cf": {
+    "images": 2569,
+    "fractured": 458,
+    "m_rate_fractured": 0.9213973799126638,
+    "m_rate_nonfractured": 0.5097110374230223,
+    "mean_props_nonfractured": 1.025106584557082,
+    "recall_top3_iou0.1": 0.777292576419214,
+    "recall_top3_iou0.3": 0.7270742358078602,
+    "recall_top3_iou0.5": 0.6157205240174672,
+    "best_iou_quantiles_fractured": [
+      0.0,
+      0.211,
+      0.603,
+      0.735,
+      0.814
+    ]
+  }
+}

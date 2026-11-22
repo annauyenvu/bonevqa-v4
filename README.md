@@ -1,4 +1,4 @@
-# BoneVQA V4: detector-conditioned visual prompting for bone radiograph VQA
+# BoneVQA: detector-conditioned visual prompting for bone radiograph VQA (V4 and final system JF)
 
 Reproducibility package for the manuscript *Detector-Conditioned Visual Prompting for Bone Radiograph VQA: A Leakage-Controlled Evaluation and Mechanism Analysis* (in preparation for submission to IEEE Access).
 
@@ -66,6 +66,48 @@ Two third-revision inputs need data that are not in this package, so their outpu
 | Detector scores of the kept proposals (input of the last row above; Supplementary S1) | `experiments/access_detector_rescore_v1.py` | fold detector checkpoints, FracAtlas images | `reports/access_v1/review3/detector_scores.json` |
 | Overlap of FracAtlas with the ROCO and PMC-VQA pretraining pools (Sec. III-C, Supplementary Fig. S1) | `experiments/access_pretraining_overlap_v1.py` | FracAtlas, ROCO and PMC-VQA images | `reports/access_v1/review3/pretraining_overlap.json` |
 
+## Final system (JF): YOLOv8, bone tumors and confidence layer (added November 2026)
+
+This part of the package backs the final configuration of the M.S. thesis and of the companion manuscript *Localization Regime, Not Box Accuracy, Drives Detector-Conditioned Prompting in Bone Radiograph Visual Question Answering* (in preparation). JF is the V4 local-token model with a two-class YOLOv8s detector (fracture, bone lesion), cross-fitted training proposals, the detector's own proposal levels (fracture r = 0.02, lesion r = 0.10), joint training on FracAtlas-VQA and BTXRD-VQA, and a confidence layer that uses the highest detector score.
+
+| Path | Contents |
+|---|---|
+| `v4_grounded_next/vg/` | Model wrapper with leakage guard, joint FracAtlas/BTXRD stream (`joint.py`), knowledge latent prompt (`kg.py`), confidence layer (`trust.py`) |
+| `v4_grounded_next/scripts/` | Training (`train_arm.py`, `train_joint.py`), evaluation (`eval_arm.py`, `eval_joint.py`), comparisons (`compare_arms.py`, `compare_btxrd.py`), cross-fitting, confidence layer, reference-information and knowledge analyses |
+| `v4_grounded_next/runs/arms/` | Training records of every arm and fold (`started.json`, `completed.json` with checkpoint SHA-256) |
+| `v4_grounded_next/runs/yolo_ablation/fold_<f>/` | Per-image fracture predictions of every arm on test and calibration, and paired-bootstrap comparisons |
+| `v4_grounded_next/runs/joint/fold_<f>/` | Per-image BTXRD predictions (test, external, model-val), comparisons, confidence-layer fits and evaluations, knowledge and reference analyses |
+| `v4_grounded_next/runs/crossfit*/` | Proposal files: Faster R-CNN and YOLOv8 cross-fitted proposals, level sweep (`crossfit_yolo_joint_sweep/r<level>/`) |
+| `v4_grounded_next/demo_jf/` | Deployed service (FastAPI + YOLOv8 worker), API tests, latency benchmark, parity check |
+| `yolo_pilot/code/` | Detector data preparation, training and prediction, BTXRD-VQA generator, proposal builders, run lanes, summary tables |
+| `yolo_pilot/datasets/` | Fold image lists, inner cross-fitting lists, box annotations in JSON (`gt.json`), BTXRD-VQA question-answer files and vocabulary (images and label files not included) |
+| `yolo_pilot/runs/pred/`, `eval/`, `frcnn/` | Raw detector predictions of every fold and detector evaluations |
+| `yolo_pilot/runs/summary_final/` | `summary.json` and `bang_tong_hop.md`: every five-fold number of the final system |
+| `paper_jf/` | Post hoc analyses of the manuscript: detector × training-regime factorial and same-image comparison of all methods |
+| `thesis_jf/` | Script that turns `summary.json` into the number cells of the thesis (`results_jf.json`) |
+
+### Where each reported result comes from
+
+Run from the repository root after `python tools/relocate.py`. The commands marked *CPU* read only stored files; they were rerun on a clean copy of this repository and reproduced the committed files with zero numeric difference.
+
+| Result (thesis table label; manuscript table) | Stored files | Command |
+|---|---|---|
+| Detector comparison on fold 0 (`detcmp`; Table VIII) | `yolo_pilot/runs/eval/fold0_fa.json`, `fold0_cross.json` | `yolo_pilot/code/eval_detectors.py`, `eval_cross.py` (need images and weights) |
+| Detector at its own operating point and at the proposal levels, five folds (`detop`; Table IX) | `yolo_pilot/runs/summary_final/summary.json` (`detector`) | *CPU* `python3 -I yolo_pilot/code/summary_final.py` |
+| Fold-0 decomposition and detector × regime factorial (`decomp`; Table X) | `v4_grounded_next/runs/yolo_ablation/fold_0/*_test.json`; `paper_jf/results/regime_factorial_fold0.json` | *CPU* `python -I paper_jf/analysis/regime_factorial_fold0.py` |
+| Proposal levels with placebo and oracle boxes (`jfground`; Table XI) | `yolo_pilot/runs/sweep_analysis/fold0.json`; `yolo_ablation/fold_0/compare_test_loc_r*.json` | `yolo_pilot/code/sweep_analysis.py report` |
+| Five-fold ladder V4 → JF, hardware-free subset (`jffolds`, `jfhw`; Table XII) | `yolo_pilot/runs/summary_final/summary.json`, `bang_tong_hop.md`; `yolo_ablation/fold_<f>/compare_test_*.json` | *CPU* `python3 -I yolo_pilot/code/summary_final.py` |
+| Same-image comparison with image-only classifiers and FAVP/LaPA/Lens-style arms (Table XIV) | `paper_jf/results/compare_methods.json` | *CPU* `python -I paper_jf/analysis/compare_methods.py` |
+| Bone-tumor questions and per-class recall (`jfbtxrd`, `jfclass`; Table XV) | `v4_grounded_next/runs/joint/fold_<f>/JF_*_btxrd_{test,external}.json`, `compare_btxrd_*_JF_vs_J.json` | *CPU* `summary_final.py` |
+| Knowledge latent prompt and reference information (`kgres`, `refres`; Table XVI) | `joint/fold_0/kg_report_K.json`, `compare_btxrd_*_kg.json`, `ref_*.json` | `v4_grounded_next/scripts/kg_report.py`, `reference_analyze.py` |
+| Confidence layer (`trustjf`; Table XVII) | `joint/fold_<f>/trust_JF_*_eval.json`, `trust_J_*_eval.md` | `v4_grounded_next/scripts/trust_fit.py`, `selective_report.py` |
+| Deployed service: latency, API tests, parity (`latency`, `apitests`; Table XVIII) | `v4_grounded_next/demo_jf/benchmark.json`, `api_tests.json` | `benchmark.py`, `api_tests.py`, `parity_check.py` (need weights) |
+| All number cells of the thesis results chapter | `thesis_jf/results_jf.json` | *CPU* `python3 -I thesis_jf/gen_jf.py` |
+
+The V4-era results (main five-fold study, seed-43 controls, late fusion, availability strata, GRAZPEDWRI-DX, question wording) are reproduced by the commands in the previous section.
+
+Not included for this part: images, detector weights (`best.pt`) and VQA checkpoints (SHA-256 in `runs/arms/**/completed.json`), and the bone knowledge graph and its 47 knowledge cards. The graph is mapped to the Radiology Gamuts Ontology, whose CC BY-NC-ND license does not allow redistribution of a derived graph; the analyses report only the graph and card-bank hashes.
+
 ## Retrain from scratch
 
 Retraining requires the images and the initial checkpoints:
@@ -83,7 +125,7 @@ Not included: raw radiographs (public datasets above), model checkpoints (`*.pt`
 ## Data and licenses
 
 - Code: MIT License (`LICENSE`).
-- Derived split and QA files, predictions and result files: CC BY 4.0. They are derived from FracAtlas and GRAZPEDWRI-DX, both released under CC BY 4.0; please cite the original datasets.
+- Derived split and QA files, predictions and result files: CC BY 4.0. They are derived from FracAtlas, GRAZPEDWRI-DX and BTXRD (Yao et al., 2025, figshare 10.6084/m9.figshare.27865398), all released under CC BY 4.0; please cite the original datasets.
 - No patient-identifying information is contained in this repository; image identifiers are those of the public datasets.
 
 ## Citation

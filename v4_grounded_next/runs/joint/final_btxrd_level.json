@@ -1,0 +1,37 @@
+{
+  "rule": "max tumour AUROC on BTXRD model_val, fold 0, JF trained with BTXRD level 0.02; inference only; ties -> stricter level",
+  "chosen_level": "0.10",
+  "candidates": {
+    "0.02": {
+      "tumor_auroc": 0.8376513658124471,
+      "tumor_auprc": 0.8471526808980776,
+      "malignancy_auroc": 0.837431693989071,
+      "diagnosis_accuracy": 0.5298507462686567
+    },
+    "0.05": {
+      "tumor_auroc": 0.8362902468788136,
+      "tumor_auprc": 0.8313195274383165,
+      "malignancy_auroc": 0.8292349726775956,
+      "diagnosis_accuracy": 0.5298507462686567
+    },
+    "0.10": {
+      "tumor_auroc": 0.847320003754811,
+      "tumor_auprc": 0.8263376264276316,
+      "malignancy_auroc": 0.8497267759562842,
+      "diagnosis_accuracy": 0.5298507462686567
+    },
+    "0.15": {
+      "tumor_auroc": 0.8474608091617384,
+      "tumor_auprc": 0.8111184277363036,
+      "malignancy_auroc": 0.8387978142076503,
+      "diagnosis_accuracy": 0.5149253731343284
+    },
+    "0.30": {
+      "tumor_auroc": 0.8207547169811322,
+      "tumor_auprc": 0.7741597056135048,
+      "malignancy_auroc": 0.8353825136612022,
+      "diagnosis_accuracy": 0.5149253731343284
+    }
+  },
+  "test_or_external_used": false
+}

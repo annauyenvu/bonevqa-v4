@@ -1,0 +1,88 @@
+{
+  "role": "test",
+  "fold": "0",
+  "n": 803,
+  "fractured": 143,
+  "components": 783,
+  "reference": "D2_sweep_r0.15",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261114,
+    "unit": "component"
+  },
+  "arms": {
+    "D2_sweep_r0.15": {
+      "auprc": 0.810932338078179,
+      "auroc": 0.9392561983471075,
+      "sens@0.5": 0.7202797202797203,
+      "spec@0.5": 0.9575757575757575,
+      "m_rate_fractured": 0.8181818181818182,
+      "m_rate_nonfractured": 0.13787878787878788,
+      "sens@0.5_m1": 0.811965811965812,
+      "sens@0.5_m0": 0.3076923076923077,
+      "n_pos_m0": 26,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.15/fold_0/proposals_fold0.json",
+      "checkpoint_sha256": "cceac2bd3a1f624c0fa0e76fa8d1885c53f64910649093f92d154a00ec53374f"
+    },
+    "D2_sweep_r0.15_placebo": {
+      "auprc": 0.725585853091635,
+      "auroc": 0.9030408984954439,
+      "sens@0.5": 0.4825174825174825,
+      "spec@0.5": 0.9727272727272728,
+      "m_rate_fractured": 0.8181818181818182,
+      "m_rate_nonfractured": 0.13787878787878788,
+      "sens@0.5_m1": 0.5213675213675214,
+      "sens@0.5_m0": 0.3076923076923077,
+      "n_pos_m0": 26,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.15/fold_0/proposals_fold0_placebo.json",
+      "checkpoint_sha256": "cceac2bd3a1f624c0fa0e76fa8d1885c53f64910649093f92d154a00ec53374f"
+    },
+    "D2_sweep_r0.15_oracleloc": {
+      "auprc": 0.8103786133540577,
+      "auroc": 0.9372430599703326,
+      "sens@0.5": 0.7202797202797203,
+      "spec@0.5": 0.9575757575757575,
+      "m_rate_fractured": 0.8181818181818182,
+      "m_rate_nonfractured": 0.13787878787878788,
+      "sens@0.5_m1": 0.811965811965812,
+      "sens@0.5_m0": 0.3076923076923077,
+      "n_pos_m0": 26,
+      "proposals_file": "/Users/uyen/Downloads/BONEVQA/v4_grounded_next/runs/crossfit_yolo_joint_sweep/r0.15/fold_0/proposals_fold0_oracleloc.json",
+      "checkpoint_sha256": "cceac2bd3a1f624c0fa0e76fa8d1885c53f64910649093f92d154a00ec53374f"
+    }
+  },
+  "diff_vs_reference": {
+    "D2_sweep_r0.15_placebo": {
+      "auprc": {
+        "diff": -0.08534648498654396,
+        "ci95": [
+          -0.1244,
+          -0.0492
+        ]
+      },
+      "auroc": {
+        "diff": -0.03621529985166361,
+        "ci95": [
+          -0.052,
+          -0.0216
+        ]
+      }
+    },
+    "D2_sweep_r0.15_oracleloc": {
+      "auprc": {
+        "diff": -0.0005537247241212961,
+        "ci95": [
+          -0.012,
+          0.0105
+        ]
+      },
+      "auroc": {
+        "diff": -0.002013138376774859,
+        "ci95": [
+          -0.0077,
+          0.0025
+        ]
+      }
+    }
+  }
+}
