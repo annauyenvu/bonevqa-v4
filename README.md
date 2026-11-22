@@ -68,7 +68,7 @@ Two third-revision inputs need data that are not in this package, so their outpu
 
 ## Final system (JF): YOLOv8, bone tumors and confidence layer (added November 2026)
 
-This part of the package backs the final configuration of the M.S. thesis and of the companion manuscript *Localization Regime, Not Box Accuracy, Drives Detector-Conditioned Prompting in Bone Radiograph Visual Question Answering* (in preparation). JF is the V4 local-token model with a two-class YOLOv8s detector (fracture, bone lesion), cross-fitted training proposals, the detector's own proposal levels (fracture r = 0.02, lesion r = 0.10), joint training on FracAtlas-VQA and BTXRD-VQA, and a confidence layer that uses the highest detector score.
+This part of the package backs the final configuration of the M.S. thesis and of the companion manuscript *Localization Regime, Not Box Accuracy, Drives Detector-Conditioned Prompting in Bone Radiograph Visual Question Answering* (in preparation). JF is the V4 local-token model with a two-class YOLOv8s detector (fracture, bone lesion), cross-fitted training proposals for FracAtlas (BTXRD training proposals are in-sample), the detector's own proposal levels (fracture r = 0.02 in training and inference; lesion r = 0.02 in training and r = 0.10 at inference), joint training on FracAtlas-VQA and BTXRD-VQA, and a confidence layer that uses the highest detector score.
 
 | Path | Contents |
 |---|---|
@@ -85,6 +85,18 @@ This part of the package backs the final configuration of the M.S. thesis and of
 | `yolo_pilot/runs/summary_final/` | `summary.json` and `bang_tong_hop.md`: every five-fold number of the final system |
 | `paper_jf/` | Post hoc analyses of the manuscript: detector × training-regime factorial and same-image comparison of all methods |
 | `thesis_jf/` | Script that turns `summary.json` into the number cells of the thesis (`results_jf.json`) |
+
+### Offline procedure for one outer fold (Algorithm 1 of the manuscript)
+
+The steps below are what `yolo_pilot/code/lane_gpu.sh`, `lane_cpu.sh` and `lane_final.sh` run; step numbers follow Algorithm 1.
+
+1. Inputs: the FracAtlas-VQA roles of fold f (TRAIN, model-val, calibration, test), BTXRD-VQA (train, val, test, external) and the lesion boxes of training images. The proposal levels were fixed once on fold 0 (step 5).
+2. Train the main detector D_f on FracAtlas TRAIN and all BTXRD train images (`yolo_pilot/runs/yolo/fa_btxrd_os3[_f<f>]`, weights not included).
+3. Cross-fitting, FracAtlas only: split FracAtlas TRAIN into three component-grouped inner folds (`yolo_pilot/datasets/fa_fold<f>/cf/`). Each inner detector is trained on the other two inner folds **plus all BTXRD train images**, and predicts proposals only for the FracAtlas images of its held-out inner fold.
+4. With D_f, predict proposals for FracAtlas model-val, calibration and test, and for every BTXRD image (val, test, external and train). The BTXRD train proposals are therefore in-sample (`crossfit_yolo_joint_sweep/r<level>/btxrd_fold<f>/proposals_btxrd_insample.json`).
+5. Display threshold per class: maximum box F1 at IoU 0.5 on model-val (`summary.json`, `detector`). Proposal levels: fracture r = 0.02 in training and inference (chosen on fold 0 model-val, `yolo_pilot/runs/sweep_analysis/`); lesion r = 0.02 in training and r = 0.10 at inference (chosen on fold 0 BTXRD val, `v4_grounded_next/runs/joint/final_btxrd_level.json`).
+6. Train the answering model on FracAtlas-VQA and BTXRD-VQA (two epochs, last checkpoint): FracAtlas TRAIN images use the cross-fitted proposals of step 3 (`crossfit_yolo_joint_sweep/r0.02/fold_<f>/proposals_fold<f>.json`); BTXRD train images use the in-sample proposals of D_f from step 4 (`r0.02/btxrd_fold<f>/proposals_btxrd_insample.json`).
+7. Fit the confidence layer on FracAtlas calibration and BTXRD val with the step-4 proposals at the inference levels (`v4_grounded_next/runs/joint/fold_<f>/trust_JF_*.json`).
 
 ### Where each reported result comes from
 

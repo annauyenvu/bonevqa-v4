@@ -59,7 +59,7 @@ def fig_framework():
     box(ax, 0.02, 0.80, 0.135, 0.12, "FracAtlas-VQA\n4,013 images, 5 folds\n(component-grouped)", OFF, fs=5.4)
     box(ax, 0.02, 0.64, 0.135, 0.12, "BTXRD-VQA\ncenter 1: train/val/test\ncenters 2–3: external", OFF, fs=5.4)
     box(ax, 0.19, 0.72, 0.13, 0.12, "Two-class YOLOv8\n(fracture, lesion)\non TRAIN", OFF, fs=5.6)
-    box(ax, 0.355, 0.80, 0.15, 0.12, "Cross-fitting:\n3 inner detectors\n→ TRAIN proposals", OFF, fs=5.5)
+    box(ax, 0.355, 0.80, 0.15, 0.12, "Cross-fitting\n(FracAtlas only):\n3 inner detectors\n→ TRAIN proposals", OFF, fs=5.5)
     box(ax, 0.355, 0.64, 0.15, 0.12, "Levels on model-val:\nτ_det (display),\nτ(r): r = 0.02 / 0.10", OFF, fs=5.5)
     box(ax, 0.54, 0.72, 0.15, 0.12, "Joint VQA training\nV4 module, FracAtlas\n+ BTXRD, 2 epochs", OFF, fs=5.5)
     box(ax, 0.725, 0.72, 0.13, 0.12, "Confidence layer\nfit on calibration\n/ BTXRD val", OFF, fs=5.5)
